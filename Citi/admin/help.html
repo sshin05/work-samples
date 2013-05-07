@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript">
+
+function changeImg(elem1)  {
+   //var elem1 =window.event.srcElement;
+	if (elem1 == null)
+    	return;    
+	if (elem1.src.indexOf("plus.gif") > 0) {
+    	elem1.src = imgLib["minus"].src;
+    	elem1.title = "Collapse";
+   	} else {
+    	elem1.src = imgLib["plus"].src;
+    	elem1.title = "Expand";
+   	}
+}
+
+function expand(strTag, strAttribute, strAttrValue, mainValue) {
+	var elem = document.getElementsByTagName(strTag);
+	for (var i =0;i<elem.length;i++) {
+  		if(elem[i].getAttribute(strAttribute) == strAttrValue) {
+		var main = document.getElementById(mainValue);
+			if (elem[i].style.display == 'none') {
+				if (isIE) {
+    				elem[i].style.display = 'block';
+				} else {
+					elem[i].style.display = 'table-row';
+				}
+				main.style.backgroundColor = '#D6E7F7';
+				resize();
+			} else {
+				elem[i].style.display = 'none';
+				main.style.backgroundColor = '#FFFFFF'; 
+				resize();
+			}
+			
+  		}
+ 	}
+}
+
+var imgLib = new Array();
+imgLib["minus"] = new Image(12, 12);
+imgLib["minus"].src = "../images/minus.gif";
+imgLib["plus"] = new Image(12, 12);
+imgLib["plus"].src = "../images/plus.gif";
+
+function collapse(sid) {
+	changeImg(document.getElementById('img'+ sid));
+	expand('tr', 'id', 'row' + sid, 'main' + sid);
+}
+
+</script>
+
+<body id="admin" onload="clearLoadingBar(); resize();">
+
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Help Topics</div>
+		</div>
+	</div>
+	
+	<div id="page">
+	
+		<table class="help" cellspacing="0">	
+		<tr id="main123">
+		<td width="11" class="icn"><a href="#" onclick="this.blur(); collapse('123');"><img src="../images/plus.gif" alt="" id="img123" /></a></td>
+		<td>Portal Entitlements</td>
+		</tr>	
+		<tr id="row123" style="display:none;">
+		<td class="content">&nbsp;</td>
+		<td class="content">Use this tool to show or hide a specific module or page from the user's view</td>
+		</tr>
+		<tr>
+		<td class="icn"><a href="#"><img src="../images/plus.gif" alt="" /></a></td>
+		<td>Content Masks</td>
+		</tr>
+		<tr>
+		<td class="icn"><a href="#"><img src="../images/plus.gif" alt="" /></a></td>
+		<td>Cloning User Profiles</td>
+		</tr>
+		<tr>
+		<td class="icn"><a href="#"><img src="../images/plus.gif" alt="" /></a></td>
+		<td>Simualting User Views</td>
+		</tr>
+		<tr>
+		<td class="icn"><a href="#"><img src="../images/plus.gif" alt="" /></a></td>
+		<td>Deleting Users</td>
+		</tr>
+		</table>
+	</div>
+</body>
+</html>

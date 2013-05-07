@@ -1,0 +1,1030 @@
+.bold {
+	font-weight: bold !important; 
+}
+
+.italics {
+	font-style: italic !important;
+}
+
+.overlay .clear {
+	clear: both;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.floatingtest {
+	border: 1px solid red;
+}
+
+.myaccount {
+	float:right;
+	margin-top:9px;
+	_margin-top:1px
+	line-height:27px;
+	margin-right: 10px;
+}
+.myaccount a:link
+{
+color:#FFFFFF; 
+padding-right:8px;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:bold;
+}
+.myaccount a:visited
+{
+color:#FFFFFF; 
+padding-right:8px;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:bold;
+}
+.myaccount a:hover
+{
+text-decoration:underline;
+}
+
+
+.cover {
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+	display: none;
+	filter:alpha(opacity=60);
+	opacity: 0.6;
+	-moz-opacity:0.6;
+}
+
+#cart {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 69px;
+	height: 30px;
+	background: url(../images/icon_cart.gif) no-repeat top;
+	display: none;
+}	
+
+#myaccount {
+	position: absolute;
+	width: 87px;
+	height: 30px;
+	background: url(../images/icon_myaccount.gif) no-repeat top;
+	display: none;
+	margin-right: -10px;
+}
+	
+.overlay, .page, .myact { 
+	display: none; 
+}
+	
+#overlay {
+	z-index: 10;
+	position: absolute;
+	clear: both;
+	margin: 0;
+	padding: 0 0 0 56px;
+	width: 880px;
+	height: 600px;
+	font: 10px Verdana;
+	background: url(../images/overlay_bg.gif) repeat-x top;	
+}
+
+
+	#overlay .close {
+		margin: 14px 12px 5px 0;
+		padding: 0;
+		text-align: right;
+		float: right;
+		width: 868px;
+	}
+	
+		#overlay .close a:link, #overlay .close a:visited, #overlay .close a:active, #overlay .close a:hover {
+			color: #395CA8;
+			text-decoration: underline;
+		}
+		
+		#overlay .close a.x:link, #overlay .close a.x:visited, #overlay .close a.x:active, #overlay .close a.x:hover {
+			margin: 0 0 0 14px;
+			padding: 2px 24px 3px 0;
+			line-height: 16px;
+			color: #666666;
+			text-decoration: none;
+			font-weight: normal;
+			background: url(../images/icon_close.gif) no-repeat right;
+		}
+		
+		
+		#overlay .close .list {
+			float: left;
+			text-align: left;
+			margin: 0;
+			line-height: 15px;
+		}
+			
+			#overlay .close .list .itemOn {
+				margin: 0 10px 0 0;
+			}
+		
+			#overlay .close .list a:link, #overlay .close .list a:visited, #overlay .close .list a:active, #overlay .close .list a:hover {
+				margin: 0 10px 0 0;
+				font-weight: normal;
+			}
+		
+	#overlay .bottomclose {
+		margin: 14px 0 0 0;
+		padding: 0;
+		text-align: right;
+		float: right;
+		width: 250px;
+	}
+	
+		#overlay .bottomclose a:link, #overlay .bottomclose a:visited, #overlay .bottomclose a:active, #overlay .bottomclose a:hover {
+			color: #395CA8;
+			text-decoration: underline;
+		}
+		
+		#overlay .bottomclose a.x:link, #overlay .bottomclose a.x:visited, #overlay .bottomclose a.x:active, #overlay .bottomclose a.x:hover {
+			margin: 0 0 0 14px;
+			padding: 2px 24px 3px 0;
+			line-height: 16px;
+			color: #666666;
+			text-decoration: none;
+			font-weight: normal;
+			background: url(../images/icon_close.gif) no-repeat right;
+		}
+
+		
+	#overlay h2 {
+		color: #3B67B2;
+		font-size: 16px;
+		font-weight: bold;
+		margin: 0 0 5px 0;
+		padding: 0;
+		display: inline;
+		float: left;
+	}
+	
+	#overlay .subhead {
+		color: #000000;
+		font-size: 14px;
+		margin: 0 0 0 15px;
+		font-weight: normal;
+		float: left;
+	}
+	
+	#overlay .link a:link, #overlay .link a:visited, #overlay .link a:active, #overlay .link a:hover {
+		margin: 3px 0 0 15px;
+		float: left;
+		color: #395CA8;
+	}
+	
+	#overlay .innersection {
+		float: left;
+		margin: 0;
+		padding: 0 ;
+		height: 440px;
+		width: 846px;
+		overflow: auto;
+	}
+	
+	#overlay .innersection .heading {
+		float: left;		
+		margin: 0 0 8px 0;
+	}
+		
+		#overlay .innersection .heading .account {
+			color: #3B67B2;
+			font-size: 12px;
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+			display: block;
+			text-align: left;
+		}
+		
+		#overlay .innersection .heading .text {
+			color: #666666;
+			margin: 5px 0 0 0;
+			padding: 0;
+			float: left;
+			text-align: left;
+		}
+		
+			#overlay .innersection .heading .text .boldhead {
+				float: left;
+				font-weight: bold;
+				margin: 0 5px 0 0;
+			}
+		
+			#overlay .innersection .heading .text .boundary {
+				float: left;
+				width: 320px;
+			}
+		
+			#overlay .innersection .heading .text a:link, #overlay .innersection .heading .text a:visited, #overlay .innersection .heading .text a:active, #overlay .innersection .heading .text a:hover {
+				text-decoration: underline;
+				font-weight: normal;
+			}
+			
+			#overlay .innersection .heading .text a.list:link, #overlay .innersection .heading .text a.list:visited, #overlay .innersection .heading .text a.list:active, #overlay .innersection .heading .text a.list:hover {
+				padding: 0 0 6px 0;
+				display: block;
+			}
+			
+			
+			#overlay .innersection .heading .details {
+				width: 120px;
+			}
+			
+		#overlay .innersection .heading .text2 {
+			color: #666666;
+			margin: 5px 0 10px 0;
+			padding: 0;
+			float: left;
+			text-align: left;
+		}
+		
+		#overlay .innersection .heading .back {
+			float: left;
+			font-size: 10px;
+			font-weight: bold;
+			margin: 5px 0 0 35px;
+		}
+		
+			#overlay .innersection .heading .back a:link, #overlay .innersection .heading .back a:visited, #overlay .innersection .heading .back a:active, #overlay .innersection .heading .back a:hover {
+				color: #666666;
+				text-decoration: none;
+			}
+		
+		#overlay .innersection .buttonrow {
+			float: left;
+			margin: 0 0 5px 0;
+			padding: 0;
+			width: 820px;
+		}
+		
+			#overlay .innersection .buttonrow .subheader {
+				font-size: 12px;
+				font-weight: bold;
+				color: #3B67B2;
+				float: left;
+				margin: 4px 10px 0 0;
+			}
+		
+		
+			#overlay .innersection .buttonrow a:link, #overlay .innersection .buttonrow a:visited, #overlay .innersection .buttonrow a:active, #overlay .innersection .buttonrow a:hover {
+				float: left;
+				margin-right: 3px;
+			}
+			
+			#overlay .innersection .buttonrow a.green:link, #overlay .innersection .buttonrow a.green:visited, #overlay .innersection .buttonrow a.green:active, #overlay .innersection .buttonrow a.green:hover {
+				float: right;
+				margin: 0;
+			}
+			
+			#overlay .innersection .buttonrow a.rightside:link, #overlay .innersection .buttonrow a.rightside:visited, #overlay .innersection .buttonrow a.rightside:active, #overlay .innersection .buttonrow a.rightside:hover {
+				float: right;
+			}
+	
+	
+	#overlay .innersection .orderhistory {
+		float: left;
+		margin: 5px 0 5px 0;
+	}
+	
+		#overlay .innersection .orderhistory .title {
+			float: left;
+			color: #395CA8;
+			font-size: 11px;
+			font-weight: bold;
+			margin: 0 0 5px 0;
+		}
+		
+		#overlay .innersection .orderhistory .empty {
+			float: left;
+			color: #555555;
+			margin: 0 0 8px 0;
+			font-weight: normal;
+			text-align: left;
+		}
+		
+		#overlay .innersection .orderhistory .col1 {
+			float: left;
+			text-align: right;
+			padding: 4px 5px 5px 0;
+			width: 160px;
+			font-weight: bold;
+		}
+		
+		#overlay .innersection .orderhistory .col2 {
+			float: left;
+			margin: 0 5px 5px 0;			
+			width: 290px;
+			text-align: left;
+		}
+		
+			#overlay .innersection .orderhistory .col2 select, #overlay .innersection .orderhistory .col2 input {
+				font-size: 10px;
+			}
+			
+			#overlay .innersection .orderhistory .col2 input {
+				width: 275px;
+				_width: 270px;
+			}
+			
+				#overlay .innersection .orderhistory .col2 input.short {
+					width: 100px;
+				}
+			
+		#overlay .innersection .orderhistory .col3 {
+			float: left;
+			margin: 0 0 5px 0;
+		} 
+		
+		
+		
+	#overlay .innersection .myprofile {
+		float: left;
+		margin: 5px 0 5px 0;
+	}
+	
+		#overlay .innersection .myprofile .title {
+			float: left;
+			color: #395CA8;
+			font-size: 11px;
+			font-weight: bold;
+			margin: 0 0 5px 0;
+		}
+		
+		#overlay .innersection .myprofile .text {
+			float: left;
+			margin: 0 0 10px 0;
+		}
+		
+		#overlay .innersection .myprofile .empty {
+			float: left;
+			color: #555555;
+			margin: 0 0 8px 0;
+			font-weight: normal;
+			text-align: left;
+		}
+		
+		#overlay .innersection .myprofile .col1 {
+			float: left;
+			text-align: right;
+			padding: 4px 5px 5px 0;
+			width: 160px;
+		}
+		
+			#overlay .innersection .myprofile .error {
+				color: #FF0000;
+				font-weight: bold;
+			}
+		
+		#overlay .innersection .myprofile .col2 {
+			float: left;
+			margin: 0 5px 5px 0;			
+			width: 230px;
+			text-align: left;
+		}
+		
+			#overlay .innersection .myprofile .col2 select, #overlay .innersection .myprofile .col2 input {
+				font-size: 10px;
+			}
+			
+			#overlay .innersection .myprofile .col2 input {
+				width: 220px;
+			}
+			
+				#overlay .innersection .myprofile .col2 input.short {
+					width: 103px;
+					_width: 107px;
+				}
+				
+				#overlay .innersection .myprofile .col2 input.chk {
+					width: 15px;
+					margin: 0;
+					padding: 0;
+				}
+				
+				#overlay .innersection .myprofile .col2 input.error {
+					border: 2px solid #FF0000;
+					color: #000000;
+					font-weight: normal;
+				}
+			
+		#overlay .innersection .myprofile .col3 {
+			float: left;
+			margin: 0 0 5px 0;
+			width: 400px;
+			text-align: left;
+		} 
+	
+	
+	#overlay .innersection .empty {
+		float: left;
+		color: #FF0000;
+		font-weight: bold;
+		margin: 10px 0 20px 0;
+		text-align: left;
+	}
+	
+	#overlay .innersection .emptynonred {
+		float: left;
+		color: #555555;
+		font-weight: bold;
+		margin: 10px 0 20px 0;
+		text-align: left;
+	}
+			
+	#overlay .innersection .shippingcol {
+		float: left;
+		width: 400px;
+		margin: 0 10px 0 0;
+		_margin: 0 8px 0 0;
+		padding: 0;
+		text-align: left;
+	}
+	
+		#overlay .innersection .shippingcol .section {
+			float: left;
+			width: 100%;
+			background-color: #F3F6FC;
+			border-left: 1px solid #E5E5E5;
+			border-right: 1px solid #E5E5E5;
+			border-bottom: 1px solid #E5E5E5;
+			padding: 0;
+			margin: 0 0 5px 0;
+		}
+		
+			#overlay .innersection .shippingcol .section .header {
+				float: left;
+				background: url(../images/shippingheader_bg.gif) repeat-x top;				
+				width: 100%;
+				color: #FFFFFF;
+				font-weight: bold;
+				height: 24px;
+				cursor: pointer;
+			}
+			
+				#overlay .innersection .shippingcol .section .header .headertext {
+					float: left;
+					margin: 0 0 0 10px;
+					padding: 6px 0 0 12px;								
+				}
+				
+				#overlay .innersection .shippingcol .section .header .arrowdown {
+					background: url(../images/icon_arrowdown.gif) no-repeat left bottom;		
+				}
+				
+				#overlay .innersection .shippingcol .section .header .arrowright {
+					background: url(../images/icon_arrowright.gif) no-repeat left bottom;
+				}
+				
+				
+				#overlay .innersection .shippingcol .section .header .complete {
+					float: right;
+					margin: 0 12px 0 0;
+					padding: 6px 0 0 17px;	
+				}
+				
+				#overlay .innersection .shippingcol .section .header .check {
+					background: url(../images/icon_check.gif) no-repeat left bottom;			
+				}
+				
+				#overlay .innersection .shippingcol .section .header .xmark {
+					background: url(../images/icon_error.gif) no-repeat left bottom;
+				}
+				
+			#overlay .innersection .shippingcol .section .body {
+				float: left;
+				padding: 5px 9px 5px 9px;
+				display: none;
+				width: 382px;
+			}
+				
+				#overlay .innersection .shippingcol .section .body .rowline {
+					float: left;
+					margin: 0 0 5px 0;
+					padding: 0;
+					width: 100%;
+				}
+				
+					#overlay .innersection .shippingcol .section .body .rowline a:link, #overlay .innersection .shippingcol .section .body .rowline a:visited, #overlay .innersection .shippingcol .section .body .rowline a:active, #overlay .innersection .shippingcol .section .body .rowline a:hover {
+						font-weight: normal;
+						text-decoration: underline;
+					}
+						
+					#overlay .innersection .shippingcol .section .body .toppadding {
+						margin-top: 1px;
+					}
+					
+					#overlay .innersection .shippingcol .section .body .ietoppadding {
+						_margin-top: 4px;
+					}
+					
+					#overlay .innersection .shippingcol .section .body .rightpadding {
+						margin-right: 4px;
+					}
+					
+					#overlay .innersection .shippingcol .section .body .label {
+						float: right;
+						text-align: right;
+						margin-right: 4px;
+						width: 110px;
+						white-space: normal;
+					}
+					#overlay .innersection .shippingcol .section .body .error {
+						color: #FF0000;
+					}
+					
+					#overlay .innersection .shippingcol .section .body .rowline input {
+						margin: 0;
+						padding: 0;
+						font-size: 10px;
+					}
+					
+						#overlay .innersection .shippingcol .section .body .rowline input.rdo {
+							width: 20px;
+							margin: 0;
+							padding: 0;
+						}
+					
+						#overlay .innersection .shippingcol .section .body .rowline input.textinput, #overlay .innersection .shippingcol .section .body .rowline textarea {
+							width: 250px;
+						}
+					
+					#overlay .innersection .shippingcol .section .body .rowline select {
+						font-size: 10px;
+						margin: 0;
+						padding: 0;
+					}
+					
+						#overlay .innersection .shippingcol .section .body .rowline select.method {
+							width: 254px;
+							_width: 250px;
+							margin: 0;
+							padding: 0;
+						}
+						
+						#overlay .innersection .shippingcol .section .body .rowline input.error {
+							border: 2px solid #FF0000;
+							color: #000000;
+						}
+						
+						#overlay .innersection .shippingcol .section .body .rowline select.address {
+							width: 364px;
+							_width: 340px;
+							margin: 0;
+							padding: 0;
+						}
+
+			
+
+	#overlay .innersection .totals {
+		float: left;
+		background-color: #FFFFFF;
+		margin: 0;
+		padding: 10px 0 7px 0;
+		border-bottom: 1px solid #C2D2EC;
+	}
+	
+	#overlay .innersection .long {
+		width: 820px;
+	}
+	
+	#overlay .innersection .short{
+		width: 400px;
+	}
+	
+		#overlay .innersection .totals .buttons {
+			float: left;
+			padding: 3px 0 0 12px;
+			width: 300px;
+		}
+		
+			#overlay .innersection .totals .buttons  a:link, #overlay .innersection .totals .buttons  a:visited, #overlay .innersection .totals .buttons  a:active, #overlay .innersection .totals .buttons  a:hover {
+				float: left;
+				margin-right: 3px;
+			}
+		
+		#overlay .innersection .totals .checkout {
+			float: right;
+			text-align: right;			
+			width: 300px;
+		}
+		
+			#overlay .innersection .totals .checkout h3 {			
+				margin: 0;
+				padding: 0 16px 6px 0;
+				display: block;
+				font-size: 13px;
+				font-weight: bold;
+				color: #000000;
+			}
+			
+			#overlay .innersection .totals .checkout .text {
+				margin: 0 16px 6px 0;
+				color: #000000;
+			}
+			
+			#overlay .innersection .totals .checkout .smallprint {
+				margin: 0 16px 6px 0;
+				color: #545454;
+			}
+			
+			#overlay .innersection .totals .checkout .button {
+				margin: 0;
+				float:right;
+			}
+			
+	#overlay .innersection .footer {
+		float: left;
+		margin: 0;
+		padding: 12px 0 11px 14px;
+		background-color: #D5DFF2;
+		width: 806px;
+		_width: 820px;
+	}
+	
+		#overlay .innersection .footer h3 {
+			float: left;
+			color: #3B67B2;
+			display: inline;
+			margin: 2px 0 0 0;
+			padding: 0;
+			font-size: 13px;
+		}
+		
+		#overlay .innersection .footer a:link, #overlay .innersection .footer a:visited, #overlay .innersection .footer a:active, #overlay .innersection .footer a:hover {
+			float: left;
+			margin: 0 0 0 5px;
+		}	
+		
+		#overlay .innersection .footer .info {
+			float: left;
+			margin: 5px 0 0 0;
+			width: 800px;
+		}
+			
+			#overlay .innersection .footer .info .col {
+				float: left;
+				margin: 0 30px 0 0;
+				width: 160px;
+				text-align: left;
+			}
+		
+		#overlay .innersection .footer .addition {
+			float: left;
+			margin: 0 0 0 15px;
+			padding: 2px 0 0 16px;
+			border-left: 1px solid #8DAED1;
+			width: auto;
+		}
+			#overlay .innersection .footer .addition .text {
+				float: left;
+				margin: 0 0 5px 0;
+				text-align: left;
+				width: 680px;
+			}
+		
+			#overlay .innersection .footer .addition .title {
+				float: left;
+				margin: 4px 3px 0 0;
+				color: #000000;
+				text-align: right;
+			}
+			
+			#overlay .innersection .footer .addition input {
+				float: left;
+				margin: 0 10px 0 0;
+				width: 200px;
+			}
+			
+			#overlay .innersection .footer .addition input.quantity {
+				width: 25px;
+			}
+			
+	#overlay .innersection .placeorderbutton {
+		float: right;
+		margin: 5px 9px 0 0;
+		width: auto;
+	}
+
+	#overlay .footer {
+		float: left;
+		color: #545454;
+		margin: 5px 0 10px 0;
+		_margin: 0 0 10px 0;
+		padding: 0;
+		width: 600px;
+		text-align: left;
+	}
+	
+		#overlay .footer .links {
+			float: left;
+			margin: 6px 0 0 0;
+			_margin: 3px 0 0 0;
+		}
+			#overlay .footer .links a:link, #overlay .footer .links a:visited, #overlay .footer .links a:active, #overlay .footer .links a:hover {
+				color: #395CA8;
+				margin: 0 12px 0 0;
+				font-weight: normal;
+			}
+			
+			
+/* TABLE GRID */
+
+
+	#overlay table {
+		float: left;
+		margin: 0 0 0 0;
+		padding: 0;
+		border-collapse: collapse;
+		background-color: #FFFFFF;
+		font: 10px Verdana;
+	}
+	
+		#overlay table th {
+			color: #FFFFFF;
+			background: url(../images/header_bg.gif);
+			height: 30px;
+			margin: 0;
+			padding: 0 0 0 12px;
+			text-align: left;
+			vertical-align: middle;
+		}
+			
+			#overlay table th.rightalign, #overlay table td.rightalign {
+				text-align: right;
+				padding-right:12px;
+			}
+		
+			#overlay table th.border {
+				border-right: 1px solid #90A8CE;
+			}
+			
+			#overlay table th a:link, #overlay table th a:visited, #overlay table th a:active, #overlay table th a:hover  {
+				display: block;
+				font-weight: normal;
+				color: #FFFFFF;
+				text-decoration: underline;
+				font-weight: bold;
+			}
+			
+			#overlay table th input, #overlay table td input {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#overlay table td {
+				margin: 0;
+				padding: 8px 0 8px 12px;
+				border-bottom: 1px solid #8DAED1;
+				height: 28px;
+				vertical-align: top;
+				text-align: left;
+			}
+		
+				#overlay table td a:link, #overlay table td a:visited, #overlay table td a:active, #overlay table td a:hover {
+					color: #395CA8;
+					font-weight: bold;
+					text-decoration: underline;
+				}
+			
+				#overlay table td.disableBorder {
+					border: 0;
+					margin: 0;
+					padding-bottom: 0;
+				}
+				
+				#overlay table td.tracking {
+					margin: 0;
+					padding: 0 0 4px 153px;
+					height: auto;
+				}
+			
+				
+				#overlay table td input.input {
+					width: 25px;
+					font-size: 10px;
+				}
+		
+
+
+
+	
+	
+/* BUTTON STYLES */		
+	
+	.overlay a.button:link, .overlay a.button:visited, .overlay a.button:active, .overlay a.button:hover {
+		display: block;
+		margin: 0;
+		width: auto;
+		_width: 1px;
+		text-decoration: none;
+		white-space: nowrap;
+		font: bold 10px Verdana, Arial, Helvetica;
+	}
+	
+	.overlay .button.enabled {
+		margin: 0;
+		padding: 0;
+		color: #666666 !important;
+		height: 23px;
+		background: url(../images/button_bg.gif) repeat-x top;
+		text-align: center;
+		cursor: pointer;
+	}
+	
+		.overlay .button.enabled .leftborder {
+			margin: 0;	
+			padding: 0 0 0 9px;	
+			height: 23px;
+			background: url(../images/button_borderleft.gif) repeat-y left;
+		}
+		
+		.overlay .button.enabled .rightborder {
+			margin: 0;	
+			padding: 5px 9px 0 0;	
+			height: 18px;
+			_height: 23px;
+			background: url(../images/button_borderright.gif) repeat-y right;
+		}
+		
+	
+	.overlay .button.disabled {
+		margin: 0;
+		padding: 0;
+		color: #B2B2B2 !important;
+		height: 23px;
+		background: url(../images/button_bg_disabled.gif) repeat-x top;
+		text-align: center;
+		cursor: default;
+	}
+	
+		.overlay .button.disabled .leftborder {
+			margin: 0;	
+			padding: 0 0 0 9px;	
+			height: 23px;
+			background: url(../images/button_borderleft_disabled.gif) repeat-y left;
+		}
+		
+		.overlay .button.disabled .rightborder {
+			margin: 0;	
+			padding: 5px 9px 0 0;	
+			height: 18px;
+			_height: 23px;
+			background: url(../images/button_borderright_disabled.gif) repeat-y right;
+		}
+		
+		
+	.overlay .button.green {
+		margin: 0;
+		padding: 0;
+		color: #FFFFFF !important;
+		height: 23px;
+		background: url(../images/button_bg_green.gif) repeat-x top;
+		text-align: center;
+		cursor: pointer;
+	}
+	
+		.overlay .button.green .leftborder {
+			margin: 0;	
+			padding: 0 0 0 9px;	
+			height: 23px;
+			background: url(../images/button_borderleft_green.gif) repeat-y left;
+		}
+		
+		.overlay .button.green .rightborder {
+			margin: 0;	
+			padding: 5px 9px 0 0;	
+			height: 18px;
+			_height: 23px;
+			background: url(../images/button_borderright_green.gif) repeat-y right;
+		}
+		
+	.overlay .button.greendisabled {
+		margin: 0;
+		padding: 0;
+		color: #FFFFFF !important;
+		height: 23px;
+		background: url(../images/button_bg_greendisabled.gif) repeat-x top;
+		text-align: center;
+		cursor: default;
+	}
+	
+		.overlay .button.greendisabled .leftborder {
+			margin: 0;	
+			padding: 0 0 0 9px;	
+			height: 23px;
+			background: url(../images/button_borderleft_gdisabled.gif) repeat-y left;
+		}
+		
+		.overlay .button.greendisabled .rightborder {
+			margin: 0;	
+			padding: 5px 9px 0 0;	
+			height: 18px;
+			_height: 23px;
+			background: url(../images/button_borderright_gdisabled.gif) repeat-y right;
+		}
+		
+				
+	
+/* POPUP STYLES */			
+	
+.popup {
+	position: absolute;
+	border: 1px solid #999999;
+	width: auto;
+	background-color: #20427B;
+	padding: 4px;
+	margin: 0;
+	z-index: 20;
+	width: 352px;
+}	
+	
+	.popup .inside {
+		float: left;
+		padding: 10px;
+		background-color: #D5DFF2;
+		text-align: left;
+		width: 332px;
+		_width: 342px;
+		color: #20427B;
+		font-size: 10px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+	
+		.popup .inside a:link, .popup .inside a:visited, .popup .inside a:active, .popup .inside a:hover {
+			text-decoration: none;
+		}
+		
+		.popup .inside .error {
+			color: #FF0000;
+		}
+	
+		.popup .inside .text {
+			float: left;
+			font-weight: bold;
+			margin: 0 0 5px 0;
+		}
+		
+		.popup .inside .head {
+			font-size: 15px;
+		}
+		
+		.popup .inside .label {
+			float: left;
+			width: 60px;
+			margin: 2px 5px 0 0;
+			_margin-top: 5px;
+			padding: 0;
+			text-align: right;
+		}
+		
+		.popup .inside .input {
+			float: left;
+			margin: 0 0 5px 0;
+			padding: 0;
+		}
+		
+			.popup .inside .input a.enabled:link, .popup .inside .input a.enabled:visited, .popup .inside .input a.enabled:active, .popup .inside .input a.enabled:hover {
+				float: left;
+				margin: 0 87px 0 0;
+				_margin: 0 80px 0 0;
+				padding: 0;
+				color: #666666;
+			}
+			
+			.popup .inside .input a.green:link, .popup .inside .input a.green:visited, .popup .inside .input a.green:active, .popup .inside .input a.green:hover {
+				float: left;
+				margin: 0;
+				padding: 0;
+				color: #FFFFFF;
+			}
+		
+			.popup .inside .input input {
+				width: 230px;
+			}
+			
+			.popup .inside .input textarea {
+				width: 230px;
+				height: 100px;
+			}
+		
+		.popup .inside .buttons {
+			float: left;
+			margin: 0 10px 0 0;
+			font-size: 10px;
+		}

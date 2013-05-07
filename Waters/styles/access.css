@@ -1,0 +1,249 @@
+/* CSS Document */
+.acces
+{
+width:950px;
+vertical-align:top;
+}
+.acsheader
+{
+padding: 33px 45px 10px 45px;
+color:#3b67b2;
+font-size:15px;
+font-family:verdana;
+font-weight:bold;
+background-color:#fff;
+}
+.acstxt
+{
+font-family:verdana;
+font-size:11px;
+color:#000;
+font-weight:normal;
+margin: 3px 5px 5px 0px;
+line-height:15px;
+}
+.acslink a:link
+{
+color:#395ca8;
+font-weight:normal;
+text-decoration:underline;
+}
+.acslink a:hover
+{
+color:#395ca8;
+font-weight:normal;
+text-decoration:underline;
+}
+.acslink a:visited
+{
+color:#395ca8;
+font-weight:normal;
+text-decoration:underline;
+}
+
+ .green {
+		margin: 0;
+		padding: 0;
+		color: #FFFFFF;
+		height: 23px;
+		background: url("../images/button_bg_green.gif") repeat-x top;
+		text-align: center;
+	}
+	
+		.green .leftborder {
+			margin: 0;	
+			padding: 0 0px 0 4px;	
+			height: 23px;
+			background: url("../images/button_borderleft_green.gif") repeat-y left;
+		}
+		
+		.green .rightborder {
+			margin: 0;	
+			height: 23px;
+			padding: 0px 0px 0 0;	
+			background: url("../images/button_borderright_green.gif") repeat-y right;
+			vertical-align:middle;
+		}
+		a.button:link,  a.button:visited,  a.button:active, a.button:hover {
+		display: block;
+		margin: 0;
+		font-weight: bold;
+		text-decoration: none;
+		white-space: nowrap;
+		text-decoration: none;
+	}
+		input.button {
+    border: 0;
+    background: #99c058;
+    height: 23px;
+    /* used to catch the buttonEnding */
+    position: relative;
+	font-weight: bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#fff;
+	padding-left:8px;
+	_padding-left:5px;
+	float:right;
+}
+
+.buttonEnding {
+    position: absolute;
+    display: inline;
+    width: 5px;
+    height: 23px;
+    background: url("../images/button_borderright_green.gif") no-repeat;
+}
+.forminput {background: #fff;
+border: 1px solid #999999;
+height:16px;
+font-size:9px;
+width:240px;
+padding-right: 10px;
+margin-bottom:5px;
+}
+.formreg 
+{
+background: #fff;
+border: 1px solid #999999;
+height:16px;
+font-size:9px;
+width:266px;
+padding-right: 10px;
+margin-bottom:5px;
+}
+.regerror 
+{
+background: #fff;
+border: 2px solid #FF0000;
+height:16px;
+font-size:9px;
+width:266px;
+padding-right: 10px;
+margin-bottom:5px;
+}
+input.button1 {    border: 0;
+    background: #99c058;
+    height: 23px;
+    /* used to catch the buttonEnding */
+    position: relative;
+	font-weight: bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#fff;
+	padding-left:8px;
+	_padding-left:5px;
+	float:right;
+	border: #9d9d9d solid 0.1px;
+}
+#mainbody
+{
+background-color:#FFFFFF;
+background-image:url("../images/Access_bk.jpg");
+background-position:bottom;
+background-repeat:no-repeat;
+}
+.plainbody
+{
+	padding:0px;
+    margin:0px auto;
+	width:950px;
+	left-margin:auto;
+	right-margin:auto;
+	background-image: none;
+	border-collapse:collapse;
+}
+a.buttonG:link,  a.buttonG:visited,  a.buttonG:active, a.buttonG:hover {
+		display: block;
+		margin: 0;
+		font-weight: bold;
+		text-decoration: none;
+		white-space: nowrap;
+		text-decoration: none;
+		color:#666666;
+	}
+.enabled {
+		margin: 0;
+		padding: 0;
+		color: #666666;
+		height: 23px;
+		background: url("../images/button_bg.gif") repeat-x top;
+		text-align: center;
+	}
+	
+.enabled .leftborder {
+			margin: 0;	
+			padding: 0 0 0 9px;	
+			height: 23px;
+			background: url("../images/button_borderleft.gif") repeat-y left;
+		}
+		
+.enabled .rightborder {
+			margin: 0;	
+			padding: 5px 9px 0 0;	
+			height: 18px;
+			_height: 23px;
+			background: url("../images/button_borderright.gif") repeat-y right;
+		}
+.subhead
+{
+color:#000;
+font-size:12px;
+font-weight:bold;
+margin-bottom:12px;
+}
+.dropdown
+{
+width:277px; 
+margin-bottom:6px; 
+height:18px;
+_width:266px;
+margin-top:0px;
+border: 1px solid #999999;
+}
+.ertxt
+{
+color:#ff0000;
+font-weight:bold;
+}
+.prgbar
+{
+border-top:#666666 1px solid;
+border-bottom:#666666 1px solid;
+height:30px;
+font-size:12px;
+padding-top:9px;
+width:500px;
+margin-bottom:10px;
+}
+.bbox
+{
+border-top:#999999 1px solid;
+padding:8px 0 8px 0;
+width:100%;
+margin:14px 0 0px 0;
+font-weight:normal;
+
+}
+.lblhdr
+{
+font-size:13px;
+color:#3b67b2;
+font-weight:bold;
+font-family:verdana;
+}
+.prcontent
+{
+margin:10px 70px 20px 0px;
+font-family:verdana;
+color:#999999;
+line-height:15px;
+font-size:11px;
+}
+.subtitle
+{
+font-weight:bold;
+font-family:verdana;
+margin:12px 0 10px 0px;
+font-size:12px;
+}

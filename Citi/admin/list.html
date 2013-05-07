@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript" src="../scripts/tablesort.js"></script>
+<body id="admin" onload="clearLoadingBar(); resize();">
+
+	<div id="loading">
+		<div class="loader">
+			<div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div>
+			<div class="text">Loading Configured Report List</div>
+		</div>
+	</div>
+	<div id="page">
+		<table class="head" cellspacing="0" id="tblHead">
+		<tr>
+		<th class="rightborder" width="216"><a href="#" onclick="switchClass('tblHead', this, 0); return sortTable('tblStart',0,true); this.blur();" class="down">Report Name</a></th>
+		<th class="rightborder" width="190"><a href="#" onclick="switchClass('tblHead', this, 1); return sortTable('tblStart',1,true); this.blur();">Account/Group</a></th>
+		<th class="rightborder" width="84"><a href="#" onclick="switchClass('tblHead', this, 2); return sortTable('tblStart',2,true); this.blur();">ID</a></th>
+		<th width="100"><a href="#" onclick="switchClass('tblHead', this, 3); return sortTable('tblStart',3,true); this.blur();">Consolidated?</a></th>
+		</tr>
+		</table>
+		<div class="data marginbottom10">
+		<table class="grid" cellspacing="0">
+		<tbody id="tblStart">
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Lorem ipsum dolor sit amet</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td width="220">Lorem ipsum dolor sit amet</td>
+		<td width="200">Acme Alpha Inc</td>
+		<td width="91">99999999</td>
+		<td width="90">yes</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Fusce aliquam tristique massa</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Fusce aliquam tristique massa</td>
+		<td>Acme Alpha Inc</td>
+		<td>99999999</td>
+		<td></td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Maecenas et est nec nisl rutrum</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Maecenas et est nec nisl rutrum</td>
+		<td>Acme Alpha Inc</td>
+		<td>99999999</td>
+		<td>yes</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Curabitur luctus pede ac nisi</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Curabitur luctus pede ac nisi</td>
+		<td>Acme Alpha Inc</td>
+		<td>99999999</td>
+		<td></td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Cras lorem purus, auctor a, egestas quis</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Cras lorem purus, auctor a, egestas quis</td>
+		<td>Acme Alpha Inc</td>
+		<td>99999999</td>
+		<td></td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Dividend/Interest Accouncements</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Dividend/Interest Accouncements</td>
+		<td>Acme Alpha Inc</td>
+		<td>99999999</td>
+		<td></td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Lorem ipsum dolor sit amet</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Lorem ipsum dolor sit amet</td>
+		<td>Acme Alpha Inc</td>
+		<td>99999999</td>
+		<td>yes</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Fusce aliquam tristique massa</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Fusce aliquam tristique massa</td>
+		<td>Acme Alpha Inc</td>
+		<td>99999999</td>
+		<td>yes</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Maecenas et est nec nisl rutrum</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Maecenas et est nec nisl rutrum</td>
+		<td>Acme Alpha Inc</td>
+		<td>99999999</td>
+		<td>yes</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Curabitur luctus pede ac nisi</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Curabitur luctus pede ac nisi</td>
+		<td>Acme Alpha Inc</td>
+		<td>99999999</td>
+		<td></td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Cras lorem purus, auctor a, egestas quis</b><br />Acme Alpha Inc'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Cras lorem purus, auctor a, egestas quis</td>
+		<td>Acme Alpha Inc</td>
+		<td>99999999</td>
+		<td></td>
+		</tr>
+		</tbody>
+		</table>
+		</div>
+	</div>	
+<script type="text/javascript" src="../scripts/wz_tooltip.js"></script>		
+</body>
+</html>

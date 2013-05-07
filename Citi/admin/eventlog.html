@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<link href="../styles/calendar.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript" src="../scripts/calendar.js"></script>
+<body id="admin" onload="clearLoadingBar(); resize();">
+
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Event Log</div>
+		</div>
+	</div>
+
+	<div id="page">
+		<div class="line">			
+			<input type="radio" value="" name="event" onclick="document.getElementById('searchID').value='Specify Date';" /> Most Recent 
+			<input type="radio" value="" name="event" /> <input type="text" class="textbox" id="searchID" value="Specify Date" onKeyPress="showCal('','',document.getElementById('searchID'),1,true,2,event,'belowleft');return false" />
+			<a href="#" onclick="showCal('','',document.getElementById('searchID'),1,true,2,event,'belowleft');return false" title="Select date from calendar" class="margintop5"><img src="../images/icon_cal.gif" id="dateToImg" alt="Select date from calendar" /></a>
+		</div>
+		
+		<table class="head" cellspacing="0">
+		<tr>
+		<th width="170">Action</th>
+		<th width="123">Date</th>
+		</tr>	
+		</table>
+		<div class="data marginbottom10">
+		<table class="grid" cellspacing="0">
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>username deleted</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td width="190"><a href="#" class="underline">username</a> deleted</td>
+		<td width="115">09/01/06 09:31 AM</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>Lorem ipsum dolor sit amet deleted</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">Lorem ipsum dolor sit amet</a> deleted</td>
+		<td>10/05/06 10:15 AM</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>username deleted</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">username</a> deleted</td>
+		<td>11/03/06 09:12 PM</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>username deleted</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">username</a> deleted</td>
+		<td>11/03/06 09:22 PM</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>username deleted</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">username</a> deleted</td>
+		<td>11/03/06 09:41 PM</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>username deleted</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">username</a> deleted</td>
+		<td>11/03/06 12:31 PM</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>username deleted</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">username</a> deleted</td>
+		<td>11/03/06 11:39 AM</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>username deleted</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">username</a> deleted</td>
+		<td>11/03/06 11:45 AM</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>username deleted</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">username</a> deleted</td>
+		<td>11/03/06 12:28 AM</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>username created</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">username</a> created</td>
+		<td>11/03/06 12:28 AM</td>
+		</tr>
+		<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=3000;return escape('<b>username deleted</b><br />admin: test'); this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">username</a> deleted</td>
+		<td>11/03/06 12:28 AM</td>
+		</tr>
+		</table>
+		</div>
+		
+		<div id="cal">
+			<div id="calbody">
+				<div id="caltopbar">
+					<table id="calnav">
+					<tr>
+					<td><a href="#" id="calnavPM"><img src="../images/arrow_calleft.gif" alt="" /></a></td>
+					<td id="calnavMY"></td>
+					<td><a href="#" id="calnavNM"><img src="../images/arrow_calright.gif" alt="" /></a></td>
+					</tr>
+					</table>
+				</div>
+				<table id="caltbl">
+					<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+					<tbody id="caltblbody"></tbody>
+					<tr>
+					<td colspan="7" id="close" onclick="hideCal()">x Close</td>
+					</tr>
+				</table>
+				
+				<div id="today"><a href="#" onclick="" id="selecttoday"></a></div>
+			</div>
+		</div>	
+		
+	</div>
+<script type="text/javascript" src="../scripts/wz_tooltip.js"></script>		
+</body>
+</html>

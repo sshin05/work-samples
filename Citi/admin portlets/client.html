@@ -1,0 +1,89 @@
+
+
+
+
+
+<html>
+<head>
+
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script src="../scripts/general.js" type="text/javascript"></script>
+<script src="../scripts/resizer.js" type="text/javascript"></script>
+
+<script language="JavaScript">
+   
+    function doRefresh(){
+//		alert("will refresh ...");
+		document.forms.profileForm.submit();
+	}
+	function minimizePortlets(){
+		//alert("minimizePortlets called");
+		portletMinimize2('/admin/framework/skins/CitiGPBAdmin/images','AccountGroupList_portlet');
+		portletMinimize2('/admin/framework/skins/CitiGPBAdmin/images','ServiceRepresentatives_portlet');
+		portletMinimize2('/admin/framework/skins/CitiGPBAdmin/images','HelpTopic_portlet');
+	}
+</script>
+
+</head>
+<body id="admin" onload="clearLoadingBar(); resize();">
+<script>
+	//window.onload=minimizePortlets;
+</script>
+
+<!-- 
+		<div id="selectClient">
+			<form id="profileForm" method="post" action="/admin/portlets/admin/client/ClientPage.faces" enctype="application/x-www-form-urlencoded">
+
+				
+					
+					
+				<select id="profileForm:idSelectStd" name="profileForm:idSelectStd" size="1" onchange="doRefresh();">	<option value="WELL    ">WELLINGTON MANAGEMENT         </option>
+	<option value="CONCORD ">CONCORDIA ADVISORS LLC        </option>
+</select>
+				<input id="profileForm:idCommandRefresh" type="submit" name="profileForm:idCommandRefresh" value="Refresh" style="visibility:hidden" />
+			<input type="hidden" name="profileForm" value="profileForm" /></form>
+		</div>
+ -->
+		<div id="loading">
+			<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div>
+			<div class="text">Loading Client Info</div>
+			</div>
+		</div>
+
+	
+		<div id="page">
+	
+			<div class="box" >			
+			<div class="info">
+				<div class="column">
+					<div class="title">Fund Type:</div>
+					<div class="clear"></div>
+					<div class="title">Region:</div>
+				</div>
+
+				<div class="column">
+					<label id="field1">
+Institutional</label>
+					<div class="clear"></div>
+					<label id="field2">
+DOMESTIC</label>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<div class="password">
+				<form id="formDefaultClient" method="post" action="/admin/portlets/admin/client/ClientPage.faces" enctype="application/x-www-form-urlencoded">
+
+					<input type="checkbox" name="formDefaultClient:_id1" />
+					<div class="text">Make this default client</div>
+					<div class="clear"></div>
+					<input id="formDefaultClient:idCommandDefault" type="submit" name="formDefaultClient:idCommandDefault" value="Save" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" class="btn" />
+				<input type="hidden" name="formDefaultClient" value="formDefaultClient" /></form>
+			</div>
+
+			</div>
+		</div>
+
+
+</body>
+</html>

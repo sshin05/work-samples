@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript" src="../scripts/forms.js"></script>
+<body id="admin" onload="clearLoadingBar(); portletTabSwitch('tab0','tabcontent',2); resize();">
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Group &amp; Account Access</div>
+		</div>
+	</div>
+	<div id="page">
+	
+		<div class="listing">
+			
+			<div class="tabs">
+				
+				<a href="#" onClick="portletTabSwitch('tab0','tabcontent', 2); return false" class="tabon" id="tab0">Account Mask</a>
+				<div class="tabgap"></div>
+				<a href="#" onClick="portletTabSwitch('tab1','tabcontent', 2); return false" class="taboff" id="tab1">Group Mask</a>
+				<div class="clear"></div>
+				
+				<div class="tabcontent">				
+					<div class="report">
+						<select>
+							<option>Top Accounts A</option>
+						</select>
+						<div class="clear">&nbsp;</div>
+						<div class="floatleft">
+							<input type="text"> <input type="submit" value="Filter" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+							<div class="clear"></div>
+							<select id="leftcol" size="8" MULTIPLE class="change">
+								<option>A Very, Very Long Report Name Example</option>
+								<option>Report name</option>
+								<option>Margin Report</option>
+								<option>Risk Report</option>
+								<option>Projection Report</option>
+								<option>Report name</option>
+								<option>Report name</option>
+								<option>Report name</option>
+							</select>
+						</div>
+						<div class="floatleft">
+							<div class="hide"><a href="#" onclick="moveListItem('leftcol','available','rightcol', 0); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Hide <span class="arrowcolor">&gt;</span></span></span></span></a></div>						
+							<div class="clear"></div>
+							<div class="show"><a href="#" onclick="moveListItem('rightcol','available','leftcol', 0); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow"><span class="arrowcolor">&lt;</span> Show</span></span></span></a>
+							</div>
+						</div>
+						<div class="floatleft">
+							<div class="title">Hidden Accounts</div>
+							<div class="clear"></div>
+							<select id="rightcol" size="8" MULTIPLE class="change">
+
+							</select>
+							<script type="text/javascript">
+							
+								document.getElementById('test').style.display="none";
+							
+							</script>
+						</div>
+					</div>	
+					
+					<h3>12345677 - Lorem ipsum dolor sit amet</h3>
+					<div class="clear"></div>
+					<div class="floatleft">
+						<table class="thead" cellspacing="0">
+						<tr>
+						<th>Groups containing Account 12345677</th>
+						</tr>
+						</table>
+						<div class="data" style="height:60px; ">
+						<table class="grid" cellspacing="0">
+						<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+						<td width="600">Acme Lorem Ipsum Supergroup</td>
+						</tr>
+						<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">				
+						<td>Acme Margin Group 2</td>
+						</tr>
+						<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">				
+						<td>Reporting Group #1</td>
+						</tr>
+						<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">				
+						<td>Group ID, Description, &amp; Type</td>
+						</tr>
+						</table>
+						</div>
+					</div>			
+				</div>
+				
+				<div class="tabcontent">				
+					<div class="report">				
+						<select>
+							<option>Top Accounts A</option>
+						</select>
+						<div class="clear">&nbsp;</div>
+						<div class="floatleft">
+							<select>
+								<option>All Types</option>
+								<option>Super Groups</option>
+								<option>Sub Accoutns</option>
+								<option>Reporting Groups</option>
+								<option>Margin Groups</option>
+								<option>Interest Groups</option>
+							</select>
+							<div class="clear"></div>
+							<select size="8" id="leftcol2" MULTIPLE class="change">
+								<option>Group id - Lorem ipsum dolor sit amet - type</option>
+								<option>Group id - Lorem ipsum dolor sit amet - dude</option>
+								<option>Group id - Lorem ipsum dolor sit amet - type</option>
+								<option>Group id - Lorem ipsum dolor sit amet - type</option>
+								<option>Group id - Lorem ipsum dolor sit amet - type</option>
+								<option>Group id - Lorem ipsum dolor sit amet - type</option>
+								<option>Group id - Lorem ipsum dolor sit amet - type</option>
+								<option>Group id - Lorem ipsum dolor sit amet - type</option>
+							</select>
+						</div>
+						<div class="floatleft">
+							<div class="hide"><a href="#" onclick="moveListItem('leftcol2','available','rightcol2', 0); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Hide <span class="arrowcolor">&gt;</span></span></span></span></a></div>						
+							<div class="clear"></div>
+							<div class="show"><a href="#" onclick="moveListItem('rightcol2','available','leftcol2', 0); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow"><span class="arrowcolor">&lt;</span> Show</span></span></span></a>
+							</div>
+						</div>
+						<div class="floatleft">
+							<div class="title">Hidden Accounts</div>
+							<div class="clear"></div>
+							<select size="8" id="rightcol2" MULTIPLE class="change">
+								<option>Account with Sensitive information</option>							
+							</select>
+						</div>
+					</div>
+					
+					<h3>ACMERSK - Acme Risk Group Description/Title - (Risk)</h3>
+					<div class="clear"></div>
+					<div class="floatleft">
+						<table class="thead" cellspacing="0">
+						<tr>
+						<th>ACMERSK Members</th>
+						</tr>
+						</table>
+						<div class="data" style="height:60px; ">
+						<table class="grid" cellspacing="0">
+						<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+						<td width="600">Account ID and Description</td>
+						</tr>
+						<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">				
+						<td>Account ID and Description</td>
+						</tr>
+						<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">				
+						<td>Group ID, Description, &amp; Type</td>
+						</tr>
+						<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">				
+						<td>Group ID, Description, &amp; Type</td>
+						</tr>
+						</table>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+		</div>
+	</div>
+<script type="text/javascript" src="../scripts/wz_tooltip.js"></script>
+</body>
+</html>

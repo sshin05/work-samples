@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+
+<body id="admin" onload="clearLoadingBar(); portletTabSwitch('tab0','tabcontent',2); resize();">
+
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Account &amp; Group List</div>
+		</div>
+	</div>
+	
+	<div id="page">
+	
+		<div class="line borderbottom">
+			<select id="selector" onchange="self.location.href=document.getElementById('selector').options[document.getElementById('selector').selectedIndex].value">
+				<option value="something else">All Top Accounts</option>
+				<option value="acccount 1">Account #1</option>
+				<option value="account 2">Account #2</option>
+				<option value="account 3">Account #3</option>
+			</select>
+		</div>
+		
+		<div class="listing">
+			
+			<div class="tabs">
+				
+				<a href="#" onClick="portletTabSwitch('tab0','tabcontent', 2); return false" class="tabon" id="tab0">Accounts</a>
+				<div class="tabgap"></div>
+				<a href="#" onClick="portletTabSwitch('tab1','tabcontent', 2); return false" class="taboff" id="tab1">Groups</a>
+				<div class="clear"></div>
+				
+				<div class="tabcontent">
+					
+					<table class="thead" cellspacing="0">
+					<tr>
+					<th width="50">ID</th>
+					<th width="160">Description</th>
+					</tr>
+					</table>
+					
+					<div class="data" style="height: 150px">
+					<table class="grid" cellspacing="0">
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Lorem ipsum dolor sit amet</b> 88877766<br />Client Ref# 366710002'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+					<td width="65">88877766</td>
+					<td width="200">Lorem ipsum dolor sit amet</td>
+					</tr>
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Fusce aliquam tristique massa</b> 99988877<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>99988877</td>
+					<td>Fusce aliquam tristique massa</td>
+					</tr>
+					<tr  onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Maecenas et est nec nisl rutrum</b> 52254354<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>52254354</td>
+					<td>Maecenas et est nec nisl rutrum</td>
+					</tr>
+					<tr  onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Curabitur luctus pede ac nisi</b> 12376566<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>12376566</td>
+					<td>Curabitur luctus pede ac nisi</td>
+					</tr>
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Cras lorem pur us, auctor a, egestas...</b> 76576576<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>76576576</td>
+					<td>Cras lorem pur us, auctor a, egestas...</td>
+					</tr>
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Dividend/Interest Announcements</b> 89798787<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>89798787</td>
+					<td>Dividend/Interest Announcements</td>
+					</tr>
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Lorem ipsum fund IMS</b> 12345677<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>12345677</td>
+					<td>Lorem ipsum dolor sit amet</td>
+					</tr>
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Fusce aliquam tristique massa</b> 52209898<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>52209898</td>
+					<td>Fusce aliquam tristique massa</td>
+					</tr>
+					</table>
+					</div>
+					
+					
+					
+					<div class="clear"></div>
+					
+					<table class="thead" cellspacing="0">
+					<tr>
+					<th>Groups containing Account 12345677:</th>				
+					</tr>
+					</table>
+					
+					<div class="data" style="height:100px;">
+					<table class="grid" cellspacing="0">
+					<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+					<td width="270">Acme Lorem Ipsum Supergroup</td>
+					</tr>
+					<tr onmouseover="this.className='hov'" onmouseout="this.className=''">				
+					<td>Reporting Group #1</td>
+					</tr>
+					<tr onmouseover="this.className='hov'" onmouseout="this.className=''">				
+					<td>Acme Margin Group 2</td>
+					</tr>
+					<tr onmouseover="this.className='hov'" onmouseout="this.className=''">				
+					<td>Acme Margin Group 3</td>
+					</tr>
+					<tr onmouseover="this.className='hov'" onmouseout="this.className=''">				
+					<td>Reporting Margin Group 4</td>
+					</tr>
+					</table>
+					</div>
+					
+				</div>
+				
+				<div class="tabcontent">
+					
+					<table class="thead" cellspacing="0">
+					<tr>
+					<th width="50">ID</th>
+					<th width="160">Description</th>
+					</tr>
+					</table>
+					
+					<div class="data" style="height: 150px">
+					<table class="grid" cellspacing="0">
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Lorem ipsum dolor sit amet</b> 88877766<br />Client Ref# 366710002'); this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+					<td width="65">88877766</td>
+					<td width="200">Lorem ipsum dolor sit amet</td>
+					</tr>
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Fusce aliquam tristique massa</b> 99988877<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>99988877</td>
+					<td>Fusce aliquam tristique massa</td>
+					</tr>
+					<tr  onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Maecenas et est nec nisl rutrum</b> 52254354<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>52254354</td>
+					<td>Maecenas et est nec nisl rutrum</td>
+					</tr>
+					<tr  onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Curabitur luctus pede ac nisi</b> 12376566<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>12376566</td>
+					<td>Curabitur luctus pede ac nisi</td>
+					</tr>
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Cras lorem pur us, auctor a, egestas...</b> 76576576<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>76576576</td>
+					<td>Cras lorem pur us, auctor a, egestas...</td>
+					</tr>
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Dividend/Interest Announcements</b> 89798787<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>89798787</td>
+					<td>Dividend/Interest Announcements</td>
+					</tr>
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Lorem ipsum fund IMS</b> 12345677<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>12345677</td>
+					<td>Lorem ipsum dolor sit amet</td>
+					</tr>
+					<tr onmouseover="this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return escape('<b>Fusce aliquam tristique massa</b> 52209898<br />Client Ref# 366710002'); this.className='hov';" onmouseout="this.className=''">
+					<td>52209898</td>
+					<td>Fusce aliquam tristique massa</td>
+					</tr>
+					</table>
+					</div>
+					
+					
+					
+					<div class="clear"></div>
+					
+					<table class="thead" cellspacing="0">
+					<tr>
+					<th>Groups containing Account 12345677:</th>				
+					</tr>
+					</table>
+					
+					<div class="data" style="height:100px;">
+					<table class="grid" cellspacing="0">
+					<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+					<td width="270">Acme Lorem Ipsum Supergroup</td>
+					</tr>
+					<tr onmouseover="this.className='hov'" onmouseout="this.className=''">				
+					<td>Reporting Group #1</td>
+					</tr>
+					<tr onmouseover="this.className='hov'" onmouseout="this.className=''">				
+					<td>Acme Margin Group 2</td>
+					</tr>
+					<tr onmouseover="this.className='hov'" onmouseout="this.className=''">				
+					<td>Acme Margin Group 3</td>
+					</tr>
+					<tr onmouseover="this.className='hov'" onmouseout="this.className=''">				
+					<td>Reporting Margin Group 4</td>
+					</tr>
+					</table>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+<script type="text/javascript" src="../scripts/wz_tooltip.js"></script>	
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<link href="../styles/calendar.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript" src="../scripts/positionsactivtity.js"></script>
+<script type="text/javascript" src="../scripts/calendar.js"></script>
+<body id="portlet" onload="clearLoadingBar(); portletTabSwitch('tab0','tabcontent',2); portletAccordion('positions', 0, 3); resize();">
+	
+	<div id="loading">
+		<div class="loader">
+			<div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Search</div>
+		</div>
+	</div>
+	
+	<div id="page">
+		
+		
+		<div class="box">
+			<div class="tabs">
+				
+				<a href="#" onClick="portletTabSwitch('tab0','tabcontent', 2); portletAccordion('positions', 0, 3); return false" class="tabon" id="tab0">Positions</a>
+				<div class="tabgap"></div>
+				<a href="#" onClick="portletTabSwitch('tab1','tabcontent', 2); portletAccordion('activity', 0, 4); return false" class="taboff" id="tab1">Activity</a>
+				
+				<div class="clear"></div>
+				<div class="tabcontent">
+					<div class="accordion" onClick="portletAccordion('positions', 0, 3); return false"><a href="#" onClick="portletAccordion('positions', 0, 3); return false" id="positions0link">Account</a></div>
+			 		<div class="accordioncontent" id="positions0">
+						 <select multiple size="8" class="multi">
+							 <option>Account Name 12345678</option>
+							 <option>Account Name 12345679</option>
+							<option>Account Name 22345678</option>
+							 <option>Account Name 32345678</option>
+							<option>Account Name 42345678</option>
+							<option>Account Name 52345678</option>
+						    <option>Account Name 62345678</option>
+							<option>Account Name 72345678</option>
+							<option>Account Name 72345678</option>
+						 </select>
+						 
+						<!-- Begin Conditional Area:  Client free text input for internal Citigroup staff //-->
+						<!-- adjust size of above select box to 5 lines //-->
+						<div class="clear"></div>
+						<div class="clientbox">Client <input type="text" size="25"/></div>				
+						<!-- End Conditional Area:  Client free text input for internal Citigroup staff //-->				 
+			 		</div>
+
+
+					<div class="accordion" onClick="portletAccordion('positions', 1, 3); return false"><a href="#" onClick="portletAccordion('positions', 1, 3); return false" id="positions1link">Security</a></div>
+					<div class="accordioncontent" id="positions1">
+						Security
+						<div class="clear"></div>
+						<div class="floatleft">
+							<input type="text" class="inputbox" /> <input type="radio" name="security" value="exact" checked="checked" /> <div class="radio">Exact</div>
+							<input type="radio" name="security" value="like" /> <div class="radio">Like</div>					
+						</div>
+						<div class="clear"></div>
+						
+						
+						<div class="datelist">C.O.B. Date
+						<div class="clear"></div>
+						<select>
+							<option value="27-Jun-2006">27-Jun-2006</option>	
+							<option value="20-Jun-2006">20-Jun-2006</option>	
+							<option value="13-Jun-2006">13-Jun-2006</option>					
+						</select>
+						<div class="clear"></div></div>
+						
+					</div>
+					<div class="accordion" onClick="portletAccordion('positions', 2, 3); return false"><a href="#" onClick="portletAccordion('positions', 2, 3); return false" id="positions2link">Security Types</a></div>
+					<div class="accordioncontent" id="positions2">
+						<select size="8" class="multi">
+							<option>All Transaction Types</option>
+							<option>EQUITY</option>
+							<option>OPTION</option>
+							<option>CORPBOND</option>
+							<option>GOVTBOND</option>
+							<option>MUNIBOND</option>
+							<option>MORTGAGE</option>
+						</select>
+						<div class="clear"></div>
+					</div>
+				</div>
+				
+				
+				
+				<div class="tabcontent">
+
+					<div class="accordion" onClick="portletAccordion('activity', 0, 4); return false"><a href="#" onClick="portletAccordion('activity', 0, 4); return false" id="activity0link">Account</a></div>
+								 <div class="accordioncontent" id="activity0">
+								 <select multiple size="8" class="multi">
+								 <option>Account Name 12345678</option>
+								 <option>Account Name 12345679</option>
+								 <option>Account Name 22345678</option>
+								 <option>Account Name 32345678</option>
+								 <option>Account Name 42345678</option>
+								 <option>Account Name 52345678</option>
+								 <option>Account Name 62345678</option>
+								 <option>Account Name 72345678</option>
+								 <option>Account Name 72345678</option>
+								 </select>
+								 
+			    <!-- Begin Conditional Area:  Client free text input for internal Citigroup staff //-->
+				<!-- adjust size of above select box to 5 lines //-->
+				<div class="clear"></div>
+				<div class="clientbox">Client <input type="text" size="25"/></div>				
+				<!-- End Conditional Area:  Client free text input for internal Citigroup staff //-->
+								 
+								 </div>
+
+
+
+					<div class="accordion" onClick="portletAccordion('activity', 1, 4); return false"><a href="#" onClick="portletAccordion('activity', 1, 4); return false" id="activity1link">Date Range</a></div>
+					<div class="accordioncontent" id="activity1">
+						
+						<select id="cobdate">
+							<option>C.O.B. Date</option>						
+						</select>
+						<div class="clear"></div>
+						<div class="cobdates">
+							From: (required)*
+							<div class="clear"></div>
+							<input type="text" class="inputbox" tabindex="-1" id="dateFrom" onFocus="showCal('','',document.getElementById('dateFrom'),1,true,2,event,'aboveright'); invisible('cobdate'); return false" onKeyPress="showCal('','',document.getElementById('dateFrom'),1,true,2,event,'aboveright'); invisible('cobdate'); return false" onblur="if (!isIE) visible('cobdate'); return false" /> <a href="#" onclick="showCal('','',document.getElementById('dateFrom'),1,true,2,event,'aboveright'); return false"><img src="../images/icon_cal.gif"  id="dateFromImg" alt="" /></a>
+						</div>
+						
+						<div class="cobdates">
+							To:
+							<div class="clear"></div>
+							<input type="text" class="inputbox" tabindex="-1" id="dateTo" onFocus="showCal('','',document.getElementById('dateTo'),1,true,2,event,'above'); invisible('cobdate'); return false" onKeyPress="showCal('','',document.getElementById('dateTo'),1,true,2,event,'above'); invisible('cobdate'); return false" onblur="if (!isIE) visible('cobdate'); return false" /> <a href="#" onclick="showCal('','',document.getElementById('dateTo'),1,true,2,event,'above'); return false"><img src="../images/icon_cal.gif"  id="dateToImg" alt="" /></a>
+						</div>		
+						<div class="clear"></div>
+						<div id="cal">
+							<div id="calbody">
+								<div id="caltopbar">
+									<table id="calnav">
+									<tr>
+									<td><a href="#" id="calnavPM"><img src="../images/arrow_calleft.gif" alt="" /></a></td>
+									<td id="calnavMY"></td>
+									<td><a href="#" id="calnavNM"><img src="../images/arrow_calright.gif" alt="" /></a></td>
+									</tr>
+									</table>
+								</div>
+								<table id="caltbl">
+									<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+									<tbody id="caltblbody"></tbody>
+									<tr>
+									<td colspan="7" id="close" onclick="hideCal()">x Close</td>
+									</tr>
+								</table>
+								
+								<div id="today"><a href="#" onclick="" id="selecttoday"></a></div>
+							</div>
+						</div>	
+					</div>
+					
+					<div class="accordion" onClick="portletAccordion('activity', 2, 4); return false"><a href="#" onClick="portletAccordion('activity', 2, 4); return false" id="activity2link">Security &amp; Currency</a></div>
+					<div class="accordioncontent" id="activity2">
+						
+						Security<div class="clear"></div>						
+						<div class="floatleft"><input type="text" class="inputbox" /> <input type="checkbox" checked value="" /> <div class="radio">Exact Match</div>
+						</div>
+						<div class="clear"></div>
+						<div class="currencylist">Currency Codes						
+						<div class="clear"></div>
+						<select>						
+						<option value="AFN">Afghani - AFN</option><option value="DZD">Algerian Dinar - DZD</option><option value="ARS">Argentine Peso - ARS</option><option value="AMD">Armenian Dram - AMD</option><option value="AWG">Aruban Guilder - AWG</option><option value="AUD">Australian Dollar - AUD</option><option value="AZN">Azerbaijanian Manat - AZN</option><option value="BSD">Bahamian Dollar - BSD</option><option value="BHD">Bahraini Dinar - BHD</option><option value="THB">Baht - THB</option><option value="PAB">Balboa - PAB</option><option value="BBD">Barbados Dollar - BBD</option><option value="BYR">Belarussian Ruble - BYR</option><option value="BZD">Belize Dollar - BZD</option><option value="BMD">Bermudian Dollar - BMD</option><option value="VEB">Bolivar - VEB</option><option value="BOB">Boliviano - BOB</option><option value="BRL">Brazilian Real - BRL</option><option value="BND">Brunei Dollar - BND</option><option value="BGN">Bulgarian Lev - BGN</option><option value="BIF">Burundi Franc - BIF</option><option value="CAD">Canadian Dollar - CAD</option><option value="CVE">Cape Verde Escudo - CVE</option><option value="KYD">Cayman Islands Dollar - KYD</option><option value="GHC">Cedi - GHC</option><option value="XOF">CFA Franc BCEAO - XOF</option><option value="XAF">CFA Franc BEAC - XAF</option><option value="XPF">CFP Franc - XPF</option><option value="CLP">Chilean Peso - CLP</option><option value="COP">Colombian Peso - COP</option><option value="KMF">Comoro Franc - KMF</option><option value="BAM">Convertible Marks - BAM</option><option value="NIO">Cordoba Oro - NIO</option><option value="CRC">Costa Rican Colon - CRC</option><option value="HRK">Croatian Kuna - HRK</option><option value="CUP">Cuban Peso - CUP</option><option value="CYP">Cyprus Pound - CYP</option><option value="CZK">Czech Koruna - CZK</option><option value="GMD">Dalasi - GMD</option><option value="DKK">Danish Krone - DKK</option><option value="MKD">Denar - MKD</option><option value="DJF">Djibouti Franc - DJF</option><option value="STD">Dobra - STD</option><option value="DOP">Dominican Peso - DOP</option><option value="VND">Dong - VND</option><option value="XBD">E.U.A.-17 - XBD</option><option value="XBC">E.U.A.-9 - XBC</option><option value="XCD">East Caribbean Dollar - XCD</option><option value="EGP">Egyptian Pound - EGP</option><option value="SVC">El Salvador Colon - SVC</option><option value="ETB">Ethiopian Birr - ETB</option><option value="XBA">EURCO - XBA</option><option value="EUR">Euro - EUR</option><option value="XBB">European Monetary Unit - XBB</option><option value="FKP">Falkland Islands Pound - FKP</option><option value="FJD">Fiji Dollar - FJD</option><option value="HUF">Forint - HUF</option><option value="CDF">Franc Congolais - CDF</option><option value="GIP">Gibraltar Pound - GIP</option><option value="XAU">Gold - XAU</option><option value="XFO">Gold-Franc - XFO</option><option value="HTG">Gourde - HTG</option><option value="PYG">Guarani - PYG</option><option value="GNF">Guinea Franc - GNF</option><option value="GWP">Guinea-Bissau Peso - GWP</option><option value="GYD">Guyana Dollar - GYD</option><option value="HKD">Hong Kong Dollar - HKD</option><option value="UAH">Hryvnia - UAH</option><option value="ISK">Iceland Krona - ISK</option><option value="INR">Indian Rupee - INR</option><option value="IRR">Iranian Rial - IRR</option><option value="IQD">Iraqi Dinar - IQD</option><option value="JMD">Jamaican Dollar - JMD</option><option value="JOD">Jordanian Dinar - JOD</option><option value="KES">Kenyan Shilling - KES</option><option value="PGK">Kina - PGK</option><option value="LAK">Kip - LAK</option><option value="EEK">Kroon - EEK</option><option value="KWD">Kuwaiti Dinar - KWD</option><option value="MWK">Kwacha - MWK</option><option value="ZMK">Kwacha - ZMK</option><option value="AOA">Kwanza - AOA</option><option value="MMK">Kyat - MMK</option><option value="GEL">Lari - GEL</option><option value="LVL">Latvian Lats - LVL</option><option value="LBP">Lebanese Pound - LBP</option><option value="ALL">Lek - ALL</option><option value="HNL">Lempira - HNL</option><option value="SLL">Leone - SLL</option><option value="LRD">Liberian Dollar - LRD</option><option value="LYD">Libyan Dinar - LYD</option><option value="SZL">Lilangeni - SZL</option><option value="LTL">Lithuanian Litas - LTL</option><option value="LSL">Loti - LSL</option><option value="MGA">Malagascy Ariary - MGA</option><option value="MYR">Malaysian Ringgit - MYR</option><option value="MTL">Maltese Lira - MTL</option><option value="TMM">Manat - TMM</option><option value="MUR">Mauritius Rupee - MUR</option><option value="MZN">Metical - MZN</option><option value="MXN">Mexican Peso - MXN</option><option value="MXV">Mexican Unidad de Inversion (UID) - MXV</option><option value="MDL">Moldovan Leu - MDL</option><option value="MAD">Moroccan Dirham - MAD</option><option value="BOV">Mvdol - BOV</option><option value="NGN">Naira - NGN</option><option value="ERN">Nakfa - ERN</option><option value="NAD">Namibian Dollar - NAD</option><option value="NPR">Nepalese Rupee - NPR</option><option value="ANG">Netherlands Antillian Guilder - ANG</option><option value="ILS">New Israeli Sheqel - ILS</option><option value="RON">New Leu - RON</option><option value="TWD">New Taiwan Dollar - TWD</option><option value="TRY">New Turkish Lira - TRY</option><option value="NZD">New Zealand Dollar - NZD</option><option value="BTN">Ngultrum - BTN</option><option value="XXX">No Currency - XXX</option><option value="KPW">North Korean Won - KPW</option><option value="NOK">Norwegian Krone - NOK</option><option value="PEN">Nuevo Sol - PEN</option><option value="ROL">Old Leu - ROL</option><option value="MRO">Ouguiya - MRO</option><option value="TOP">Pa'anga - TOP</option><option value="PKR">Pakistan Rupee - PKR</option><option value="XPD">Palladium - XPD</option><option value="MOP">Pataca - MOP</option><option value="UYU">Peso Uruguayo - UYU</option><option value="PHP">Philippine Peso - PHP</option><option value="XPT">Platinum - XPT</option><option value="GBP">Pound Sterling - GBP</option><option value="BWP">Pula - BWP</option><option value="QAR">Qatari Rial - QAR</option><option value="GTQ">Quetzal - GTQ</option><option value="ZAR">Rand - ZAR</option><option value="OMR">Rial Omani - OMR</option><option value="KHR">Riel - KHR</option><option value="MVR">Rufiyaa - MVR</option><option value="IDR">Rupiah - IDR</option><option value="RUB">Russian Ruble - RUB</option><option value="RWF">Rwanda Franc - RWF</option><option value="SHP">Saint Helena Pound - SHP</option><option value="SAR">Saudi Riyal - SAR</option><option value="XDR">SDR - XDR</option><option value="RSD">Serbian Dinar - RSD</option><option value="SCR">Seychelles Rupee - SCR</option><option value="XAG">Silver - XAG</option><option value="SGD">Singapore Dollar - SGD</option><option value="SKK">Slovak Koruna - SKK</option><option value="SBD">Solomon Islands Dollar - SBD</option><option value="KGS">Som - KGS</option><option value="SOS">Somali Shilling - SOS</option><option value="TJS">Somoni - TJS</option><option value="LKR">Sri Lanka Rupee - LKR</option><option value="SDD">Sudanese Dinar - SDD</option><option value="SRD">Surinam Dollar - SRD</option><option value="SEK">Swedish Krona - SEK</option><option value="CHF">Swiss Franc - CHF</option><option value="SYP">Syrian Pound - SYP</option><option value="BDT">Taka - BDT</option><option value="WST">Tala - WST</option><option value="TZS">Tanzanian Shilling - TZS</option><option value="KZT">Tenge - KZT</option><option value="SIT">Tolar - SIT</option><option value="TTD">Trinidad and Tobago Dollar - TTD</option><option value="MNT">Tugrik - MNT</option><option value="TND">Tunisian Dinar - TND</option><option value="AED">UAE Dirham - AED</option><option value="UGX">Uganda Shilling - UGX</option><option value="XFU">UIC-Franc - XFU</option><option value="COU">Unidad de Valor Real - COU</option><option value="CLF">Unidades de formento - CLF</option><option value="UYI">Uruguay Peso en Unidades Indexadas - UYI</option><option value="USD" selected>US Dollar - USD</option><option value="USN">US Dollar (Next day) - USN</option><option value="USS">US Dollar (Same day) - USS</option><option value="UZS">Uzbekistan Sum - UZS</option><option value="VUV">Vatu - VUV</option><option value="CHE">WIR Euro - CHE</option><option value="CHW">WIR Franc - CHW</option><option value="KRW">Won - KRW</option><option value="YER">Yemeni Rial - YER</option><option value="JPY">Yen - JPY</option><option value="CNY">Yuan Renminbi - CNY</option><option value="ZWD">Zimbabwe Dollar - ZWD</option><option value="PLN">Zloty - PLN</option>
+							
+							
+							
+						</select></div>
+						<div class="clear"></div>
+						
+					</div>				
+					
+					<div class="accordion"  onClick="portletAccordion('activity', 3, 4); return false"><a href="#" onClick="portletAccordion('activity', 3, 4); return false" id="activity3link">Transaction Types</a></div>
+					<div class="accordioncontent" id="activity3">
+						
+						<select size="8" >
+							<option>All Transaction Types</option>
+							<option>TRADES</option>
+							<option>DIVIDENDS</option>
+							<option>REORGS</option>
+							<option>BOOK KEEPING</option>
+							<option>MONEY</option>
+							<option>TRANSFERS</option>
+						</select>
+						<div class="floatleft">
+							Hide:
+							<div class="clear"></div>
+							<input type="checkbox" value="" /> <div class="radio">Cancels</div>
+							<div class="clear"></div>
+							<input type="checkbox" value="" /> <div class="radio">Arranged Activity</div>
+							<div class="clear"></div>
+							<input type="checkbox" value="" /> <div class="radio">Journals</div>
+							<div class="clear"></div>
+							<input type="checkbox" value="" /> <div class="radio">Currency Offsets</div>
+						
+						</div>
+						<div class="clear"></div>
+						
+					</div>
+					
+				</div>			
+				
+			</div>		
+		</div>
+		
+		<div class="footer2">
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Search</span></span></span></a>
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Download CSV</span></span></span></a>
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Clear</span></span></span></a>
+		</div>
+	
+	</div>
+	
+</body>
+</html>

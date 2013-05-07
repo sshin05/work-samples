@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>CitiGroup</title>
+
+<link href="styles/global.css" type="text/css" rel="stylesheet" />
+<script src="scripts/general.js" type="text/javascript"></script>
+
+</head><body>
+<div id="bluebar">&nbsp;</div>
+<div id="header" class="center">		
+	<div class="classic">
+		<div class="floatleft"><img src="images/logo.gif" alt="" border="0"/></div>
+		<div class="floatleft">
+			<div class="account">
+				<div class="accountname">
+					<div class="title"><a href="#" class="underline" title="Deephaven">Deephaven</a> / <span title="Deephaven Distressed Opportunity">Deephaven Distressed Oppt...</span></div>
+					<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="arrow">Change</span></span></span></a>
+				</div>
+					
+			</div>
+		</div>
+		<div class="floatright">
+			<div class="service">
+				<a href="my_profile.html" class="separator">My Account</a>
+				<a href="#" onclick="openwin('help_window.html','help',700,400); return false" class="separator">Help</a> 
+				<a href="customerservice_contactinfo.html" class="separator">Client Service</a>
+				<span class="username">Mmoratis:</span> <a href="#" class="bold">Log out</a>
+			</div>
+			<div class="clear"></div>
+			<div class="admin">
+				<a href="#" class="separator">Securities Lending Admin</a> 
+				<a href="#" class="separator">GPB Admin</a> 
+				<a href="admin.html">User Admin</a>
+			</div>
+		</div>
+	</div>	
+</div>
+<div id="mainnav">
+	<div class="tabs">
+		<div class="center" id="dropdown">
+			<ul>
+			<li><a href="home.html" class="main">My Prime Serve</a></li>
+			<li><a href="#" class="main">Portfolio Analysis<img src="images/arrow_mainnavdown.gif" width="7" height="4" alt="" /></a>
+				<ul>
+				<li><a href="risk.html">Risk</a></li>
+				<li><a href="performance.html">Performance</a></li>
+				<li><a href="holdings.html">Holdings &amp; Assets</a></li>
+				<li><a href="fees.html">Fees &amp; Cost</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="itemOn">Trades &amp; Transactions<img src="images/arrow_mainnavdown.gif" width="7" height="4" alt="" /></a>
+				<ul>
+				<li><a href="trade.html">Corporate Actions</a></li>
+				<li><a href="stockloan.html">Stock Loan</a></li>
+				<li><a href="tradeactivity.html">Trade Activity</a></li>
+				<li><a href="payments_transfers.html">Payments &amp; Transfers</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="main">Financing &amp; Margin<img src="images/arrow_mainnavdown.gif" width="7" height="4" alt="" /></a>
+				<ul>
+				<li><a href="financing.html">Margin</a></li>
+				<li><a href="interests_accruals.html">Interests &amp; Accruals</a></li>
+				</ul>
+			</li>
+			</ul>
+			<div class="management"><a href="#"><img src="images/icon_reportdata.gif" width="9" height="12" alt="" /> <span class="underline">Report &amp; Data Management</span></a></div>
+		</div>
+		
+	</div>
+	<div class="subbar">
+		<div class="center">
+			<div class="subnav">
+				<div class="floatleft"><a href="trade.html">Corporate Action</a></div>
+				<div class="dash"><img src="images/spacer.gif" width="1" height="14" alt="" /></div>
+				<div class="floatleft"><a href="stockloan.html">Stock Loan</a></div>
+				<div class="dash"><img src="images/spacer.gif" width="1" height="14" alt="" /></div>
+				<div class="floatleft"><a href="tradeactivity.html" class="itemOn">Trade Activity</a></div>
+				<div class="dash"><img src="images/spacer.gif" width="1" height="14" alt="" /></div>
+				<div class="floatleft"><a href="payments_transfers.html">Payments &amp; Tranfers</a></div>
+			</div>
+		
+		
+			<div class="customization">
+				<div class="dropdown">
+					<select name="quicklinks">
+						<option>My Quick Links</option>
+						<option>Trade Upload Search</option>
+						<option>Cash Transfer History</option>
+						<option>Prime Analytics: Performance</option>
+						<option>Reg Sho List</option>
+						<option>E-Confirms</option>
+						<option value="allocation_entry.html">Allocation Entry</option>
+					</select>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="shadow"></div>
+</div>
+
+<div id="body">
+	<div class="bodypage">
+		<div class="header">Allocation Entry </div>		
+		
+			<div class="clear"></div>
+							
+		<div class="allentry">
+			 <div class="contentrow">
+			  <div class="lbheader">Trade Header </div>	 
+							<div class="frmrow">
+								<div class="colshrt">
+									<div class="smheader">Buy/Sell:</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Total Shares: </div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Security:</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Price:</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Trade Date:</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Settle Date: </div>
+								</div>
+							<div class="clear"></div>
+							</div>
+							<div class="frmrowfrm">
+								<div class="colshrt">
+									<select name="buysell"class="srt">
+									<option>Buy</option>
+								  </select>
+								</div>
+								<div class="colshrt">
+									<input name="Input3" class="srt" type="text" />
+								</div>
+								<div class="colshrt">
+									<input name="Input3" class="srt" type="text" />
+								</div>
+								<div class="colshrt">
+									<input name="Input3" class="srt" type="text" />
+								</div>
+								<div class="colshrt">
+									<input name="Input3" class="srt" type="text" />
+								</div>
+								<div class="colshrt">
+									<input name="Input3" class="srt" type="text" />
+								</div>
+							<div class="clear"></div>
+							</div>
+							<div class="frmrow">
+								<div class="colshrt">
+									<div class="smheader">Executing Broker:</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">&nbsp;</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">&nbsp;</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">&nbsp;</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Commission:</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Comm. Type </div>
+								</div>
+							<div class="clear"></div>
+							</div>
+							<div class="frmrow">
+								<div class="colshrt">
+								  <input name="Input32" class="srt" type="text" />
+								</div>
+								<div class="collng">
+								  <select name="select" class="lng">
+									<option>Select a broker</option>
+								  </select>
+								</div>
+								
+								<div class="colshrt">
+									&nbsp;
+								</div>
+								<div class="colshrt">
+									<input name="Input3" class="srt" type="text" />
+								</div>
+								<div class="colshrt">
+								  <select name="select2"class="srt">
+									<option>Cent/Share</option>
+								  </select>
+								</div>
+							<div class="clear"></div>
+							</div>
+							<div class="clear"></div>			
+					  </div>
+				  <div class="contentrow">
+		  <div class="lbsubheader">Optional Fields </div>
+		  <div class="frmrow">
+								<div class="colshrt">
+									<div class="smheader">Sec Fee: </div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Currency:</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Bond Int :</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Open/Close:</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Exch. Rate:</div>
+								</div>
+								<div class="colshrt">
+									<div class="smheader">Strategy: </div>
+								</div>
+							<div class="clear"></div>
+							</div>
+							<div class="frmrow">
+								<div class="colshrt">
+									<select name="buysell"class="srt">
+									<option selected="selected">Buy</option>
+								      </select>
+								</div>
+								<div class="colshrt">
+								  <select name="select3"class="srt">
+                                    <option selected="selected">USD</option>
+                                  </select>
+								</div>
+								<div class="colshrt">
+									<input name="Input3" type="text" class="srt" value="0.0" />
+								</div>
+								<div class="colshrt">
+								  <select name="select4"class="srt">
+                                    <option selected="selected">&nbsp;</option>
+                                  </select>
+								</div>
+								<div class="colshrt">
+									<input name="Input3" class="srt" type="text" />
+								</div>
+								<div class="colshrt">
+									<input name="Input3" class="srt" type="text" />
+								</div>
+							<div class="clear"></div>
+							</div>
+							<div class="frmrow">
+								<div class="colshrt">
+									<div class="smheader">Trade Type:</div>
+								</div>
+								<div class="collng">
+									<div class="lbsubheader">INTERNAL OFFICE-USE</div>
+								</div>
+								
+								<div class="colshrt">
+									<div class="smheader">&nbsp;</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="frmrow">
+								<div class="colshrt">
+								  <select name="select5"class="srt">
+                                    <option selected="selected">&nbsp;</option>
+                                  </select>
+								</div>
+								<div class="coltxtshrt">
+									<span class="label">Blotter Code:</span></div>
+								<div class="colshrt">
+									<input name="Input3" class="srt" type="text" />
+								</div>
+								
+								<div class="coltxtshrt">
+									<span class="label">Trailer Code:</span></div>
+								<div class="colshrt">
+									<input name="Input3" class="srt" type="text" />
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>		
+		  
+		  
+		  
+		  
+		  
+		  	 
+						<div class="clear"></div>			
+				  </div>
+				  <div class="submitFoot"><a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Submit</span></span></span></a> &nbsp;<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Clear </span></span></span></a> &nbsp; <a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Close</span></span></span></a></div>
+				  
+				  <div class="contentrow">
+		  <div class="lbheader">Trade Allocations </div>	 
+						<div class="frmrow">
+							<div class="collng">
+								<div class="smheader">Account Name </div>
+							</div>
+							<div class="colshrt">
+								<div class="smheader">Account Number </div>
+							</div>
+							<div class="colshrt">
+								<div class="smheader">Shares</div>
+							</div>
+						<div class="clear"></div>
+						</div>
+						<div class="frmrow">
+							<div class="coltxtlng">
+								PB ERROR ACCT (D0340)
+							</div>
+							<div class="colshrt">
+							  <select name="select6"class="srt">
+							    <option>00217340</option>
+                               </select>
+							</div>
+							<div class="colshrt">
+							  <input name="Input33" class="srt" type="text" />
+							</div>
+						<div class="clear"></div>
+						</div>
+						<div class="frmrow">
+							<div class="coltxtlng">
+								STOCK LOAN EXCHANGE TRADE FDS </div>
+							<div class="colshrt">
+							  <select name="select6"class="srt">
+							    <option>09817016</option>
+                               </select>
+							</div>
+							<div class="colshrt">
+							  <input name="Input33" class="srt" type="text" />
+							</div>
+						<div class="clear"></div>
+						</div>
+						<div class="frmrow">
+							<div class="coltxtlng">
+								BORROW COLLATERAL ACCOUNT
+							</div>
+							<div class="colshrt">
+							  <select name="select6"class="srt">
+							    <option>55765382</option>
+                               </select>
+							</div>
+							<div class="colshrt">
+							  <input name="Input33" class="srt" type="text" />
+							</div>
+						<div class="clear"></div>
+						</div>
+						<div class="frmrow">
+							<div class="coltxtlng">
+								NA
+							</div>
+							<div class="colshrt">
+							  <select name="select6"class="srt">
+							    <option>10A01038</option>
+                               </select>
+							</div>
+							<div class="colshrt">
+							  <input name="Input33" class="srt" type="text" />
+							</div>
+						<div class="clear"></div>
+						</div>
+						<div class="frmrow">
+							<div class="coltxtlng">NA</div>
+							<div class="colshrt">
+							  <select name="select6"class="srt">
+							    <option>10A01039</option>
+                              </select>
+							</div>
+							<div class="colshrt">
+							  <input name="Input33" class="srt" type="text" />
+							</div>
+						<div class="clear"></div>
+						</div>
+						<div class="frmrow">
+							<div class="coltxtlng">NA</div>
+							<div class="colshrt">
+							  <select name="select6"class="srt">
+							    <option>10A01040</option>
+                              </select>
+							</div>
+							<div class="colshrt">
+							  <input name="Input33" class="srt" type="text" />
+							</div>
+						<div class="clear"></div>
+						</div>
+						<div class="frmrow">
+							<div class="coltxtlng">NA</div>
+							<div class="colshrt">
+							  <select name="select6"class="srt">
+							    <option>10A01041</option>
+                              </select>
+							</div>
+							<div class="colshrt">
+							  <input name="Input33" class="srt" type="text" />
+							</div>
+						<div class="clear"></div>
+						</div>
+						<div class="frmrow">
+							<div class="coltxtlng">NA</div>
+							<div class="colshrt">
+							  <select name="select6"class="srt">
+							    <option>10A01042</option>
+                              </select>
+							</div>
+							<div class="colshrt">
+							  <input name="Input33" class="srt" type="text" />
+							</div>
+						<div class="clear"></div>
+						</div>
+						
+						
+						
+						<div class="clear"></div>			
+				  </div>
+				  
+				  
+				  
+				  <div class="clear"></div>
+	  </div>
+		  
+		  
+		  
+			
+	  
+	  
+	    <div class="clear"></div>
+  </div>
+		
+		
+		
+		
+</div> 
+	<!-- end body page -->
+</div>
+<div class="clear"></div>
+
+
+<div id="footer">
+	<div class="info">
+		<div class="floatleft"><a href="https://primebroker.citigroup.com">More on Prime Brokerage Products &amp; Services</a></div>
+		<div class="copyright">
+			<img src="images/logo_membercitigroup.gif" width="98" height="12" alt="" />
+			<div class="clear"></div>
+			<a href="#">Terms, conditions, and small print</a>
+			<div class="clear"></div>
+			&copy; 2006 Citigroup
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

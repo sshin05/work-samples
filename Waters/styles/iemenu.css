@@ -1,0 +1,321 @@
+/*=========================================*/
+/*===== BASE STYLES =======================*/
+/*=========================================*/
+
+ol, ul, li
+{
+   list-style:none;
+	padding:0;
+	margin:0;
+}
+
+
+a:focus
+{
+	-moz-outline-style: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.floatleft {
+	float: left;
+}
+
+.test {
+	border: 1px solid red;
+}
+
+.info {
+	float: left;
+	margin: 0 0 8px 0;
+	padding: 0;	
+	font: 10px Verdana;
+}
+
+	.info .header {
+		float: left;
+		margin: 0 14px 0 0;
+		padding: 0;
+		font-weight: bold;
+	}
+	
+	.info .facets {
+		float: left;
+		margin: 0;
+		padding: 0;
+		color: #999999;
+	}
+	
+.facetinfo .marginleft {
+	margin-left: 50px;
+}
+
+/*===== Header : Start ====================*/
+
+.nav_l2 
+{
+	float: left;
+  	position:relative;
+	width:868px;
+	height:12px;
+	font-size:9px;
+	text-align:center
+}
+
+.nav_l2 a 
+{
+	margin:0;
+	font-weight:bold;
+	vertical-align:baseline;
+}
+
+/*===== Header : End ======================*/
+/*===== Drop Down Menus : Start ===========*/
+#nav { /* all lists */
+	padding: 0;
+	margin: 0;
+	height: 28px;
+	background: url(../images/menu_bg.gif) top;
+	border-left: 1px solid #99999B;
+	border-right: 1px solid #99999B;
+}
+
+#nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+
+#nav a {
+	display: block;
+	color: #000000;
+	font: 10px Verdana;
+	text-decoration: none;
+	/*width: 10em;*/
+}
+
+	#nav li { /* all list items */
+		float: left;
+		/*width: 10em;  width needed or else Opera goes nuts */
+	}
+
+
+		#nav li.l2 a.head {
+			display: inline;
+			list-style: none;
+			padding: 6px 22px 0 9px;
+			margin: 0;
+			height: 28px;
+			background-color: #FFFFFF;
+			background: url(../images/menu_arrowseparator.gif) repeat-y right;
+		}	
+		
+			html>body #nav li.l2 a.head {	
+				display: block;
+				height: 22px;
+			}	
+
+		#nav li.l2over {
+			background-color: #8CA8D0;
+		}
+		
+		#nav li.l2over a.head {
+			display: inline;
+			list-style: none;
+			padding: 6px 22px 0 9px;
+			margin: 0;
+			height: 28px;	
+			color: #FFFFFF;
+			background-color: #FFFFFF;
+			background: url(../images/menu_arrowseperator_over.gif) repeat-y right;			
+		}
+		
+			html>body #nav li.l2over a.head {
+				display:block;
+				height: 22px;
+			}
+	
+	#nav li ul.l2_sub { /* second-level lists */
+		position: absolute;
+		left: -999em; 
+		/* using left instead of display to hide menus because display: none isn't read by screen readers */
+	}
+	
+		
+
+	#nav .menuItem {
+		clear:both;
+		background-color: #FFFFFF;
+		background-image:url(../images/dropdown_bg.gif);
+		width:273px;
+		text-align:left;
+		padding: 0 0 0 1px;
+	}
+	
+		#nav .menuItem a {
+			color:#000000;
+			font-size:10px;
+			padding:5px 0px 0px 10px;
+			height: 16px;
+		}
+		
+			#nav .menuItem a.itemOn {
+				font-weight: bold;
+				background-color: #8CA8D0;
+				width: 260px;
+			}
+		
+		#nav .menuItem a:hover {
+			background-color: #8CA8D0;
+			width: 260px;
+		}
+		
+	#nav .menuI2 {
+		clear:both;
+		width:273px;
+		background-color: #FFFFFF;
+		background-image:url(../images/dropdown_bg.gif);
+		text-align:left;
+		font: 10px Verdana;
+		padding: 0 0 0 1px;
+		display: none;
+	}
+	
+		#nav .menuI2 a {
+			padding: 5px 0 0 18px;
+			_padding: 4px 0 4px 18px;
+			height: 16px;
+			background-color: #E2E9F3;
+			color:#000000;
+			width: 243px;
+			_width: 260px;
+			background-image: url(../images/dropdown_dot2.gif);
+			background-position: left;
+			background-repeat:  no-repeat;
+		}
+		
+			#nav .menuI2 a:hover {
+				background-color: #8CA8D0;
+			}
+	
+	
+	#nav .menuTop {
+		background-color: #FFFFFF;
+		background-image:url(../images/dropdown_bg_top.gif);
+		width:273px;
+		height:25px;
+	}
+	
+		#nav .menuTop a {
+			padding: 9px 0 0 10px;		
+			height: 16px;
+			text-align:left;
+		}
+		
+
+	
+	#nav .menuBottom {
+		background-color: #FFFFFF;
+		background-image:url(../images/dropdown_bg_bottom.gif);
+		width:273px;
+		
+	}
+	
+		#nav .menuBottom a {
+			padding:5px 0px 0px 10px;
+			height:20px;
+			text-align:left;
+		}
+		
+
+		
+	#nav .arrows {
+		clear:both;
+		_clear: none;
+		margin: 0;
+		padding: 0 0 7px 0;
+		background-color: #FFFFFF;
+		background-image: url(../images/dropdown_bottomshadow.gif);
+		background-position: bottom;
+		width: 274px;
+	}
+	
+		#nav .arrows .noscroll {
+			float: left;
+			background-color: #FFFFFF;
+			background-image: url(../images/menu_noscroll.gif);
+			width: 274px;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#nav .arrows .up {
+			float: left;
+			background-color: #FFFFFF;
+			background-image: url(../images/menu_up.gif);
+			width: 132px;
+			height: 20px;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+		}	
+		
+		#nav .arrows .upOver {
+			float: left;
+			background-color: #FFFFFF;
+			background-image: url(../images/menu_up_over.gif);
+			width: 132px;
+			height: 20px;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#nav .arrows .down {
+			float: left;
+			background-color: #FFFFFF;
+			background-image: url(../images/menu_down.gif);
+			width: 142px;
+			height: 20px;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#nav .arrows .downOver {
+			float: left;			
+			background-color: #FFFFFF;
+			background-image: url(../images/menu_down_over.gif);
+			width: 142px;
+			height: 20px;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+		}
+	
+		
+		
+		
+
+#nav li:hover ul, #nav li.sfhover ul { 
+/* lists nested under hovered list items for ie */
+	left: auto;
+	padding: 0px;
+	margin:20px 30px 0px -50px;
+}
+
+
+
+html>body #nav li:hover ul, html>body #nav li.sfhover ul { 
+/* lists nested under hovered list items for non-ie */
+	left: auto;
+	padding: 0;
+	margin:0px 30px 0px 0px;
+}
+
+
+
+/*===== Drop Down Menus : End = ===========*/

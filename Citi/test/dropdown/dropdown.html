@@ -1,0 +1,53 @@
+<html>
+<head>
+
+<title>Dropdown Sample</title>
+
+<script type="text/javascript" src="dropdown.js">
+</script>
+
+</head>
+<body>
+
+<h3>Dropdown Sample</h3>
+
+<!-- Dropdown Menu -->
+
+<div id="menu_parent"
+     style="width: 100px; border: 1px solid black; background: #FFFFEE; padding: 0px 5px;
+            font-weight: 900; color: #008000;">
+Main Menu
+</div>
+
+
+
+<br /><br /><br /><br />
+<div id="menu_child"
+     style="position: absolute; display: none; background: #FFFFEE;">
+<a style="display: block; width: 100px; border: 1px solid black; padding: 0px 5px; text-decoration: none; font-weight: 900; color: #0000C0; border-bottom: none;" href="#">Item 1</a>
+<a style="display: block; width: 100px; border: 1px solid black; padding: 0px 5px; text-decoration: none; font-weight: 900; color: #0000C0; border-bottom: none;" href="#">Item 2</a>
+<a style="display: block; width: 100px; border: 1px solid black; padding: 0px 5px; text-decoration: none; font-weight: 900; color: #0000C0;" href="#">Item 3</a>
+</div>
+<script type="text/javascript">
+at_attach("menu_parent", "menu_child", "hover", "y", "pointer");
+</script>
+<!-- Search Form -->
+
+<div id="src_parent"
+     style="width: 100px; border: 1px solid black; background: #FFFFEE; padding: 0px 5px;
+            font-weight: 900; color: #008000;">
+Site Search
+</div>
+<form id="src_child" action="dropdown.php"
+      style="position: absolute; visibility: hidden; border: 1px solid black; background: #FFFFEE; padding: 0px 5px 2px 5px;">
+<b>Enter search terms:</b><br />
+<input type="text" name="terms" />
+<center><input type="submit" value="Submit" /></center>
+</form>
+
+<script type="text/javascript">
+at_attach("src_parent", "src_child", "click", "x", "pointer");
+</script>
+
+</body>
+</html>

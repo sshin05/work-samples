@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<link href="../styles/calendar.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript" src="../scripts/positionsactivtity.js"></script>
+
+<body id="portlet" onload="clearLoadingBar(); portletAccordion('pl', 0, 2); resize();">
+	
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Realtime P/L</div>
+		</div>
+	</div>
+	
+	<div id="page">	
+		
+		<div class="box">		
+			<div class="tabcontent">
+				<div class="accordion" onClick="portletAccordion('pl', 0, 2); return false"><a href="#" onClick="portletAccordion('pl', 0, 2); return false" id="pl0link">Account & Groups</a></div>
+			 	<div class="accordioncontent" id="pl0"> 		
+				
+					 <select id="laccounts" multiple size="8" class="multi" onchange="clearCheck('oaccounts');">
+						 <option selected>Acme Alpha Top Account Group Name</option>
+						 <option>Group Name Here</option>
+						<option>Account Name 22345678</option>
+						 <option>Account Name 32345678</option>
+						<option>Account Name 42345678</option>
+						<option>Account Name 52345678</option>
+					    <option>Account Name 62345678</option>
+						<option>Account Name 72345678</option>
+						<option>Account Name 72345678</option>
+					 </select>
+					<div class="clear"></div>	 
+			   			<input id="oaccounts" type="checkbox" value="" onclick="clearSelector('laccounts');"/> <div class="radio">Search Across All Top Accounts</div>
+					<div class="clear"></div>	 
+			 	</div>
+			
+			
+			
+			
+				<div class="accordion" onClick="portletAccordion('pl', 1, 2); return false"><a href="#" onClick="portletAccordion('pl', 1, 2); return false" id="pl1link">Sorting & Refresh</a></div>
+				<div class="accordioncontent" id="pl1">
+				
+					
+					<h2>Primary Sort</h2>
+					
+					<select class="sort">
+						<option selected>Account</option>
+						<option>Symbol</option>
+						<option>Quantity</option>
+						<option>P/L</option>
+					</select>
+					
+					<input type="radio" name="primary" value="ascending" checked/> <div class="radio">ascending</div>
+					<input type="radio" name="primary" value="descending" /> <div class="radio">descending</div>
+					
+					<div class="clear"></div>
+					
+					<h2>Secondary Sort</h2>
+					
+					<select class="sort">
+						<option selected>P/L</option>				
+						<option>Symbol</option>
+						<option>Quantity</option>
+						<option>Account</option>
+						
+					</select>
+					
+					<input type="radio" name="secondary" value="ascending" checked /> <div class="radio">ascending</div>
+					<input type="radio" name="secondary" value="descending" /> <div class="radio">descending</div>
+					
+					<div class="clear"></div>
+					
+					
+					<h2>Refresh Frequency</h2>
+					<input type="radio" name="refresh" value="manual" checked /> <div class="radio">manual</div>
+					<input type="radio" name="refresh" value="3" /> <div class="radio">3 min</div>
+					<input type="radio" name="refresh" value="5" /> <div class="radio">5 min</div>
+					<input type="radio" name="refresh" value="10" /> <div class="radio">10 minutes</div>
+				</div>	
+			</div>
+		</div>
+		<div class="footer">
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Search</span></span></span></a>
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Download CSV</span></span></span></a>
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Clear</span></span></span></a>
+		</div>
+	</div>	
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+/* Help Styles 
+---------------------------------------------------*/
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color: #ffffff;
+	color:#000;
+	width: 100%;
+	font: normal 11px Arial, Helvetica, sans-serif;
+}
+
+img {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+a:link, a:active, a:visited {
+	color: #000066;
+	text-decoration: underline;
+	font-weight:normal;
+}
+
+a:hover {
+	color: #00ADEF;	
+	text-decoration:none;
+}
+
+p {
+	font-size:11px;
+	margin: 0px 0px 5px 0px;
+	
+}
+
+
+
+/* Basic Styles  (nc)
+---------------------------------------------------*/
+.helpcontent {}
+.helpcontent .header { 	color: #3eadf8;	font-size: 12px;	font-weight: bold;	margin: 18px 0 5px 18px; 	padding: 0 0 0 7px;	line-height:22px; }
+.helpcontent .subheader { color: #00ADEF; font-size:11px;	font-weight:bold;	padding-bottom:5px;}
+.helpcontent .smheader { color: #00ADEF;	font-size:11px;	font-weight:bold; padding-bottom:6px;}
+.helpcontent ul { margin:-2px 0 2px -21px; #margin:-2px 0 -10px 19px;}
+.helpcontent .itemOn {background:#e2e2e2; margin-left:-65px; padding:1px 0 1px 65px; }
+.helpcontent .subhead ul {padding:5px 0px 5px 15px; margin:0px; }
+.helpcontent .itemOn ul  {#padding:5px 0px 5px 0; margin:0px;}
+.helpcontent li {color: #666; font-size:11px;	font-weight:bold; list-style:none; padding:5px 0px 5px 5px; margin:0px;}
+.helpcontent .divider {border-top:1px solid #c5c7dc;margin:-5px 0 0 0; padding:2px 0 0 0;}
+
+.helpcopy {padding:18px;}
+.helpcopy .header { 	color: #3eadf8;	font-size: 12px;font-weight: bold;line-height:22px;padding-bottom:10px; }
+.helpcopy .subheader { color: #666; font-size:11px;	font-weight:bold;	}
+.helpcopy .imagebox {padding:10px 0 10px 0;}

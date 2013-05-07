@@ -1,0 +1,436 @@
+/*=========================================*/
+/*===== BASE STYLES =======================*/
+/*=========================================*/
+
+ol, ul, li
+{
+   list-style:none;
+	padding:0;
+	margin:0;
+}
+
+
+a:focus
+{
+	-moz-outline-style: none;
+}
+
+.menuclear {
+	clear: both;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.test {
+	border: 1px solid red;
+}
+
+.facetinfo {
+	float: left;
+	margin: 10px 0 8px 0;
+	padding: 0;	
+	font: 10px Verdana;
+}
+
+	.facetinfo .head {
+		float: left;
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+		width: 100px;
+	}
+	
+	.facetinfo .margins {
+		width: 650px !important;
+		margin: 0 0 10px 0;
+		color: #999999;
+	}
+	
+	.facetinfo .facets {
+		float: left;
+		margin: 0;
+		padding: 0 5px 5px 0;
+		color: #999999;
+		line-height: 15px;
+		white-space: nowrap;
+	}
+	
+	
+	.facetinfo .facetspadding {
+		float: left;
+		width: 530px;
+		margin: 0 0 5px 0;
+		padding: 0;
+	}
+	
+	.facetinfo .facetcontainer {
+		float: left;		
+		width: 450px;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.facetinfo img {
+		border: 0;
+	}
+
+		
+	.facetinfo a.clearfacet:link, .facetinfo a.clearfacet:active, .facetinfo a.clearfacet:visited, .facetinfo a.clearfacet:hover {
+		
+		border: 0;
+		margin: 0 0 0 10px;
+	}
+	
+	.facetinfo .clearall {
+		float: right;
+		margin: 0 20px 0 0;
+	}
+	
+		.facetinfo .clearall a.clearx:link, .facetinfo .clearall a.clearx:visited, .facetinfo .clearall a.clearx:active, .facetinfo .clearall a.clearx:hover {			
+			font-weight: normal;
+			text-decoration: none;
+			color: #999999;
+			padding: 2px 20px 2px 0;
+			_padding: 0 20px 0px 0;
+			height: 14px;
+			margin: 0;
+			background: url(../images/icon_x.gif) no-repeat right;
+		}
+
+/*===== Header : Start ====================*/
+
+.short {
+	width:730px;
+}
+
+.long {
+	width: 910px;
+}
+
+.nav_l2 
+{
+	float: left;
+  	position:relative;	
+	height:12px;
+	font-size:9px;
+	text-align:center;
+	margin: 0 0 22px 0;
+	_margin: 0 0 5px 0;
+}
+
+.nav_l2 a 
+{
+	margin:0;
+	font-weight:bold;
+	vertical-align:baseline;
+}
+
+/*===== Header : End ======================*/
+/*===== Drop Down Menus : Start ===========*/
+#nav { /* all lists */
+	padding: 0;
+	margin: 0;
+	height: 28px;
+	background: url(../images/menu_bg.gif) top;
+	border-left: 1px solid #99999B;
+	border-right: 1px solid #99999B;
+}
+
+#nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+
+#nav a {
+	display: block;
+	color: #000000;
+	font: 10px Verdana;
+	text-decoration: none;
+	/*width: 10em;*/
+}
+
+	#nav li { /* all list items */
+		float: left;
+		/*width: 10em;  width needed or else Opera goes nuts */
+	}
+
+
+		#nav li.l2 a.head {
+			display: inline;
+			list-style: none;
+			padding: 6px 22px 0 9px;
+			margin: 0;
+			height: 28px;
+			background-color: #FFFFFF;
+			background: url(../images/menu_arrowseparator.gif) repeat-y right;
+		}	
+		
+			html>body #nav li.l2 a.head {	
+				display: block;
+				height: 22px;
+			}	
+		
+		#nav li.l2:hover, #nav li.l2.iehover {
+			background-color: #8CA8D0;
+		}
+		
+		#nav li.l2.iehover a.head:hover, #nav li.l2.iehover a.head2Line:hover {
+			color: #FFFFFF;
+			background-color: #FFFFFF;
+			background: url(../images/menu_arrowseperator_over.gif) repeat-y right;			
+		}
+		
+		html>body #nav li.l2 a.head:hover {			
+			color: #FFFFFF;
+			background-color: #FFFFFF;
+			background: url(../images/menu_arrowseperator_over.gif) repeat-y right;			
+		}
+		
+		#nav li.l2 a.head2Line {
+			display: inline;
+			list-style: none;
+			padding: 0 22px 0 9px;
+			margin: 0;
+			height: 26px;
+			background-color: #FFFFFF;
+			background: url(../images/menu_arrowseparator.gif) repeat-y right;
+		}
+		
+			html>body #nav li.l2 a.head2Line {	
+				display: block;
+				height: 27px;
+			}	
+			
+		html>body #nav li.l2 a.head2Line:hover {			
+			color: #FFFFFF;
+			background-color: #FFFFFF;
+			background: url(../images/menu_arrowseperator_over.gif) repeat-y right;			
+		}
+		
+		
+		#nav li.l2over {
+			background-color: #8CA8D0;
+		}
+		
+		#nav li.l2over a.head {
+			display: inline;
+			list-style: none;
+			padding: 6px 22px 0 9px;
+			margin: 0;
+			height: 28px;	
+			color: #FFFFFF;
+			background-color: #FFFFFF;
+			background: url(../images/menu_arrowseperator_over.gif) repeat-y right;			
+		}
+		
+			html>body #nav li.l2over a.head {
+				display:block;
+				height: 22px;
+			}
+			
+			
+		#nav li.l2over a.head2Line {
+			display: inline;
+			list-style: none;
+			padding: 0 22px 1px 9px;
+			margin: 0;
+			height: 27px;	
+			color: #FFFFFF;
+			background-color: #FFFFFF;
+			background: url(../images/menu_arrowseperator_over.gif) repeat-y right;			
+		}
+		
+			html>body #nav li.l2over a.head2Line {
+				display:block;
+				height: 27px;
+			}
+	
+	#nav li ul.l2_sub { /* second-level lists */
+		position: absolute;
+		left: -999em; 
+		/* using left instead of display to hide menus because display: none isn't read by screen readers */
+	}
+	
+		
+
+	#nav .menuItem {
+		clear:both;
+		background-color: #FFFFFF;
+		background-image:url(../images/dropdown_bg.gif);
+		width:262px;
+		_width:263px;
+		text-align:left;
+		padding: 0 0 0 1px;
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	
+		#nav .menuItem a {
+			color:#000000;
+			font-size:10px;
+			padding:5px 0px 0px 10px;
+			_padding: 5px 0 4px 10px;
+			height: 16px;
+		}
+		
+			#nav .menuItem a.itemOn {
+				font-weight: bold;
+				background-color: #8CA8D0;
+				width: 252px;
+				_width: 261px;
+			}
+		
+		#nav .menuItem a:hover {
+			background-color: #8CA8D0;
+			width: 252px;
+			_width: 261px;
+		}
+		
+	#nav .menuI2 {
+		clear:both;
+		width:262px;
+		_width:263px;
+		background-color: #FFFFFF;
+		background-image:url(../images/dropdown_bg.gif);
+		text-align:left;
+		font: 10px Verdana;
+		padding: 0 0 0 1px;
+		display: none;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	
+		#nav .menuI2 a {
+			padding: 5px 0 0 18px;
+			_padding: 5px 0 4px 18px;
+			height: 16px;
+			background-color: #E2E9F3;
+			color:#000000;
+			width: 243px;
+			_width: 261px;
+			background-image: url(../images/dropdown_dot2.gif);
+			background-position: left;
+			background-repeat:  no-repeat;
+		}
+		
+			#nav .menuI2 a:hover {
+				background-color: #8CA8D0;
+			}
+	
+	
+	#nav .arrows {
+		clear:both;
+		margin: 0;		
+		background-color: #FFFFFF;
+		/*
+		padding: 0 0 7px 0;
+		background-image: url(../images/dropdown_bottomshadow.gif);
+		background-position: bottom;*/
+		width: 263px;
+	}
+	
+		#nav .arrows .noscrollleft {
+			float: left;
+			background-color: #FFFFFF;
+			background: url(../images/menu_noscroll_left.gif) no-repeat left;
+			width: 132px;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+		}
+		
+			#nav .arrows .noscrollright {
+			float: left;
+			background-color: #FFFFFF;
+			background: url(../images/menu_noscroll_right.gif) no-repeat left;
+			width: 131px;
+			_width: 131px;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#nav .arrows .up {
+			float: left;
+			background-color: #FFFFFF;
+			background-image: url(../images/menu_up.gif);
+			width: 132px;
+			height: 20px;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+			cursor: pointer;
+		}	
+		
+		#nav .arrows .upOver {
+			float: left;
+			background-color: #FFFFFF;
+			background-image: url(../images/menu_up_over.gif);
+			width: 132px;
+			height: 20px;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+			cursor: pointer;
+		}
+		
+		#nav .arrows .down {
+			float: left;
+			background-color: #FFFFFF;
+			background-image: url(../images/menu_down.gif);
+			width: 131px;
+			height: 20px;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+			cursor: pointer;
+		}
+		
+		#nav .arrows .downOver {
+			float: left;			
+			background-color: #FFFFFF;
+			background-image: url(../images/menu_down_over.gif);
+			width: 131px;
+			height: 20px;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+			cursor: pointer;
+		}
+	
+		
+		
+		
+
+#nav li ul, #nav li.sfhover ul { 
+/* lists nested under hovered list items for ie */
+	left: auto;
+	padding: 0px;
+	margin:28px 30px 0px -50px;
+}
+
+
+
+html>body #nav li ul, html>body #nav li.sfhover ul { 
+/* lists nested under hovered list items for non-ie */
+	left: auto;
+	padding: 0;
+	margin:0px 30px 0px 0px;
+}
+
+html>body #nav li.shift ul { 
+/* lists nested under hovered list items for non-ie */
+	left: auto;
+	padding: 0;
+	margin:0px 0px 0px -183px;
+}
+
+/*===== Drop Down Menus : End = ===========*/

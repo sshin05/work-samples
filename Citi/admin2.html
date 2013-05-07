@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>CitiGroup</title>
+</head>
+<link href="styles/global.css" type="text/css" rel="stylesheet" />
+<script src="scripts/general.js" type="text/javascript"></script>
+<script src="scripts/resizer.js" type="text/javascript"></script>
+<script src="scripts/portlets.js" type="text/javascript"></script>
+<script src="scripts/effects.js" type="text/javascript"></script>
+
+<body onload="portletMinimize2('ifrL2');portletMinimize2('ifrL3');portletMinimize2('ifrL4');portletMinimize2('ifrR2');portletMinimize2('ifrR3');portletMinimize2('ifrR4');">
+<div id="bluebar"></div>
+<div id="header" class="center">		
+	<div class="classic">
+		<div class="floatleft"><img src="images/logo.gif" alt="" border="0"></div>
+		<div class="floatright">
+			<div class="service">
+				<a href="my_profile.html" class="separator">My Account</a>
+				<a href="#" onclick="openwin('help_window.html','help',700,400); return false" class="separator">Help</a>
+				<a href="customerservice_contactinfo.html" class="separator">Client Service</a>
+				<span class="username">Mmoratis:</span> <a href="#" class="bold">Log out</a>
+			</div>
+			<div class="clear"></div>
+			<div class="admin">
+				<span class="bold">Administration:</span> <a href="#" class="separator">Securities Lending</a>
+				<a href="#" class="separator">GPB</a>
+				<span class="itemOn">PrimeServe</span>
+			</div>	
+		</div>
+	</div>	
+</div>
+<div id="mainnav">
+	<div class="tabs">
+		<div class="center" id="dropdown">
+			<ul>
+			<li><a href="home.html" class="main">My Prime Serve</a></li>
+			<li><a href="#" class="main">Portfolio Analysis<img src="images/arrow_mainnavdown.gif" width="7" height="4" alt="" /></a>
+				<ul>
+				<li><a href="risk.html">Risk</a></li>
+				<li><a href="performance.html">Performance</a></li>
+				<li><a href="holdings.html">Holdings &amp; Assets</a></li>
+				<li><a href="fees.html">Fees &amp; Cost</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="main">Trades &amp; Transactions<img src="images/arrow_mainnavdown.gif" width="7" height="4" alt="" /></a>
+				<ul>
+				<li><a href="trade.html">Corporate Actions</a></li>
+				<li><a href="stockloan.html">Stock Loan</a></li>
+				<li><a href="tradeactivity.html">Trade Activity</a></li>
+				<li><a href="payments_transfers.html">Payments &amp; Transfers</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="main">Financing &amp; Margin<img src="images/arrow_mainnavdown.gif" width="7" height="4" alt="" /></a>
+				<ul>
+				<li><a href="financing.html">Margin</a></li>
+				<li><a href="interests_accruals.html">Interests &amp; Accruals</a></li>
+				</ul>
+			</li>
+			</ul>
+			<div class="management"><a href="#"><img src="images/icon_reportdata.gif" width="9" height="12" alt="" /> <span class="underline">Report &amp; Data Management</span></a></div>
+		</div>
+		
+	</div>
+	<div class="subbar">
+		<div class="center">
+			<div class="customization">
+				<div class="link"><a href="#">Customize Page</a></div>
+				<div class="dropdown">
+					<select name="quicklinks">
+						<option>My Quick Links</option>
+						<option>Trade Upload Search</option>
+						<option>Cash Transfer History</option>
+						<option>Prime Analytics: Performance</option>
+						<option>Reg Sho List</option>
+						<option>E-Confirms</option>
+						<option value="allocation_entry.html">Allocation Entry</option>
+					</select>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="shadow"></div>
+</div>
+
+<div id="body">
+	<div class="bodypage">
+		<div class="leftwidecolumn">
+			<div class="portlet">
+				<h1>GPB Portal User Administration</h1>
+			</div>
+			<div class="portlet">				
+				<div class="admin"><div class="floatleft">User</div> <div class="dash"><img src="images/spacer.gif" width="1" alt="" /></div>  <a href="admin.html" target="_parent">Client</a></div>
+				<div class="clear"></div>
+				
+			</div>	
+			<div class="clear"></div>
+			<div class="portlet">
+				<a href="#" class="underline">Acme Europe</a> &gt;&nbsp;&nbsp;
+				<select>
+					<option>Chuck Taylor</option>
+				</select>
+			</div>
+			<div class="specialclearIE"></div>
+			
+			<div class="portlet" id="portifrL1">
+				<div class="portletheader">
+					<table>
+					<tr>
+					<td class="title"><a href="#" onclick="portletMinimize('ifrL1'); resize(); return false"><img src="images/portlet_arrow_expand.gif" alt="" id="imgifrL1" /> <span class="text">User Profile for Kevin Doe</span></a></td>					
+					<td>&nbsp;</td>	
+					</tr>
+					</table>
+				</div>
+				<div class="portletwidebody">
+					<iframe src="admin/userprofile.html" name="ifrL1" id="ifrL1" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="portletshadow"></div>
+			</div>
+			
+			
+			<div class="portlet" id="portifrL2">
+				<div class="portletheader">
+					<table>
+					<tr>
+					<td class="title"><a href="#" onclick="portletMinimize('ifrL2'); resize(); return false"><img src="images/portlet_arrow_expand.gif" alt="" id="imgifrL2" /> <span class="text">Portal Entitlements</span></a></td>					
+					<td>&nbsp;</td>
+					</tr>
+					</table>
+				</div>
+				<div class="portletwidebody">
+					<iframe src="admin/entitlements.html" name="ifrL2" id="ifrL2" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="portletshadow"></div>
+			</div>
+			
+			<div class="portlet" id="portifrL3">
+				<div class="portletheader">
+					<table>
+					<tr>
+					<td class="title"><a href="#" onclick="portletMinimize('ifrL3'); resize(); return false"><img src="images/portlet_arrow_expand.gif" alt="" id="imgifrL3" /> <span class="text">Group &amp; Account Access</span></a></td>					
+					<td>&nbsp;</td>
+					</tr>
+					</table>
+				</div>
+				<div class="portletwidebody">
+					<iframe src="admin/masks.html" name="ifrL3" id="ifrL3" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="portletshadow"></div>
+			</div>
+			
+			<div class="portlet" id="portifrL4">
+				<div class="portletheader">
+					<table>
+					<tr>
+					<td class="title"><a href="#" onclick="portletMinimize('ifrL4'); resize(); return false"><img src="images/portlet_arrow_expand.gif" alt="" id="imgifrL4" /> <span class="text">Report Masks</span></a></td>					
+					<td>&nbsp;</td>
+					</tr>
+					</table>
+				</div>
+				<div class="portletwidebody">
+					<iframe src="admin/reportmask.html" name="ifrL4" id="ifrL4" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="portletshadow"></div>
+			</div>
+			
+		</div>		
+		<div class="rightcolumn">
+			 
+		 	
+			<div class="portlet">
+				<div class="find">				
+					<h2>Find</h2>
+					<select>
+						<option>Last Names</option>
+					</select>
+					<input type="text" class="search" />  <a href="#" onClick="searchResults('find', true, 'findresults'); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">GO</span></span></span></a>
+					
+					<div class="position"><input type="radio" name="search" value="" /> <span class="text">Starting with</span> <input type="radio" name="search" value="" /> <span class="text">Containing</span></div>
+				</div>				
+				<iframe class="findresults" id="findresults" src="admin/searchresults.html" frameborder="0" scrolling="no"></iframe>
+				
+				<div class="portletshadow"></div>
+			</div>
+			<div class="specialclearOther"></div>
+			
+			<div class="portlet" id="portifrR1">
+				<div class="portletheader">
+					<table>
+					<tr>
+					<td class="title"><a href="#" onclick="portletMinimize('ifrR1'); resize(); return false"><img src="images/portlet_arrow_expand.gif" alt="" id="imgifrR1" /> <span class="text">Event Log</span></a></td>
+					<td>&nbsp;</td>					
+					</tr>
+					</table>
+				</div>
+				<div class="portletbody">
+					<iframe src="admin/eventlog.html" name="ifrR1" id="ifrR1" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="portletshadow"></div>
+			</div>
+			
+			
+			<div class="portlet" id="portifrR2">
+				<div class="portletheader">
+					<table>
+					<tr>
+					<td class="title"><a href="#" onclick="portletMinimize('ifrR2'); resize(); return false"><img src="images/portlet_arrow_expand.gif" alt="" id="imgifrR2" /> <span class="text">Configurations &amp; Application Settings</span></a></td>
+					<td>&nbsp;</td>					
+					</tr>
+					</table>
+				</div>
+				<div class="portletbody">
+					<iframe src="admin/settings.html" name="ifrR2" id="ifrR2" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="portletshadow"></div>
+			</div>
+			
+			<div class="portlet" id="portifrR3">
+				<div class="portletheader">
+					<table>
+					<tr>
+					<td class="title"><a href="#" onclick="portletMinimize('ifrR3'); resize(); return false"><img src="images/portlet_arrow_expand.gif" alt="" id="imgifrR3" /> <span class="text">Notifications Types</span></a></td>
+					<td>&nbsp;</td>					
+					</tr>
+					</table>
+				</div>
+				<div class="portletbody">
+					<iframe src="admin/notifications.html" name="ifrR3" id="ifrR3" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="portletshadow"></div>
+			</div>
+			
+			<div class="portlet" id="portifrR4">
+				<div class="portletheader">
+					<table>
+					<tr>
+					<td class="title"><a href="#" onclick="portletMinimize('ifrR4'); resize(); return false"><img src="images/portlet_arrow_expand.gif" alt="" id="imgifrR4" /> <span class="text">Help Topics</span></a></td>
+					<td>&nbsp;</td>					
+					</tr>
+					</table>
+				</div>
+				<div class="portletbody">
+					<iframe src="admin/help.html" name="ifrR4" id="ifrR4" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="portletshadow"></div>
+			</div>
+
+			
+		</div>
+	</div>
+</div>
+
+
+<div id="footer">	
+	<div class="info">
+		<div class="floatleft"><a href="https://primebroker.citigroup.com">More on Prime Brokerage Products &amp; Services</a></div>
+		<div class="copyright">
+			<img src="images/logo_membercitigroup.gif" width="98" height="12" alt="" />
+			<div class="clear"></div>
+			<a href="#">Terms, conditions, and small print</a>
+			<div class="clear"></div>
+			&copy; 2006 Citigroup
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

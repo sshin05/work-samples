@@ -1,0 +1,1166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+<title>User Admin Portal</title>
+<link rel="stylesheet" type="text/css" href="styles/global.css">
+<link rel="stylesheet" type="text/css" href="styles/help.css">
+<link rel="stylesheet" type="text/css" href="styles/body.css">
+<link rel="stylesheet" type="text/css" href="styles/book.css">
+<link rel="stylesheet" type="text/css" href="styles/button.css">
+<link rel="stylesheet" type="text/css" href="styles/form.css">
+<link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/portlet.css">
+<link rel="stylesheet" type="text/css" href="styles/window.css">
+
+<script src="scripts/console.js" type="text/javascript"></script>
+<script src="scripts/cookies.js" type="text/javascript"></script>
+<script src="scripts/delete.js" type="text/javascript"></script>
+<script src="scripts/float.js" type="text/javascript"></script>
+<script src="scripts/menu.js" type="text/javascript"></script>
+<script src="scripts/menufx.js" type="text/javascript"></script>
+<script src="scripts/skin.js" type="text/javascript"></script>
+<script src="scripts/state.js" type="text/javascript"></script>
+<script src="scripts/util.js" type="text/javascript"></script>
+<script src="scripts/effects.js" type="text/javascript"></script>
+<script src="scripts/general.js" type="text/javascript"></script>
+<script src="scripts/portlets.js" type="text/javascript"></script>
+<script src="scripts/resizer.js" type="text/javascript"></script>
+	</head>
+<body
+        
+        class="bea-portal-body"
+        
+        onload="initSkin();"
+        
+    ><div class="bea-portal-body-content">
+	<link href="styles/global.css" type="text/css" rel="stylesheet" />
+	<script src="scripts/general.js" type="text/javascript"></script>
+	<script src="scripts/resizer.js" type="text/javascript"></script>
+	<script src="scripts/portlets.js" type="text/javascript"></script>
+	<script src="scripts/effects.js" type="text/javascript"></script>
+    
+<div id="bluebar"></div>
+<div id="header" class="center">		
+	<div class="classic">
+		<div class="floatleft"><img src="images/logo.gif" alt="" border="0"></div>
+		<div class="floatright">
+			<div class="service">
+				<a href="my_profile.html" class="separator">My Account</a>
+				<a href="#" onclick="openwin('help_window.html','help',700,400); return false" class="separator">Help</a>
+				<a href="customerservice_contactinfo.html" class="separator">Client Service</a>
+				<span class="username">Mmoratis:</span> <a href="#" class="bold">Log out</a>
+			</div>
+			<div class="clear"></div>
+			<div class="admin">
+				<span class="bold">Administration:</span> <a href="#" class="separator">Securities Lending</a>
+				<a href="#" class="separator">GPB</a>
+				<span class="itemOn">PrimeServe</span>
+			</div>			
+		</div>
+	</div>	
+</div>
+<div id="mainnav">
+	<div class="tabs">
+		<div class="center" id="dropdown">
+			<ul>
+			<li><a href="home.html" class="main">My Prime Serve</a></li>
+			<li><a href="#" class="main">Portfolio Analysis<img src="images/arrow_mainnavdown.gif" width="7" height="4" alt="" /></a>
+				<ul>
+				<li><a href="risk.html">Risk</a></li>
+				<li><a href="performance.html">Performance</a></li>
+				<li><a href="holdings.html">Holdings &amp; Assets</a></li>
+				<li><a href="fees.html">Fees &amp; Cost</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="main">Trades &amp; Transactions<img src="images/arrow_mainnavdown.gif" width="7" height="4" alt="" /></a>
+				<ul>
+				<li><a href="trade.html">Corporate Actions</a></li>
+				<li><a href="stockloan.html">Stock Loan</a></li>
+				<li><a href="tradeactivity.html">Trade Activity</a></li>
+				<li><a href="payments_transfers.html">Payments &amp; Transfers</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="main">Financing &amp; Margin<img src="images/arrow_mainnavdown.gif" width="7" height="4" alt="" /></a>
+				<ul>
+				<li><a href="financing.html">Margin</a></li>
+				<li><a href="interests_accruals.html">Interests &amp; Accruals</a></li>
+				</ul>
+			</li>
+			</ul>
+			<div class="management"><a href="#"><img src="images/icon_reportdata.gif" width="9" height="12" alt="" /> <span class="underline">Report &amp; Data Management</span></a></div>
+		</div>
+		
+	</div>
+	<div class="subbar">
+		<div class="center">
+			<div class="customization">
+				<div class="link"><a href="#">Customize Page</a></div>
+				<div class="dropdown">
+					<select name="quicklinks">
+						<option>My Quick Links</option>
+						<option>Trade Upload Search</option>
+						<option>Cash Transfer History</option>
+						<option>Prime Analytics: Performance</option>
+						<option>Reg Sho List</option>
+						<option>E-Confirms</option>
+						<option value="allocation_entry.html">Allocation Entry</option>
+					</select>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="shadow"></div>
+</div>
+</div>
+</div>
+	<link href="styles/global.css" type="text/css" rel="stylesheet" />
+	<script src="scripts/general.js" type="text/javascript"></script>
+	<script src="scripts/resizer.js" type="text/javascript"></script>
+	<script src="scripts/portlets.js" type="text/javascript"></script>
+	<script src="scripts/effects.js" type="text/javascript"></script>
+    <div class="clear"></div>
+    
+
+    
+    <div
+        
+        class="bea-portal-book-primary"
+        
+    >
+        
+
+    
+    <div class="bea-portal-ie-table-buffer-div">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td class="bea-portal-book-primary-menu-single-container" align="left" nowrap="nowrap">
+    <ul
+        
+        class="bea-portal-book-primary-menu-single"
+        
+    ><li class="bea-portal-book-primary-menu-single-item-active"><span>Client</span></li><li class="bea-portal-book-primary-menu-single-item"><a href="https://localhost:7002/admin/admin.portal?_nfpb=true&amp;_pageLabel=admin_portal_page_main">Main</a></li></ul>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+    
+        
+        <div
+            class="bea-portal-book-primary-content"
+            
+        >
+
+    
+    <div
+        
+        class="bea-portal-book-primary-page"
+        
+    >
+
+    
+    <table
+        
+        class="bea-portal-layout-grid"
+        
+        cellspacing="0"
+    >
+    
+        <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                width="640"
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <table
+        
+        class="bea-portal-layout-flow"
+        
+        cellspacing="0"
+    >
+        <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <div
+        
+        class="bea-portal-window"
+        
+        width="100%"
+    >
+        
+<div
+        
+        class="bea-portal-window-titlebar"
+        
+    >
+        <div class="bea-portal-ie-table-buffer-div">
+            <table class="bea-portal-window-titlebar-container" cellspacing="0">
+                <tr>
+                    <td class="bea-portal-window-titlebar-title" nowrap="nowrap"></td>
+                    <td class="bea-portal-window-titlebar-buttons" nowrap="nowrap">
+</td>
+                </tr>
+            </table>
+        </div>
+  </div>
+        
+<div
+            class="bea-portal-window-content"
+            
+        >
+
+<html>
+<head>
+<link href="styles/global.css" type="text/css" rel="stylesheet" />
+<html>
+<head>
+<script language="JavaScript">
+   
+    function doSubmitForm(){
+		document.forms.selectorForm.submit();
+	}
+	
+	//Navigate to UserProfile page  with selected user
+	function viewCleint(cleintId){
+	   	var adminUrl = '/admin/admin.portal?_nfpb=true&_pageLabel=admin_portal_page_client';
+	    top.parent.location.replace(adminUrl);
+	}
+</script>
+</head>
+<body>
+<script>
+//	window.onload=resize;
+</script>
+   
+		<div class="portlet">
+			<h1>GPB Portal User Administration</h1>
+		</div>
+	
+	<div class="portlet">
+		<div class="admin">
+    <div class="floatleft"><span>Client</span></div>
+                        <div class="dash"><img src="images/spacer.gif" width="1" alt="" /></div> 
+                        <div class="floatleft"><a href="https://localhost:7002/admin/admin.portal?_nfpb=true&amp;_pageLabel=admin_portal_page_main">Main</a></div>
+                        <div class="dash"><img src="images/spacer.gif" width="1" alt="" /></div>
+                        
+		</div>	
+	</div>
+			
+	<div class="clear"></div>
+	<div class="portlet">
+		<form id="selectorForm" method="post" action="https://localhost:7002/admin/admin.portal?_nfpb=true&amp;_windowLabel=ClientSelectorPage_1_1&amp;_nffvid=%2Fadmin%2Fportlets%2Fadmin%2Fselector%2FSelectorPage.faces&amp;_pageLabel=admin_portal_page_client" enctype="application/x-www-form-urlencoded">
+		
+		<div id="selectClient">
+				
+					
+					
+				<select id="selectorForm:idSelectStd" name="selectorForm:idSelectStd" size="1" onchange="doSubmitForm();">	<option value="WELL    " selected="selected">WELLINGTON MANAGEMENT         </option>
+	<option value="CONCORD ">CONCORDIA ADVISORS LLC        </option>
+</select>
+		</div>
+		
+		<span class="errorStyle"></span>
+		<input type="hidden" name="selectorForm" value="selectorForm" /></form>
+		
+	</div>
+	
+	<div class="clear"></div>
+   
+</body>
+</html>
+</div>
+    </div>
+    
+</div>
+</td>
+            
+                  </tr>
+                    <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <div
+        
+        class="bea-portal-window"
+        
+        width="100%"
+    >
+        
+<div
+        
+        class="bea-portal-window-titlebar"
+        
+    >
+        <div class="bea-portal-ie-table-buffer-div">
+            <table class="bea-portal-window-titlebar-container" cellspacing="0">
+                <tr>
+                    <td class="bea-portal-window-titlebar-title" nowrap="nowrap"></td>
+                    <td class="bea-portal-window-titlebar-buttons" nowrap="nowrap">
+</td>
+                </tr>
+            </table>
+        </div>
+  </div>
+        
+<div
+            class="bea-portal-window-content"
+            
+        >
+
+<div class="portlet" id="portClientPage_portlet">
+    
+		
+   <div class="portletheader">
+		<table>
+			<tr>
+				<td class="title"><a href="#" onClick="portletMinimizeWithContext('/admin', 'ClientPage_portlet'); resize(); return false;"><img src="images/portlet_arrow_expand.gif" width="8" height="26" alt="" id="imgClientPage_portlet" /> <span class="text">WELLINGTON MANAGEMENT</span></a></td>				
+				<td><img src="images/portlet_seperator.gif" width="1" height="11" alt="" /></td>
+				<td><a href="#">?</a></td>					
+			</tr>
+		</table>
+	</div>
+    <div class="portletwidebody">
+    	<iframe src="admin portlets/client.html" name="ClientPage_portlet" id="ClientPage_portlet" frameborder="0" scrolling="no"></iframe>  
+	</div>
+	<div class="portletshadow"></div>
+</div>
+</div>
+    </div>
+    
+</div>
+</td>
+            
+                  </tr>
+                    <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <div
+        
+        class="bea-portal-window"
+        
+        width="100%"
+    >
+        
+<div
+        
+        class="bea-portal-window-titlebar"
+        
+    >
+        <div class="bea-portal-ie-table-buffer-div">
+            <table class="bea-portal-window-titlebar-container" cellspacing="0">
+                <tr>
+                    <td class="bea-portal-window-titlebar-title" nowrap="nowrap"></td>
+                    <td class="bea-portal-window-titlebar-buttons" nowrap="nowrap">
+</td>
+                </tr>
+            </table>
+        </div>
+  </div>
+        
+<div
+            class="bea-portal-window-content"
+            
+        >
+
+<div class="portlet" id="portClientUserList_portlet">
+    
+		
+   <div class="portletheader">
+		<table>
+			<tr>
+				<td class="title"><a href="#" onClick="portletMinimizeWithContext('/admin', 'ClientUserList_portlet'); resize(); return false;"><img src="images/portlet_arrow_expand.gif" width="8" height="26" alt="" id="imgClientUserList_portlet" /> <span class="text">WELLINGTON MANAGEMENT          Users</span></a></td>
+				
+				<td><img src="images/portlet_seperator.gif" width="1" height="11" alt="" /></td>
+				<td><a href="#">?</a></td>					
+			</tr>
+		</table>
+	</div>
+    <div class="portletwidebody">
+    	<iframe src="admin portlets/users.html" name="ClientUserList_portlet" id="ClientUserList_portlet" frameborder="0" scrolling="no"></iframe>  
+	</div>
+	<div class="portletshadow"></div>
+</div>
+</div>
+    </div>
+    
+</div>
+</td>
+            
+                  </tr>
+                    <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <div
+        
+        class="bea-portal-window"
+        
+        width="100%"
+    >
+        
+<div
+        
+        class="bea-portal-window-titlebar"
+        
+    >
+        <div class="bea-portal-ie-table-buffer-div">
+            <table class="bea-portal-window-titlebar-container" cellspacing="0">
+                <tr>
+                    <td class="bea-portal-window-titlebar-title" nowrap="nowrap"></td>
+                    <td class="bea-portal-window-titlebar-buttons" nowrap="nowrap">
+</td>
+                </tr>
+            </table>
+        </div>
+  </div>
+        
+<div
+            class="bea-portal-window-content"
+            
+        >
+
+<div class="portlet" id="portClientReportListPage_portlet">
+    
+		
+   <div class="portletheader">
+		<table>
+			<tr>
+				<td class="title"><a href="#" onClick="portletMinimizeWithContext('/admin', 'ClientReportListPage_portlet'); resize(); return false;"><img src="images/portlet_arrow_expand.gif" width="8" height="26" alt="" id="imgClientReportListPage_portlet" /> <span class="text">Configured Report List</span></a></td>
+				
+				<td><img src="images/portlet_seperator.gif" width="1" height="11" alt="" /></td>
+				<td><a href="#">?</a></td>					
+			</tr>
+		</table>
+	</div>
+    <div class="portletwidebody">
+    	<iframe src="admin portlets/reportlist.html" name="ClientReportListPage_portlet" id="ClientReportListPage_portlet" frameborder="0" scrolling="no"></iframe>  
+	</div>
+	<div class="portletshadow"></div>
+</div>
+</div>
+    </div>
+    
+</div>
+</td>
+            
+    
+        </tr>
+    </table>
+    
+
+</div>
+</td>
+            
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <table
+        
+        class="bea-portal-layout-flow"
+        
+        cellspacing="0"
+    >
+        <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <div
+        
+        class="bea-portal-window"
+        
+        width="100%"
+    >
+        
+<div
+        
+        class="bea-portal-window-titlebar"
+        
+    >
+        <div class="bea-portal-ie-table-buffer-div">
+            <table class="bea-portal-window-titlebar-container" cellspacing="0">
+                <tr>
+                    <td class="bea-portal-window-titlebar-title" nowrap="nowrap"></td>
+                    <td class="bea-portal-window-titlebar-buttons" nowrap="nowrap">
+</td>
+                </tr>
+            </table>
+        </div>
+  </div>
+        
+<div
+            class="bea-portal-window-content"
+            
+        >
+<html>
+<head>
+	
+	
+	<link href="styles/global.css" type="text/css" rel="stylesheet" />
+	<link href="styles/admin.css" type="text/css" rel="stylesheet" />
+	<script src="scripts/general.js" type="text/javascript"></script>
+	<script src="scripts/resizer.js" type="text/javascript"></script>
+<script language="JavaScript">
+ 
+//////////////////////////////////////////////////////////////////////////////
+// DEFAULT FORM TEXT ENTRIES
+	// Clears any populated input onclick
+	function clearTip(fieldId, tipTxt) {
+		if (document.getElementById(fieldId).value == tipTxt) {
+			document.getElementById(fieldId).value = "";
+		}
+	}
+	
+	// Restores the "Default style" for any input
+	function restoreTip(fieldId, tipTxt) {
+		if (document.getElementById(fieldId).value == "") {
+			document.getElementById(fieldId).value = tipTxt;		
+		}
+	}
+	 
+	function searchResultsAll(){
+	
+		
+		
+		if("false"=="true"){
+			
+			
+			
+					
+		}else {
+		
+			return false;
+		
+		}
+		var searchVal = document.forms.searchForm["searchForm:searchSelection"].length;
+		
+		for(var i=0;i<searchVal;i++)
+		{
+			if(document.forms.searchForm["searchForm:searchSelection"][i].checked){
+			
+				var selectVal = document.forms.searchForm["searchForm:searchSelection"][i].value;
+				//alert("searchResultsAll "+selectVal);
+				if(selectVal == "U" ){
+					searchResults('find', true, 'findresultsUser');
+				}
+				if(selectVal == "C" ){
+					searchResults('find', true, 'findresultsClient');
+				}
+				break;
+			}
+		}
+	}
+	
+	//Display proper controls depending upon the previous state.
+	function radioClicked(){
+		//alert("radioClicked clicked...");
+		var searchVal = document.forms.searchForm["searchForm:searchSelection"].length;
+		hide('inputArea1');
+		hide('inputArea2');
+		
+		for(var i=0;i<searchVal;i++)
+		{
+			if(document.forms.searchForm["searchForm:searchSelection"][i].checked){
+			
+				var selectVal = document.forms.searchForm["searchForm:searchSelection"][i].value;
+				if(selectVal == "U" ){
+					unhide('inputArea1');
+					hide('findresultsClient');
+				}
+				if(selectVal == "C" ){
+					unhide('inputArea2');
+					hide('findresultsUser');
+				}
+				break;
+			}
+		}
+		
+		searchResultsAll();
+	}
+	
+	//Close the search window and navigate to UserProfile page  with selected user
+	function viewProfile(userId){
+		searchResults('find', false, 'findresultsUser');  //Close the search window
+	   	var adminUrl = '/admin/admin.portal?_nfpb=true&_pageLabel=admin_portal_page_userprofile';
+	    top.parent.location.replace(adminUrl+"&selectedUser="+userId);
+	}
+	//Close the search window and navigate to UserProfile page  with selected user
+	function viewCleint(cleintId){
+		searchResults('find', false, 'findresultsClient');  //Close the search window
+	   	var adminUrl = '/admin/admin.portal?_nfpb=true&_pageLabel=admin_portal_page_client';
+	    top.parent.location.replace(adminUrl+"&searchedCleint="+cleintId);
+	}
+	
+	//Assign the selected client id to a hidden field and close the window
+	function refreshClient(cleintId){
+		document.forms.searchForm["searchForm:idTempText"].focus();
+		document.getElementById( "searchForm:idTempText").value=cleintId;      //For outputText
+		document.forms.searchForm["searchForm:idInputClient"].focus(); //Take the focus out of idTempText
+		searchResults('find', false, 'findresultsClient');  //Close the search window
+	}
+				
+	function submitForm(){
+		var formValue = document.forms.searchForm;
+		formValue.submit();
+	}
+</script>
+</head>
+<body id="admin">
+	<script> 
+   		window.onload=radioClicked;resize;
+   	</script>
+        
+			<div class="portlet">
+				<div class="find">	
+				<form id="searchForm" method="post" action="https://localhost:7002/admin/admin.portal?_nfpb=true&amp;_windowLabel=Search_portlet_3&amp;_nffvid=%2Fadmin%2Fportlets%2Fadmin%2Fsearch%2FSearchPage.faces&amp;_pageLabel=admin_portal_page_client" enctype="application/x-www-form-urlencoded">
+				   <table>		
+				    <tr>
+				    <td><span style="font-size: 11px">Search</span></td>
+					<td>
+						
+						     
+						     
+						<table border="0" id="searchForm:searchSelection" style="font-size: 11px">
+	<tr>
+<td>
+<label><input type="radio" checked name="searchForm:searchSelection" value="U" onclick="radioClicked();"> Users</input></label></td>
+<td>
+<label><input type="radio" name="searchForm:searchSelection" value="C" onclick="radioClicked();"> Clients</input></label></td>
+	</tr>
+</table>
+					</td>
+					<td><input id="searchForm:idTempText" type="text" name="searchForm:idTempText" class="hidden-text-box" onblur="submitForm();" size="1" />
+					</td>
+					</tr>
+					</table>
+					<table>
+					<tr>
+					<td width="180">
+						<div id="inputArea1">
+							
+								
+							<select id="searchForm:idSelectName" name="searchForm:idSelectName" size="1" style="font-size: 11px">	<option value="1">Last Name</option>
+	<option value="2">First Name</option>
+	<option value="3">Email</option>
+	<option value="4">UserName</option>
+	<option value="5">Company</option>
+</select>
+								
+							<input id="searchForm:idInputUserName" type="text" name="searchForm:idInputUserName" value="Staring with" maxlength="30" onblur="restoreTip(this.id, 'Staring with');" onfocus="clearTip(this.id, 'Staring with')" size="8" style="font-size: 11px" />
+						</div>
+						<div id="inputArea2" style="display : none;">
+							
+							<input id="searchForm:idInputClient" type="text" name="searchForm:idInputClient" value="Containing text" maxlength="30" onblur="restoreTip(this.id, 'Containing text'); " onfocus="clearTip(this.id, 'Containing text')" size="25" style="font-size: 11px" />
+						</div>
+					
+					</td>
+					<td>
+						<input type="submit" name="searchForm:_id4" value="Go" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" class="btn" />
+						<input type="submit" name="searchForm:_id5" value="Show" onclick="searchResultsAll(); return false" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" class="btn" />
+						
+					</td>
+					</tr>
+					</table>
+				<input type="hidden" name="searchForm" value="searchForm" /></form>
+							
+				</div>				
+				<div class="findresults" style="width: 420px" id="findresultsUser">
+					<div class="head" style="width: 420px">
+						<h2>0 Matching Users:</h2>
+						<a href="#" onClick="searchResults('find', false, 'findresultsUser'); return false">x Close</a>
+					</div>
+					<div class="results">
+					<div class="list" style="width: 410px;">
+						
+						<div class="data">
+							
+								
+									
+										
+									
+								
+								
+								
+									
+									
+								
+								
+									
+										
+									
+								
+							<table class="grid">
+<tbody>
+</tbody>
+</table>
+						</div>
+						
+					</div>
+					</div>
+					<div class="foot">
+						<div class="icon"><a href="#"><img src="images/icn_xls.gif" alt="" /></a></div>
+						<div class="icon">
+							<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Download</span></span></span>	</a>
+						</div>
+					</div>
+				</div> 
+				 
+				<div class="findresults" style="width: 300px" id="findresultsClient">
+					<div class="head"  style="width: 300px">
+						<h2>0 Matching Clients:</h2>
+						<a href="#" onClick="searchResults('find', false, 'findresultsClient'); return false">x Close</a>
+					</div>
+					<div class="results">
+					<div class="list">
+						<div class="data">
+							
+								
+									
+										
+									
+								
+							<table class="grid">
+<tbody>
+</tbody>
+</table>
+						</div>
+						
+					</div>
+					</div>
+				</div>  
+			                
+				<div class="portletshadow"></div>
+			</div>    
+        
+    </body>
+</html>
+</div>
+    </div>
+    
+</div>
+</td>
+            
+                  </tr>
+                    <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <div
+        
+        class="bea-portal-window"
+        
+        width="100%"
+    >
+        
+<div
+        
+        class="bea-portal-window-titlebar"
+        
+    >
+        <div class="bea-portal-ie-table-buffer-div">
+            <table class="bea-portal-window-titlebar-container" cellspacing="0">
+                <tr>
+                    <td class="bea-portal-window-titlebar-title" nowrap="nowrap"></td>
+                    <td class="bea-portal-window-titlebar-buttons" nowrap="nowrap">
+</td>
+                </tr>
+            </table>
+        </div>
+  </div>
+        
+<div
+            class="bea-portal-window-content"
+            
+        >
+
+<div class="portlet" id="portEventLogPage_portlet">
+    
+		
+   <div class="portletheader">
+		<table>
+			<tr>
+				<td class="title"><a href="#" onClick="portletMinimizeWithContext('/admin', 'EventLogPage_portlet'); resize(); return false;"><img src="images/portlet_arrow_expand.gif" width="8" height="26" alt="" id="imgEventLogPage_portlet" /> <span class="text">Event Log</span></a></td>
+				
+				<td><img src="images/portlet_seperator.gif" width="1" height="11" alt="" /></td>
+				<td><a href="#">?</a></td>					
+			</tr>
+		</table>
+	</div>
+    <div class="portletbody">
+    	<iframe src="admin portlets/eventlog.html" name="EventLogPage_portlet" id="EventLogPage_portlet" frameborder="0" scrolling="no"></iframe>  
+	</div>
+	<div class="portletshadow"></div>
+</div>
+</div>
+    </div>
+    
+</div>
+</td>
+            
+                  </tr>
+                    <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <div
+        
+        class="bea-portal-window"
+        
+        width="100%"
+    >
+        
+<div
+        
+        class="bea-portal-window-titlebar"
+        
+    >
+        <div class="bea-portal-ie-table-buffer-div">
+            <table class="bea-portal-window-titlebar-container" cellspacing="0">
+                <tr>
+                    <td class="bea-portal-window-titlebar-title" nowrap="nowrap"></td>
+                    <td class="bea-portal-window-titlebar-buttons" nowrap="nowrap">
+</td>
+                </tr>
+            </table>
+        </div>
+  </div>
+        
+<div
+            class="bea-portal-window-content"
+            
+        >
+
+<div class="portlet" id="portAccountGroupList_portlet">
+    
+		
+   <div class="portletheader">
+		<table>
+			<tr>
+				<td class="title"><a href="#" onClick="portletMinimizeWithContext('/admin', 'AccountGroupList_portlet'); resize(); return false;"><img src="images/portlet_arrow_expand.gif" width="8" height="26" alt="" id="imgAccountGroupList_portlet" /> <span class="text">Account & Group List</span></a></td>
+				
+				<td><img src="images/portlet_seperator.gif" width="1" height="11" alt="" /></td>
+				<td><a href="#">?</a></td>					
+			</tr>
+		</table>
+	</div>
+    <div class="portletbody">
+    	<iframe src="admin portlets/accountgrplist.html" name="AccountGroupList_portlet" id="AccountGroupList_portlet" frameborder="0" scrolling="no"></iframe>  
+	</div>
+	<div class="portletshadow"></div>
+</div>
+</div>
+    </div>
+    
+</div>
+</td>
+            
+                  </tr>
+                    <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <div
+        
+        class="bea-portal-window"
+        
+        width="100%"
+    >
+        
+<div
+        
+        class="bea-portal-window-titlebar"
+        
+    >
+        <div class="bea-portal-ie-table-buffer-div">
+            <table class="bea-portal-window-titlebar-container" cellspacing="0">
+                <tr>
+                    <td class="bea-portal-window-titlebar-title" nowrap="nowrap"></td>
+                    <td class="bea-portal-window-titlebar-buttons" nowrap="nowrap">
+</td>
+                </tr>
+            </table>
+        </div>
+  </div>
+        
+<div
+            class="bea-portal-window-content"
+            
+        >
+
+<div class="portlet" id="portServiceRepresentatives_portlet">
+    
+		
+   <div class="portletheader">
+		<table>
+			<tr>
+				<td class="title"><a href="#" onClick="portletMinimizeWithContext('/admin', 'ServiceRepresentatives_portlet'); resize(); return false;"><img src="images/portlet_arrow_expand.gif" width="8" height="26" alt="" id="imgServiceRepresentatives_portlet" /> <span class="text">Service Representatives</span></a></td>
+				
+				<td><img src="images/portlet_seperator.gif" width="1" height="11" alt="" /></td>
+				<td><a href="#">?</a></td>					
+			</tr>
+		</table>
+	</div>
+    <div class="portletbody">
+    	<iframe src="admin portlets/service.html" name="ServiceRepresentatives_portlet" id="ServiceRepresentatives_portlet" frameborder="0" scrolling="no"></iframe>  
+	</div>
+	<div class="portletshadow"></div>
+</div>
+</div>
+    </div>
+    
+</div>
+</td>
+            
+                  </tr>
+                    <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <div
+        
+        class="bea-portal-window"
+        
+        width="100%"
+    >
+        
+<div
+        
+        class="bea-portal-window-titlebar"
+        
+    >
+        <div class="bea-portal-ie-table-buffer-div">
+            <table class="bea-portal-window-titlebar-container" cellspacing="0">
+                <tr>
+                    <td class="bea-portal-window-titlebar-title" nowrap="nowrap"></td>
+                    <td class="bea-portal-window-titlebar-buttons" nowrap="nowrap">
+</td>
+                </tr>
+            </table>
+        </div>
+  </div>
+        
+<div
+            class="bea-portal-window-content"
+            
+        >
+
+<div class="portlet" id="portClientNotificationType_1">
+    
+		
+   <div class="portletheader">
+		<table>
+			<tr>
+				<td class="title"><a href="#" onClick="portletMinimizeWithContext('/admin', 'ClientNotificationType_1'); resize(); return false;"><img src="images/portlet_arrow_expand.gif" width="8" height="26" alt="" id="imgClientNotificationType_1" /> <span class="text">Notifications Types</span></a></td>
+				
+				<td><img src="images/portlet_seperator.gif" width="1" height="11" alt="" /></td>
+				<td><a href="#">?</a></td>					
+			</tr>
+		</table>
+	</div>
+    <div class="portletbody">
+    	<iframe src="admin portlets/notificationtypes.html" name="ClientNotificationType_1" id="ClientNotificationType_1" frameborder="0" scrolling="no"></iframe>  
+	</div>
+	<div class="portletshadow"></div>
+</div>
+</div>
+    </div>
+    
+</div>
+</td>
+            
+                  </tr>
+                    <tr>
+    
+            
+            <td class="bea-portal-layout-placeholder-container"
+                
+            >
+<div
+        
+        class="bea-portal-layout-placeholder"
+        
+>
+    
+    <div
+        
+        class="bea-portal-window"
+        
+        width="100%"
+    >
+        
+<div
+        
+        class="bea-portal-window-titlebar"
+        
+    >
+        <div class="bea-portal-ie-table-buffer-div">
+            <table class="bea-portal-window-titlebar-container" cellspacing="0">
+                <tr>
+                    <td class="bea-portal-window-titlebar-title" nowrap="nowrap"></td>
+                    <td class="bea-portal-window-titlebar-buttons" nowrap="nowrap">
+</td>
+                </tr>
+            </table>
+        </div>
+  </div>
+        
+<div
+            class="bea-portal-window-content"
+            
+        >
+
+<div class="portlet" id="portHelpTopic_portlet">
+    
+		
+   <div class="portletheader">
+		<table>
+			<tr>
+				<td class="title"><a href="#" onClick="portletMinimizeWithContext('/admin', 'HelpTopic_portlet'); resize(); return false;"><img src="images/portlet_arrow_expand.gif" width="8" height="26" alt="" id="imgHelpTopic_portlet" /> <span class="text">Help Topics</span></a></td>
+				
+				<td><img src="images/portlet_seperator.gif" width="1" height="11" alt="" /></td>
+				<td><a href="#">?</a></td>					
+			</tr>
+		</table>
+	</div>
+    <div class="portletbody">
+    	<iframe src="admin portlets/help.html" name="HelpTopic_portlet" id="HelpTopic_portlet" frameborder="0" scrolling="no"></iframe>  
+	</div>
+	<div class="portletshadow"></div>
+</div>
+</div>
+    </div>
+    
+</div>
+</td>
+            
+    
+        </tr>
+    </table>
+    
+
+</div>
+</td>
+            
+    
+        </tr>
+    
+    </table>
+    
+
+
+    </div>
+    
+
+        </div>
+        
+    </div>
+    
+
+<div id="onfooter">
+<div id="footer">	
+	<div class="info">
+		<div class="floatleft">Citigroup Global Prime Brokerage
+		<div class="clear"></div>
+		<a href="#">Electronic Access Agreement</a></div>
+		<div class="copyright">
+			<img src="images/logo_membercitigroup.gif" width="98" height="12" alt="" />
+			<div class="clear"></div>
+			<a href="#">Terms, conditions, and small print</a>
+			<div class="clear"></div>
+			&copy; 2006 Citigroup
+		</div>
+	</div>
+</div>
+
+    </div>
+        </div>
+    
+        </div></body>
+</html>

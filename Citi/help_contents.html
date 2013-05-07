@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link href="styles/help.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+
+function itemChange (row) {		
+	temp = document.getElementById('bravo').rows
+	
+	for (i = 0; i < temp.length; ++i) {
+		if (i != row) {
+			if (temp[i].cells[0].className=="itemOn") {				
+				temp[i].cells[0].className = "";
+			}
+		} else {
+			//alert(temp[i].cells[0].childNodes[0].nodeName);
+			temp[i].cells[0].className="itemOn";
+		}
+	}
+}
+
+</script>
+</head>
+
+<body>
+	<div class="helpcontent">
+	<table id="bravo">
+	<tr>
+	<th class="header">Help Topics</th>	
+	</tr>
+	<tr>
+	<th class="divider">General Help</th>
+	</tr>
+	<tr>
+	<td class="itemOn"><a href="help_contents2.html" target="mainFrame" onclick="itemChange(2)">Editing Your Profile</a></td>
+	</tr>
+	<tr>
+	<td><a href="#" onclick="itemChange(3); return false;">Customizing A Page</a></td>
+	</tr>
+	<tr>
+	<th class="divider">Page Modules</th>
+	</tr>
+	<tr>
+	<td><a href="#" onclick="itemChange(5); return false;">Reports &amp; Data</a></td>
+	</tr>
+	<tr>
+	<td><a href="#" onclick="itemChange(6); return false;">Notifications</a></td>
+	</tr>
+	<tr>
+	<td class="subhead">Summary Modules</td>
+	</tr>
+	<tr>
+	<td><a href="#" onclick="itemChange(8); return false;">[Module Name]</a></td>
+	</tr>
+	<tr>
+	<td><a href="#" onclick="itemChange(9); return false;">[Module Name]</a></td>
+	</tr>
+	<tr>
+	<td class="subhead">Link &amp; Content Modules</td>
+	</tr>
+	<tr>
+	<td><a href="#" onclick="itemChange(11); return false;">[Module Name]</a></td>
+	</tr>
+	<tr>
+	<td><a href="#" onclick="itemChange(12); return false;">[Module Name]</a></td>
+	</tr>	
+	</tr>
+	</table>
+	</div>
+</body>
+</html>

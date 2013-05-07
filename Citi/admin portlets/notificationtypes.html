@@ -1,0 +1,146 @@
+
+
+
+
+
+
+<html>
+<head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<link href="../styles/admin.css" type="text/css" rel="stylesheet" />
+<script src="../scripts/general.js" type="text/javascript"></script>
+<script src="../scripts/resizer.js" type="text/javascript"></script>
+<script src="../scripts/forms.js" type="text/javascript"></script>
+
+ 
+</head>
+<body id="admin" onload="resize();">
+
+   	<div id="loading">
+		<div class="loader">
+			<div class="floatleft"><img src="/admin//framework/skins/CitiGPBAdmin/images/icn_loading.gif"  alt="" /></div>
+			<div class="text">Loading Notifications Types</div>
+		</div>
+	</div>
+
+	<div id="page">
+	
+		<form id="notifyID" method="post" action="/admin/portlets/admin/clientnotifications/ClientNotificationType.faces" enctype="application/x-www-form-urlencoded">
+	
+		
+		<table class="head" cellspacing="0">
+			<tr>
+				<th>Description</th>
+			</tr>
+		</table>
+		
+		<div class="data" style="height: 120px;">
+
+			
+						
+								
+								
+						
+								
+						
+			<table class="grid" cellspacing="0">
+<tbody>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:0:_id2" /></td>
+<td class="notify-column-2">Boxed Position</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:1:_id2" /></td>
+<td class="notify-column-2">Corporate Actions - Amendments</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:2:_id2" /></td>
+<td class="notify-column-2">Corporate Actions - Announcements</td>
+
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:3:_id2" /></td>
+<td class="notify-column-2">Corporate Actions - Mandatory</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:4:_id2" /></td>
+<td class="notify-column-2">Corporate Actions - Voluntary</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:5:_id2" /></td>
+<td class="notify-column-2">Cash Transfer Break</td>
+</tr>
+<tr>
+
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:6:_id2" /></td>
+<td class="notify-column-2">Dividend Announceme</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:7:_id2" /></td>
+<td class="notify-column-2">DTC Trade Affirmation</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:8:_id2" /></td>
+<td class="notify-column-2">Margin Fed Call</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:9:_id2" /></td>
+<td class="notify-column-2">Margin House Call</td>
+
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:10:_id2" /></td>
+<td class="notify-column-2">Margin Requirement</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:11:_id2" /></td>
+<td class="notify-column-2">Trade Fail</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:12:_id2" /></td>
+<td class="notify-column-2">Option Assignment</td>
+</tr>
+<tr>
+
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:13:_id2" /></td>
+<td class="notify-column-2">Option Expiration</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:14:_id2" /></td>
+<td class="notify-column-2">Option Exercise</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:15:_id2" /></td>
+<td class="notify-column-2">Corporate Actions - Proxy</td>
+</tr>
+<tr>
+<td class="notify-column-1"><input type="checkbox" name="notifyID:_id0:16:_id2" /></td>
+<td class="notify-column-2">Trade Break</td>
+
+</tr>
+</tbody>
+</table>
+
+		</div>
+	
+		<div class="clear"></div>
+		
+		<div class="footer">
+			<input id="notifyID:idsavenotify" type="submit" name="notifyID:idsavenotify" value="Save Changes" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" class="btn" />
+			<span class="textright">*Client default</span></div>
+		</div>
+
+		
+		<div class="portletshadow"></div>
+		
+		<input type="hidden" name="notifyID" value="notifyID" /></form>
+		
+	</div>
+
+       <script>
+       			clearLoadingBar();
+       </script>
+
+
+</body>
+</html>

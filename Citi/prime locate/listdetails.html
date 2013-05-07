@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<link href="../styles/calendar.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript" src="../scripts/calendar.js"></script>
+<body id="portlet" onload="clearLoadingBar(); resize();">
+
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Important Messages</div>
+		</div>
+	</div>
+	<div id="page">
+		<div class="box" style="width: 635px">
+		
+			<div class="shortsale">
+				<input type="radio" value="" name="shortsale" class="rdo" checked="checked" /> <div class="radio">Request Locate</div>
+				<div class="clear"></div>
+				<input type="radio" value="" name="shortsale" class="rdo" /> <div class="radio">Check Supply</div>
+				<div class="clear"></div>
+				<input type="checkbox" value="" name="level" class="chk" /> <div class="radio">Indicative Level</div>
+				<div class="clear"></div>
+				<input type="radio" value="" name="show" class="rdo" /> <div class="radio">Show Quantity</div>
+				<div class="clear"></div>
+				<input type="radio" value="" name="show" class="rdo" /> <div class="radio">Show Amount</div>
+			</div>
+			<div class="shortsale" style="margin-top: 10px">
+				<div class="name">List Name:
+				<div class="clear"></div>
+				<input type="text" class="" /></div> 
+				<div class="name">Default Quantity:
+				<div class="clear"></div>
+				<input type="text" class="" /></div> 
+				<div class="name">Default Currency:
+				<div class="clear"></div>
+				<select>
+				<option></option>
+				</select></div>
+				
+				<div class="clear"></div>			
+				
+				<div class="name">Schedule Runtime:
+				<div class="clear"></div>
+				<select>
+				<option>00</option>
+				<option>01</option>
+				<option>02</option>
+				<option>03</option>
+				<option>04</option>
+				<option>05</option>
+				<option>06</option>
+				<option>07</option>
+				<option>08</option>
+				<option>09</option>				
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+				<option>13</option>
+				<option>14</option>
+				<option>15</option>
+				<option>16</option>
+				<option>17</option>
+				<option>18</option>
+				<option>19</option>
+				<option>20</option>
+				<option>21</option>
+				<option>22</option>
+				<option>23</option>
+				</select>
+				<div class="colon">:</div>
+				<select>				
+				<option>00</option>
+				<option>05</option>
+				<option>10</option>
+				<option>15</option>
+				<option>20</option>
+				<option>25</option>
+				<option>30</option>
+				<option>35</option>
+				<option>40</option>
+				<option>45</option>
+				<option>50</option>
+				<option>55</option>
+				</select>
+				</div> 
+				<div class="name">Frequency:
+				<div class="clear"></div>
+				<select>
+				<option>Monthly</option>
+				<option>Weekly</option>
+				<option>Daily</option>
+				</select>
+				<div class="colon"><a href="#" onclick="showCal('','',document.getElementById('monthdate'),5,false,9,event,'belowright');return false"><img src="../images/icon_cal.gif" alt="" id="dateFromImg" /></a></div>
+				<input type="text" id="monthdate" style="width: 15px; margin-right: 5px; border: none;" disabled="disabled" />
+				<input type="checkbox" value="" class="chk"/>
+				<div class="colon">Hold</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="tableset" style="height: 80px; width: 635px;">	
+		<table class="list">
+		<tr>
+		<th width="200">Destination</th>
+		<th width="30">HTML</th>
+		<th width="405">CSV</th>
+		</tr>
+		<tr>
+		<td>ahatzo@yahoo.com</td>
+		<td><input type="checkbox" value="" /></td>
+		<td><input type="checkbox" value="" /></td>
+		</tr>
+		<tr>
+		<td>alfred.ierardi@Citigroup.com</td>
+		<td><input type="checkbox" value="" /></td>
+		<td><input type="checkbox" value="" /></td>
+		</tr>
+		<tr>
+		<td>a.user@gmail.com</td>
+		<td><input type="checkbox" value="" /></td>
+		<td><input type="checkbox" value="" /></td>
+		</tr>
+		<tr>
+		<td>a.user@gmail.com</td>
+		<td><input type="checkbox" value="" /></td>
+		<td><input type="checkbox" value="" /></td>
+		</tr>
+		<tr>
+		<td>ahatzo@yahoo.com</td>
+		<td><input type="checkbox" value="" /></td>
+		<td><input type="checkbox" value="" /></td>
+		</tr>
+		<tr>
+		<td>alfred.ierardi@Citigroup.com</td>
+		<td><input type="checkbox" value="" /></td>
+		<td><input type="checkbox" value="" /></td>
+		</tr>
+		<tr>
+		<td>a.user@gmail.com</td>
+		<td><input type="checkbox" value="" /></td>
+		<td><input type="checkbox" value="" /></td>
+		</tr>
+		<tr>
+		<td>a.user@gmail.com</td>
+		<td><input type="checkbox" value="" /></td>
+		<td><input type="checkbox" value="" /></td>
+		</tr>
+		</table>
+		</div>
+	
+	
+		
+	
+	
+	</div>
+</body>
+</html>
+
+
+<div id="cal">
+	<div id="calbody">
+		<div id="caltopbar">
+			<table id="calnav">
+			<tr>
+			<td><a href="#" id="calnavPM"><img src="../images/arrow_calleft.gif" alt="" /></a></td>
+			<td id="calnavMY"></td>
+			<td><a href="#" id="calnavNM"><img src="../images/arrow_calright.gif" alt="" /></a></td>
+			</tr>
+			</table>
+		</div>
+		<table id="caltbl">
+			<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+			<tbody id="caltblbody"></tbody>
+			<tr>
+			<td colspan="7" id="close" onclick="hideCal()">x Close</td>
+			</tr>
+		</table>
+		
+		<div id="today"><a href="#" onclick="" id="selecttoday"></a></div>
+	</div>
+</div>	

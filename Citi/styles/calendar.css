@@ -1,0 +1,141 @@
+/**** Calendar styles****/
+#cal {
+	width: 175px;
+	position: absolute;
+	z-index: 1000;
+	top: 0px;
+	left: 0px;
+	padding: 0px;
+	background-color: #fff;
+	font: normal 10px arial, helvetica, sans-serif;
+	display: none;
+	}
+	
+#calbody {
+	width: 100%;
+	padding: 5px;
+	border: solid 1px #C5C7DC;
+	background-color: #fff;
+	}
+	
+	/* Fix IE. Hide from IE Mac \*/
+	* html #cal { padding: 0px 0px 0px 0px; }
+	* html #calbody { padding: 5px; }
+	/* End */
+	
+#caltopbar {
+	width: 100%;
+	font-size: 9px;
+	font-weight: bold;
+	background-image: url(../images/bg_calheader.gif);
+	color: #fff;
+	padding: 0;
+	text-align: right;
+	
+	}
+
+	
+#close {
+	padding: 0 0 7px 0;
+	cursor: pointer;
+	vertical-align: bottom;
+	font: normal 9px verdana, helvetica, sans-serif;
+	color: #666666;
+	}
+		
+		/* Fix IE. Hide from IE Mac \*/
+		* html #close { padding: 0; }
+		/* End */
+		
+#calnav { 
+	width: 100%;
+	color: #5190CD;
+	font: bold 14px Arial;
+	padding: 0;
+	border: solid 1px #C5C7DC;
+	}
+	
+#calnav td {
+	text-align: center;
+	font-weight: bold;
+	height: 18px;
+	_height: 16px;
+	}
+	
+#calnav a {
+	text-decoration:none;
+	}
+	
+#calnavPM { 
+	width: 10%;
+	padding: 0px 5px 0px 0px; 
+	background: url('../imgs/icon_leftarrow.gif') no-repeat center center; 
+	}
+	
+#calnavNM { 
+	width: 10%;
+	padding: 0px 5px 0px 0px; 
+	background: url('../imgs/icon_rightarrow.gif') no-repeat center center;
+	}
+	
+#calnavMY { width: 82% }
+
+#caltbl {
+	margin: 0;
+	padding: 0;
+	border-left: solid 1px #91b0d5;
+	border-right: solid 1px #91b0d5;
+	border-bottom: solid 1px #91b0d5;
+	width: 100%;
+	color: #666666;
+}
+
+#caltbl a, #caltbl a:visited, #caltbl a:active, #caltbl a:link {
+	text-decoration:underline;
+	color: #000000;
+	}
+	
+#caltbl a:hover {
+	text-decoration:underline;
+	color: #FF6600;
+	}
+
+#caltbl td {
+	font: normal 10px arial, helvetica, sans-serif;
+	padding: 1px 2px 0px 0px;
+	text-align: right;
+	}
+	
+#caltbl th {
+	font: bold 9px verdana, helvetica, sans-serif;
+	padding: 1px 0 0px 12px;
+	margin: 0 5px 0 0;
+	color: #5190CD;
+	}
+	
+#today { 
+	text-align: center;
+	}
+	
+#cal table { 
+	font: normal 10px arial, helvetica, sans-serif;
+	border-spacing: 0;
+	width: 100%;
+	border-collapse: collapse;	
+	}
+	
+#cal img {
+	border: none;
+	vertical-align: middle;
+	}
+	
+#cal iframe {
+	width: 100%;
+	padding: 0; 
+	margin: 0; 
+	border: none;
+	}
+	
+#cal select, #cal input {
+	font: normal 10px arial, helvetica, sans-serif;
+	}

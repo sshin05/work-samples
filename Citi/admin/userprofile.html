@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<body id="admin" onload="clearLoadingBar(); resize();">
+	
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading User Profile</div>
+		</div>
+	</div>
+	<div id="page">
+		<div class="header">
+			<input type="submit" value="Simulate View" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+			<input type="submit" value="Clone Settings" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+			<input type="submit" value="Reset Password" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" onclick="unhide('user');" />
+			<input type="submit" value="Delete User" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+			<input type="submit" value="Add Top Account" class="btn" onclick="openwin('topaccounts.html','accounts',300,300); return false" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		</div>	
+		
+		<div class="profile">
+			<div class="leftcol">
+				<span class="red">*</span> Required Fields
+				
+				<div class="textfield">
+					First Name <span class="red">*</span>
+					<div class="clear"></div>
+					<input type="text" />
+				</div>
+				
+				<div class="textfield">
+					Last Name <span class="red">*</span>
+					<div class="clear"></div>
+					<input type="text" />
+				</div>
+				<div class="clear"></div>
+				
+				<div class="textfield">
+					Username <span class="red">*</span>
+					<div class="clear"></div>
+					<input type="text" />
+				</div>
+				
+				<div class="textfield">
+					Email <span class="red">*</span>
+					<div class="clear"></div>
+					<input type="text" />
+				</div>
+				<div class="clear"></div>
+				
+				<div class="textfield">
+					Company Name
+					<div class="clear"></div>
+					<input type="text" style="width: 200px" />
+				</div>
+				<div class="clear"></div>
+							
+				<div class="textfield">
+					Phone
+					<div class="clear"></div>
+					<input type="text" />
+				</div>
+				
+				<div class="textfield">
+					Mobile
+					<div class="clear"></div>
+					<input type="text" />
+				</div>			
+				
+				<div class="textfield">
+					Fax
+					<div class="clear"></div>
+					<input type="text" />
+				</div>
+				<div class="clear"></div>
+				
+				<div class="textfield">
+					Country
+					<div class="clear"></div>
+					<select>
+						<option>Japan</option>
+						<option>USA</option>
+					</select>
+				</div>		
+				
+				<div class="textfield">
+					Time Zone
+					<div class="clear"></div>
+					<select>
+						<option>US Eastern</option>
+						<option>US Central</option>
+					</select>
+				</div>		
+				
+			</div>
+			<div class="rightcol">
+				<div class="area">
+					<h3>Regions</h3> <input type="radio" value="" /> <div class="text">IPB</div> <input type="radio" value="" /><div class="text">US</div> <input type="radio" value="" /> <div class="text">Both</div>
+				</div>
+				<div class="clear"></div>
+				<div class="area" style="height: 94px">
+					<h3>Roles</h3>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text">Trader</div><div class="floatright"><a href="#" onclick="openwin('../desc_window.html','ques',700,400); return false" class="underline" target="_parent">?</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text">Operations</div><div class="floatright"><a href="#" onclick="openwin('../desc_window.html','ques',700,400); return false" class="underline">?</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text">Client Administrator</div><div class="floatright"><a href="#" onclick="openwin('../desc_window.html','ques',700,400); return false" class="underline">?</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text">Fund Adminsitrator</div><div class="floatright"><a href="#" onclick="openwin('../desc_window.html','ques',700,400); return false" class="underline">?</a></div>
+	<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text">Client Administrator</div><div class="floatright"><a href="#" onclick="openwin('../desc_window.html','ques',700,400); return false" class="underline">?</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text">Fund Adminsitrator</div><div class="floatright"><a href="#" onclick="openwin('../desc_window.html','ques',700,400); return false" class="underline">?</a></div>
+				</div>
+				<div class="clear"></div>
+				<div class="area" style="height: 94px">
+					<h3>Top Accounts</h3>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text"><a href="#" class="underline">Acme Europe</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text"><a href="#" class="underline">Acme USA</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text"><a href="#" class="underline">Acme Europe</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text"><a href="#" class="underline">Acme USA</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text"><a href="#" class="underline">Acme Europe</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text"><a href="#" class="underline">Acme USA</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text"><a href="#" class="underline">Acme Europe</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text"><a href="#" class="underline">Acme USA</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text"><a href="#" class="underline">Acme Europe</a></div>
+					<div class="clear"></div>
+					<input type="checkbox" value="" /> <div class="text"><a href="#" class="underline">Acme USA</a></div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="footer">
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Save Changes</span></span></span></a>
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Cancel</span></span></span></a>
+		</div>
+		
+		<iframe>
+		<div id="user">
+			<div class="header">
+				<div class="floatleft bold">Reset Password</div>
+				<div class="floatright"><a href="#" onClick="hide('user'); return false" class="close">x Close</a></div>
+			</div>
+			
+			<div class="body" id="body1">
+				<div class="error">Error line</div>
+				<div class="clear"></div>
+				
+				<form>
+				<div class="inputarea">
+					<div class="text textwidth">New Password</div>
+					<input type="text" />
+				</div>
+				
+				<div class="clear"></div>
+				<div class="inputarea">
+					<div class="text textwidth">Retype Password</div>
+					<input type="text" />
+				</div>
+				</form>
+				
+				<div class="clear"></div>
+				<div class="controls2">
+					<input type="submit" value="Change Password" class="btn" onclick="hide('body1'); unhide('body2');" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+					<input type="submit" value="Cancel" class="btn" onclick="hide('user');" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+				</div>
+			</div>
+			
+			<div class="body" id="body2">
+				<div class="inputarea">
+					<div class="text aligncenter">Password has been reset.</div>			
+					<div class="controls2">
+					<a href="#" class="button" onclick="hide('user');"><span class="borderleft"><span class="borderright"><span class="noarrow">Close</span></span></span></a>
+					</div>		
+				</div>
+			</div>			
+		</div>
+		</iframe>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<body id="portlet" onload="clearLoadingBar(); portletTabSwitch('tab0','tabcontent',2); resize();">
+
+	<div id="loading">
+		<div class="loader">
+			<div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div>
+			<div class="text">Loading Trade Reconciliation</div>
+		</div>
+	</div>
+
+	<div id="page">	
+
+		<div class="box">
+			<div class="tabs">
+
+				<a href="#" onClick="portletTabSwitch('tab0','tabcontent', 2); return false" class="tabon" id="tab0">US</a>
+				<div class="tabgap"></div>
+				<a href="#" onClick="portletTabSwitch('tab1','tabcontent', 2); return false" class="taboff" id="tab1">IPB</a>
+				<div class="clear"></div>
+
+				<div class="tabcontent">
+					<div class="box">
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="../DTC_Trade_Exceptions.html" target="_parent">DTC Trade Exceptions</a></div>
+						<div class="clear"></div>
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="../trade_activity.html" target="_parent">Trade Upload Search</a></div>
+						<div class="clear"></div>
+						<div class="icn"><img src="../images/icn_ie.gif" alt="" /></div> <div class="icnline"><a href="#">Modified Trade Blotter</a></div>
+						<div class="clear"></div>
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="../econfirms.html" target="_parent">E-Confirms</a></div>
+					</div>
+					<div class="upload bordertop noborderbottom">
+						<div class="text">Position Upload:</div> <input type="text" class="tf" /> <a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Browse</span></span></span></a>
+						<div class="clear"></div>
+						<a href="#" onclick="unhide('iframebar1'); resize();" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Upload</span></span></span></a>
+					</div>					
+					<div class="iframebar" id="iframebar1" style="padding-top: 5px;">
+						<iframe src="fileupload.html" frameborder="0" scrolling="no" class="mesg"></iframe>
+					</div>
+					
+				</div>
+
+				<div class="tabcontent">
+					<div class="box">
+						<span class="bold">Trade Activity</span>
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="../IPB_Trade_Exceptions.html" target="_parent">Trade Exceptions</a>: <a href="#" target="_parent">Failing</a> | <a href="#" target="_parent">Pending</a></div>
+						<div class="clear"></div>
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="../IPB_Trade_Activity.html" target="_parent">Settled Today</a></div>
+						<div class="clear"></div>
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="../IPB_Trade_Activity.html" target="_parent">All Trade Activity</a></div>
+						<div class="clear"></div>
+						<div class="bordertop noborderbottom" style="width: 97%; padding-top: 5px;">
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="../trade_upload_status_details.html" target="_parent">Trade Upload Search/Modify/Cancel</a></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

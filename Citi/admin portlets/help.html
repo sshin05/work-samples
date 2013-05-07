@@ -1,0 +1,143 @@
+
+
+
+
+
+<html>
+<head>
+	
+	
+	<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+	<script src="../scripts/general.js" type="text/javascript"></script>
+	<script src="../scripts/resizer.js" type="text/javascript"></script>
+
+</head>
+
+<script type="text/javascript">
+
+function changeImg(elem1)  {
+   //var elem1 =window.event.srcElement;
+	if (elem1 == null)
+    	return;    
+	if (elem1.src.indexOf("plus.gif") > 0) {
+    	elem1.src = imgLib["minus"].src;
+    	elem1.title = "Collapse";
+   	} else {
+    	elem1.src = imgLib["plus"].src;
+    	elem1.title = "Expand";
+   	}
+}
+
+function expand(strTag, strAttribute, strAttrValue, mainValue) {
+	var elem = document.getElementsByTagName(strTag);
+	for (var i =0;i<elem.length;i++) {
+  		if(elem[i].getAttribute(strAttribute) == strAttrValue) {
+		var main = document.getElementById(mainValue);
+			if (elem[i].style.display == 'none') {
+				if (isIE) {
+    				elem[i].style.display = 'block';
+				} else {
+					elem[i].style.display = 'table-row';
+				}
+				main.style.backgroundColor = '#D6E7F7';
+				resize();
+			} else {
+				elem[i].style.display = 'none';
+				main.style.backgroundColor = '#FFFFFF'; 
+				resize();
+			}
+			
+  		}
+ 	}
+}
+
+var imgLib = new Array();
+imgLib["minus"] = new Image(12, 12);
+imgLib["minus"].src = "/admin/framework/skins/CitiGPBAdmin/images/minus.gif";
+imgLib["plus"] = new Image(12, 12);
+imgLib["plus"].src = "/admin/framework/skins/CitiGPBAdmin/images/plus.gif";
+
+function collapse(sid) {
+	changeImg(document.getElementById('img'+ sid));
+	expand('tr', 'id', 'row' + sid, 'main' + sid);
+}
+
+</script>
+
+<body id="admin" onload="clearLoadingBar(); resize();">
+
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Help Topics</div>
+		</div>
+	</div>
+
+	<div id="page">
+		
+		<form id="helpForm" method="post" action="/admin/portlets/admin/help/HelpTopicPage.faces" enctype="application/x-www-form-urlencoded">
+
+
+		<table class="help" cellspacing="0">	
+			<tr id="mainIdEntitle">
+				<td width="11" class="icn"><a href="#" onclick="this.blur(); collapse('IdEntitle');"><img src="../images/plus.gif" alt="" id="imgIdEntitle" /></a></td>
+				<td>Portal Entitlements</td>
+			</tr>	
+				<tr id="rowIdEntitle" style="display:none;">
+
+					<td class="content">&nbsp;</td>
+					<td class="content">Use this tool to show or hide a specific module or page from the users view</td>
+				</tr>
+
+			<tr id="mainIdContentMask"> 
+				<td width="11" class="icn"><a href="#" onclick="this.blur(); collapse('IdContentMask');"><img src="../images/plus.gif" alt="" 
+				id="imgIdContentMask"/></a></td>
+				<td>Content Masks</td>
+			</tr>
+				<tr id="rowIdContentMask" style="display:none;">
+
+					<td class="content">&nbsp;</td>
+					<td class="content">--No help Available--</td>
+				</tr>
+
+			<tr id="mainIdCloneUser"> 
+				<td width="11" class="icn"><a href="#" onclick="this.blur(); collapse('IdCloneUser');"><img src="../images/plus.gif" alt="" 
+				id="imgIdCloneUser"/></a></td>
+				<td>Cloning User Profiles</td>
+			</tr>
+				<tr id="rowIdCloneUser" style="display:none;">
+
+					<td class="content">&nbsp;</td>
+					<td class="content">--No help Available--</td>
+				</tr>
+			
+			<tr id="mainIdSimulateUser"> 
+				<td width="11" class="icn"><a href="#" onclick="this.blur(); collapse('IdSimulateUser');"><img src="../images/plus.gif" alt="" 
+				id="imgIdSimulateUser"/></a></td>
+				<td>Simualting User Views</td>
+			</tr>
+				<tr id="rowIdSimulateUser" style="display:none;">
+
+					<td class="content">&nbsp;</td>
+					<td class="content">--No help Available--</td>
+				</tr>
+	
+			<tr id="mainIdDeleteUser"> 
+				<td width="11" class="icn"><a href="#" onclick="this.blur(); collapse('IdDeleteUser');"><img src="../images/plus.gif" alt="" 
+				id="imgIdDeleteUser"/></a></td>
+				<td>Deleting Users</td>
+			</tr>
+				<tr id="rowIdDeleteUser" style="display:none;">
+
+					<td class="content">&nbsp;</td>
+					<td class="content">--No help Available--</td>
+				</tr>
+
+
+		</table>
+
+		<input type="hidden" name="helpForm" value="helpForm" /></form>
+
+	</div>
+
+
+</body>
+</html>

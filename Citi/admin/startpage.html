@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<body id="admin" onload="clearLoadingBar(); resize();">
+	
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading New User</div>
+		</div>
+	</div>
+	<div id="page">
+		<form>
+		<div class="line">			
+			<input type="submit" value="Set all to 'Approve'" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />			
+		</div>
+		<table class="head" cellspacing="0">
+		<tr>
+		<th width="72">User</th>
+		<th width="72">Date</th>
+		<th width="102">Submitted By</th>
+		<th width="100">Client</th>
+		<th width="218">Approve/Reject</th>
+		</tr>
+		</table>
+		<div class="data">
+		<table class="grid" cellspacing="0">
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td width="78"><a href="#" class="underline">Username</a></td>
+		<td width="78">9-Nov-06</td>
+		<td width="108"><a href="#" class="underline">User Last Name</a></td>
+		<td width="105"><a href="#" class="underline">top account name</a></td>
+		<td width="220"><input type="radio" name="choice1" value="" onclick="hide('textbox1');" /> Ignore <input type="radio" name="choice1" value="" onclick="hide('textbox1');" /> Approve <input type="radio" name="choice1" value="" onclick="unhide('textbox1');" /> Reject
+		<input type="text" id="textbox1" class="reject" />
+		</td>
+		</tr>
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td><a href="#" class="underline">Username</a></td>
+		<td>9-Nov-06</td>
+		<td><a href="#" class="underline">User Last Name</a></td>
+		<td><a href="#" class="underline">top account name</a></td>
+		<td><input type="radio" name="choice2" value="" onclick="hide('textbox2');"  /> Ignore <input type="radio" name="choice2" value="" onclick="hide('textbox2');"  /> Approve <input type="radio" name="choice2" value="" onclick="unhide('textbox2');" /> Reject
+		<input type="text" id="textbox2" class="reject" />
+		</td>
+		</tr>
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td ><a href="#" class="underline">Username</a></td>
+		<td>9-Nov-06</td>
+		<td><a href="#" class="underline">User Last Name</a></td>
+		<td><a href="#" class="underline">top account name</a></td>
+		<td><input type="radio" name="choice3" value="" onclick="hide('textbox3');"  /> Ignore <input type="radio" name="choice3" value="" onclick="hide('textbox3');"  /> Approve <input type="radio" name="choice3" value="" onclick="unhide('textbox3');" /> Reject
+		<input type="text" id="textbox3" class="reject" />
+		</td>
+		</tr>
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td ><a href="#" class="underline">Username</a></td>
+		<td>9-Nov-06</td>
+		<td><a href="#" class="underline">User Last Name</a></td>
+		<td><a href="#" class="underline">top account name</a></td>
+		<td><input type="radio" name="choice4" value="" onclick="hide('textbox4');"  /> Ignore <input type="radio" name="choice4" value="" onclick="hide('textbox4');"  /> Approve <input type="radio" name="choice4" value=""  onclick="unhide('textbox4');"/> Reject
+		<input type="text" id="textbox4" class="reject" />
+		</td>
+		</tr>
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td ><a href="#" class="underline">Username</a></td>
+		<td>9-Nov-06</td>
+		<td><a href="#" class="underline">User Last Name</a></td>
+		<td><a href="#" class="underline">top account name</a></td>
+		<td><input type="radio" name="choice5" value="" onclick="hide('textbox5');"  /> Ignore <input type="radio" name="choice5" value="" onclick="hide('textbox5');"  /> Approve <input type="radio" name="choice5" value="" onclick="unhide('textbox5');" /> Reject
+		<input type="text" id="textbox5" class="reject" />
+		</td>
+		</tr>
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td ><a href="#" class="underline">Username</a></td>
+		<td>9-Nov-06</td>
+		<td><a href="#" class="underline">User Last Name</a></td>
+		<td><a href="#" class="underline">top account name</a></td>
+		<td><input type="radio" name="choice6" value="" onclick="hide('textbox6');"  /> Ignore <input type="radio" name="choice6" value="" onclick="hide('textbox6');"  /> Approve <input type="radio" name="choice6" value="" onclick="unhide('textbox6');" /> Reject
+		<input type="text" id="textbox6" class="reject" />
+		</td>
+		</tr>
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td ><a href="#" class="underline">Username</a></td>
+		<td>22-Oct-06</td>
+		<td><a href="#" class="underline">User Last Name</a></td>
+		<td><a href="#" class="underline">top account name</a></td>
+		<td><input type="radio" name="choice7" value="" onclick="hide('textbox7');"  /> Ignore <input type="radio" name="choice7" value="" onclick="hide('textbox7');"  /> Approve <input type="radio" name="choice7" value="" onclick="unhide('textbox7');" /> Reject
+		<input type="text" id="textbox7" class="reject" />
+		</td>
+		</tr>
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td ><a href="#" class="underline">Username</a></td>
+		<td>22-Oct-06</td>
+		<td><a href="#" class="underline">User Last Name</a></td>
+		<td><a href="#" class="underline">top account name</a></td>
+		<td><input type="radio" name="choice8" value="" onclick="hide('textbox8');"  /> Ignore <input type="radio" name="choice8" value="" onclick="hide('textbox8');"  /> Approve <input type="radio" name="choice8" value="" onclick="unhide('textbox8');" /> Reject
+		<input type="text" id="textbox8" class="reject" />
+		</td>
+		</tr>
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td ><a href="#" class="underline">Username</a></td>
+		<td>22-Oct-06</td>
+		<td><a href="#" class="underline">User Last Name</a></td>
+		<td><a href="#" class="underline">top account name</a></td>
+		<td><input type="radio" name="choice9" value="" onclick="hide('textbox9');"  /> Ignore <input type="radio" name="choice9" value="" onclick="hide('textbox9');"  /> Approve <input type="radio" name="choice9" value="" onclick="unhide('textbox9');" /> Reject
+		<input type="text" id="textbox9" class="reject" />
+		</td>
+		</tr>
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td ><a href="#" class="underline">Username</a></td>
+		<td>22-Oct-06</td>
+		<td><a href="#" class="underline">User Last Name</a></td>
+		<td><a href="#" class="underline">top account name</a></td>
+		<td><input type="radio" name="choice10" value="" onclick="hide('textbox10');"  /> Ignore <input type="radio" name="choice10" value="" onclick="hide('textbox10');"  /> Approve <input type="radio" name="choice10" value="" onclick="unhide('textbox10');" /> Reject
+		<input type="text" id="textbox10" class="reject" />
+		</td>
+		</tr>
+		<tr onmouseover="this.className='hov'" onmouseout="this.className=''">
+		<td ><a href="#" class="underline">Username</a></td>
+		<td>22-Oct-06</td>
+		<td><a href="#" class="underline">User Last Name</a></td>
+		<td><a href="#" class="underline">top account name</a></td>
+		<td><input type="radio" name="choice11" value="" onclick="hide('textbox11');"  /> Ignore <input type="radio" name="choice11" value="" onclick="hide('textbox11');"  /> Approve <input type="radio" name="choice11" value="" onclick="unhide('textbox11');" /> Reject
+		<input type="text" id="textbox11" class="reject" />
+		</td>
+		</tr>
+		</table>
+		</div>
+		
+		<div class="footer">			
+			<input type="submit" value="Submit" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<script language="Javascript">
+<!--
+
+numMenus = 3;
+document.onmouseover = hideAllMenusTest;
+var menuActive = new Array(numMenus);
+var timeOn = null;
+
+function showMenuTest(menuNumber, eventObj, labelID) {
+    hideAllMenusTest();
+	
+	eventObj.cancelBubble = true;
+    var menuId = 'myMenu' + menuNumber;
+    if(changeObjectVisibility(menuId, 'visible')) {
+		return true;
+    } else {
+		return false;
+    }
+}
+
+function hideAllMenusTest() {
+    for(counter = 1; counter <= numMenus; counter++) {
+		changeObjectVisibility('myMenu' + counter, 'hidden');
+    }
+	hideAllMenus();
+}
+
+function menuOverTest() {
+	clearTimeout(timeOn)
+}
+
+function menuOutTest() {
+	if(document.layers) {
+ 		timeOn = setTimeout("hideAllMenusTest()", 400)
+	}
+}
+
+function hideAllMenus() {
+    for(counter = 1; counter <= numMenus; counter++) {
+		if (menuActive[counter] == true) {
+			changeObjectVisibility('menu' + counter, 'hidden');
+			menuActive[counter] = false;
+			if (imageMenu[counter] == false) {				
+				changeBGColour('colourBox'+counter, offColours[counter])
+				if (!ns4) {
+					if (tier[counter] > 0) changeClass('menuLink'+counter, menuItemClass);
+					else changeClass('menuLink'+counter, menuLabelClass);
+				}
+			} 
+   		}
+   }
+}
+
+
+function getStyleObject(objectId, doc) {
+    if(document.getElementById && document.getElementById(objectId)) {
+		return document.getElementById(objectId).style;
+	} else if (document.all && document.all(objectId)) {
+			   return document.all(objectId).style;
+	} else if (document.layers && document.layers[objectId]) {
+			   return getObjNN4(document,objectId);
+	} else {
+		return false;
+    }
+}
+
+function changeObjectVisibility(objectId, newVisibility) {
+    var styleObject = getStyleObject(objectId, document);
+    if(styleObject) {
+	styleObject.visibility = newVisibility;
+	return true;
+    } else {
+	return false;
+    }
+} 
+
+//-->
+</script>
+
+
+<body>
+
+
+<table>
+	<tr>
+		<td>
+			<div id="myLabel1"><a href="#" onMouseover="menuOverTest(); return !showMenuTest('1', event, 'myLabel1');" class="History" onMouseOut="menuOutTest();"><b>Menu One</b></a></div>
+			<div id="myMenu1" style="width: 150px; height: 52px; position:absolute; z-index:20; visibility:hidden" onmouseover="event.cancelBubble = true;">
+			<table border="1" cellspacing="0" cellpadding="0" width="200">
+				<tr>
+					<td width="100%" height="15">
+						<a href="#" class="MenuItem" onMouseOut="menuOutTest();" onMouseOver="menuOverTest();">Menu 1a</a>
+
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" height="15">
+						<a href="#" class="MenuItem" onMouseOut="menuOutTest();" onMouseOver="menuOverTest();">Menu 1b</a>
+					</td>
+				</tr>
+				<tr>
+
+					<td width="100%" height="15">
+						<a href="#" class="MenuItem" onMouseOut="menuOutTest();" onMouseOver="menuOverTest();">Menu 1c</a>
+					</td>
+				</tr>
+			</table>
+			</div>
+		</td>
+		<td>
+
+			<div id="myLabel2"><a href="#" onMouseover="menuOverTest(); return !showMenuTest('2', event, 'myLabel2');"  class="History" onMouseOut="menuOutTest();"><b>Menu Two</b></a></div>
+			<div id="myMenu2" style="width: 150px; height: 52px; position:absolute; z-index:20; visibility:hidden" onmouseover="event.cancelBubble = true;">
+			<table border="1" cellspacing="0" cellpadding="0" width="200">
+				<tr>
+					<td width="100%" height="15">
+						<a href="#" class="MenuItem" onMouseOut="menuOutTest();" onMouseOver="menuOverTest();">Menu 2a</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td width="100%" height="15">
+						<a href="#" class="MenuItem" onMouseOut="menuOutTest();" onMouseOver="menuOverTest();">Menu 2b</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" height="15">
+						<a href="#" class="MenuItem" onMouseOut="menuOutTest();" onMouseOver="menuOverTest();">Menu 2c</a>
+
+					</td>
+				</tr>
+			</table>
+			</div>
+		</td>
+		<td>
+			<div id="myLabel3"><a href="#" onMouseover="menuOverTest(); return !showMenuTest('3', event, 'myLabel3'); " class="History" onMouseOut="menuOutTest();"><b>Menu Three</b></a></div>
+			<div id="myMenu3" style="width: 150px; height: 52px; position:absolute; z-index:20; visibility:hidden" onmouseover="event.cancelBubble = true;">
+
+			<table border="1" cellspacing="0" cellpadding="0" width="200">
+				<tr>
+					<td width="100%" height="15">
+						<a href="#" class="MenuItem" onMouseOut="menuOutTest();" onMouseOver="menuOverTest();">Menu 3a</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" height="15">
+
+						<a href="#" class="MenuItem" onMouseOut="menuOutTest();" onMouseOver="menuOverTest();">Menu 3b</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" height="15">
+						<a href="#" class="MenuItem" onMouseOut="menuOutTest();" onMouseOver="menuOverTest();">Menu 3c</a>
+					</td>
+				</tr>
+
+			</table>
+			</div>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript" src="../scripts/tablesort.js"></script>
+<body id="admin" onload="clearLoadingBar(); resize();">
+
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Users</div>
+		</div>
+	</div>
+	<div id="page">
+		<div class="line">			
+			<h2>All Funds</h2> <input type="submit" value="Change" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+			
+		</div>
+		<div class="clear"></div>
+		<div class="line bordertop">			
+			<input type="submit" value="New User" class="btn" onClick="unhide('user'); return false" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		</div>
+		<table class="head" id="tblHead" cellspacing="0">
+		<tr>
+		<th class="rightborder" width="125">Options</th>
+		<th class="rightborder" width="100"><a href="#" onclick="switchClass('tblHead', this, 1); this.blur(); return sortTable('tblStart',1,true);" class="down">Name</a></th>
+		<th class="rightborder" width="170"><a href="#" onclick="switchClass('tblHead', this, 2); this.blur(); return sortTable('tblStart',2,true);">Email</a></th>
+		<th class="rightborder" width="96"><a href="#" onclick="switchClass('tblHead', this, 3); this.blur(); return sortTable('tblStart',3,true);">Phone</a></th>
+		<th width="118"><a href="#" onclick="switchClass('tblHead', this, 4); this.blur(); return sortTable('tblStart',4,true);">Last Login</a></th>
+		</tr>
+		</table>
+		<div class="data marginbottom10">
+		<table class="grid" cellspacing="0">
+		<tbody id="tblStart">
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td width="126"><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td width="104"><a href="../admin2.html" class="underline" target="_parent">Doe, Kevin</a></td>
+		<td width="170"><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td width="98">(908) 204-4341</td>
+		<td width="101">09/01/06 9:31 AM</td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td><a href="../admin2.html" class="underline" target="_parent">Doe, John</a></td>
+		<td><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td>(908) 204-4342</td>
+		<td>09/01/06 9:31 AM</td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td><a href="../admin2.html" class="underline" target="_parent">Doe, Ian</a></td>
+		<td><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td>(908) 204-4343</td>
+		<td>09/01/06 9:31 AM</td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td><a href="../admin2.html" class="underline" target="_parent">Doe, Henry</a></td>
+		<td><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td>(908) 204-4344</td>
+		<td>09/01/06 9:31 AM</td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td><a href="../admin2.html" class="underline" target="_parent">Doe, George</a></td>
+		<td><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td>(908) 204-4345</td>
+		<td>09/01/06 9:31 AM</td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td><a href="../admin2.html" class="underline" target="_parent">Doe, Frank</a></td>
+		<td><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td>(908) 204-4346</td>
+		<td>09/01/06 9:31 AM</td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td><a href="../admin2.html" class="underline" target="_parent">Doe, Evan</a></td>
+		<td><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td>(908) 204-4347</td>
+		<td>09/01/06 9:31 AM</td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td><a href="../admin2.html" class="underline" target="_parent">Doe, David</a></td>
+		<td><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td>(908) 204-4348</td>
+		<td>09/01/06 9:31 AM</td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td><a href="../admin2.html" class="underline" target="_parent">Doe, Charles</a></td>
+		<td><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td>(908) 204-4349</td>
+		<td>09/01/06 9:31 AM</td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td><a href="../admin2.html" class="underline" target="_parent">Doe, Bob</a></td>
+		<td><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td>(908) 204-4350</td>
+		<td>09/01/06 9:31 AM</td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td><input type="submit" value="Simulate" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" />
+		<input type="submit" value="Clone" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" /></td>
+		<td><a href="../admin2.html" class="underline" target="_parent">Doe, Bob</a></td>
+		<td><a href="#" class="underline">aaa@bbb.com</a></td>
+		<td>(908) 204-4351</td>
+		<td>09/01/06 9:31 AM</td>
+		</tr>
+		</tbody>
+		</table>
+		</div>
+		
+			
+		<div id="user">
+			<div class="header">
+				<div class="floatleft bold">New User</div>
+				<div class="floatright"><a href="#" onClick="hide('user'); return false" class="close">x Close</a></div>
+			</div>
+			
+			<div class="body" id="body1">
+				<form>
+				<input type="checkbox" value="" class="checkbox" /> <div class="checkboxtext">Internal User</div>
+				<div class="clear"></div>
+				<div class="inputarea">
+					<div class="text">First Name</div>
+					<div class="clear"></div>
+					<input type="text" class="textinput" />
+				</div>
+				<div class="inputarea">
+					<div class="text">Last Name</div>
+					<div class="clear"></div>
+					<input type="text" class="textinput" />
+				</div>
+				<div class="clear"></div>
+				<div class="inputarea">
+					<div class="text">SOE ID</div>
+					<div class="clear"></div>
+					<input type="text" class="textinput" />
+				</div>
+				<div class="inputarea">
+					<div class="text">Email</div>
+					<div class="clear"></div>
+					<input type="text" class="textinput" />
+				</div>
+				<div class="clear"></div>
+				<div class="inputarea">
+					<div class="text">Temporary Password</div>
+					<div class="clear"></div>
+					<input type="text" class="textinput" />
+				</div>
+				</form>
+				<div class="clear"></div>
+				<div class="controls">
+					<a href="#" onClick="hide('body1'); unhide('body2'); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Next &gt;</span></span></span></a>
+					<a href="#" onClick="hide('user'); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Cancel</span></span></span></a>
+				</div>
+			</div>
+			
+			<div class="body" id="body2">
+				
+				<img src="../images/icn_!.gif" alt="" class="floatleft" /> <div class="alert">User May Already Exist</div>
+				<div class="clear"></div>
+				<div class="maintext">An existing user was found matching the provided information.</div>
+				<div class="clear"></div>
+				<div class="controls">
+					<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">View Profile</span></span></span></a>
+					<a href="#" onClick="hide('body2'); unhide('body1'); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">&lt; Back</span></span></span></a>
+					<a href="#" onClick="hide('user'); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Cancel</span></span></span></a>
+				</div>
+			</div>
+			
+			<div class="body" id="body3">
+				
+				<img src="../images/icn_!.gif" alt="" class="floatleft" /> <div class="alert">User Found</div>
+				<div class="clear"></div>
+				<div class="maintext">An existing user was found matching the provided information. Please contact your Client Services Repetitive for support.</div>
+				<div class="clear"></div>
+				<div class="controls">				
+					<a href="#" onClick="hide('body3'); unhide('body1'); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">&lt; Back</span></span></span></a>
+					<a href="#" onClick="hide('user'); return false" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Cancel</span></span></span></a>
+				</div>
+			</div>
+			
+			<div class="body" id="body4">
+				<img src="../images/icn_loading.gif" width="17" height="17" alt="" class="loading" />
+				<div class="maintext">Creating User Profile and Login for:
+					<div class="clear"></div>
+					&lt; User First Name, Last Name &gt;
+					<div class="clear"></div>
+					Once completed, you will be forwarded to the user's profile.
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+		
+</body>
+</html>

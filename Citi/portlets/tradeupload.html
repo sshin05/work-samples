@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<body id="portlet" onload="clearLoadingBar(); portletTabSwitch('tab0','tabcontent',2); resize();">
+
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Trade Upload</div>
+		</div>
+	</div>
+	<div id="page">
+		
+		<div class="box">
+			<div class="tabs">
+				
+				<a href="#" onClick="portletTabSwitch('tab0','tabcontent', 2); return false" class="tabon" id="tab0">US</a>
+				<div class="tabgap"></div>
+				<a href="#" onClick="portletTabSwitch('tab1','tabcontent', 2); return false" class="taboff" id="tab1">IPB</a>
+				<div class="clear"></div>
+				
+				<div class="tabcontent">
+					<div class="upload">
+						<div class="text">Trade File Upload:</div> <input type="text" class="tf" /> <a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Browse</span></span></span></a>
+						<div class="clear"></div>
+						<a href="#" onclick="unhide('iframebar1'); resize();" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Upload</span></span></span></a>
+					</div>
+					<div class="iframebar" id="iframebar1">
+						<iframe src="fileupload.html" frameborder="0" scrolling="no" class="mesg"></iframe>
+					</div>
+					<div class="clear"></div>
+					<div class="box">	
+						<div class="icn"><img src="../images/icn_ie.gif" alt="" /></div> <div class="icnline"><a href="#">Trade Upload Status</a></div>		
+						<div class="clear"></div>
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="../allocation_entry.html" target="_parent">Allocation Entry</a></div>
+					</div>
+				</div>
+				
+				<div class="tabcontent">
+					<div class="upload">
+						<div class="text">Pleae enter a trade file to upload to &lt;Top Account Name&gt; including the full path name.</div>
+						<div class="clear"></div>
+						<div class="text">Trade File Upload:</div> <input type="text" class="tf" /> <a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Browse</span></span></span></a>
+						<div class="clear"></div>
+						<a href="#" onclick="unhide('iframebar2'); resize();" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Upload</span></span></span></a>
+					</div>
+					<div class="iframebar" id="iframebar2">
+						<iframe src="fileupload.html" frameborder="0" scrolling="no" class="mesg"></iframe>
+					</div>
+					<div class="clear"></div>
+					<div class="box">	
+						<div class="icn"><img src="../images/icn_ie.gif" alt="" /></div> <div class="icnline"><a href="#">Trade Upload Status</a></div>		
+						<div class="clear"></div>
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="../allocation_entry.html" target="_parent">Allocation Entry</a></div>
+						<div class="clear"></div>
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="javascript: openwin('../trade_upload_status.html','main',950, 500);">Internal Trade Upload Status</a></div>
+						<div class="clear"></div>
+						<div class="icn"><img src="../images/icn_doc.gif" alt="" /></div> <div class="icnline"><a href="../trade_input.html" target="_parent">Trade Input</a></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

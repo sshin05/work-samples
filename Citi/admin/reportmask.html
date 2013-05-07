@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript" src="../scripts/forms.js"></script>
+<body id="admin" onload="clearLoadingBar(); resize();">
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Report Masks</div>
+		</div>
+	</div>
+	<div id="page">
+		<div class="listing">
+			
+			<div class="tabs bordertop">		
+				
+				<div class="tabcontent" style="display:block;">				
+					<div class="report">
+						<select>
+							<option>Top Accounts A</option>
+						</select>
+						<div class="clear">&nbsp;</div>
+						<div class="floatleft">
+							<select>
+								<option>All Reports and Data Extracts</option>
+								<option>Daily Reports</option>
+								<option>Monthly and Yearly Reports</option>
+								<option>Consolidated Reports</option>
+								<option>Non-Consolidated Reports</option>
+								<option>Data Extracts</option>		
+							</select>
+							<div class="clear"></div>
+							<select id="leftcol" size="8" MULTIPLE class="change">
+								<option>A Very, Very Long Report Name Example</option>
+								<option>Report name</option>
+								<option>Margin Report</option>
+								<option>Risk Report</option>
+								<option>Projection Report</option>
+								<option>Report name</option>
+								<option>Report name</option>
+								<option>Report name</option>
+							</select>
+						</div>
+						<div class="floatleft">
+							<div class="hide"><a href="#" onclick="moveListItem('leftcol','available','rightcol', 0); return false;" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Hide <span class="arrowcolor">&gt;</span></span></span></span></a></div>						
+							<div class="clear"></div>
+							<div class="show"><a href="#" onclick="moveListItem('rightcol','available','leftcol', 0); return false;" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow"><span class="arrowcolor">&lt;</span> Show</span></span></span></a>
+							</div>
+						</div>
+						<div class="floatleft">
+							<div class="title">Hidden Reports</div>
+							<div class="clear"></div>
+							<select id="rightcol" size="8" MULTIPLE class="change">
+								<option>Account with Sensitive information</option>							
+							</select>
+						</div>
+					</div>				
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+<script type="text/javascript" src="../scripts/wz_tooltip.js"></script>
+</body>
+</html>

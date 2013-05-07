@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/help.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript">
+
+
+
+function searchList(inputValue) {
+	var otherFrame = parent.bottomFrame.document.getElementById('listing');
+	var maxlength = otherFrame.rows.length;
+	var temp1 = inputValue.value.toUpperCase();
+	var i = 0;
+	while (i < maxlength) {
+		var temp2 = otherFrame.rows[i].cells[1].innerHTML.toUpperCase();
+		if (temp2.indexOf(temp1, 0) == 0) {
+			parent.bottomFrame.scrollTo(0, findPosTop(otherFrame.rows[i]));
+			break;		
+		} else {
+			++i;
+		}
+	} 
+}
+
+</script>
+
+<body>
+
+<div class="accountselector">
+Jump to: <input type="text" onKeyUp="searchList(this)"> 
+</div>
+
+</body>
+</html>

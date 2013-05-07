@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<STYLE type="text/css">
+#tooltip {
+  position: absolute;
+  visibility: hidden;
+  border: 1px solid black;
+  background-color: lightyellow;
+}
+</STYLE>
+<SCRIPT language="JavaScript" type="text/javascript">
+var descriptions = {
+  'Kibo': 'Kibo is GOD.',
+  'Xibo': 'Xibo is the Devil.',
+  'Maho': 'Maho is the JavaScript Heretic for Hire.'
+}
+function showTooltip (nextTo, tip) {
+  var tt = document.getElementById('tooltip');
+  tt.innerHTML = descriptions[tip];
+  tt.style.left = (getPageLeft(nextTo) + nextTo.offsetWidth) + 'px';
+  tt.style.top = getPageTop(nextTo) + 'px';
+  tt.style.visibility = 'visible';
+} 
+function hideTooltip () {
+  document.getElementById('tooltip').style.visibility = 'hidden';
+} 
+function getPageLeft (el) {
+  var left = 0;
+  do 
+    left += el.offsetLeft;
+  while ((el = el.offsetParent));
+  return left;
+}
+function getPageTop (el) {
+  var top = 0;
+  do 
+    top += el.offsetTop;
+  while ((el = el.offsetParent));
+  return top;
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV ID="tooltip"></DIV>
+<SELECT ID="aSelect"
+        ONMOUSEOVER="showTooltip(this, event.target.value)"
+        ONMOUSEOUT="hideTooltip();"
+>
+<OPTION VALUE="Kibo">Kibo</option>
+<OPTION VALUE="Xibo">Xibo</option>
+<OPTION VALUE="Maho">Maho</option>
+</SELECT>
+
+</BODY>
+</HTML>

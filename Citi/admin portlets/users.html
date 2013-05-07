@@ -1,0 +1,497 @@
+
+
+
+
+
+
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<link href="../styles/admin.css" type="text/css" rel="stylesheet" />
+<script src="../scripts/general.js" type="text/javascript"></script>
+<script src="../scripts/resizer.js" type="text/javascript"></script>
+<script src="../scripts/tablesort.js" type="text/javascript"></script>
+
+
+<HTML>
+<title>Hello</title> 
+    <HEAD> 
+    
+    <script language="javascript">
+     
+     function internalUser(){
+    
+    	if(document.forms.newUserForm["newUserForm:internalUserID"].checked){
+				
+				hide("userIDArea");unhide("soeIDArea");unhide("usersoid");
+				document.forms.newUserForm["newUserForm:userID"].value=""
+    			    			
+			}
+			else {
+				
+				unhide("userIDArea");hide("soeIDArea");unhide("usersoid");
+				document.forms.newUserForm["newUserForm:soeID"].value=""
+    			
+			}
+			
+    	document.forms.newUserForm["newUserForm:createUID"].disabled=true;
+    }
+    
+    function userValid(){
+    
+    var validateField = document.forms.validateForm["validateForm:validateField"];
+    //alert(validateField)
+    if(typeof validateField!='undefined'){
+    	validateField = document.forms.validateForm["validateForm:validateField"].value;
+    }
+
+    var userType = document.forms.validateForm["validateForm:userTypeField"];
+    if(typeof userType!='undefined'){
+    	userType = document.forms.validateForm["validateForm:userTypeField"].value;
+    }
+    
+    unhide("userIDArea");hide("soeIDArea");unhide("usersoid");
+    //alert(validateField);
+    //alert(userType);
+    if(validateField!=""){
+   
+   		if(validateField=="true"){	
+
+	   			hide("body1");unhide('body2');hide('body3');hide('body4'); hide('body5');unhide("user");
+    	}
+    	else if(validateField=="false"){
+    	
+    	
+    		if(userType=="userID") {
+
+    			hide("body1");hide('body2');hide('body3');unhide('body4'); hide('body5');unhide("user");
+    			viewProfile("null");
+    		}
+    		else if(userType=="soeID") {
+    			hide("body1");hide('body2');hide('body3');hide('body4'); unhide('body5');unhide("user");
+    		}	
+    		
+    		
+    	}	
+    }
+    
+    
+    }
+    
+    function newUser(){
+    
+	    document.forms.newUserForm["newUserForm:internalUserID"].checked = false;
+	    document.forms.newUserForm["newUserForm:createUID"].disabled=true;
+    
+	    unhide("body1");hide('body2');hide('body3');hide('body4'); hide('body5');unhide("user");
+    	//hide("body4"); unhide("body1"); unhide("user");
+    }
+    
+    function viewProfile(userId){
+    	//Note: request.getRequestURI() don't give URL of the page rather URL of the iFrame .
+    	//AdminConstants.USERPROFILE_PAGE_URL has been evaluted and put in the session from 
+    	//Portlet backing file.
+    	var adminUrl = '/admin/admin.portal?_nfpb=true&_pageLabel=admin_portal_page_userprofile';
+		if(userId=="null") 	    top.parent.location.replace(adminUrl);
+		else 	    top.parent.location.replace(adminUrl+"&selectedUser="+userId);
+    }
+    
+    
+			       function validateUserForm(){
+    
+			   			var message = "red";
+			   			var message1 = "Internal User <font color='red'>: Fields cannot be Empty.</font>";
+			   			var message3 = "Internal User <font color='red'>: Invalid Email.</font>";
+			   			var message2 = "#5190CD";
+			   			
+						var toReturn = true;
+			  						
+    					var fname = document.forms.newUserForm["newUserForm:fnameID"].value;
+			    		var lname = document.forms.newUserForm["newUserForm:lnameID"].value;
+			    		var soe = document.forms.newUserForm["newUserForm:soeID"].value;
+    					var email = document.forms.newUserForm["newUserForm:emailID"].value;
+			    		var passwd = document.forms.newUserForm["newUserForm:passwdID"].value;
+    					var user = document.forms.newUserForm["newUserForm:userID"].value;
+    					
+    					var internalUser = document.forms.newUserForm["newUserForm:internalUserID"].checked;
+    					
+    					
+
+						
+    					if(fname.length<=0){
+    					
+    						document.getElementById("fnameErr").style.color=message;
+    					}else {
+    					
+    							document.getElementById("fnameErr").style.color=message2;
+    					
+    					}
+
+	   					if(lname.length<=0){
+
+	    					 document.getElementById("lnameErr").style.color=message;
+	    					 
+    					}else document.getElementById("lnameErr").style.color=message2;
+    					
+    					if(email.length<=0){
+
+	    					 document.getElementById("emailErr").style.color=message;
+	    					 
+    					}else document.getElementById("emailErr").style.color=message2;
+    					
+    					if(passwd.length<=0){
+
+	    					 document.getElementById("passwdErr").style.color=message;
+	    					 
+    					}else document.getElementById("passwdErr").style.color=message2;
+    					
+    					if(!internalUser){
+    					
+		   					if(user.length<=0){
+
+		    					 document.getElementById("userErr").style.color=message;
+	    					 
+    						}else document.getElementById("userErr").style.color=message2;
+    					}else {
+    					
+    						if(soe.length<=0){
+
+		    					 document.getElementById("soeErr").style.color=message;
+	    					 
+    						}else document.getElementById("soeErr").style.color=message2;
+    					
+    					}	
+    					
+						if(!internalUser && (fname.length<=0 || lname.length<=0 || email.length<=0 || passwd.length<=0 || user.length<=0)){
+						    	
+						    	toReturn = false;
+						    	
+						    	document.getElementById("errMsg").innerHTML=message1;
+						    	
+						    	    					
+						}else if(internalUser && (fname.length<=0 || lname.length<=0 || email.length<=0 || passwd.length<=0 || soe.length<=0)){
+						    	
+						    	toReturn = false;
+						    	
+						    	document.getElementById("errMsg").innerHTML=message1;
+						    	
+						    	    					
+						}						
+						else if(email.indexOf("@")==-1 || email.indexOf(".")==-1){
+				    			
+				    		document.getElementById("emailErr").style.color=message;
+				    		
+				    		document.getElementById("errMsg").innerHTML=message3;
+
+				    		toReturn = false;
+
+    					}else {
+    					
+    						document.getElementById("emailErr").style.color=message2;
+    					
+	    					document.getElementById("errMsg").innerHTML="Internal User";
+    					}
+    					
+    					if(toReturn) document.forms.newUserForm["newUserForm:createUID"].disabled=false;
+    					
+    					else document.forms.newUserForm["newUserForm:createUID"].disabled=true;
+    					
+    					return toReturn;
+    			}
+    			
+    			
+			function viewProfileExists(){
+
+			    	var soe = document.forms.newUserForm["newUserForm:soeID"].value;
+    				var user = document.forms.newUserForm["newUserForm:userID"].value;
+    				var internalUser = document.forms.newUserForm["newUserForm:internalUserID"].checked;
+					
+					if(internalUser){
+					
+						viewProfile(soe);
+					
+					}
+					else {
+					
+						viewProfile(user);
+					
+					}    					
+			
+			    	
+    		}
+    		
+    		function simulateUser(){
+    		
+    			
+    			
+    			
+    			if("USER_SIMULATE_TOKEN"!="USER_SIMULATE_TOKEN"){
+
+					if("USER_TO_SIMULATE"!="USER_TO_SIMULATE"){
+					
+						window.open("https://localhost:7002/gpbPortal?sim=USER_SIMULATE_TOKEN","");
+						//window.open("http://check/gpbPortal?sim=USER_SIMULATE_TOKEN","");
+						
+					}    			
+    			
+    			}
+    			
+    		}
+    		
+    		function cloneUser(){
+    		
+    			
+    			
+    			
+    			if("USER_TO_CLONE"!="USER_TO_CLONE"){
+    			
+    				viewProfile("USER_TO_CLONE");
+    			}
+    			
+    			
+    		
+    		}
+    		
+	    
+    </script>
+    </HEAD>
+    
+
+<body id="admin" onLoad="resize();simulateUser();userValid();cloneUser();">
+
+    
+    
+     
+	<div class="line">			
+		<h2>All Funds</h2> <a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Change</span></span></span></a>
+
+	</div>
+	<div class="clear"></div>
+	<div class="line bordertop">			
+		<a href="#" onClick="newUser();" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">New User</span></span></span></a>
+	</div>
+
+	<form id="idUserListForm" method="post" action="/admin/portlets/admin/clientuser/ClientUserListPage.faces" enctype="application/x-www-form-urlencoded">
+
+		<table class="head" id="tblHead" cellspacing="0"  style="font-size: 11px;">
+		<tr>
+
+		<th class="rightborder" width="125">Options</th>
+		<th class="rightborder" width="120"><a href="#" onclick="switchClass('tblHead', this, 1); this.blur(); return sortTable('tblStart',1,true);" class="down">Name</a></th>
+		<th class="rightborder" width="180"><a href="#" onclick="switchClass('tblHead', this, 2); this.blur(); return sortTable('tblStart',2,true);">Email</a></th>
+		<th class="rightborder" width="76"><a href="#" onclick="switchClass('tblHead', this, 3); this.blur(); return sortTable('tblStart',3,true);">Phone</a></th>
+		<th width="118"><a href="#" onclick="switchClass('tblHead', this, 4); this.blur(); return sortTable('tblStart',4,true);">Last Login</a></th>
+		</tr>
+
+		</table>
+		<div class="data marginbottom10">
+			
+			
+				
+					
+					
+					
+				
+				
+					
+						
+					
+				
+				
+					
+				
+				
+					
+				
+				
+					
+				
+			<table class="grid">
+<tbody id="tblStart">
+<tr>
+<td class="report-column-1"><input id="idUserListForm:idTbl:0:idSimulateButton" type="submit" name="idUserListForm:idTbl:0:idSimulateButton" value="Simulate" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" title="pbdevt2" class="btn" /> <input id="idUserListForm:idTbl:0:idCloneButton" type="submit" name="idUserListForm:idTbl:0:idCloneButton" value="Clone" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" title="pbdevt2" class="btn" /></td>
+<td class="report-column-2"><a href="javascript:viewProfile('pbdevt2');" class="underline">DevTestingUs..</a></td>
+<td class="report-column-3"><span class="underline"></span></td>
+<td class="report-column-4"></td>
+<td class="userlist-column-1">03/08/07 11:05 AM</td>
+</tr>
+
+<tr>
+<td class="report-column-1"><input id="idUserListForm:idTbl:1:idSimulateButton" type="submit" name="idUserListForm:idTbl:1:idSimulateButton" value="Simulate" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" title="rothkass" class="btn" /> <input id="idUserListForm:idTbl:1:idCloneButton" type="submit" name="idUserListForm:idTbl:1:idCloneButton" value="Clone" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" title="rothkass" class="btn" /></td>
+<td class="report-column-2"><a href="javascript:viewProfile('rothkass');" class="underline">Lehmann,Ed</a></td>
+<td class="report-column-3"><span class="underline">elehmann@rkco.co..</span></td>
+<td class="report-column-4"></td>
+<td class="userlist-column-1"> </td>
+</tr>
+<tr>
+<td class="report-column-1"><input id="idUserListForm:idTbl:2:idSimulateButton" type="submit" name="idUserListForm:idTbl:2:idSimulateButton" value="Simulate" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" title="pbperft1" class="btn" /> <input id="idUserListForm:idTbl:2:idCloneButton" type="submit" name="idUserListForm:idTbl:2:idCloneButton" value="Clone" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" title="pbperft1" class="btn" /></td>
+<td class="report-column-2"><a href="javascript:viewProfile('pbperft1');" class="underline">Perf Test Us..</a></td>
+<td class="report-column-3"><span class="underline"></span></td>
+
+<td class="report-column-4"></td>
+<td class="userlist-column-1">02/28/07 04:51 PM</td>
+</tr>
+<tr>
+<td class="report-column-1"><input id="idUserListForm:idTbl:3:idSimulateButton" type="submit" name="idUserListForm:idTbl:3:idSimulateButton" value="Simulate" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" title="dsim" class="btn" /> <input id="idUserListForm:idTbl:3:idCloneButton" type="submit" name="idUserListForm:idTbl:3:idCloneButton" value="Clone" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" title="dsim" class="btn" /></td>
+<td class="report-column-2"><a href="javascript:viewProfile('dsim');" class="underline">Simbandumwe,..</a></td>
+<td class="report-column-3"><span class="underline">dsimbandumwe@rou..</span></td>
+<td class="report-column-4"></td>
+<td class="userlist-column-1">03/06/07 08:34 PM</td>
+</tr>
+<tr>
+<td class="report-column-1"><input id="idUserListForm:idTbl:4:idSimulateButton" type="submit" name="idUserListForm:idTbl:4:idSimulateButton" value="Simulate" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" title="uadevt1" class="btn" /> <input id="idUserListForm:idTbl:4:idCloneButton" type="submit" name="idUserListForm:idTbl:4:idCloneButton" value="Clone" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" title="uadevt1" class="btn" /></td>
+
+<td class="report-column-2"><a href="javascript:viewProfile('uadevt1');" class="underline">Tester,Dev</a></td>
+<td class="report-column-3"><span class="underline">devtester@ra.com</span></td>
+<td class="report-column-4"></td>
+<td class="userlist-column-1">02/25/07 10:59 PM</td>
+</tr>
+</tbody>
+</table>
+
+		</div>
+		
+	<input type="hidden" name="idUserListForm" value="idUserListForm" /></form>
+	
+	
+	<div id="user">
+
+	<form id="newUserForm" method="post" action="/admin/portlets/admin/clientuser/ClientUserListPage.faces" enctype="application/x-www-form-urlencoded">
+
+		<div class="header">
+			<div class="floatleft bold">New User</div>
+			<div class="floatright"><a href="#" onClick="hide('user');javascript:document.forms.newUserForm.reset();" class="close">x Close</a></div>
+		</div>
+		<div class="body" id="body1">
+			
+			<div id="testID">
+
+							
+				<input id="newUserForm:internalUserID" type="checkbox" name="newUserForm:internalUserID" class="checkbox" onclick="javascript:internalUser(this.form)" />
+			</div>
+			
+			<div class="checkboxtext" id="errMsg">Internal User </div> 
+			
+			<div class="clear"></div>
+			<div class="inputarea">
+				<div class="text"><div id="fnameErr">First Name</div></div>
+				<div class="clear"></div>
+				<input id="newUserForm:fnameID" type="text" name="newUserForm:fnameID" onblur="validateUserForm();" />
+
+				
+			</div>
+			<div class="inputarea">
+				<div class="text"><div id="lnameErr">Last Name</div></div>
+				<div class="clear"></div>
+				<input id="newUserForm:lnameID" type="text" name="newUserForm:lnameID" onblur="validateUserForm();" />
+				
+			</div>
+			 
+			<div class="clear"></div>
+			<div id="usersoid">
+
+			<div class="inputarea" id="userIDArea">
+				<div class="text" id="username"><div id="userErr">UserID</div></div>
+					<div class="clear"></div>
+				<div class="text" id="uservalue"><input id="newUserForm:userID" type="text" name="newUserForm:userID" onblur="validateUserForm();" /></div>
+				
+				
+			</div>
+			<div class="inputarea" id="soeIDArea">
+				<div class="text" id="username"><div id="soeErr">SOEID</div></div>
+					<div class="clear"></div>
+
+				<div class="text" id="uservalue"><input id="newUserForm:soeID" type="text" name="newUserForm:soeID" onblur="validateUserForm();" /></div>
+				
+			</div>
+			</div>
+			<div class="inputarea">
+				<div class="text"><div id="emailErr">Email</div></div>
+				<div class="clear"></div>
+				<input id="newUserForm:emailID" type="text" name="newUserForm:emailID" onblur="validateUserForm();" />
+				
+			</div>
+
+			<div class="clear"></div>
+			<div class="inputarea">
+				<div class="text"><div id="passwdErr">Temporary Password</div></div>
+				<div class="clear"></div>
+				
+				<input id="newUserForm:passwdID" type="password" name="newUserForm:passwdID" value="" onblur="validateUserForm();" />
+								
+			</div>
+			
+			<div class="clear"></div>
+			<div class="controls">
+
+						<input id="newUserForm:createUID" type="submit" name="newUserForm:createUID" value="Next&gt;" onmouseout="this.className='btn'" onmouseover="this.className='btn btnhov'" class="btn" />
+								
+						
+						<a href="#" class="button" onclick="hide('user');unhide('body4');javascript:document.forms.newUserForm.reset();"><span class="borderleft"><span class="borderright"><span class="noarrow">Cancel</span></span></span></a>
+			</div>
+		</div>
+		<div class="body" id="body2">
+			
+			<img src="../images/icn_!.gif" alt="" class="floatleft" /> <div class="alert">User May Already Exist</div>
+			<div class="clear"></div>
+
+			<div class="maintext">An existing user was found matching the provided information.</div>
+			<div class="clear"></div>
+			<div class="controls">
+				<a href="javascript:viewProfileExists();" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">View Profile</span></span></span></a>
+				<a href="#" onClick="hide('body2'); unhide('body1'); " class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">&lt; Back</span></span></span></a>
+				<a href="#" onClick="hide('user');" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Cancel</span></span></span></a>
+
+			</div>
+		</div>
+		
+		<div class="body" id="body3">
+			
+			<img src="../images/icn_!.gif" alt="" class="floatleft" /> <div class="alert">User Found</div>
+			<div class="clear"></div>
+			<div class="maintext">An existing user was found matching the provided information. Please contact your Client Services Repetitive for support.</div>
+			<div class="clear"></div>
+
+			<div class="controls">				
+				<a href="#" onClick="hide('body3'); unhide('body1'); " class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">&lt; Back</span></span></span></a>
+				<a href="#" onClick="hide('user');" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Cancel</span></span></span></a>
+			</div>
+		</div>
+		
+		<div class="body" id="body4">
+			<img src="../images/icn_loading.gif" width="17" height="17" alt="" class="loading" />
+			<div class="maintext">Creating User Profile and Login for:
+				<div class="clear"></div>
+
+				&lt;,&gt;
+				<div class="clear"></div>
+				Once completed, you will be forwarded to the user's profile.
+			</div>
+		</div>
+		<div class="body" id="body5">
+			
+			<img src="../images/icn_!.gif" alt="" class="floatleft" /> <div class="alert">SOE Not Found</div>
+			<div class="clear"></div>
+
+			<div class="maintext">No user was found matching the provided information .Please check with your spelling.</div>
+			<div class="clear"></div>
+			<div class="controls">				
+				<a href="#" onClick="hide('body5'); unhide('body1'); " class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">&lt; Back</span></span></span></a>
+				<a href="#" onClick="hide('user');" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Cancel</span></span></span></a>
+			</div>
+		</div>
+
+		<input type="hidden" name="newUserForm" value="newUserForm" /></form>
+		</div>
+		
+		<form id="validateForm" method="post" action="/admin/portlets/admin/clientuser/ClientUserListPage.faces" enctype="application/x-www-form-urlencoded">
+
+		<input id="validateForm:validateField" type="hidden" name="validateForm:validateField" />
+		<input id="validateForm:userTypeField" type="hidden" name="validateForm:userTypeField" />
+		<input type="hidden" name="validateForm" value="validateForm" /></form>
+	
+	
+	
+
+	</body>
+    
+</HTML>  
+

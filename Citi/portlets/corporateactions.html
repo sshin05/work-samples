@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<body id="portlet" onload="clearLoadingBar(); resize();">
+	
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Corporate Actions</div>
+		</div>
+	</div>
+	
+	<div id="page">
+
+		
+		<div class="box">		
+			<div class="group">
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Download All</span></span></span></a> Corporate Actions records as a CSV file.
+			</div>
+			
+			<h2>Security</h2>
+			
+			<input type="text" class="inputbox" />
+			<input type="radio" name="security" value="symbol" checked="checked"/> <div class="radio">Symbol</div>
+			<input type="radio" name="security" value="cusip" /> <div class="radio">CUSIP</div>
+			
+			<div class="clear"></div>
+			
+			<h2>Reorg Type</h2>
+			
+			<input type="radio" name="reorgtype" value="all" checked="checked" /> <div class="radio">ALL</div>
+			<input type="radio" name="reorgtype" value="mandatory" /> <div class="radio">Mandatory</div>
+			<input type="radio" name="reorgtype" value="voluntarily" /> <div class="radio">Voluntarily</div>
+			
+		</div>
+		
+		<div class="footer">
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Search</span></span></span></a>
+		
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Clear</span></span></span></a>
+		</div>
+	
+	</div>
+	
+</body>
+</html>

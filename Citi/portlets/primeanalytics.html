@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<link href="../styles/calendar.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript" src="../scripts/calendar.js"></script>
+<body id="portlet" onload="clearLoadingBar(); resize();">
+	
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Prime Analytics</div>
+		</div>
+	</div>
+
+	<div id="page">
+		<div class="header">
+			<select name="grouplist" class="grouplist">
+			<option selected="selected">Top Account Group Description</option>
+			<option>Group Description 12345</option>
+			<option>Group Description 22345</option>
+			<option>Group Description 32345</option>
+			<option>Group Description 42345</option>
+			</select>
+		</div>
+		
+		<div class="box">
+			
+			<div class="charts">
+				<div class="line"><a href="#"><img src="../images/icon_chart.gif" alt="" /> <span class="underline">Sector Exposure</span></a></div>			
+				<div class="clear"></div>
+				<div class="line"><a href="#"><img src="../images/icon_chart.gif" alt="" /> <span class="underline">Position Analysis</span></a></div>
+			</div>
+			
+			<div class="subhead">Activity</div>
+			
+			<h2>Run Period</h2>
+			
+			<div class="date">
+				Start Date
+				<div class="clear"></div>
+				<input type="text" id="dateFrom" onfocus="showCal('','',document.getElementById('dateFrom'),1,true,2,event,'aboveright');return false" onkeypress="showCal('','',document.getElementById('dateFrom'),1,true,2,event,'aboveright');return false" /> <a href="#" onclick="showCal('','',document.getElementById('dateFrom'),1,true,2,event,'aboveright');return false"><img src="../images/icon_cal.gif" id="dateFromImg" alt="" /></a>
+			</div>		
+			
+			<div class="date">
+				End Date
+				<div class="clear"></div>
+				<input type="text" id="dateTo" onfocus="showCal('','',document.getElementById('dateTo'),1,true,2,event,'above');return false" onkeypress="showCal('','',document.getElementById('dateTo'),1,true,2,event,'above');return false" /> <a href="#" onclick="showCal('','',document.getElementById('dateTo'),1,true,2,event,'above');return false"><img src="../images/icon_cal.gif" id="dateToImg" alt="" /></a>
+			</div>		
+			
+		</div>
+		
+		<div class="footer">
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Analyze</span></span></span></a>
+		</div>
+		
+	</div>
+
+
+<div id="cal">
+	<div id="calbody">
+		<div id="caltopbar">
+			<table id="calnav">
+			<tr>
+			<td><a href="#" id="calnavPM"><img src="../images/arrow_calleft.gif" alt="" /></a></td>
+			<td id="calnavMY"></td>
+			<td><a href="#" id="calnavNM"><img src="../images/arrow_calright.gif" alt="" /></a></td>
+			</tr>
+			</table>
+		</div>
+		<table id="caltbl">
+			<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+			<tbody id="caltblbody"></tbody>
+			<tr>
+			<td colspan="7" id="close" onclick="hideCal()">x Close</td>
+			</tr>
+		</table>
+		
+		<div id="today"><a href="#" onclick="" id="selecttoday"></a></div>
+	</div>
+</div>		
+</body>
+</html>

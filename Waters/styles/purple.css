@@ -1,0 +1,51 @@
+
+/*===== Landing : Start ==================*/
+/* Left Nav Start */
+#LeftNav
+{
+  	background: url("../images/purple/ln_bk.gif") top left repeat-x; /* unique */
+	background-color:#FFFFFF;
+  	width:183px;
+  	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 24px 0px;
+	text-align:left;
+	height:100%;
+		border-left-width:1px;
+	border-left-color:#999999;
+	border-left-style:solid;
+		border-right-width:1px;
+	border-right-color:#999999;
+	border-right-style:solid;
+		border-bottom-width:1px;
+	border-bottom-color:#999999;
+	border-bottom-style:solid;
+}
+#LeftNav .selParent
+{
+	background-color:#847bac; /* unique */
+	margin:0px;
+	padding:0px;
+}
+/* Left Nav End */
+/* Right Content Start */
+#RightColumn
+{
+  	background: url("../images/purple/landing_bk.jpg") bottom left no-repeat; /* unique */
+	background-color:#FFFFFF;
+  	width:767px;
+	min-height:500px; 
+  	margin: 0px 0px 0px 0px;
+	text-align:left;
+	padding:0px;
+}
+#RightColumnPlain
+{
+  	background:none;
+	background-color:#FFFFFF;
+  	width:767px;
+	min-height:500px; 
+  	margin: 0px 0px 0px 10px;
+	text-align:left;
+	padding:0px;
+}
+/*===== Landing : Start ==================*/

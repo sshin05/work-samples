@@ -1,0 +1,470 @@
+
+
+
+
+
+
+
+<html>
+<head>
+
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<link href="../styles/admin.css" type="text/css" rel="stylesheet" />
+<script src="../scripts/general.js" type="text/javascript"></script>
+<script src="../scripts/resizer.js" type="text/javascript"></script>
+
+<script src="../scripts/positionsactivtity.js" type="text/javascript"></script>
+
+<script language="JavaScript">
+
+function accountClicked(vx){
+	
+ 	document.getElementById( "subAccountForm:idselectedSubAccountId" ).innerHTML=vx;  //For outputLebel
+//	document.getElementById( "idselectedSubAccountId" ).value=vx;      //For outputText
+	document.forms.subAccountForm["subAccountForm:idHiddenSubAccount"].focus();
+	document.forms.subAccountForm["subAccountForm:idHiddenSubAccount"].value=vx;
+	document.forms.subAccountForm["subAccountForm:idTempText"].focus();
+}
+
+function submitForm(){
+	var formValue = document.forms.subAccountForm;
+	formValue.submit();
+}
+
+function groupClicked(vx){
+	var vxvalue = vx;
+ 	document.getElementById( "groupForm:idselectedGroupId" ).innerHTML=vx;
+	document.forms.groupForm["groupForm:idHiddenGroup"].focus();
+	document.forms.groupForm["groupForm:idHiddenGroup"].value = vx;
+	document.forms.groupForm["groupForm:idTempText"].focus();
+	
+}
+
+function submitFormG(){
+	var formValue = document.forms.groupForm;
+	formValue.submit();
+}
+
+    function showHover(this1)
+    {
+	    return this1.T_ABOVE=true;this1.T_WIDTH=80;this1.T_PADDING=9;this1.T_BORDERCOLOR='#aad5ff';this1.T_BGCOLOR='#fffbbd';this1.T_STICKY=1;this1.T_TEMP=3000; this1.className='hov';
+	    //this.T_ABOVE=true;this.T_WIDTH=169;this.T_PADDING=9;this.T_BORDERCOLOR='#aad5ff';this.T_BGCOLOR='#fffbbd';this.T_STICKY=1;this.T_TEMP=4000;return 
+    }
+    
+</script>
+
+</head>
+
+<body id="admin" onload="clearLoadingBar();resize();">
+
+	
+		<div id="loading">
+			<div class="loader">
+				<div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div>
+
+				<div class="text">Loading Account &amp; Group Test</div>
+			</div>
+		</div>
+			
+		<div id="page">
+		
+			<div class="listing">
+			
+				<div class="tabs">
+					
+					<a href="#" onClick="portletTabSwitch('tab0','tabcontent', 2);" class="tabon" id="tab0">Accounts</a>
+
+					<div class="tabgap"></div>
+					<a href="#" onClick="portletTabSwitch('tab1','tabcontent', 2);" class="taboff" id="tab1">Groups</a>
+					<div class="clear"></div>
+			
+					
+					<div class="tabcontent" id="accountTab">
+	
+						
+						<form id="subAccountForm" method="post" action="/admin/portlets/admin/accountgrouplist/AccountGroupListPage.faces" enctype="application/x-www-form-urlencoded">
+
+							<table class="thead" cellspacing="0">
+								<tr><th width="50">ID</th> <th width="180">Description</th>	</tr>
+
+							</table>
+							<div class="data" style="height: 150px">
+								
+								
+									
+										
+									
+								
+								
+									
+								
+								<table class="grid">
+<tbody>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11325 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11325 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11325 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11326 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11326 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11326 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11973 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11973 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11973 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11974 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11974 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11974 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11975 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11975 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11975 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11976 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11976 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11976 </a></td>
+
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11977 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11977 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11977 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11978 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11978 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11978 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11979 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11979 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11979 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11980 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11980 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11980 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11987 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11987 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11987 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11988 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11988 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11988 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa11989 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa11989 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa11989 </a></td>
+
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa12072 ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa12072 <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa12072 </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3467  ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3467  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3467  </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3468  ');" onmouseover="showHover(this);return escape('<b&gt; </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3468  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3468  </a></td>
+<td class="accountgrouplist-upper-2"></td>
+</tr>
+
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3681  ');" onmouseover="showHover(this);return escape('<b&gt;GLOBAL HEALTH OPPT </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3681  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3681  </a></td>
+<td class="accountgrouplist-upper-2">GLOBAL HEALTH OPPT</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3682  ');" onmouseover="showHover(this);return escape('<b&gt;GLOBAL HEALTH CARE OPPTY </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3682  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3682  </a></td>
+<td class="accountgrouplist-upper-2">GLOBAL HEALTH CARE OPPTY</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3683  ');" onmouseover="showHover(this);return escape('<b&gt;GLOBAL NATURAL RESOURCE III </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3683  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3683  </a></td>
+<td class="accountgrouplist-upper-2">GLOBAL NATURAL RESOURCE III</td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3684  ');" onmouseover="showHover(this);return escape('<b&gt;GLOBAL NATURAL RES III LP </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3684  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3684  </a></td>
+<td class="accountgrouplist-upper-2">GLOBAL NATURAL RES III LP</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3685  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS SJP </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3685  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3685  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS SJP</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3691  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS LP SJP </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3691  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3691  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS LP SJP</td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3692  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS RDR </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3692  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3692  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS RDR</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3693  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT RESOURCES MTC </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3693  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3693  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT RESOURCES MTC</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3694  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS LP RDR </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3694  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3694  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS LP RDR</td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3695  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS LP MTC </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3695  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3695  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS LP MTC</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3712  ');" onmouseover="showHover(this);return escape('<b&gt;GNR III </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3712  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3712  </a></td>
+<td class="accountgrouplist-upper-2">GNR III</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3713  ');" onmouseover="showHover(this);return escape('<b&gt;GNR III LP </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3713  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3713  </a></td>
+<td class="accountgrouplist-upper-2">GNR III LP</td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3714  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3714  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3714  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3715  ');" onmouseover="showHover(this);return escape('<b&gt;GLOBAL HEALTH CARE LP </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3715  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3715  </a></td>
+<td class="accountgrouplist-upper-2">GLOBAL HEALTH CARE LP</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3716  ');" onmouseover="showHover(this);return escape('<b&gt;GLOBAL HEALTH CARE </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3716  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3716  </a></td>
+<td class="accountgrouplist-upper-2">GLOBAL HEALTH CARE</td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3717  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS LP (MTC) </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3717  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3717  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS LP (MTC)</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3718  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS (RDR) </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3718  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3718  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS (RDR)</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3719  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS (MTC) </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3719  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3719  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS (MTC)</td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3720  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS  LP (SJP) </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3720  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3720  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS  LP (SJP)</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3721  ');" onmouseover="showHover(this);return escape('<b&gt;TRIDENT SELECTIONS LP (RDR) </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3721  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3721  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS LP (RDR)</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3763  ');" onmouseover="showHover(this);return escape('<b&gt;REAL ASSETS PORT LP LIBOR PLUS </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3763  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3763  </a></td>
+<td class="accountgrouplist-upper-2">REAL ASSETS PORT LP LIBOR PLUS</td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3794  ');" onmouseover="showHover(this);return escape('<b&gt;REAL ASSETS PORTFOLIO LP-KOREA </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3794  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3794  </a></td>
+<td class="accountgrouplist-upper-2">REAL ASSETS PORTFOLIO LP-KOREA</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3795  ');" onmouseover="showHover(this);return escape('<b&gt;DIVERSIFIED INFLAT STRAT-KOREA </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3795  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3795  </a></td>
+<td class="accountgrouplist-upper-2">DIVERSIFIED INFLAT STRAT-KOREA</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3916  ');" onmouseover="showHover(this);return escape('<b&gt;REAL ASSETS PORT GNR </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3916  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3916  </a></td>
+<td class="accountgrouplist-upper-2">REAL ASSETS PORT GNR</td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3917  ');" onmouseover="showHover(this);return escape('<b&gt;REAL ASSETS PORT GFI </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3917  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3917  </a></td>
+<td class="accountgrouplist-upper-2">REAL ASSETS PORT GFI</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3918  ');" onmouseover="showHover(this);return escape('<b&gt;REAL ASSETS PORT CASH </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3918  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3918  </a></td>
+<td class="accountgrouplist-upper-2">REAL ASSETS PORT CASH</td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa3919  ');" onmouseover="showHover(this);return escape('<b&gt;REAL ASSETS PORT COMM </b&gt;</br&gt;<b&gt;IMS </b&gt;sa3919  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa3919  </a></td>
+<td class="accountgrouplist-upper-2">REAL ASSETS PORT COMM</td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="accountClicked('sa4053  ');" onmouseover="showHover(this);return escape('<b&gt;DIVERS INFLATION STRAT LP/MF </b&gt;</br&gt;<b&gt;IMS </b&gt;sa4053  <br/&gt;<b&gt;Client Ref# </b&gt;  <br&gt; (Click to see group membership)');">sa4053  </a></td>
+<td class="accountgrouplist-upper-2">DIVERS INFLATION STRAT LP/MF</td>
+</tr>
+</tbody>
+</table>
+
+							</div>
+
+							
+							<input id="subAccountForm:idHiddenSubAccount" type="text" name="subAccountForm:idHiddenSubAccount" value="Select.." class="hidden-text-box" onblur="submitForm();" size="1" />
+							<input id="subAccountForm:idTempText" type="text" name="subAccountForm:idTempText" class="hidden-text-box" size="1" />
+
+							
+							<table class="thead" cellspacing="0">
+								<tr>
+									<th style="font-size:12px;">Groups containing Account: 
+									<span id="subAccountForm:idselectedSubAccountId">Select..</span>
+									</th>
+								</tr>
+							</table>
+					
+							<div class="data" style="height:100px;">
+								
+									
+								<table class="grid" cellspacing="0">
+
+<tbody>
+</tbody>
+</table>
+
+							</div>	
+						<input type="hidden" name="subAccountForm" value="subAccountForm" /></form>	
+
+					</div>
+					
+					<div class="tabcontent" id="groupTab">
+						
+	
+						<form id="groupForm" method="post" action="/admin/portlets/admin/accountgrouplist/AccountGroupListPage.faces" enctype="application/x-www-form-urlencoded">
+
+							<table class="thead" cellspacing="0">
+								<tr> <th width="50">ID</th>	<th width="180">Description</th> </tr>
+
+							</table>
+							<div class="data" style="height: 150px">
+								
+							 		
+										
+											
+										
+									
+									
+								<table class="grid">
+<tbody>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('GBNRIII ');" onmouseover="showHover(this);return escape('<b&gt;GBNRIII  </b&gt;</br&gt;<b&gt;GNR III CONSOLIDATED MARGIN                       </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                          <br&gt; (Click to see members)');" class="underline">GBNRIII </a></td>
+<td class="accountgrouplist-upper-2">GNR III CONSOLIDATED MARGIN                       </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('GHCO    ');" onmouseover="showHover(this);return escape('<b&gt;GHCO     </b&gt;</br&gt;<b&gt;GLOBAL HEALTH CARE OPPORTUNITY                    </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">GHCO    </a></td>
+<td class="accountgrouplist-upper-2">GLOBAL HEALTH CARE OPPORTUNITY                    </td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('GHCOLP  ');" onmouseover="showHover(this);return escape('<b&gt;GHCOLP   </b&gt;</br&gt;<b&gt;GLOBAL HEALTH CARE OPPORTUNITY LP                 </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">GHCOLP  </a></td>
+<td class="accountgrouplist-upper-2">GLOBAL HEALTH CARE OPPORTUNITY LP                 </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('GLOBAL  ');" onmouseover="showHover(this);return escape('<b&gt;GLOBAL   </b&gt;</br&gt;<b&gt;GHCO CONSOLIDATED MARGIN                          </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">GLOBAL  </a></td>
+<td class="accountgrouplist-upper-2">GHCO CONSOLIDATED MARGIN                          </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('GLOBALLP');" onmouseover="showHover(this);return escape('<b&gt;GLOBALLP </b&gt;</br&gt;<b&gt;GHCO LP CONSOLIDATED MARGIN                       </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">GLOBALLP</a></td>
+<td class="accountgrouplist-upper-2">GHCO LP CONSOLIDATED MARGIN                       </td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('GNRIII  ');" onmouseover="showHover(this);return escape('<b&gt;GNRIII   </b&gt;</br&gt;<b&gt;GLOBAL NATURAL RESOURCES III                      </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">GNRIII  </a></td>
+<td class="accountgrouplist-upper-2">GLOBAL NATURAL RESOURCES III                      </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('GNRIIILP');" onmouseover="showHover(this);return escape('<b&gt;GNRIIILP </b&gt;</br&gt;<b&gt;GNR III LP CONSOLIDATED MARGIN                    </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">GNRIIILP</a></td>
+<td class="accountgrouplist-upper-2">GNR III LP CONSOLIDATED MARGIN                    </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('NATRES  ');" onmouseover="showHover(this);return escape('<b&gt;NATRES   </b&gt;</br&gt;<b&gt;NATURAL RESERVE III                               </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">NATRES  </a></td>
+<td class="accountgrouplist-upper-2">NATURAL RESERVE III                               </td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('NATRESLP');" onmouseover="showHover(this);return escape('<b&gt;NATRESLP </b&gt;</br&gt;<b&gt;NATURAL RESERVE III LP                            </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">NATRESLP</a></td>
+<td class="accountgrouplist-upper-2">NATURAL RESERVE III LP                            </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('REALA   ');" onmouseover="showHover(this);return escape('<b&gt;REALA    </b&gt;</br&gt;<b&gt;REAL ASSETS CONSOLIDATED MARGIN                   </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         INTEREST                                          MARGIN                                            REPORTING                                          <br&gt; (Click to see members)');" class="underline">REALA   </a></td>
+<td class="accountgrouplist-upper-2">REAL ASSETS CONSOLIDATED MARGIN                   </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('TRISEL  ');" onmouseover="showHover(this);return escape('<b&gt;TRISEL   </b&gt;</br&gt;<b&gt;TRIDENT SELECT                                    </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         INTEREST                                          MARGIN                                            REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">TRISEL  </a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECT                                    </td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('TRISELEC');" onmouseover="showHover(this);return escape('<b&gt;TRISELEC </b&gt;</br&gt;<b&gt;TRIDENT SELECTIONS CONSOLIDATED MARGIN            </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         INTEREST                                          MARGIN                                            REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">TRISELEC</a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS CONSOLIDATED MARGIN            </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('TRISELLP');" onmouseover="showHover(this);return escape('<b&gt;TRISELLP </b&gt;</br&gt;<b&gt;TRIDENT SELECTIONS LP CONSOLIDATED MARGIN         </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         INTEREST                                          MARGIN                                            REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">TRISELLP</a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS LP CONSOLIDATED MARGIN         </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('TRSELMTC');" onmouseover="showHover(this);return escape('<b&gt;TRSELMTC </b&gt;</br&gt;<b&gt;TRIDENT SELECTIONS MTC                            </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         INTEREST                                          MARGIN                                            REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">TRSELMTC</a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS MTC                            </td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('TRSELRDR');" onmouseover="showHover(this);return escape('<b&gt;TRSELRDR </b&gt;</br&gt;<b&gt;TRIDENT SELECTIONS RDR                            </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         INTEREST                                          MARGIN                                            REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">TRSELRDR</a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS RDR                            </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('TRSELSJP');" onmouseover="showHover(this);return escape('<b&gt;TRSELSJP </b&gt;</br&gt;<b&gt;TRIDENT SELECTIONS SJP                            </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         INTEREST                                          MARGIN                                            REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">TRSELSJP</a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS SJP                            </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('TRSLPMTC');" onmouseover="showHover(this);return escape('<b&gt;TRSLPMTC </b&gt;</br&gt;<b&gt;TRIDENT SELECTIONS LP MTC                         </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         INTEREST                                          MARGIN                                            REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">TRSLPMTC</a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS LP MTC                         </td>
+
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('TRSLPRDR');" onmouseover="showHover(this);return escape('<b&gt;TRSLPRDR </b&gt;</br&gt;<b&gt;TRIDENT SELECTIONS LP RDR                         </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         INTEREST                                          MARGIN                                            REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">TRSLPRDR</a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS LP RDR                         </td>
+</tr>
+<tr>
+<td class="accountgrouplist-upper-1"><a href="javascript:void(0);" onclick="groupClicked('TRSLPSJP');" onmouseover="showHover(this);return escape('<b&gt;TRSLPSJP </b&gt;</br&gt;<b&gt;TRIDENT SELECTIONS LP SJP                         </b&gt;<br/&gt;<b&gt;Type </b&gt; REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         INTEREST                                          MARGIN                                            REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                         REPORTING                                          <br&gt; (Click to see members)');" class="underline">TRSLPSJP</a></td>
+<td class="accountgrouplist-upper-2">TRIDENT SELECTIONS LP SJP                         </td>
+</tr>
+</tbody>
+</table>
+
+							</div>
+
+							
+							<input id="groupForm:idHiddenGroup" type="text" name="groupForm:idHiddenGroup" value="Select.." class="hidden-text-box" onblur="submitFormG();" size="1" />
+							<input id="groupForm:idTempText" type="text" name="groupForm:idTempText" class="hidden-text-box" size="1" />
+							
+							<table class="thead" cellspacing="0">
+								<tr>
+									<th style="font-size:12px;">Accounts in Group: 
+									<span id="groupForm:idselectedGroupId">Select..</span>
+									</th>				
+								</tr>
+							</table>
+
+							
+							<div class="data" style="height:100px;">
+								
+									
+								<table class="grid" cellspacing="0">
+<tbody>
+</tbody>
+</table>
+
+							</div>	
+							<input type="hidden" name="groupForm" value="groupForm" /></form>								
+	
+					</div>
+					
+			</div>
+	</div>
+	</div>
+
+	
+	
+	<script> 
+		portletTabSwitch('tab1','tabcontent', 2); 
+	</script>
+	<script src="../scripts/wz_tooltip.js" type="text/javascript"></script>
+
+</body>
+
+</html>

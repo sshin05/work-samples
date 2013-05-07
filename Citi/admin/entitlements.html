@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript" src="../scripts/resizer.js"></script>
+<script type="text/javascript" src="../scripts/tablesort.js"></script>
+<body id="admin" onload="clearLoadingBar(); resize();">
+
+	<div id="loading">
+		<div class="loader"><div class="floatleft"><img src="../images/icn_loading.gif"  alt="" /></div><div class="text">Loading Portal Entitlements</div>
+		</div>
+	</div>
+	<div id="page">
+
+		<div class="line">
+			<select>
+				<option>All section</option>
+			</select>
+			<select>
+				<option>Entitled and Prohibited Items</option>
+			</select>
+		</div>
+		<div class="clear"></div>
+		<table class="head" id="tblHead" cellspacing="0">
+		<tr>
+		<th class="rightborder" width="100"><a href="#" onclick="switchClass('tblHead', this, 0); this.blur(); return sortTable('tblStart',0,true);" class="down">Section</a></th>
+		<th class="rightborder" width="100"><a href="#" onclick="switchClass('tblHead', this, 1); this.blur(); return sortTable('tblStart',1,true);">Name</a></th>
+		<th class="rightborder" width="250">Description</th>
+		</tr>
+		</table>
+		
+		<div class="data" style="height:250px ">
+		<table class="grid" cellspacing="0">
+		<tbody id="tblStart">
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td width="135">Global</td>
+		<td width="140"><input type="checkbox" value="" /> Entitlement Name</td>
+		<td>Quisque felis. Nullam non metus a libero eleifend sollicitudin. Cras necturpis et diam venenatis tempus. Nam condimentum elit sit amde dui. Proin tincidunt vestibulum urna. <a href="#" class="underline">More...</a></td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Finance</td>
+		<td><input type="checkbox" value="" /> Entitlement Name</td>
+		<td>Quisque felis. Nullam non metus a libero eleifend sollicitudin. Cras necturpis et diam venenatis tempus. Nam condimentum elit sit amde dui. Proin tincidunt vestibulum urna. <a href="#" class="underline">More...</a></td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Trade &amp; Transaction</td>
+		<td><input type="checkbox" value="" /> Entitlement Name</td>
+		<td>Quisque felis. Nullam non metus a libero eleifend sollicitudin. Cras necturpis et diam venenatis tempus. Nam condimentum elit sit amde dui. Proin tincidunt vestibulum urna. <a href="#" class="underline">More...</a></td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Portfolio Analysis</td>
+		<td><input type="checkbox" value="" /> Entitlement Name</td>
+		<td>Quisque felis. Nullam non metus a libero eleifend sollicitudin. Cras necturpis et diam venenatis tempus. Nam condimentum elit sit amde dui. Proin tincidunt vestibulum urna. <a href="#" class="underline">More...</a></td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Global</td>
+		<td><input type="checkbox" value="" /> Entitlement Name</td>
+		<td>Quisque felis. Nullam non metus a libero eleifend sollicitudin. Cras necturpis et diam venenatis tempus. Nam condimentum elit sit amde dui. Proin tincidunt vestibulum urna. <a href="#" class="underline">More...</a></td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Finance</td>
+		<td><input type="checkbox" value="" /> Entitlement Name</td>
+		<td>Quisque felis. Nullam non metus a libero eleifend sollicitudin. Cras necturpis et diam venenatis tempus. Nam condimentum elit sit amde dui. Proin tincidunt vestibulum urna. <a href="#" class="underline">More...</a></td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Trade &amp; Transaction</td>
+		<td><input type="checkbox" value="" /> Entitlement Name</td>
+		<td>Quisque felis. Nullam non metus a libero eleifend sollicitudin. Cras necturpis et diam venenatis tempus. Nam condimentum elit sit amde dui. Proin tincidunt vestibulum urna. <a href="#" class="underline">More...</a></td>
+		</tr>
+		<tr onmouseover="this.className='hov'; this.style.cursor='pointer';" onmouseout="this.className=''">
+		<td>Portfolio Analysis</td>
+		<td><input type="checkbox" value="" /> Entitlement Name</td>
+		<td>Quisque felis. Nullam non metus a libero eleifend sollicitudin. Cras necturpis et diam venenatis tempus. Nam condimentum elit sit amde dui. Proin tincidunt vestibulum urna. <a href="#" class="underline">More...</a></td>
+		</tr>
+		</tbody>
+		</table>
+		</div>
+		
+		<div class="footer">
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Save Changes</span></span></span></a>
+		</div>
+	</div>
+</body>
+</html>

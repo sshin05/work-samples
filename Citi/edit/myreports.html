@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>My Reports: Edit Preferences</title>
+</head>
+<link href="../styles/global.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/general.js"></script>
+<script type="text/javascript">
+	function reorderIcon(num, direction, icon, iconName) {
+		var temp1;
+		var temp2;
+		if (direction == 'down') {
+			temp1 = getElementsByClass(icon)[num].innerHTML;
+			getElementsByClass(icon)[num].innerHTML = getElementsByClass(icon)[num+1].innerHTML;
+			getElementsByClass(icon)[num+1].innerHTML = temp1;
+			temp2 = getElementsByClass(iconName)[num].src;
+			getElementsByClass(iconName)[num].src = getElementsByClass(iconName)[num+1].src;
+			getElementsByClass(iconName)[num+1].src = temp2;
+		} else if (direction == 'up') {
+				temp1 = getElementsByClass(icon)[num].innerHTML;
+				getElementsByClass(icon)[num].innerHTML = getElementsByClass(icon)[num-1].innerHTML;
+				getElementsByClass(icon)[num-1].innerHTML = temp1;
+				temp2 = getElementsByClass(iconName)[num].src;
+				getElementsByClass(iconName)[num].src = getElementsByClass(iconName)[num-1].src;
+				getElementsByClass(iconName)[num-1].src = temp2;		
+			}
+		
+	}
+
+</script>
+<body id="edit">
+	<div class="header">My Reports: Edit Preferences</div>
+	<div class="line">
+		<h3>General View</h3>
+		<div class="clear"></div>
+		<input type="radio" value="" name="general" /> <div class="txt">Maximized (Open)</div>
+		<input type="radio" value="" name="general" /> <div class="txt">Minimized (Closed)</div>
+	</div>
+	<div class="line">
+		<h3>Bundles</h3>
+		<div class="clear"></div>
+		<input type="radio" value="" name="bundles" /> <div class="txt">Show</div>
+		<input type="radio" value="" name="bundles" /> <div class="txt">Hide</div>
+		<div class="clear"></div>
+		<div class="desc">Determines whether the report bundles panel will be open upon start up of your home page.</div>
+	</div>
+	<div class="line">
+		<h3>Show</h3>
+		<div class="clear"></div>
+		<select>
+			<option>Daily Reports</option>
+		</select>
+		
+		<div class="clear"></div>
+		<div class="desc">Determines which report filters will apply when the window loads.</div>
+	</div>
+	<div class="line">
+		<h3>Sort By</h3>
+		<div class="clear"></div>
+		<input type="radio" value="" name="sort" /> <div class="txt">Report Title</div>
+		<input type="radio" value="" name="sort" /> <div class="txt">Account/Group</div>
+	</div>
+	<div class="line">
+		<h3>Format Preferences</h3>
+		<div class="clear"></div>
+		<div class="floatleft">
+			<div class="row borderbottom">
+				<img src="../images/icn_pdf.gif" alt="" class="icnPos" /> 
+				<div class="icn">PDF (Adobe Acrobat)</div>
+				<div class="arrows">
+					<span class="sel"><img src="../images/arrow_editupgray.gif" alt="" /></span>
+					<a href="#" onclick="reorderIcon(0,'down','icn','icnPos'); return false" class="sel"><img src="../images/arrow_editdownblue.gif" alt="" /></a>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row borderbottom">
+				<img src="../images/icn_ie.gif" alt="" class="icnPos" /> 
+				<div class="icn">WEB (Actuate)</div>
+				<div class="arrows">
+					<a href="#" onclick="reorderIcon(1,'up','icn','icnPos'); return false" class="sel"><img src="../images/arrow_editupblue.gif" alt="" /></a>
+					<a href="#" onclick="reorderIcon(1,'down','icn','icnPos'); return false" class="sel"><img src="../images/arrow_editdownblue.gif" alt="" /></a>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row borderbottom">
+				<img src="../images/icn_xls.gif" alt="" class="icnPos" /> 
+				<div class="icn">XLS (Excel)</div>
+				<div class="arrows">
+					<a href="#" onclick="reorderIcon(2,'up','icn','icnPos'); return false" class="sel"><img src="../images/arrow_editupblue.gif" alt="" /></a>
+					<a href="#" onclick="reorderIcon(2,'down','icn','icnPos'); return false" class="sel"><img src="../images/arrow_editdownblue.gif" alt="" /></a>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row">
+				<img src="../images/icn_xls.gif" alt="" class="icnPos" /> 
+				<div class="icn">CSV (Text)</div>
+				<div class="arrows">
+					<a href="#" onclick="reorderIcon(3,'up','icn','icnPos'); return false" class="sel"><img src="../images/arrow_editupblue.gif" alt="" /></a>
+					<span class="sel"><img src="../images/arrow_editdowngray.gif" alt="" /></span>
+				</div>
+			</div>
+		</div>
+		<div class="col">This order determines the type of report that will launch when clicking a link.</div>
+	</div>
+	<div class="borderline">
+		<div class="form">
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">OK</span></span></span></a>
+			<a href="#" class="button"><span class="borderleft"><span class="borderright"><span class="noarrow">Cancel</span></span></span></a>
+		</div>
+	</div>
+</body>
+</html>
