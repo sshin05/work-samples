@@ -1,0 +1,1726 @@
+/* CSS Document */
+
+div
+{
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+td
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+form
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Start Header CSS */
+
+div#header
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 910px;
+	height: 82px;
+	background: url(../images/bg_topnav.jpg) no-repeat top;
+}
+
+div#header_cbp
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 910px;
+	height: 82px;
+	background: url(../images/cbpNav_bg.gif) repeat-x top;
+}
+
+div#header table td.header_left
+{
+	background-image: url(../images/logo_bg_new.gif);
+	background-repeat: no-repeat;
+	text-indent: 21px;
+	padding-bottom: 5px;
+}
+
+div#header_cbp table td.header_left
+{
+	text-indent: 21px;
+	padding-top: 14px;
+}
+
+div#header_cbp table td.header_left
+{
+	text-indent: 21px;
+	padding-bottom: 5px;
+}
+
+div#header table div#header_rt_top
+{
+	background-image: url(../images/main_Nav_bg.gif);
+	background-repeat: no-repeat;
+	height: 41px;
+}
+
+div#header_rt_down
+{
+	background-image: url(../images/primary_Nav_bg.gif);
+	background-repeat: repeat-x;
+	height: 40px;
+}
+
+/* End Header CSS */
+
+/* Start Body CSS */
+
+#main .bodyOtherPages 
+{
+	float: left;
+	width: 910px;
+	height: auto;
+	padding-bottom: 10px;
+	background-image: url(../images/pageBottom.gif); 
+	background-repeat: no-repeat; 
+	background-position: bottom;
+}
+
+#main .bodyOtherPages .contentBg
+{
+	padding: 10px 10px 0px 10px; 
+	background: #ffffff; 
+	height: 95%;
+}
+
+div#middleContent
+{
+	background-color: #FAFAFA;
+}
+
+html>body div#middleContent
+{
+	background-color: #FAFAFA;
+}
+
+div.pageTitle
+{
+	font-size: 16px;
+	color: #505050;
+	font-weight: bold;
+	text-indent: 5px;
+	padding-bottom: 6px;
+/*	text-transform: uppercase;*/
+}
+
+div.pageTitle h1
+{
+	font-size: 16px;
+	color: #505050;
+	font-weight: bold;
+	text-indent: 5px;
+	padding-bottom: 6px;
+/*	text-transform: uppercase;*/
+	padding: 0px;
+	margin: 0px;
+}
+
+div.deals h1
+{
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+	padding: 0px 0px 6px 0px;
+	margin: 0px;
+}
+
+div#titleDesc
+{
+	padding: 5px;
+}
+
+div.titleDesc
+{
+	padding: 5px;
+}
+
+.exception_msg
+{
+	background-image: url(../images/exception_img.gif);
+	background-repeat: no-repeat;
+	background-position: 1px 5px;
+/*	border: 1px solid #eb2822;*/
+	padding: 5px 5px 5px 45px;
+	color: #eb2822;
+	background-color: #FAFAFA;
+	height: 36px;
+}
+
+html>body .exception_msg
+{
+	height: 45px;
+}
+
+.excep_top
+{
+	background-image: url(../images/excep_top.gif);
+	background-repeat: repeat-x;
+}
+
+.excep_botm
+{
+	background-image: url(../images/excep_botm.gif);
+	background-repeat: repeat-x;
+}
+
+.excep_rt
+{
+	background-image: url(../images/excep_rt.gif);
+	background-repeat: repeat-y;
+}
+
+.excep_left
+{
+	background-image: url(../images/excep_left.gif);
+	background-repeat: repeat-y;
+}
+
+.left_bg
+{
+	background: #FAFAFA;
+	background-image: url(../images/left_bg.jpg);
+	background-repeat: repeat-y;
+}
+
+.golder_leftbg
+{
+	background: #FAFAFA;
+	background-image: url(../images/golden_leftbg.jpg);
+	background-repeat: repeat-y;
+}
+
+.left_bg_padding
+{
+	padding-left: 11px;
+}
+
+.left_greenbg_padding
+{
+	padding-left: 11px;
+	width:148px
+}
+
+.rt_bg
+{
+	background-image: url(../images/rt_bg.jpg);
+	background-repeat: repeat-y;
+	background-position: right;
+}
+
+.rt_bg_padding
+{
+	padding-top: 11px;
+	padding-right: 11px;
+	padding-bottom: 11px;
+}
+
+.rt_greenbg_padding
+{
+	padding-top: 11px;
+	padding-right: 11px;
+	padding-bottom: 11px;
+	width:148px
+}
+
+.carClass_leftbgpadding
+{
+	padding-left: 5px;
+}
+
+.carClass_rtbgpadding
+{
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+}
+
+.carClass_height
+{
+	height: 75px;
+}
+
+.carClass_width
+{
+	width: 80px;
+}
+
+.carClass_fontSize
+{
+	font-size: 12px;
+}
+
+div#secHeadingGry
+{
+	background-image: url(../images/ltgrey_title_middle.jpg); 
+	background-repeat: repeat-x;
+	height: 25px;
+	width: 100%;
+}
+
+.mapPostionTxt
+{
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 25px;
+}
+
+div .secHeading
+{
+	background-image: url(../images/sectionHeader.gif); 
+	background-repeat: no-repeat;
+	height: 21px;
+	width: 100%;
+	padding-top: 4px;
+}
+
+div .secHeading h2 
+{	
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	font-weight: bold;
+	padding: 0px;
+	padding-left: 9px;
+	margin: 0px;
+}
+
+div .secHeading h2 a:link, div .secHeading h2 a:active, div .secHeading h2 a:visited, div .secHeading h2 a:hover
+{	
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+div .secHeading530
+{
+	background-image: url(../images/sectionHeader_530.gif); 
+	background-repeat: no-repeat;
+	height: 21px;
+	width: 100%;
+	padding-top: 4px;
+	color: #ffffff;
+}
+
+div .secHeading530 h2 
+{	
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	font-weight: bold;
+	padding: 0px;
+	padding-left: 9px;
+	margin: 0px;
+}
+
+div#secHeading
+{
+	background-image: url(../images/grey_title_middle.jpg); 
+	background-repeat: repeat-x;
+	height: 27px;
+	width: 100%;
+}
+
+.golden_tab
+{
+	background-image: url(../images/golden_bar.gif); 
+	background-repeat: repeat-x;
+	height: 25px;
+	width: 530px;
+}
+
+.left_Corner
+{
+	float: left;
+}
+
+.rt_Corner
+{
+	float: right;
+}
+
+.rt_text
+{
+	text-align: right;
+}
+
+div#secHeading div#secHeadTxt
+{
+	float: left;
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+.goldenTabText
+{
+	float: left;
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	padding-left:10px;
+	font-weight: bold;
+}
+
+div#secHeading div#secHeadTxt h2
+{
+	float: left;
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dealsH 
+{
+	color: #000000;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0px 0px 6px 0px;
+}
+
+.link_print
+{
+	padding-right: 5px; 
+	float: right;
+	font-size:10px;
+}
+div#secHeading div#secHeadTxt a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/*div#secDownLine
+{
+	background-image: url(../images/bot_middle_bg.jpg); 
+	background-repeat: repeat-x;
+	background-position:center;
+	width: 100%;
+	height: 5px;
+}*/
+
+div.secDownLine
+{
+	background-image: url(../images/bot_middle_bg.jpg); 
+	background-repeat: repeat-x;
+	background-position:center;
+	width: 100%;
+	height: 5px;
+}
+
+.greensecDownLine
+{
+	background-image: url(../images/bot_middle_bg.jpg); 
+	background-repeat: repeat-x;
+	background-position:center;
+	width: 170px;
+	height: 5px;
+}
+
+/*div#secTopLine
+{
+	background-image: url(../images/top_middle_bg.jpg); 
+	background-repeat: repeat-x;
+	background-position:center;
+	width: 100%;
+	height: 5px;
+}*/
+
+div.secTopLine
+{
+	background-image: url(../images/top_middle_bg.jpg); 
+	background-repeat: repeat-x;
+	background-position:center;
+	width: 100%;
+	height: 5px;
+}
+
+div#secHeadingRedBg
+{
+	background-image: url(../images/red_topMid_bg.jpg); 
+	background-repeat: repeat-x;
+	height: 27px;
+	width: 100%;
+}
+
+div#secHeadingRedBg div#secHeadTxt
+{
+	float: left;
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+.mandatory
+{
+	color: #FF0000;
+	font-size:13px;
+}
+
+.redItalic
+{
+	color: #FF0000;
+	font-size:11px;
+	font-style:italic;
+}
+
+.asteriskfont
+{
+	font-weight:normal; 
+	font-size: 11px; 
+	text-transform: none;
+}
+
+select
+{
+	font-size: 11px;
+}
+
+.txtSize
+{
+	font-size: 11px;
+}
+
+.grey_dots
+{
+	background-image: url(../images/grey_dots.jpg);
+	background-repeat: repeat-x;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	background-position: center;
+}
+
+.grey_dots2
+{
+	background-image: url(../images/grey_dots.jpg);
+	background-repeat: repeat-x;
+}
+
+.mapPostion
+{
+	background-image: url(../images/map_title.jpg);
+	background-repeat: no-repeat;
+	height: 25px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-left: 10px;
+	padding-right: 5px;
+	line-height: 23px;
+}
+
+a:link.mapnonlink, a:active.mapnonlink, a:visited.mapnonlink, a:hover.mapnonlink
+{
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: default;
+}
+
+div#map
+{
+	height: 427px;
+}
+
+.wideMap
+{
+	position: absolute;
+	border: 1px solid #000000;
+	width: 700px;
+	left: 208px;
+	z-index: 100px;
+	top: 142px;
+	height: 427px;
+}
+
+.wideMapiFrame
+{
+	position: absolute;
+	width: 697px;
+	left: 208px;
+	z-index: 100px;
+	top: 142px;
+	height: 425px;
+}
+
+.mapGrnPostion
+{
+	background-image: url(../images/header_top.gif);
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	line-height: 25px;
+	width:170px;
+	text-indent: 10px;
+}
+
+.airport_Loc 
+{
+	background-image: url(../images/grey_bg.jpg);
+	background-repeat: repeat-x;
+	background-color: #cccccc;
+	padding-left: 10px;
+	padding-right: 5px;
+	line-height: 26px;
+	height: 26px;
+}
+
+.airport_Locs 
+{
+	background-image: url(../images/grey_bg.jpg);
+	background-repeat: repeat-x;
+	background-color: #cccccc;
+/*	padding-left: 10px;*/
+/*	padding-right: 5px;*/
+	line-height: 25px;
+	height: 25px;
+}
+
+.red_no
+{
+	background-image: url(../images/red_round_btn.gif);
+	background-repeat: no-repeat;
+	width: 34px;
+	height: 25px;
+	text-align: center;
+	text-indent: 6px;
+/*	padding-left: 4px;*/
+}
+
+.red_no span
+{
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 1px;
+	padding-top: 2px;
+}
+
+.locationclosed
+{
+	color: #ff0000; 
+	width: 152px; 
+	text-align: right; 
+	font-weight: bold;
+}
+
+.airport_Loc_2
+{
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.airport_Loc_2new
+{
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.airport_Loc2
+{
+	background-color: #EEEEEE;
+	background-image: url(../images/grey_dots.jpg);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	height: 25px;
+	line-height: 25px;
+}
+
+.airport_Loc2_new
+{
+/*	background-color: #EEEEEE;*/
+	background-image: url(../images/selectCar_Bg.gif);
+/*	background-position: bottom;*/
+	background-repeat: no-repeat;
+	height: 26px;
+	line-height: 25px;
+}
+
+.airport_Loc2_txt
+{
+	text-align: right;
+	padding-right: 5px;
+}
+
+.airport_Loc_divide
+{
+	width:351px; 
+	border-right: 1px solid #666666;
+}
+
+html>body .airport_Loc_divide
+{
+/*	float: left; */
+	width: 349px;
+	border-right: 1px solid #666666;
+}
+
+.loc_info
+{
+	float: left;
+	padding-left: 3px;
+	width: 349px;
+	height: 140px;
+	border-right: 1px dotted #C1C1C1;
+}
+
+html>body .loc_info
+{
+	float: left;
+	padding-left: 3px;
+	width: 347px;
+	height: 140px;
+	border-right: 1px dotted #C1C1C1;
+}
+
+.ap_distance
+{
+	padding-left: 35px; 
+	float: left;
+}
+
+.subTitle 
+{
+	background-image: url(../images/grey_bg.jpg);
+	background-repeat: repeat-x;
+	background-color: #cccccc;
+	padding-left: 7px;
+	padding-right: 5px;
+/*	line-height: 25px;*/
+/*	text-transform: uppercase;	*//* none | capitalize | uppercase | lowercase */
+	font-weight: bold;
+}
+
+.subTitle a, .subTitle a:visited, .subTitle a:active
+{
+	color: #000000;
+	font-weight: normal;
+}
+
+.subTitle a:hover
+{
+	color: #ff0000;
+}
+
+a.resModify, a:visited.resModify
+{
+	font-weight: normal;
+	color: #000000;
+	background: #ffffff;
+	text-decoration: none;
+	font-size: 11px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+a:hover.resModify
+{
+	font-weight: normal;
+	color: #ffffff;
+	background: #ff3333;
+	text-decoration: none;
+	font-size: 11px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div#res_num
+{
+	background: #ff3333;
+	color: #ffffff; 
+	font-size: 14px; 
+	padding: 5px; 
+	font-weight: bold;
+}
+
+div#est_title
+{
+	background-image: url(../images/estimate_tle_bg.jpg); 
+	line-height: 30px; 
+	background-repeat: no-repeat; 
+	font-size: 13px; 
+	font-weight: bold; 
+	letter-spacing: 1px; 
+	padding-left: 10px; 
+	padding-right: 5px; 
+	color: #ffffff;
+}
+
+div#redsecDownLine
+{
+	background-image: url(../images/red_mid_bg.jpg); 
+	background-repeat: repeat-x;
+	background-position:center;
+	width: 100%;
+	height: 9px;
+}
+
+.red_left_bg
+{
+	background-color: #FAFAFA;
+	background-image: url(../images/red_left_bg.jpg);
+	background-repeat: repeat-y;
+}
+
+.red_leftbg_padding
+{
+	padding-left: 6px;
+}
+
+.red_rt_bg
+{
+	background-image: url(../images/red_rit_bg.jpg);
+	background-repeat: repeat-y;
+	background-position: right;
+}
+
+.red_rtbg_padding
+{
+	padding-right: 7px;
+}
+
+.estiTotal
+{
+	background: #DDDDDD;
+	font-size: 16px; 
+	font-weight: bold; 
+	line-height: 25px;
+}
+
+.boldDarkGrey
+{
+	font-weight: bold;
+	color: #666666;
+}
+
+/*#msg_Note
+{
+	text-align: right; 
+}*/
+
+div#airportMap
+{
+	background: #515151;
+}
+
+a.link_white, a:active.link_white, a:visited.link_white, a:hover.link_white
+{
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 11px;
+	text-decoration: underline;
+}
+
+.field_txt
+{
+	float: left; 
+	width: 110px;
+}
+
+.seedeals_txt
+{
+	float: left; 
+	width: 80px;
+}
+
+.vAlign4Chk
+{
+	vertical-align: middle;
+}
+
+.verticalAlign
+{
+	vertical-align: middle;
+}
+
+html>body .verticalAlign
+{
+	vertical-align: bottom;
+}
+
+.link_modify
+{
+	padding-right: 10px; 
+	float: right;
+	padding-top: 6px;
+}
+
+.links_modify
+{
+	padding-right: 10px; 
+	float: right;
+}
+
+.btnHeight
+{
+	height: 30px;
+}
+
+.form_Moreheight
+{
+	height: 40px;
+}
+
+.pagination a:link, .pagination a:active, .pagination a:visited, .pagination a:hover
+{
+	color: #000000;
+	font-weight: bold;
+}
+
+.pagination a:hover
+{
+	color: #3366FF;
+}
+
+div.selCarBtn
+{
+	float: right;
+	height: 20px; 
+	padding-top: 4px;
+	padding-right: 5px;
+	text-align: center;
+	font-size: 10px;
+	line-height: 10px;
+	width: 65px;
+}
+.leisure_rate
+{
+	float: right;
+	height: 20px; 
+	padding-top: 4px;
+	text-align: center;
+	font-size: 10px;
+	line-height: 10px;
+	width: 30px;
+}
+
+.coolcar
+{
+	color: #ff0000;
+}
+
+.opn_LineHeight
+{
+	line-height: 20px;
+}
+
+.travelAgents
+{
+	background:#D4D0AD;
+}
+
+div.travelAgents div
+{
+	color:#515151; 
+	font-weight:bold; 
+	font-size:12px;
+}
+
+.viewMap
+{
+	text-align: center;
+	border: 1px solid #000000;
+}
+
+.currentReservation 
+{
+	background-image: url(../images/grey_bg.jpg);
+	background-repeat: repeat-x;
+	background-color: #cccccc;
+/*	padding: 10px;*/
+	padding-top: 3px;
+}
+
+.currentReservation_lt
+{
+	background-image: url(../images/curentCar_bgLf.gif);
+	background-repeat: repeat-y;
+}
+
+.currentReservation_rt
+{
+	background-image: url(../images/curentCar_bgRt.gif);
+	background-repeat: repeat-y;
+	background-position: right;
+	padding: 7px 7px 7px 7px;
+}
+
+.currentReservation_botm
+{
+	background-image: url(../images/curentCar_bgbotm.gif);
+	background-repeat: repeat-x;
+}
+
+.modifyRes
+{
+	float: right;
+	text-align: right;
+	width:175px;
+}
+
+.highLightModify
+{
+	color: #669900;
+	font-weight: bold; 
+	font-size: 11px; 
+}
+
+.lineHeight_Norm
+{
+	line-height: normal;
+}
+
+.other_Loc
+{
+	float: right;
+	width: 100px;
+}
+
+.width_sel
+{
+	width: 206px;
+}
+
+.width_partner
+{
+	width: 350px;
+}
+
+.centerAlign
+{
+	text-align: center;
+}
+
+ul.paddingMargin
+{
+	padding: 0px;
+	margin: 0px;
+	list-style:inside;
+}
+
+ul.removeList
+{
+	list-style: none;
+}
+
+.greyFont
+{
+	color: #333333;
+}
+
+.lineHeight
+{
+	line-height: 15px;
+}
+
+.selectLocBtn
+{
+	padding: 5px 0px 1px 1px;
+}
+
+.apMapDisplay
+{
+	display:'';
+	padding: 5px 3px 3px 1px;
+}
+
+.apMapNone
+{
+	display: none;
+	padding: 5px 3px 3px 1px;
+}
+
+.ap_address
+{
+	padding-left: 35px; 
+}
+
+.imgDisplay
+{
+	display: '';
+}
+
+.imgNone
+{
+	display: none;
+}
+
+.selCarBaseRate
+{
+	width: 143px;
+}
+
+.selCarBaseRate2
+{
+	width: 80px;
+}
+
+.removepadding
+{
+	padding: 0px;
+}
+
+.removeMargin
+{
+	margin: 0px;
+}
+
+.fieldError
+{
+	color: #ff0000;
+}
+
+.makeResLable
+{
+	float: right;
+	font-size: 9px;
+	padding-right: 10px;
+}
+
+a.nonClicklink:link, a.nonClicklink:active, a.nonClicklink:visited, a.nonClicklink:hover
+{
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	cursor: default;
+}
+
+.closeImgAPinfo
+{
+	margin-right: 5px;
+}
+
+.selectCarTop
+{
+	background-image: url(../images/selectCarOver_top.gif);
+	background-repeat: no-repeat;
+	height: 5px;
+	padding: 0px;
+	margin: 0px;
+	background-color: #999999;
+}
+
+.selectCar
+{
+	background-image: url(../images/selectCarOver.gif);
+	background-repeat: repeat-y;
+	padding: 0px;
+	margin: 0px;
+	background-color: #999999;
+}
+
+.selectCarBtn
+{
+	background-image: url(../images/selectCarOver_botm.gif);
+	background-repeat: no-repeat;
+	height: 5px;
+	padding: 0px;
+	margin: 0px;
+	background-color: #999999;
+}
+
+.locationInfo
+{
+	position: absolute;
+	left: 670px;
+	top: 310px;
+	background-color: #CCCCCC;
+	width: 220px;
+	border: 1px solid #000000; 
+	padding: 5px;
+}
+
+.locationInfo2
+{
+	position: absolute;
+	left: 670px;
+	top: 365px;
+	background-color: #CCCCCC;
+	width: 220px;
+	border: 1px solid #000000; 
+	padding: 5px;
+}
+
+/* Developer Member 2 */
+
+.ProfileLoginBtn
+{
+margin-left:125px;
+}
+.CancelText
+{
+float:left;
+padding-left:4px;
+width:200px;
+}
+
+.review_txt
+{
+	float: left; 
+	width: 150px;
+}
+
+.Form_Height
+{
+height:20px;
+}
+.form_height
+{
+height:25px;
+}
+.enroll_txt
+{
+	float: left; 
+	width: 120px;
+	
+}
+.login_txt
+{
+	float: left; 
+	width: 165px;
+	
+}
+.landing_txt
+{
+	float: left; 
+	width: 190px;
+	
+}
+.information_txt
+{
+	float: left; 
+	width: 134px;	
+}
+.salutation_horz_text
+{
+float:left;
+width:75px;
+}
+.first_horz_text
+{
+float:left;
+width:89px;
+}
+.mi_horz_text
+{
+float:left;
+width:60px;
+}
+.last_horz_text
+{
+float:left;
+width:80px;
+}
+.ScrollBar
+{
+padding:15px 10px 0px 10px;
+width:485px;
+height:180px;
+overflow:scroll;
+overflow-x: hidden;
+border: 1px solid #cccccc;
+background:#FFFFFF;
+}
+.rt_button
+{
+	float: right;
+	width:200px;
+}
+.leftHeader
+{
+float:left;
+height:27px;
+width:6px;
+}
+.rightHeader
+{
+float:right;
+height:27px;
+width:6px;
+}
+.centerHeader
+{
+width:100px;	
+}
+.italic
+{
+font-style:italic;
+font-size:11px;
+color:#000000;
+}
+.leftColumn
+{
+float:left;
+width:200px;
+}
+.centerColumn
+{
+float:left;
+width:100px;
+}
+.rightColumn
+{
+float:left;
+width:100px;
+}
+.red_txt
+{
+	color: #eb2822;
+	font-size:12px;
+	font-weight:bold;
+	height:20px;
+	background-color:#dcd9d9;
+}
+.normalText
+{
+width:120px;
+float:left;
+}
+			
+.account_landing_txt
+{
+	float: left; 
+	width: 105px;
+}
+.tripmodule_txt
+{
+	float: left; 
+	width: 200px;
+	
+}
+.nextrip_txt
+{
+	float: left; 
+	width: 100px;
+	
+}
+
+.whiteText
+{
+font-size:11px;
+color:#FFFFFF;
+}
+
+.smallwhiteText
+{
+font-size:10px;
+color:#FFFFFF;
+}
+
+.SavedInformation
+{
+	background-image: url(../images/saved_information.gif);
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top:7px;
+	height:19px;
+}
+
+.SavedInformations
+{
+	background-image: url(../images/saved_information.gif);
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	padding-right: 5px;
+	height:26px;
+}
+
+.savedInfrmTxt
+{
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	padding-top:7px;
+}
+
+a.InformationText, a:visited.InformationText, a:active.InformationText
+{
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration:none;
+}
+.spacer
+{
+height:10px;
+}
+.ModifyText
+{
+padding-right:16px;
+}
+.showText
+{
+padding-left:15px;
+height:30px;
+padding-top:10px;
+}
+.MainPopup
+{
+border-left:solid 1px #666666;
+border-right:solid 1px #666666;
+border-bottom:solid 1px #666666;
+width:430px;
+margin-left:20px;
+}
+.popBg
+{
+	background-image: url(../images/grey_popbagrnd.gif); 
+	background-repeat: repeat-x;
+	height: 360px;
+	width: 415px;
+	padding-left:15px;
+	background-color:#dddddd;
+	padding-top:14px;
+}
+
+.apstlInfo
+{
+	position: absolute;
+	width: 525px;
+	text-align: center;
+	z-index: 100px;
+}
+
+div#popHeading
+{
+	background-image: url(../images/grey_popbg.gif); 
+	background-repeat: repeat-x;
+	background-color:#6e6e6e;
+	height: 26px;
+	width: 432px;
+	margin-left:20px;
+}
+
+.popHeading
+{
+	background-image: url(../images/grey_popbg.gif); 
+	background-repeat: repeat-x;
+	background-color:#6e6e6e;
+	height: 26px;
+	width: 432px;
+	margin-left:20px;
+}
+
+.WhiteBTxt
+{
+	float: left;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: bold;
+}
+.leftPanelTxt
+{
+	float: left; 
+	width: 90px;
+}
+
+.customerTxt
+{
+	float: left; 
+	width: 245px;
+}
+
+.rightPanelText
+{
+	width: 140px;
+}
+
+.directionsGap
+{
+	padding: 10px 0px 10px 11px;
+}
+.planeIcon
+{
+	padding-top: 15px;
+}
+
+.topGap
+{
+	padding-top:5px;
+}
+
+.rightImg
+{
+	position: absolute;
+	top: 140px;
+	left: 145px;
+	display: none;
+	float: right;
+}
+
+.trHight
+{
+	height: 23px;
+}
+
+.makeReservationBtn
+{
+	padding-top: 5px;
+	float: right;
+}
+
+.whiteBText
+{
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: normal;
+	padding-top: 2px;
+}
+
+a.whiteBText, a:active.whiteBText, a:visited.whiteBText
+{
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: normal;
+	padding-top: 2px;
+}
+
+/*.airport_Loc_divide
+{
+	float: left; 
+	width: 342px; 
+	border-right: 1px solid #666666;
+}*/
+
+.confirmation_number
+{
+	float: left; 
+	width:132px; 
+	border-right: 1px solid #666666;
+}
+
+.total_estimate
+{
+	float: left; 
+	width: 250px;
+}
+
+.sitmapSectGap
+{
+	padding-left:20px;
+}
+
+.map_position
+{
+	position: absolute;
+	top: 140px;
+	left: 145px;
+	display: none;
+	float: right;
+}
+
+.make_reservationbtn
+{
+	padding-top:5px;
+	float:right;
+}
+
+.airplane_icon
+{
+	padding: 5px 3px 3px 1px;
+}
+
+.formRight
+{
+	width: 370px; 
+	float: right;
+}
+
+.golden_tab
+{
+	background-image: url(../images/golden_bar.gif);
+	background-repeat: repeat-x;
+	height: 25px;
+	width: 530px;
+}
+
+div .golden_smalltab
+{
+	background-image: url(../images/golden_bar_small.gif); 
+	background-repeat: no-repeat;
+	height: 21px;
+	width: 100%;
+	padding-top: 4px;
+}
+
+div .golden_smalltab h2 
+{	
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	font-weight: bold;
+	padding: 0px;
+	padding-left: 9px;
+	margin: 0px;
+}
+
+div .secHeadingLong530
+{
+	background-image: url(../images/grey_longtab.gif); 
+	background-repeat: no-repeat;
+	height: 21px;
+	width: 100%;
+	padding-top: 4px;
+	color: #ffffff;
+}
+
+div .secHeadingLong530 h2 
+{	
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	font-weight: bold;
+	padding: 0px;
+	padding-left: 9px;
+	margin: 0px;
+}
+
+div .secHeadingSmall530
+{
+	background-image: url(../images/grey_smalltab.gif); 
+	background-repeat: no-repeat;
+	height: 21px;
+	width: 100%;
+	padding-top: 4px;
+	color: #ffffff;
+}
+
+div .secHeadingSmall530 h2 
+{	
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	font-weight: bold;
+	padding: 0px;
+	padding-left: 9px;
+	margin: 0px;
+}
+
+div .secHeadingVLong530
+{
+	background-image: url(../images/grey_vlongtab.gif); 
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 100%;
+	color: #ffffff;
+}
+
+div .secHeadingVLogng530 h2 
+{	
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	font-weight: bold;
+	padding: 0px;
+	padding-left: 9px;
+	margin: 0px;
+}
+
+.dottedVline
+{
+background-image: url(../images/dotted_vline.gif);
+background-repeat: repeat-y;
+width: 5px;
+}
+
+.dottedVline2
+{
+background-image: url(../images/dotted_vline.gif);
+background-repeat: repeat-y;
+width: 10px;
+}
+
+.grey_leftbg
+{
+background-image: url(../images/grey_leftbg.gif);
+width: 4px;
+height: 29px;
+background-repeat: repeat-y;
+}
+
+.grey_rightbg
+{
+background-image: url(../images/grey_rightbg.gif);
+width: 4px;
+height: 29px;
+background-repeat: repeat-y;
+}
+
+.grey_noplate
+{
+background-image: url(../images/grey_plate.gif);
+background-repeat: no-repeat;
+font-size: 13px;
+color: #FFFFFF;
+font-weight: bold;
+margin-left: 7px;
+}
+
+.red_noplate
+{
+background-image: url(../images/red_plate.gif);
+background-repeat: no-repeat;
+font-size: 13px;
+color: #FFFFFF;
+font-weight: bold;
+margin-left: 7px;
+}
+
+.small_map
+{
+padding-left: 190px;
+font-size: 11px;
+color: #000000;
+}
+
+div .secHeading560
+{
+	background-image: url(../images/grey_vsmalltab.gif); 
+	background-repeat: no-repeat;
+	height: 21px;
+	width: 100%;
+	padding-top: 4px;
+	color: #ffffff;
+}
+
+div .secHeading560 h2
+{
+	color: #FFFFFF;
+	font-size: 13px;
+	padding-top: 5px;
+	font-weight: bold;
+	padding: 0px;
+	padding-left: 9px;
+	margin: 0px;
+}
+
+/* Developer Member 2 */
+
+/* End Body CSS */

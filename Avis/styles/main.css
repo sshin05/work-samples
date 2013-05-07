@@ -1,0 +1,1671 @@
+/* CONSTANTS */
+
+body {
+	margin: 0;
+	padding: 0 0 0 5px;
+	width: 925px;
+	height: 100%;
+	background: url(../images/bg_body.gif) repeat-x top;
+	font: normal 12px Arial;
+	color: #333333;
+}
+
+a:link, a:active, a:visited, a:hover {
+	color:#3366FF;
+}
+
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	
+	font-size: 11px;
+	font-weight: bold;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+br {
+
+}
+
+/* DO NOT USE */
+
+.nav, .navigation, .line1, .line2 {  }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.nav {
+		float:left;
+	}
+}
+
+.sec, .nextaccount, .prevaccount { display: none; }
+
+/* BUTTONS */
+
+a.continue:link, a.continue:active, a.continue:visited, a.continue:hover {	
+	margin: 10px 10px 0 0;
+}
+
+a.offers:link, a.offers:active, a.offers:visited, a.offers:hover {
+	float: left;
+	width: 133px;
+	height: 30px;			
+}
+
+a.receipts:link, a.receipts:active, a.receipts:visited, a.receipts:hover {
+	float: left;
+	width: 98px;
+	height: 30px;
+}
+
+a.home:link, a.home:active, a.home:visited, a.home:hover {
+	position: absolute;
+	width: 170px;
+	height: 70px;
+}
+
+/* GLOBAL CLASSES */
+
+.bordertest {
+	border: 1px solid red;
+}
+
+.bordertest2 {
+	border: 1px solid blue;
+}
+
+.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.floatleft {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.floatright {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.fade {
+	behavior: url(styles/iepngfix.htc);
+}
+
+.hide {
+	display: none;
+}
+
+.red {
+	color: #FF3333;
+	font-size: 13px;
+	line-height: 11px;
+}
+
+.smalltext {
+	font-size: 10px;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.safaritextright {
+		text-align: right;
+	}
+}
+
+
+/* PERMANANT SETTINGS */
+
+#tabs {
+	white-space: nowrap;
+}
+
+#main {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 920px;
+	height: 100%;
+}
+
+
+	#main #leftshadow {
+		float: left;
+		width: 5px;
+		height: 629px;
+		background: url(../images/bg_leftshadow.jpg) no-repeat top;
+	}
+	
+	#main #rightshadow {
+		float: right;
+		width: 5px;
+		height: 629px;
+		background: url(../images/bg_rightshadow.jpg) no-repeat top;
+	}
+
+
+/* HEADER AND TOP NAVIGATION */
+
+	#main .header {
+		float: left;
+		margin: 0;
+		padding: 0;
+		background: url(../images/bg_topnav.jpg) no-repeat top;	
+		width: 910px;
+		height: 82px;
+	}
+	
+	
+		#main .header .utilitynav {
+			float: right;
+			margin: 0 17px 0 0;
+			padding: 3px 0 0 0;	
+			z-index: 10;
+			width: auto;
+		}
+		
+			#main .header .utilitynav .navigation {
+				width: 350px;
+			}
+		
+			#main .header .utilitynav .login {
+				float: left;
+				margin: 4px 5px 0 0;
+				padding: 0;
+				color: #FFFFFF;
+				font-weight: bold;
+				font-size: 11px;
+			}
+			
+			#main .header .utilitynav .fontsize11 {
+				font-size: 11px;
+			}
+			
+			#main .header .utilitynav .paddingtop4 {
+				padding-top: 4px !important;
+			}
+		
+			#main .header .utilitynav a:link, #main .header .utilitynav a:active, #main .header .utilitynav a:visited, #main .header .utilitynav a:hover {
+				float: left;
+				color: #FFFFFF;
+				font-size: 10px;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			
+			#main .header .utilitynav a.one:link, #main .header .utilitynav a.one:active, #main .header .utilitynav a.one:visited  {
+				padding: 3px 0 5px 0;	
+				font-size: 10px;			
+				text-align: center;
+				height: 17px;
+				width: 46px;
+			}
+			
+			#main .header .utilitynav a.one:hover, #main .header .utilitynav ul li:hover a.one, #main .header .utilitynav ul li.sfhover a.one {
+				background: url(../images/bg_utility_one_over.gif) no-repeat top;
+			}
+			
+			#main .header .utilitynav a.two:link, #main .header .utilitynav a.two:active, #main .header .utilitynav a.two:visited {
+				padding: 4px 0 5px 0;				
+				text-align: center;
+				height: 17px;
+				width: 80px;
+			}
+			
+			#main .header .utilitynav a.two:hover {
+				background: url(../images/bg_utility_two_over.gif) no-repeat top;
+			}
+			
+			#main .header .utilitynav a.three:link, #main .header .utilitynav a.three:active, #main .header .utilitynav a.three:visited {
+				padding: 4px 0 5px 0;				
+				text-align: center;
+				height: 17px;
+				width: 109px;
+			}
+			
+			#main .header .utilitynav a.three:hover, #main .header .utilitynav ul li:hover a.three, #main .header .utilitynav ul li.sfhover a.three {
+				background: url(../images/bg_utility_three_over.gif) no-repeat top;
+			}
+			
+			#main .header .utilitynav a.four:link, #main .header .utilitynav a.four:active, #main .header .utilitynav a.four:visited {
+				padding: 4px 0 5px 0;				
+				text-align: center;
+				height: 17px;
+				width: 110px;
+				float: left;
+			}
+			
+				
+			
+			#main .header .utilitynav a.four:hover, #main .header .utilitynav ul li:hover a.four, #main .header .utilitynav ul li.sfhover a.four {
+				background: url(../images/bg_utility_four_over.gif) no-repeat top;
+			}
+			
+			#main .header .utilitynav .divider {
+				float: left;
+				padding: 0;
+				margin: 0;
+				background: url(../images/divider_reddots.gif) no-repeat top;
+				width: 1px;
+				height: 21px;
+				line-height: 21px;
+			}
+			
+			#main .header .utilitynav a:link .arrow, #main .header .utilitynav a:active .arrow, #main .header .utilitynav a:visited .arrow {
+				padding: 0 0 0 10px;
+				background: url(../images/arrow_leftwhite.gif) no-repeat right;
+				width: 5px;
+				height: 9px;
+			}
+			
+			#main .header .utilitynav a:hover .arrow, #main .header .utilitynav ul li:hover a .arrow, #main .header .utilitynav ul li.sfhover a.four .arrow {
+				padding: 0 0 0 10px;
+				background: url(../images/arrow_downwhite.gif) no-repeat right;
+				width: 7px;
+				height: 4px;
+			}
+			
+			#main .header .utilitynav .underline {
+				text-decoration: underline;
+			}
+		
+		#main .header iframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			filter: progid:DXImageTransform.Microsoft.Alpha(style=1,opacity=1);
+		}
+			
+		#main .header .utilitynav ul, #main .header .utilitynav ul li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			z-index: 10;
+		}
+		
+			#main .header .utilitynav li:hover ul, #main .header .utilitynav li.sfhover ul {
+				display: block;
+			}
+		
+		
+		#main .header .utilitynav ul ul {
+			_clear: left;
+			position: absolute;
+			border-top: 1px solid #999999;			
+			width: 168px;
+			color: #666666;
+			padding: 0;
+			margin: 25px 0 0 0;
+			#margin: 25px 0 0 -110px;
+			_margin: 0 0 0 0;
+			list-style: none;
+			text-align: left;
+			display: none;
+			z-index: 10;
+		}	
+		
+		#main .header .utilitynav ul ul.dropdown {
+			margin: 25px 0 0 -60px;
+			#margin: 25px 0 0 -170px;
+			_margin: 0 0 0 -60px;
+		}
+		
+			#main .header .utilitynav ul ul.widealign {
+				#margin-left: -46px;
+				_margin-left: 0;
+				width: 325px;
+			}
+			
+				#main .header .utilitynav ul ul.widealign li {
+					width: 307px;
+				}
+				
+				#main .header .utilitynav ul ul.widealign li .ie7margintop4 {
+					#margin-top: 4px;
+				}
+		
+			#main .header .utilitynav ul ul li {
+				float: left;
+				list-style: none;
+				border-left: 1px solid #999999;
+				border-right: 1px solid #999999;
+				width: 152px;
+				height: auto;
+				margin: 0;
+				padding: 10px 8px 0 8px;
+				background-color: #FFFFFF;
+			}
+			
+				#main .header .utilitynav ul ul li.divider {
+					float: left;
+					background: url(../images/divider_shortgraydots.gif) no-repeat top;
+					background-color: #FFFFFF;
+					width: 168px;
+					height: 1px;
+					margin: 0;
+					_margin: 0 0 -10px 0;
+					padding: 10px 0 0 0;
+				}
+				
+				#main .header .utilitynav ul ul li.longdivider {
+					float: left;
+					background: url(../images/divider_longgraydots.gif) no-repeat top;
+					background-color: #FFFFFF;
+					width: 323px;
+					height: 1px;					
+					margin: 0;
+					_margin: 0 0 -10px 0;
+					padding: 10px 0 0 0;
+				}
+				
+				#main .header .utilitynav ul ul li a:link, #main .header .utilitynav ul ul li a:active, #main .header .utilitynav ul ul li a:visited, #main .header .utilitynav ul ul li a:hover  {
+					color: #3366FF;
+					text-decoration: underline;
+					font-weight: normal;
+					font-size: 10px;
+				}
+				
+					#main .header .utilitynav ul ul li a.go:link, #main .header .utilitynav ul ul li a.go:active, #main .header .utilitynav ul ul li a.go:visited,  #main .header .utilitynav ul ul li a.go:hover {
+						width: 45px;
+						height: 30px;
+						margin: -10px 0 5px 0;
+						padding: 0;
+						float: right;
+					}
+
+					#main .header .utilitynav ul ul li a.submit:link, #main .header .utilitynav ul ul li a.submit:active, #main .header .utilitynav ul ul li a.submit:visited, #main .header .utilitynav ul ul li a.submit:hover {
+						width: 67px;
+						height: 30px;
+						margin: -10px 0 5px 0;
+						padding: 0;
+						float: right;
+					}
+			
+				#main .header .utilitynav ul ul li h3 {	
+					float: left;
+					font-size: 12px;
+					font-weight: bold;
+					display: inline;				
+					margin: 0 0 2px 0;
+					padding: 0;
+					color: #666666;
+				}
+				
+				#main .header .utilitynav ul ul li select, #main .header .utilitynav ul ul li input {
+					float: left;
+					width: 150px;
+					margin: 0 0 10px 0;
+					padding: 0;
+					font-size: 12px;
+				}
+				
+				#main .header .utilitynav ul ul li input {
+					margin-right: 2px;
+				}
+				
+					#main .header .utilitynav ul ul li input.chb {
+						width: auto;
+						margin: 0 5px 0 0;
+						_margin-left: -3px;
+						padding: 0;
+						float: left;
+					}
+				
+				#main .header .utilitynav ul ul li.iedividefix {
+					#padding-bottom: 10px;
+				}
+				
+				#main .header .utilitynav ul ul li .text {
+					float: left;
+					font-size: 11px;
+					margin: 0 0 10px 0;
+				}
+				
+				#main .header .utilitynav ul ul li input.short {
+					float: left;
+					width: 120px;
+					_width: 118px;
+					font-size: 12px;
+					line-height: 13px;
+					margin: 0 5px 10px 0px;
+				}		
+				
+				#main .header .utilitynav ul ul li .margintop4 {
+					_margin-top: 4px;
+				}
+	
+				#main .header .utilitynav ul ul.dropdown li {				
+					background: url(../images/divider_shortgraydots.gif) repeat-x bottom;				
+					width: 168px;
+					padding: 0 0 1px 0;
+				}
+				
+					#main .header .utilitynav ul ul li.footer {
+						float: left;
+						height: 6px;
+						margin: -1px 0 0 0;
+						_margin: -10px 0 0 0;
+						padding: 0;
+						background: url(../images/bg_utilityfooter.gif) no-repeat bottom;
+						width: 170px;
+						border: 0;
+					}
+					
+					#main .header .utilitynav ul ul li.longfooter {
+						float: left;
+						height: 6px;
+						margin: -1px 0 0 0;
+						_margin: -10px 0 0 0;
+						padding: 0;
+						background: url(../images/bg_utilitylongfooter.gif) no-repeat bottom;
+						width: 325px;
+						border: 0;
+					}
+				
+					#main .header .utilitynav ul ul.dropdown li a:link, #main .header .utilitynav ul ul.dropdown li a:active, #main .header .utilitynav ul ul.dropdown li a:visited {
+						color: #666666;
+						padding: 5px;
+						width: 158px;
+						background-color: #FFFFFF;
+						font-size: 11px;
+						text-decoration: none;
+					}
+				
+					#main .header .utilitynav ul ul.dropdown li a:hover {
+						background-color: #DDDDDD
+					}
+		
+		#main .header .mainnav {
+			float: left;
+			margin: 12px 0 0 296px;
+			_margin-left: 148px;
+			padding: 0;
+		}
+	
+		
+			#main .header .mainnav ul {
+				float: left;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+				#main .header .mainnav ul li {
+					float: left;
+					margin: 0 1px 0 0;
+				}
+				
+				#main .header .mainnav ul li.footer {
+					background: url(../images/bg_secondary_footer.gif) no-repeat bottom;
+					margin: -1px 0 0 0;
+					_margin-top: -10px;
+					padding: 0;
+					height: 6px;
+				}
+				
+				#main .header .mainnav li:hover ul ul {
+					display: none;
+				}				
+				
+				#main .header .mainnav li:hover ul, #main .header .mainnav li li:hover ul {
+					display: block;
+				}
+				
+				#main .header .mainnav li.sfhover ul ul {
+					display: none;
+				}
+				
+				#main .header .mainnav li.sfhover ul, #main .header .mainnav li li.sfhover ul {
+					display: block;
+				}
+				
+		
+					#main .header .mainnav ul li a.tab1:link, #main .header .mainnav ul li a.tab1:active, #main .header .mainnav ul li a.tab1:visited {
+						float: left;
+						width: 109px;
+						height: 31px;
+						margin: 0;
+						padding: 0;
+					}
+					
+					#main .header .mainnav ul li a.tab1:hover, #main .header .mainnav ul li:hover a.tab1, #main .header .mainnav ul li.sfhover a.tab1 {
+						float: left;
+						width: 109px;
+						height: 31px;
+						background: url(../images/tab_reservations_over.jpg) no-repeat top;
+					}
+					
+					#main .header .mainnav ul li a.tab2:link, #main .header .mainnav ul li a.tab2:active, #main .header .mainnav ul li a.tab2:visited {
+						float: left;
+						width: 89px;
+						height: 31px;
+						margin: 0;
+						padding: 0;
+					}
+					
+					#main .header .mainnav ul li a.tab2:hover, #main .header .mainnav ul li:hover a.tab2, #main .header .mainnav ul li.sfhover a.tab2 {
+						float: left;
+						width: 89px;
+						height: 31px;
+						background: url(../images/tab_locations_over.jpg) no-repeat top;
+					}
+					
+					#main .header .mainnav ul li a.tab3:link, #main .header .mainnav ul li a.tab3:active, #main .header .mainnav ul li a.tab3:visited {
+						float: left;
+						width: 63px;
+						height: 31px;
+						margin: 0;
+						padding: 0;
+					}
+					
+					#main .header .mainnav ul li a.tab3:hover, #main .header .mainnav ul li:hover a.tab3, #main .header .mainnav ul li.sfhover a.tab3 {
+						float: left;
+						width: 63px;
+						height: 31px;
+						background: url(../images/tab_deals_over.jpg) no-repeat top;
+					}
+					
+					#main .header .mainnav ul li a.tab4:link, #main .header .mainnav ul li a.tab4:active, #main .header .mainnav ul li a.tab4:visited {
+						float: left;
+						width: 127px;
+						height: 31px;
+						margin: 0;
+						padding: 0;
+					}
+					
+					#main .header .mainnav ul li a.tab4:hover, #main .header .mainnav ul li:hover a.tab4, #main .header .mainnav ul li.sfhover a.tab4 {
+						float: left;
+						width: 127px;
+						height: 31px;
+						background: url(../images/tab_cars_over.jpg) no-repeat top;
+					}
+					
+					
+					
+				#main .header .mainnav ul ul {
+					#clear: left;
+					position: absolute;
+					border-top: 1px solid #999999;			
+					width: 181px;
+					color: #666666;
+					padding: 0;
+					margin: 30px 0 0 0;
+					#margin-top: 0;
+					list-style: none;
+					text-align: left;
+					display: none;
+					z-index: 10;
+				}
+				
+					#main .header .mainnav ul ul li {
+						float: left;
+						list-style: none;						
+						width: 181px;
+						margin: 0;
+						padding: 0;						
+						background: #FFFFFF  url(../images/divider_maingraydots.gif) no-repeat bottom;
+					}
+										
+						#main .header .mainnav ul ul li a:link, #main .header .mainnav ul ul li a:active, #main .header .mainnav ul ul li a:visited {
+							float: left;
+							margin: 0;
+							padding: 6px 8px 6px 12px;
+							width: 159px;
+							color: #666666;
+							font-size: 11px;
+							text-decoration: none;							
+							border-left: 1px solid #999999;
+							border-right: 1px solid #999999;
+						}
+						
+						
+						 #main .header .mainnav ul ul li a.arrow:link,  #main .header .mainnav ul ul li a.arrow:active, #main .header .mainnav ul ul li a.arrow:visited {
+						 	background: url(../images/arrow_rightgray.gif) no-repeat 99%;
+							margin: 0;
+							padding: 6px 8px 6px 12px;
+							width: 159px;
+						 }
+						 
+						  #main .header .mainnav ul ul li a:hover, #main .header .mainnav ul ul li a.arrow:hover {
+						 	background-color: #DDDDDD;
+						 }
+						 
+					#main .header .mainnav ul ul ul {	
+						_clear: left;
+						position: absolute;
+						border-top: 1px solid #999999;			
+						width: 181px;
+						color: #666666;
+						padding: 0;
+						margin: 0 0 0 174px;
+						#margin-top: -28px;
+						list-style: none;
+						text-align: left;
+						display: none;
+						z-index: -1;
+					}
+							
+		#main .header .search {
+			float: right;
+			margin: 19px 17px 0 0;
+			#margin: 17px 10px 0 0; 
+			_margin: 17px 5px 0 0;
+		}
+		
+			#main .header .search input {
+				margin: 0;
+				padding: 2px 0 0 0;
+				#padding: 1px 0 0 0;
+				font-size: 12px;
+				color: #999999;
+				width: 145px;
+				text-transform: uppercase;
+			}
+			
+			#main .header .search input.arrow {
+				margin: 0 0 5px 0;
+				padding: 0;
+				height: 17px;
+				width: 23px;
+				vertical-align: middle;
+			}
+			
+			
+/* MAIN BODY */			
+	
+	#main .cts {
+		background: url(../images/bg_cts.jpg) no-repeat top;
+	}
+	
+	#main .hummer1 {
+		background: url(../images/bg_hummer1.jpg) no-repeat top;
+	}
+	
+	#main .hummer2 {
+		background: url(../images/bg_hummer2.jpg) no-repeat top;
+	}
+	
+	#main .mustang {
+		background: url(../images/bg_mustang.jpg) no-repeat top;
+	}	
+	
+	#main .tahoe {
+		background: url(../images/bg_tahoe.jpg) no-repeat top;
+	}
+	
+	
+
+	#main .body {
+		float: left;
+		width: 910px;
+		height: auto;
+		padding-bottom: 70px;
+		background-color: #474C5B;
+	}
+	
+	
+		.tabs1 {
+			background: url(../images/bg_tabs.gif) no-repeat top;
+			height: 44px;
+			width: 530px;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.tabs2 {
+			background: url(../images/bg_tabs2.gif) no-repeat top;
+			height: 44px;
+			width: 530px;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.component {
+			position: absolute;
+			float: left;
+			top: 99px;
+			left: 20px;			
+			width: 530px;
+			margin: 0;
+			padding: 0;
+		}
+		
+		
+	
+		
+		.non-seo {
+			position: relative;
+			top: 0;
+			left: 0;
+			margin: 17px 0 0 10px;
+			padding: 0;
+		}
+				
+		 .component a.tab:link,  .component a.tab:active,  .component a.tab:visited,  .component a.tab:hover {
+			float: left;
+			color: #FFFFFF;
+			font-weight: bold;
+			font-size: 13px;
+			text-decoration: none;
+			white-space: nowrap;
+		}
+		
+		.component a.one:link, .component a.one:active, .component a.one:visited {
+			padding: 15px 7px 0 9px;
+			margin: 0;
+			width: 126px;
+			height: 22px;
+			position: relative;
+		}
+		
+		.component a.one:hover {
+			margin: 1px 0 0 0;
+			padding: 14px 7px 0 9px;
+			background: url(../images/tab_one_over.gif) no-repeat top;
+			width: 126px;
+			height: 22px;
+			position: relative;
+		}
+		
+		
+		.component a.itemOn1:link, .component a.itemOn1:active, .component a.itemOn1:visited, .component a.itemOn1:hover {
+			background: url(../images/tab_one_itemOn.gif) no-repeat top;
+			width: 132px;
+			height: 30px;
+			padding: 14px 1px 0 9px;
+			margin: 0;
+			color: #333333;
+			font-size: 13px;
+			font-weight: bold;
+			cursor: default;
+			position: relative;
+		}
+		
+		.component a.two:link, .component a.two:active, .component a.two:visited {
+			padding: 15px 6px 0 7px;
+			margin: 0;
+			width: 144px;
+			height: 22px;
+			position: relative;
+		}
+		
+		.component a.two:hover {
+			margin: 1px 0 0 0;
+			padding: 14px 6px 0 7px;
+			background: url(../images/tab_two_over.gif) no-repeat top;
+			width: 144px;
+			height: 22px;
+			position: relative;
+		}
+		
+		.component a.itemOn2:link, .component a.itemOn2:active, .component a.itemOn2:visited, .component a.itemOn2:hover {
+			background: url(../images/tab_two_itemOn.gif) no-repeat top;
+			width: 147px;
+			height: 30px;
+			padding: 14px 3px 0 7px;
+			margin: 0;
+			color: #333333;
+			font-size: 13px;
+			font-weight: bold;
+			cursor: default;
+			position: relative;
+		}
+		
+		.component a.three:link, .component a.three:active, .component a.three:visited {
+			padding: 15px 9px 0 9px;
+			margin: 0;
+			width: 87px;
+			height: 22px;
+			position: relative;
+		}
+		
+		.component a.three:hover {
+			margin: 1px 0 0 0;
+			padding: 14px 9px 0 9px;
+			background: url(../images/tab_three_over.gif) no-repeat top;
+			width: 87px;
+			height: 22px;
+			position: relative;
+		}
+		
+		.component a.itemOn3:link, .component a.itemOn3:active, .component a.itemOn3:visited, .component a.itemOn3:hover {
+			background: url(../images/tab_three_itemOn.gif) no-repeat top;
+			width: 96px;
+			height: 30px;
+			padding: 14px 0 0 9px;
+			margin: 0;
+			color: #333333;
+			font-size: 13px;
+			font-weight: bold;
+			cursor: default;
+			position: relative;
+		}
+		
+		.component a.four:link, .component a.four:active, .component a.four:visited {
+			padding: 15px 0 0 10px;
+			width: 116px;
+			height: 22px;
+			position: relative;
+		}
+		
+		.component a.four:hover {		
+			margin: 1px 0 0 0;	
+			padding: 14px 0 0 10px;
+			background: url(../images/tab_four_over.gif) no-repeat top;
+			width: 116px;
+			height: 22px;
+			position: relative;
+		}
+		
+		.component a.itemOn4:link, .component a.itemOn4:active, .component a.itemOn4:visited, .component a.itemOn4:hover {
+			background: url(../images/tab_four_itemOn.gif) no-repeat top;
+			width: 117px;
+			height: 30px;
+			padding: 14px 0 0 9px;
+			margin: 0;
+			color: #333333;
+			font-size: 13px;
+			font-weight: bold;
+			cursor: default;
+			position: relative;
+		}
+		
+		.component .tabs2 a.four:link, .component .tabs2 a.four:active, .component .tabs2 a.four:visited {
+			float: right;
+			padding: 15px 0 0 10px;
+			width: 116px;
+			height: 22px;
+			position: relative;
+		}
+		
+		.component .tabs2 a.four:hover {		
+			margin: 1px 0 0 0;	
+			padding: 14px 0 0 10px;
+			background: url(../images/tab_four_over.gif) no-repeat top;
+			width: 116px;
+			height: 22px;
+			position: relative;
+		}
+		
+		.component .tabs2 a.itemOn4:link, .component .tabs2 a.itemOn4:active, .component .tabs2 a.itemOn4:visited, .component .tabs2 a.itemOn4:hover {
+			background: url(../images/tab_four_itemOn.gif) no-repeat top;
+			width: 117px;
+			height: 30px;
+			padding: 14px 0 0 9px;
+			margin: 0;
+			color: #333333;
+			font-size: 13px;
+			font-weight: bold;
+			cursor: default;
+			position: relative;
+		}
+			
+		
+			.component .reservation {
+				float: left;
+				margin: 0;
+				padding: 8px 0 5px 0;
+				_padding: 6px 0 3px 0;
+				font-size: 11px;
+				width: 530px;
+				height: auto;
+				min-height: 230px;
+				background: url(../images/bg_main.gif) repeat-y top;
+				display: none;
+				z-index: 100;
+			}
+			
+				.component .reservation .col {
+					float: right;
+					width: 120px;
+					line-height: 13px;
+					margin: 0 70px 0 0;
+					_margin: 0 40px 0 0;
+				}
+				
+					.component .reservation .col a:link, .component .reservation .col a:active, .component .reservation .col a:visited, .component .reservation .col a:hover {
+						float: left;
+						margin: 2px 0 0 10px;
+					}
+				
+				.component .reservation .disable, .component .reservation .disable a{
+					color: #C0C0C0 !important;
+					cursor: auto;
+				}
+				
+				.component .reservation .divider {
+					float: left;
+					background: url(../images/divider_graydots.gif) no-repeat top;
+					width: 530px;
+					height: 1px;
+					margin: 6px 0 0 0;
+					_margin-bottom: -13px;
+					padding: 0;
+					border: 0;
+					white-space: nowrap;
+				}
+				
+			
+				.component .reservation .label {					
+					float: left;
+					font-weight: bold;
+				}
+				
+				.component .reservation .label2 {					
+					float: left;
+					font-weight: bold;
+					font-size: 9px;
+					margin: 2px 0 0 0;
+				}
+				
+				.component .reservation .label3 {					
+					float: left;
+					font-weight: bold;
+					font-size: 12px;
+					margin: 2px 0 0 0;
+				}				
+				
+					.component .reservation .label2 a:link, .component .reservation .label2 a:active, .component .reservation .label2 a:visited, .component .reservation .label2 a:hover {
+						color: #3366FF;
+						font-weight: normal;
+					}
+					
+						.component .reservation .label2 a.nonclick:link, .component .reservation .label2 a.nonclick:active, .component .reservation .label2 a.nonclick:visited, .component .reservation .label2 a.nonclick:hover {
+							font-weight: bold;
+							color: #333333;
+							text-decoration: none;
+							cursor: auto;
+						}
+				
+				
+				.component .reservation .label3 {
+					float: left;
+					font-weight: bold;
+					margin: 2px 0 0 0;
+					width: 140px;
+				}
+				
+					
+				.component .reservation .leftcol {
+					float: left;
+					width: 98px;
+					margin: 9px 0 0 13px;
+					_margin: 9px 0 0 7px;
+				}
+
+				.component .reservation .marginleft5 {
+					margin-left: 5px;					
+				}	
+					
+				.component .reservation .marginleft35 {
+					margin-left: 35px;
+					#margin-left: 38px;
+					_margin-left: 35px;					
+				}
+								
+				.component .reservation .marginright22 {
+					margin-right: 22px;
+					_margin-right: 18px;
+				}
+				
+				.component .reservation .margintop2 {
+					margin-top: 2px;
+					_margin-top: 4px;
+				}
+				
+				.component .reservation .ie7margintop6 {
+					#margin-top: 6px;
+				}
+				
+				.component .reservation .rightcol {
+					float: left;
+					width: 410px;
+					margin: 0;
+					padding: 0;
+				}
+								
+				.component .reservation .row {
+					float: left;
+					margin: 8px 0 0 13px;
+					_margin: 8px 0 0 7px;					
+					width: 500px;
+					_width: 510px;
+				}
+				
+				.component .reservation .bigRow {
+					float: left;
+					margin: 8px 0 0 3px;
+					_margin: 8px 0 0 1px;					
+					width: 512px;
+					_width: 522px;
+					height: 25px;
+					_height: 25px;
+					background-color: #cccccc;
+					padding-left: 7px;
+					padding-right: 5px;
+					padding-top: 7px; 
+				}
+				
+				.component .reservation .row2 {
+					float: left;
+					margin: 8px 0 0 5px;
+					_margin: 8px 0 0 2px;
+					width: 410px;
+				}
+				
+				.component .reservation .row21 {
+					float: left;
+					margin: 8px 0 0 1px;
+					_margin: 8px 0 0 -3px;
+					width: 410px;
+				}
+				
+				.component .reservation .row3 {
+					float: left;
+					margin: 8px 0 0 116px;
+					_margin-left: 58px;
+				}
+			
+				.component .reservation .rowlast {
+					float: left;
+					margin: 8px 0 0 13px;
+					_margin: 8px 0 0 7px;
+				}
+
+				
+				.component .reservation .text {
+					float: left;
+					margin-left: 3px;
+					color: #666666;
+				}
+				
+				.component .reservation .text2 {
+					float: left;
+					width: 50px;
+					color: #666666;
+				}
+				
+				.component .reservation .topline {
+					width: 271px;
+					#width: 273px;
+					_width: 271px;
+				}
+			
+				.component .reservation input.short {
+					float: left;
+					width: 60px;
+					_width: 58px;
+					font-size: 12px;
+					line-height: 13px;
+					margin: 0 0 0 5px;
+				}
+				
+				.component .reservation input.short2 {
+					float: left;
+					width: 43px;
+					_width: 41px;
+					font-size: 12px;
+					line-height: 13px;
+					margin: 0 0 0 5px;
+				}
+				
+				.component .reservation input.resident {
+					float: left;
+					margin: 2px 5px 0 0;
+					#margin-left: -4px;
+					_margin-right: 2px;					
+				}
+
+				
+				.component .reservation input.wide {
+					float: left;
+					width: 260px;
+					_width: 258px;
+					font-size: 12px;
+					line-height: 13px;
+					margin: 0;
+				}
+				
+				.component .reservation input.wide2 {
+					float: left;
+					width: 206px;
+					_width: 204px;
+					font-size: 12px;
+					line-height: 13px;
+					margin: 0 0 0 5px;
+				}
+				
+				.component .reservation select {
+					float: left;
+					font-size: 12px;
+					line-height: 13px;
+				}
+				
+				.component .reservation select.country {
+					width: 200px;
+					_width: 187px;
+					margin: 0 8px 0 0;
+					#margin: 3px 4px 0 0;
+					_margin: 3px 0 0 28px;
+					float: right;
+					_float: left;
+					z-index: 1;
+				}
+				
+					@media screen and (-webkit-min-device-pixel-ratio:0) {
+						.component .reservation select.country {
+							margin: 0 0 0 20px;
+							padding: 0;
+							display: inline;
+							float: right;
+						}
+					}
+				
+
+				.component .reservation select.location {
+					width: 210px;
+					margin: 0 0 0 5px;
+				}
+				
+				.component .reservation select.time {
+					width: 68px;					
+					margin: 0 0 0 5px;
+					padding: 0;
+				}
+				
+				.component #name {
+					float: left;
+					margin: 0;
+					padding: 0;
+				}
+			
+			.component .compfooter {				
+				float: left;
+				background: url(../images/bg_mainfooter.gif) no-repeat top;
+				width: 530px;
+				height: 6px;
+				margin: 0;
+				padding: 0;
+			}
+							
+				
+		
+		
+		#main .body .inforight {
+			float: right;
+			margin: 0 20px 10px 0;
+			_margin: 0 0 10px 0;
+		}
+		
+			#main .body .inforight .content {
+				float: left;
+				width: 350px;
+				height: 100%;
+			}
+		
+			#main .body .inforight .account {		
+				float: left;	
+				margin: 24px 0 0 10px;				
+				_margin: 24px 5px 0 0;
+			}
+			
+				#main .body .inforight .account .header {
+					float: left;
+					background: url(../images/bg_accountheader.gif) no-repeat top;
+					margin: 0;
+					padding: 5px 0 0 10px;
+					width: 340px;
+					height: 20px;
+					color: #FFFFFF;
+				}
+				
+					#main .body .inforight .account .header h2 {
+						margin: 0;
+						padding: 0;
+					}
+					
+					#main .body .inforight .account .header a:link, #main .body .inforight .account .header a:active, #main .body .inforight .account .header a:visited, #main .body .inforight .account .header a:hover  {
+						color: #FFFFFF;
+						font-size: 11px;
+						margin: 0 0 0 10px;
+					}
+					
+				#main .body .inforight .account .body {
+					float: left;
+					background: url(../images/bg_account.gif) repeat-y top;
+					width: 350px;
+					padding: 8px 0 0 0;
+					color: #666666;
+					font-size: 11px;
+				}
+				
+					#main .body .inforight .account .body a:link, #main .body .inforight .account .body a:active, #main .body .inforight .account .body a:visited, #main .body .inforight .account .body a:hover {
+						color: #3366FF;
+						font-size: 11px;
+					}
+					
+					#main .body .inforight .account .body a.disable:link, #main .body .inforight .account .body a.disable:active, #main .body .inforight .account .body a.disable:visited, #main .body .inforight .account .body a.disable:hover {
+						color: #666666;
+						text-decoration: none;
+						cursor: default;
+					}
+					
+					#main .body .inforight .account .body .col {
+						float: left;
+						width: 100px;
+					}
+					
+					#main .body .inforight .account .body .col2 {
+						float: left;
+						width: 234px;
+					}
+				
+					#main .body .inforight .account .body .label {
+						float: left;
+						color: #333333;
+						font-weight: bold;
+					}
+					
+					#main .body .inforight .account .body .name {
+						float: left;
+						margin: 0 0 0 5px;
+					}
+					
+					#main .body .inforight .account .body .row {
+						float: left;
+						padding: 0 8px 0 8px;
+						margin: 0 0 6px 0;
+					}
+					
+						@media screen and (-webkit-min-device-pixel-ratio:0) {
+							#main .body .inforight .account .body .row {
+								width: 335px;
+							}
+						}
+					
+					#main .body .inforight .account .body .subhead {
+						float: left;
+						background: url(../images/bg_accountsubheader.gif) no-repeat top;
+						width: 334px;
+						height: 19px;
+						margin: 2px 0 8px 0;
+						padding: 7px 8px 0 8px;
+					}
+					
+						#main .body .inforight .account .body .subhead h4 {
+							float: left;
+							margin: 0;
+							padding: 0;
+							display: inline;
+							text-transform: uppercase;
+						}
+						
+					
+				#main .body .inforight .account .footer {
+					float: left;
+					background: url(../images/bg_accountfooter.gif) no-repeat top;
+					width: 350px;
+					height: 6px;
+					margin: 0;
+					padding: 0;
+				}
+				
+			#main .body .inforight p {
+				margin: 0 0 3px 0;
+				padding: 0;
+			}
+			
+			#main .body .inforight li {
+				margin: 5px 0 0 15px;
+				_margin: 5px 0 0 0;
+				padding: 0;
+			}
+		
+			#main .body .inforight .top {
+				float: left;
+				background: url(../images/inforight_fade_top.png) no-repeat top;
+				width: 347px;
+				height: 38px;
+				margin: 35px 0 151px 0;
+				padding: 2px 0 0 23px;
+				color: #FFFFFF;
+				font-weight: bold;
+				font-size: 13px;				
+			}
+			
+			#main .body .inforight .bottom {
+				float: left;
+				background: url(../images/inforight_fade_bottom.png) no-repeat top;
+				width: 347px;
+				height: 75px;
+				margin: 0;
+				padding: 3px 0 0 23px;
+				color: #FFFFFF;
+				/* font-weight: bold; */
+				font-size: 11px;
+			}
+
+	
+/* BOTTOM MODULES */	
+
+	#main .bottomhalf {
+		float: left;
+		width: 874px;
+		height: 207px;
+		margin: 0;
+		padding: 15px 15px 0 21px;
+		background: url(../images/bottommodule.gif) no-repeat top;
+	}
+	
+		#main .bottomhalf h2 {
+			float: left;
+			color: #FFFFFF;
+			margin: 0 0 4px 0;
+			padding: 0;
+		}
+		
+		#main .bottomhalf .section {
+			float: left;
+		}
+				
+			#main .bottomhalf .section h4 {
+				margin: 5px 0 5px 0;
+				padding: 0;
+				color: #333333;
+				display: block;
+			}
+			
+			#main .bottomhalf .section .text {
+				margin: 0 0 5px 0;
+				padding: 0;
+				color: #666666;
+				font-size: 11px;
+				display: block;
+			}
+			
+			#main .bottomhalf .section a:link, #main .bottomhalf .section a:active, #main .bottomhalf .section a:visited, #main .bottomhalf .section a:hover  {
+				color: #3366FF;
+				_display: inline;
+			}
+	
+		#main .bottomhalf .leftmodule {
+			float: left;
+			margin: 0;
+			padding: 0;
+			width: 524px;
+		}
+		
+		#main .bottomhalf .leftmodule h4.margintop10 {
+			margin-top: 10px;
+		}
+		
+		#main .bottomhalf .leftmodule .short {
+			width: 161px;
+			margin: 0 0 0 10px;
+			_width: 166px;
+			_margin: 0 0 0 5px;
+		}
+		
+		#main .bottomhalf .leftmodule .wide {
+			width: 318px;
+			margin: 0 0 0 10px;
+			_margin: 0 0 0 5px;
+		}			
+			
+			#main .bottomhalf .leftmodule ul {
+				margin: 0 0 5px 15px;
+				padding: 0;				
+				display: block;
+			}
+				
+				#main .bottomhalf .leftmodule ul li {
+					margin: 0 0 3px 0;
+					padding: 0;
+					font-size: 11px;
+					color: #3366FF;
+				}
+				
+					#main .bottomhalf .leftmodule ul li a:link, #main .bottomhalf .leftmodule ul li a:active, #main .bottomhalf .leftmodule ul li a:visited, #main .bottomhalf .leftmodule ul li a:hover {
+						color: #3366FF;
+					}
+				
+				
+			
+		#main .bottomhalf .rightmodule {
+			float: left;
+			margin: 0;
+			padding: 0 0 0 16px;
+			width: 332px;
+		}
+		
+			#main .bottomhalf .rightmodule .short {
+			width: 161px;
+			margin: 0 0 0 10px;
+			_width: 166px;
+			_margin: 0 0 0 5px;
+		}
+
+			#main .bottomhalf .rightmodule .wide {
+				width: 328px;
+				margin: 0 0 0 2px;
+			}
+
+			
+/* MAIN FOOTER */				
+
+	#main .footer {
+		float: left;
+		margin: 14px 0 0 20px;
+		_margin: 16px 0 0 10px;
+		width: 890px;
+	}
+		#main .footer .advertisements {
+			float: right;
+			margin: 0 15px 0 0;
+			_margin: 0 8px 0 0;
+		}
+		
+			#main .footer .advertisements img {
+				margin: 0 0 0 10px;				
+				vertical-align: middle;
+			}
+	
+		#main .footer .linklist {
+			float: left;
+			margin: 0;
+			padding: 0;
+			color: #FFFFFF;
+			font-size: 10px;
+			line-height: 18px;
+			width: 380px;
+		}
+		
+			#main .footer .linklist a:link, #main .footer .linklist a:active, #main .footer .linklist a:visited, #main .footer .linklist a:hover {
+				color: #FFFFFF;
+				text-decoration: underline;
+			}
+
+
+/* Suggestion box styles */	
+
+#listing1, #listing2 {
+	display: none;
+	position: absolute;
+}
+		
+iframe.tablelisting {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	filter: progid:DXImageTransform.Microsoft.Alpha(style=1,opacity=1);
+	width: 274px;
+}
+
+table.listing {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #3C64FD;
+	padding: 1px;
+	margin: 0;
+	background-color: #FFF;
+	width: 274px;
+}
+
+	table.listing td {
+		padding: 0 0 2px 17px;
+		color: #3C64FD;
+		vertical-align: top;
+	}
+	
+		table.listing td.airplane {
+			background: url(../images/icon_airplane.gif) no-repeat left top;
+		}
+		
+		table.listing td.car {
+			background: url(../images/icon_car.gif) no-repeat left top;
+		}
+				
+		table.listing tr:hover td.airplane {
+			background: #3C64FD url(../images/icon_airplanewhite.gif) no-repeat left top;
+		}
+		
+			table.listing tr.iehover td.airplane {
+			background: #3C64FD url(../images/icon_airplanewhite.gif) no-repeat left top;
+		}
+		
+		table.listing tr:hover td.car {
+			background: #3C64FD url(../images/icon_carwhite.gif) no-repeat left top;
+		}
+		
+			table.listing tr.iehover td.car {
+			background: #3C64FD url(../images/icon_carwhite.gif) no-repeat left top;
+		}
+		
+		table.listing tr:hover td {
+			background-color: #3C64FD;
+		}
+		
+			table.listing tr.iehover td {
+				background-color: #3C64FD;
+			}
+		
+		table.listing tr:hover td a {
+			color: #FFF;
+		}
+		
+			table.listing tr.iehover td a {
+				color: #FFF;
+			}
+
+		table.listing td a:link, table.listing td a:active, table.listing td a:visited, table.listing td a:hover {
+			text-decoration: none;
+		}
+			
+	
+		
+/* Airport Pop-up styles */			
+
+body.airport {
+	margin: 10px 0 0 0;
+	padding: 0;
+	width: 97%;
+	height: 100%;
+	font: normal 12px Arial;
+	color: #333333;
+	white-space: normal;
+	background: #FFFFFF;
+}
+
+body.airport  h2 {
+	font-size: 14px;
+	font-weight: bold;
+	display: inline;
+	margin: 0;
+	padding: 0 0 10px 10px;
+	float: left;
+}
+
+body.airport a.close:link, body.airport a.close:active, body.airport a.close:visited, body.airport a.close:hover {
+	float: right;
+	text-decoration: underline;
+	padding: 0 10px 0 0;
+}
+
+body.airport table {
+	border: 0;
+	padding: 0 0 10px 0;
+	margin: 10px 0 0 12px;
+	border-collapse: separate;
+	border-bottom: 1px solid #333333;
+}
+
+body.airport th {
+	font-weight: bold;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+body.airport td {
+	text-align: left;
+	margin: 0;
+	padding: 0 0 2px 0;
+}
+
+body.airport .alphabet {
+	float: left;
+	padding: 0;
+	margin: 0 0 0 5px;
+}
+
+	body.airport .alphabet a:link, body.airport .alphabet a:active, body.airport .alphabet a:visited, body.airport .alphabet a:hover {
+		padding: 0 5px 0 5px;
+	}
+
+
+body.airport .head {
+	font-weight: bold;
+	padding: 0 0 5px 10px;
+}
+
+body.airport .italics {
+	font-style: italic;
+}
+
+body.airport .locations {
+	border-top: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	float: left;
+	padding: 4px 10px 4px 10px;
+	margin: 0 0 10px 0;
+	width: 100%;
+}
+
+body.airport .top {
+	float: right;
+	text-align: right;
+	margin: 5px 0 0 0;
+}
+
+
+
+
+	

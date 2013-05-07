@@ -1,0 +1,151 @@
+/**** Calendar styles****/
+#cal {
+	width: 342px;
+	_width: 346px;
+	height: 165px;
+	_height: 171px;
+	position: absolute;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	padding: 3px 3px 3px 1px;
+	_padding: 3px 0 0 0;
+	color: #333333;
+	background: url(../images/bg_calendar.gif) no-repeat top;
+	font: normal 11px arial, helvetica, sans-serif;
+	display: none;
+}
+#calbody {
+	float: left;
+	padding: 0;
+	margin: 0 0 0 2px;
+	width: 169px;
+	height: 145px;
+	background: url(../images/bg_month.gif) no-repeat top;
+}
+
+	
+#caltopbar {
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+	text-align: center;	
+	}
+
+	
+#close {
+	float: left;
+	margin: 0;
+	padding: 0 0 7px 0;
+	width: 342px;
+	cursor: pointer;
+	vertical-align: bottom;
+	text-align: center;
+	font: normal 11px verdana, helvetica, sans-serif;
+	color: #3366FF;
+	}
+		
+		/* Fix IE. Hide from IE Mac \*/
+		* html #close { padding: 0; }
+		/* End */
+		
+#calnav { 
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	}
+	
+#calnav td {
+	}
+	
+#calnav a {
+	text-decoration:none;
+	}
+	
+#calnavPM { 
+	width: 4px;
+	height: 7px;
+	margin: 0;
+	padding: 0 4px 0 0; 
+	background: url(../images/arrow_calendar_left.gif) no-repeat right;
+	}
+	
+#calnavNM { 
+	width: 4px;
+	height: 7px;
+	margin: 0;
+	padding: 0 4px 0 0; 
+	background: url(../images/arrow_calendar_right.gif) no-repeat left;
+	display: block;
+	}
+	
+.calnavMY { width: 80%; text-transform: uppercase; font-weight: bold; text-align: center; font-size: 11px; }
+
+#caltbl {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: #333333;
+}
+
+#caltbl a, #caltbl a:visited, #caltbl a:active, #caltbl a:link {
+	text-decoration:none;
+	color: #333333;
+	}
+	
+#caltbl a:hover {
+	text-decoration:none;
+	color: #FFFFFF;
+	padding: 2px;
+	background-color: #EB2822;
+	}
+
+#caltbl td {
+	font: normal 10px arial, helvetica, sans-serif;
+	padding: 5px 0 0 0;
+	margin: 0;
+	text-align: center;
+	}
+	
+#caltbl th {
+	font: bold 11px arial, helvetica, sans-serif;
+	padding: 5px 0 0 0;
+	margin: 0;
+	color: #333333;
+	}
+	
+#today { 
+	text-align: center;
+	}
+	
+#cal table { 
+	font: normal 10px arial, helvetica, sans-serif;
+	border-spacing: 0;
+	width: 100%;
+	border-collapse: collapse;	
+	}
+	
+#cal img {
+	border: none;
+	vertical-align: middle;
+	}
+	
+#cal iframe {	
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	filter: progid:DXImageTransform.Microsoft.Alpha(style=1,opacity=1);
+	 opacity: 0.0;
+	-moz-opacity:0.0;
+	}
+	
+#cal select, #cal input {
+	font: normal 10px arial, helvetica, sans-serif;
+	}
