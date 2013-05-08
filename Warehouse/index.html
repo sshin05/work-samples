@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta content="charset=UTF-8">
+    <title>Warehouse</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <!--[if IE]>
+    <script src="scripts/html5.js" type="text/javascript"></script>
+    <![endif]-->    
+    <script src="scripts/jquery.js" type="text/javascript"></script>    
+    <script src="scripts/fadeslideshow.js" type="text/javascript"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+	<script type="text/javascript">
+    var mygallery=new fadeSlideShow({
+    wrapperid: "main", //ID of blank DIV on page to house Slideshow
+    dimensions: [1022, 600], //width/height of gallery in pixels. Should reflect dimensions of largest image
+    imagearray: [
+    ["images/bgimages/bg1.jpg", "", "", ""],
+    ["images/bgimages/bg2.jpg", "", "", ""],
+    ["images/bgimages/bg3.jpg", "", "", ""],
+	["images/bgimages/bg4.jpg", "", "", ""],
+	["images/bgimages/bg5.jpg", "", "", ""],
+	["images/bgimages/bg6.jpg", "", "", ""],
+	["images/bgimages/bg7.jpg", "", "", ""],
+	["images/bgimages/bg8.jpg", "", "", ""],
+	["images/bgimages/bg9.jpg", "", "", ""],
+	["images/bgimages/bg10.jpg", "", "", ""],
+	["images/bgimages/bg11.jpg", "", "", ""]
+    ],
+    displaymode: {type:'auto', pause:5000, cycles:0, wraparound:true},
+    persist: true, //remember last viewed slide and recall within same session?
+    fadeduration: 1000, //transition duration (milliseconds)
+    descreveal: "ondemand",
+    togglerid: ""
+    })
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+
+<header>
+	<h1><span>Warehouse</span></h1>
+    <nav class="main">
+    <ul>    
+    <li><a href="#">Menu</a></li>
+    </ul>
+    </nav>
+    <nav class="photo">
+    <ul>
+    <li><a href="#">Photo Gallery</a></li>
+    </ul>
+    </nav>
+</header>
+<section id="over">
+	<section id="main"></section>
+    <section class="middlecontent">
+        <article class="leftPanel">    	
+            <div class="content">
+            <img src="images/you.jpg" width="300" height="125" alt="" />
+            <img src="images/food.jpg" width="300" height="125" alt="" /> 
+            <img src="images/beer.jpg" width="300" height="125" alt="" /> 
+            <img src="images/fun.jpg" width="300" height="125" alt="" />
+            <div class="text">
+                <div class="one"><img src="images/you.png" width="90" height="36" alt="" /></div>
+                <div class="two"><img src="images/plus.png" width="34" height="34" alt="" /></div>
+                <div class="three"><img src="images/food.png" width="104" height="40" alt="" /></div>
+                <div class="four"><img src="images/plus.png" width="34" height="34" alt="" /></div>
+                <div class="five"><img src="images/beer.png" width="104" height="38" alt="" /></div>
+                <div class="six"><img src="images/equal.png" width="34" height="34" alt="" /></div>
+                <div class="seven"><img src="images/fun.png" width="80" height="38" alt="" /></div>
+            </div>
+            </div>
+        </article>
+        <article class="rightPanel">    	
+            <h2>Warehouse</h2>
+            <div class="content">
+            	<div id="mapImg" style='position:relative;width:390px; z-index:10;'>
+   					<a href="http://local.daum.net/map/index.jsp?urlX=518444&urlY=1114171&urlLevel=2&map_type=TYPE_MAP&map_hybrid=false&SHOWMARK=true&weather=true" target="_blank" 
+        onclick="window.open('http://local.daum.net/map/index.jsp?urlX=518444&urlY=1114171&urlLevel=2&map_type=TYPE_MAP&map_hybrid=false&SHOWMARK=true&weather=true','_blank', 
+                'toolbar=yes,location=yes,directories=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes');return false;"><img src="http://map2.daum.net/map/mapservice?MX=518444&MY=1114171&SCALE=1.25&IW=500&IH=400&COORDSTM=WCONGNAMUL" width="388" height="400" border="0" style="border:1px solid #ccc"></a>
+    				<div class="tpText" style="background:url(http://localimg.daum-img.net/localimages/07/2007/map/2007/arrow_yl.gif) 7px 9px no-repeat; background-color:#000; position:absolute; top:0px; left:0px; opacity:0.7; filter:alpha(opacity=70); width:100%; padding:5px 0 3px 0; color:#fff; font-size:12px; font-family:����; word-break:break-all; overflow:hidden; line-height:17px;text-indent:15px;'">지도를 클릭하시면 위치정보를 확인하실 수 있습니다.</div>
+                </div>
+            </div>
+        </article>
+	</section>
+</section>
+
+<footer><div class="middle"><span class="copy">WareHouse &copy; 2010</span></div></footer>
+
+</body>
+</html>

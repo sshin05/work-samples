@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+article { behavior: url("styles/iepngfix.htc") }
+
+body { margin: 0 auto; padding: 0; width: 1024px; height: 702px; font: normal 12px Arial, verdana, sans-serif;  }
+
+
+#page { background: #fff url("../images/background.jpg") no-repeat 0 0; border: 1px solid #013e5e; height: 100%; float: left; }
+#page header { width: 250px; padding-left: 100px; margin-top: 10px; float: left;  }
+
+#page nav { width: 270px; clear: left; float: left; padding-left: 80px; margin-top: 20px; }
+#page nav ul { margin: 0; padding: 10px; font-size: 15px; color: #000; list-style: none;  border: 1px solid  #013e5e; width: 200px; }
+#page nav ul li { padding-left: 10px; line-height: 24px; width: 190px; }
+#page nav ul li a:link, nav ul li a:visited, nav ul li a:active { color: #000; text-decoration: none; font-weight: bold; }
+#page nav ul li:hover, nav ul li a:hover, #page nav ul li.sfhover,  #page nav ul li.colorOn { background-color: #32b6fb; }
+
+#content article .clear { clear: both; }
+#page article { width: 524px; height: 500px; float: right; margin: 40px 20px 0 0; padding: 0; border: 1px solid  #013e5e;  background-color: #fff; }
+#page article iframe { border: 0; width: 524px; height: 500px; margin: 0; padding: 0; }
+
+#page footer { float: left; width: 1024px; height: auto; clear: both; }
+
+div#loader { position: absolute; top: 0; left: 0; background-color: #000; width: 524px; height: 500px; text-align: center; color: #fff; z-index: 10; }
+div#loader .middle { padding-top:245px; font-weight: bold; font-size: 20px; }
+
+
+#content header { float: left; width: 394px; height: 100px; margin: 16px 0 0 15px; }
+#content header.main { background: #000 url("../images/banners.jpg") no-repeat 0 0;  }
+#content header.menu { background: #000 url("../images/banners.jpg") no-repeat 0 -120px; }
+#content header.gallery { background: #000 url("../images/banners.jpg") no-repeat 0 -240px; }
+#content header.reservations { background: #000 url("../images/banners.jpg") no-repeat 0 -360px; }
+
+#content header h1 { font-size: 40px; margin:0; padding: 0; display: inline; }
+
+#content article { float: left; width: 492px; margin: 0 0 0 15px; padding: 10px 0 0 0;  height: 356px !important;}
+
+#content article.main { background: #fff url("../images/food1.png") no-repeat bottom right; height: 350px; }
+*html #content article.main {  }
+#content article.main h2 { margin: 0 0 0 20px; font-size: 16px;}
+#content article.main p { width: 380px; margin: 0 0 0 20px; }
+
+#content article.menu { overflow: auto;}
+#content article.menu table { border-collapse: collapse; float: left; margin-left: 20px; }
+*html #content article.menu table { margin-left: 10px; width: 445px; }
+#content article.menu table th { text-align: left; padding-top: 10px; }
+#content article.menu table td { width: 50%; padding-top:5px; }
+
+#content article.gallery .image { height: 200px; text-align: center; }
+#content article.gallery .image .cover { position: absolute; width: 282px; height: 202px; background-color: #fff; left: 121px; }
+#content article.gallery .image img { margin: 0 auto; border: 1px solid #013e5e; }
+#content article.gallery .thumbs { width: auto; height: 143px; margin-top: 5px; padding: 5px 23px 0 23px; border-top: 1px solid #013e5e; overflow: auto; }
+*html #content article.gallery .thumbs { padding: 5px 22px 0 22px; }
+#content article.gallery .thumbs img { border: 0; }
+#content article.gallery .thumbs a:link, #content article.gallery .thumbs a:visited, #content article.gallery .thumbs a:active { float: left; height: 70px;  border: 1px solid #013e5e; margin: 0 5px 5px 0; }
+#content article.gallery .thumbs a:hover { border-color: #ff0000 ;}
+ 
+#content article.reservations { position: relative; overflow: auto; }
+#content article.reservations p { width: 450px; margin-left: 20px; }
+#content article.reservations #mapImg { position:relative; width:475px; }
+#content article.reservations #mapImg .tpText { background:url(http://localimg.daum-img.net/localimages/07/2007/map/2007/arrow_yl.gif) 7px 9px no-repeat; background-color:#000; position:absolute; top:0px; left:0px; opacity:0.7; filter:alpha(opacity=70); width:100%; padding:5px 0 3px 0; color:#fff; font-size:12px; font-family:??; word-break:break-all; overflow:hidden; line-height:17px;text-indent:15px; }
