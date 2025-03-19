@@ -1,0 +1,98 @@
+// @author Penn
+// --------------------------------------------------
+// NOTE: vendor prefixes are now obsolete thanks to Gulp Autoprefixer
+// https://www.npmjs.com/package/gulp-autoprefixer
+
+// corner-arrows.scss
+// --------------------------------------------------
+// Place colored arrows around two corners of container
+//
+// There are two versions of 'slope'
+// (slope of the imaginary line connecting two corners)
+//
+// positive slope:
+//  ------->
+// |       |
+// |       |
+// |       |
+// <-------
+//
+// negative slope:
+// <-------
+// |       |
+// |       |
+// |       |
+//  ------->
+
+@mixin corner-arrows($container-width, $container-height, $color, $slope) {
+
+    // 'dim' == 'dimension'
+    $corner-length: 50px;
+    $corner-thickness: 10px;
+    background: $color;
+
+    @if $slope == 'positive' {
+
+        &:nth-child(1) {
+            top: 0;
+            left: $container-width - $corner-length;
+            width: $corner-length;
+            height: $corner-thickness;
+        }
+
+        &:nth-child(2) {
+            top: 0;
+            left: $container-width - $corner-thickness;
+            width: $corner-thickness;
+            height: $corner-length;
+        }
+
+        &:nth-child(3) {
+            top: $container-height - $corner-length;
+            left: 0;
+            width: $corner-thickness;
+            height: $corner-length;
+        }
+
+        &:nth-child(4) {
+            top: $container-height - $corner-thickness;
+            left: 0;
+            width: $corner-length;
+            height: $corner-thickness;
+        }
+
+    }
+
+    @if $slope == 'negative' {
+
+        &:nth-child(1) {
+            top: 0;
+            left: 0;
+            width: $corner-length;
+            height: $corner-thickness;
+        }
+
+        &:nth-child(2) {
+            top: 0;
+            left: 0;
+            width: $corner-thickness;
+            height: $corner-length;
+        }
+
+        &:nth-child(3) {
+            top: $container-height - $corner-thickness;
+            left: $container-width - $corner-length;
+            width: $corner-length;
+            height: $corner-thickness;
+        }
+
+        &:nth-child(4) {
+            top: $container-height - $corner-length;
+            left: $container-width - $corner-thickness;
+            width: $corner-thickness;
+            height: $corner-length;
+        }
+
+    }
+
+}

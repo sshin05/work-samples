@@ -1,0 +1,56 @@
+// @author Joseph
+// --------------------------------------------------
+// Read the HBC Frontend Guidelines!
+// https://github.com/saksdirect/HBC_frontend_guidelines/wiki/CSS-coding-standards
+
+// main.scss
+// --------------------------------------------------
+// No 'real' css in this file, only imports
+//
+// Breaking apart the styles into different partials makes them:
+// * more modular
+// * easier to read
+// * easier to troubleshoot
+// * more semantic
+
+// CSS Reset
+@import 'partials/reset';
+
+// Modules and Global Variables
+@import 'partials/base';
+
+// Editorial-specific Variables
+@import 'partials/variables';
+
+// Single Page App
+// @import 'partials/single-page';
+
+// Base Layout
+@import 'partials/responsive';
+//@import 'partials/header';
+//@import 'partials/nav';
+@import 'partials/section';
+@import 'partials/footer';
+
+// HBC Carousel
+//@import 'partials/hbc-carousel';
+
+// FED Tabs
+@import 'components/fed-tabs';
+
+// Typography
+@import 'partials/typography';
+
+//Tabs
+@import 'partials/_component_tabs-1';
+@import 'partials/_component_tabs-2';
+@import 'partials/_component_tabs-3';
+
+// Custom Elements
+// @import 'partials/your-custom-element-here';
+
+// Shameful Code
+@import 'partials/hacks';
+
+// temporary styles for template mockup
+//@import 'partials/temp-dev';

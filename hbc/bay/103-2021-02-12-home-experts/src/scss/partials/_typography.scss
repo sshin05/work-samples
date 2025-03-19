@@ -1,0 +1,20 @@
+// @author Penn
+// --------------------------------------------------
+
+// typography.scss
+// --------------------------------------------------
+// Includes font-family, weights, styles, colors, etc
+
+#dsg-editorial.dsg-editorial {
+
+    // base styles
+    font-family: $sans;
+    font-weight: $regular;
+    font-style: normal;
+    color: $text-color-dark;
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+            
+    }
+
+} // end #dsg-editorial.dsg-editorial

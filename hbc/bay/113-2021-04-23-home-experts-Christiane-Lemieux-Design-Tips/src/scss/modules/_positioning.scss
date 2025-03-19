@@ -1,0 +1,33 @@
+// @author Penn
+// --------------------------------------------------
+// NOTE: vendor prefixes are now obsolete thanks to Gulp Autoprefixer
+// https://www.npmjs.com/package/gulp-autoprefixer
+
+// transforms.scss
+// --------------------------------------------------
+// mixins involving css transforms
+// translating, flipping, etc.
+
+// clears floated content
+// http://stackoverflow.com/questions/211383/which-method-of-clearfix-is-best
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+// vertically align any element (IE9+)
+// must use mixin "vertical-center" on child
+@mixin vertical-align-parent {
+    transform-style: preserve-3d;
+}
+
+// vertically align any element (IE9+)
+// must use mixin "vertical-center-child" on parent
+@mixin vertical-align-child {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

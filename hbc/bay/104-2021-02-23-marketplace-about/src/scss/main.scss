@@ -1,0 +1,369 @@
+// @author Joseph
+// --------------------------------------------------
+// Read the HBC Frontend Guidelines!
+// https://github.com/saksdirect/HBC_frontend_guidelines/wiki/CSS-coding-standards
+
+// main.scss
+// --------------------------------------------------
+// No 'real' css in this file, only imports
+//
+// Breaking apart the styles into different partials makes them:
+// * more modular
+// * easier to read
+// * easier to troubleshoot
+// * more semantic
+
+// CSS Reset
+@import 'partials/reset';
+
+// Modules and Global Variables
+@import 'partials/base';
+
+// Editorial-specific Variables
+@import 'partials/variables';
+
+// Single Page App
+// @import 'partials/single-page';
+
+// Base Layout
+@import 'partials/responsive';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/section';
+@import 'partials/footer';
+
+// HBC Carousel
+//@import 'partials/hbc-carousel';
+
+// Typography
+@import 'partials/typography';
+
+//Tabs
+@import 'partials/_component_tabs-1';
+@import 'partials/_component_tabs-2';
+@import 'partials/_component_tabs-3';
+
+// Custom Elements
+// @import 'partials/your-custom-element-here';
+
+// Shameful Code
+@import 'partials/hacks';
+
+// temporary styles for template mockup
+//@import 'partials/temp-dev';
+
+#dsg-editorial.dsg-editorial {
+    .caps {
+        text-transform: uppercase;
+    }
+    .square {
+        color: #fff;
+        // height: 20vw;
+        max-height: 530px;
+        margin: 1%;
+        padding: 3%;
+        text-align: left;
+        .icon {
+            width: 29%;
+        }
+        p {
+            margin-top: 26%;
+            margin-bottom: 15%;
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+    .square:after {
+        // content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+    .square.yellow {
+        color: #000;
+    }
+    .green {
+        background-color: #00704A;
+        .icon svg {
+            width: 57%;
+        }
+    }
+    .red {
+        background-color: #B30838;
+    }
+    .yellow {
+        background-color: #EEB211;
+    }
+
+    section.sec__header {
+        background-color: #fff;
+        border-bottom: 1px solid #848484;
+        .marketLogo {
+            margin: 30px;
+        }
+        h1 {
+            font-size: 74px;
+            margin: 0px 0 25px;
+        }
+        h4 {
+            font-size: 30px;
+
+        }
+        .HBCColors{
+            margin-top: 5%;
+            margin-bottom: -1px;
+        }
+        p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+    }
+    section.section-two {
+        h2 {
+            font-size: 40px;
+            margin: 40px 0 30px;
+        }
+        p{
+            font-size: 22px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+    }
+    section.section-three {
+        h3{
+            font-size: 35px;
+            margin-top: 100px;
+            margin-bottom: 25px;
+        }
+    }
+    section.section-four {
+        div {
+            margin: 1%;
+            h4{
+                padding-top: 5%;
+            }
+            p {
+                font-size: 18px;
+                line-height: 20px;
+                padding: 0 17% 0 17%;
+            }
+            .cta{
+                margin-top: 6px;
+                font-size: 18px;
+            }
+        }
+    }
+    section.section-five {
+        margin-top: 50px;
+    }
+    section.section-six {
+        h2 {
+            font-size: 40px;
+            margin: 100px 0 40px;
+        }
+    }
+
+    section {
+        margin-top: 20px;
+    }
+    section.section-seven {
+
+        .collapsible {
+            position: relative;
+            background-color: #fff;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 20px;
+            border-top: 1px solid #EBEBEC;
+            letter-spacing: .5px;
+            padding: 1% 3% 1% 3%;
+        }
+        .collapsible:last-child,
+        .content:last-child {
+            border-bottom: 1px solid #EBEBEC;
+        }
+        .active, .collapsible:hover {
+            background-color: #fff;
+            border-bottom: 1px solid #EBEBEC;
+        }
+        .dsg-editorial .active, .dsg-editorial .collapsible:hover {
+            background-color: #fff;
+        }
+        .fed-tabs__container .content p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 22px;
+            font-style: normal;
+            letter-spacing: 0.035em;
+            display: block;
+            padding: 1% 3% 1% 3%;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-align: left;
+            letter-spacing: .5px;
+            .bold {
+                font-weight: 800;
+            }
+        }
+        
+        .collapsible:after {
+            // content: '\25BD';
+            content: '\2228';
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+            color: gray;
+            display: block;
+            position: absolute;
+            right: 2%;
+            top: 3px;
+        }
+        
+        .active:after {
+            // content: "\25BC";
+            content: '\2227';
+        }
+        
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            // background-color: #EBEBEC;
+        }
+        .fed-tabs .fed-tabs__buttons {
+            margin: 3% 0 2% 0;
+            border: 0;
+            .fed-tabs__buttons-button {
+                border: 1px solid #EBEBEC;
+                margin: 0 20px 0 20px;
+                span {
+                    font-size: 35px;
+                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+                &.fed-tabs__buttons-active{
+                    color: #fff;
+                    background-color: #00274C;
+                }
+            }
+        }
+        .fed-tabs__container-intro {
+            h1 {
+                font-size: 43px;
+                margin: 7% 0 5% 0 ;
+            }
+            .cta {
+                margin: 5% 0 5% 0 ;
+            }
+        }
+    }
+}
+@media (max-width:950px) {
+    #dsg-editorial.dsg-editorial {
+        section.sec__header {
+            h1 {
+                font-size: 11vw;
+                margin: 10px;
+            }
+            h4 {
+                font-size: 5vw;
+            }
+            p {
+                font-size: 5vw;
+                line-height: 6.5vw;
+                margin: 0 5% 5% 5%;
+            }
+        }
+        section.section-two {
+            h2 {
+                font-size: 7.5vw;
+                margin: 10% 5% 2% 5%;
+            }
+            p {
+                    font-size: 4.2vw;
+                    line-height: 5vw;
+                    margin: 0 5% 5% 5%;
+            }
+        }
+        section.sec__three {
+            .square {
+                padding: 5% 10% 0% 10%;
+                .icon {
+                    width: 24%;
+                }
+                p {
+                    margin-top: 8%;
+                    margin-bottom: 5%;
+                    font-size: 21px;
+                    line-height: 22px;
+                }
+            }
+        }
+        section.section-three {
+            h3 {
+                font-size: 7.5vw;
+                margin: 10% 5% 2% 5%;
+            }
+        }
+        section.section-four {
+            div {
+                h4 {
+                    padding-top: 0%;
+                    font-size: 7.5vw;
+                    margin: 3% 5% 1% 5%;
+                }
+                p {
+                    font-size: 5vw;
+                    line-height: 5vw;
+                }
+                .cta {
+                    margin-bottom: 8%;
+                }
+            }
+        }
+        section.section-five {
+            padding-top: 10%;
+
+        }
+        section.section-six {
+            h2 {
+                font-size: 6.5vw;
+            }
+        }
+        section.section-seven {
+            .fed-tabs {
+                .fed-tabs__buttons {
+                    .fed-tabs__buttons-button {
+                        margin: 0 2px 0 2px;
+                        span {
+                            font-size: 4vw;
+                        }
+                    }
+                }
+                .fed-tabs__container {
+                    .collapsible {
+                        font-size: 4.5vw;
+                        line-height: 5vw;
+                        padding: 4% 4% 4% 4%;
+                    }
+                    .content {
+                        p {
+                            font-size: 4vw;
+                            line-height: 4.5vw;
+                                margin: 4%;
+                        }
+                    }
+                    .fed-tabs__container-intro {
+                        h1 {
+                            font-size: 5.5vw;
+                            margin: 15% 5% 1% 5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+// @author Joseph
+// --------------------------------------------------
+
+// section.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+    section {
+
+        &.sec__01{
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+
+            & .header {
+                position: absolute;
+                top: 50%;
+                left: 35%;
+                width: 100%;
+                transform: translate(-50%, -50%);
+
+                &.main {
+                    left: 50%;
+
+                    p {
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            h1{
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+
+            .cta {
+                margin-top: 20px;
+            }
+
+            img {
+                margin: 0 0 20px 0;
+                display: block;
+            }
+        }
+
+        &.sec__02{
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+
+        &.sec__03{
+            text-align: center;
+            padding: 31px 0 52px 0;
+        }
+
+        &.sec__04{
+           margin: 50px auto;
+           max-width: 1239px;
+        }
+
+        .fed-tabs{
+            .fed-tabs__buttons{
+                border-top: 1px solid #262525;
+                border-bottom: 1px solid #262525;
+
+                .fed-tabs__buttons-button{
+                    text-transform: uppercase;
+                    color:#000;
+                    padding: 22px 0;
+
+                    &.fed-tabs__buttons-active{
+                        color: #a7a9ac;
+                    }
+                }
+
+                &.main {
+                    border: none;
+                    margin-bottom: 50px;
+
+                    & .fed-tabs__buttons-button img {
+                        width: auto;
+                        margin-bottom: 15px;
+                    }
+
+                    & .fed-tabs__buttons-button span {
+                        margin-top: 5px;
+                        font-weight: 400;
+                        text-transform: none;
+                    }
+                }
+            }
+
+            .fed-tabs__container{
+
+                .product-tab {
+                    margin-right: 26px;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+
+            }
+        }
+
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+            &.sec__01 .header {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                margin-bottom: 20px;
+            }
+
+            & .fed-tabs .fed-tabs__container .product-tab {
+                margin-right: 0;
+            }
+        }
+    }
+} // end #dsg-editorial.dsg-editorial

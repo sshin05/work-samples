@@ -1,0 +1,111 @@
+// @author Penn
+// --------------------------------------------------
+
+// temp-dev.scss
+// --------------------------------------------------
+// THIS IS A TEMPORARY STYLESHEET
+// IT IS FOR DEMONSTRATION PURPOSES ONLY
+// MAKE SURE YOU COMMENT OUT THIS FILE IN MAIN.SCSS
+
+
+#dsg-designer-nav.dsg-designer-nav {
+
+    // dimensions
+    $header-height: 200px;
+    $nav-height: 50px;
+    $section-height: 385px;
+    $footer-height: 50px;
+
+    // margins
+    $section-margin: 20px;
+    $header-margin: ($section-margin * 2) + $nav-height;
+
+    // positioning
+    $nav-position: ($header-height + $section-margin);
+
+    // color
+    $background-color: #ddd;
+    $background-color-nav: #bada55;
+
+    // super fragile :not statement here XD
+    // this is for mockup only! don't use code like this lol
+    :not(.slick-arrow) {
+
+        &:before {
+            font-size: 16px;
+            font-weight: $bold;
+            margin-right: $section-margin;
+        }
+
+    }
+
+    header,
+    section,
+    nav,
+    footer {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    header {
+        height: $header-height;
+        margin-bottom: $header-margin;
+
+        &:before {
+            content: '[HEADER]';
+        }
+
+    }
+
+    nav {
+        height: $nav-height;
+        top: $nav-position;
+        background: $background-color-nav;
+
+        ul:before {
+            content: '[NAV]';
+        }
+
+        li {
+            margin-left: $section-margin;
+            text-decoration: underline;
+        }
+    }
+
+    #slick-basic,
+    #slick-basic img {
+        height: $section-height;
+        width: $stage-width;
+    }
+
+    section {
+        height: $section-height;
+        margin-bottom: $section-margin;
+
+        &:nth-of-type(2):before {
+            content: '[SECTION 1]';
+        }
+
+        &:nth-of-type(3):before {
+            content: '[SECTION 2]';
+        }
+
+        &:nth-of-type(4):before {
+            content: '[SECTION 3]';
+        }
+
+    }
+
+    footer {
+        text-align: center;
+        height: $footer-height;
+        line-height: $footer-height;
+
+        &:before {
+            content: '[FOOTER]';
+            margin-right: $section-margin;
+        }
+
+    }
+
+} // end #dsg-editorial.dsg-editorial

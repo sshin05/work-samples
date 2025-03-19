@@ -1,0 +1,144 @@
+// @author Joseph
+// --------------------------------------------------
+// Read the HBC Frontend Guidelines!
+// https://github.com/saksdirect/HBC_frontend_guidelines/wiki/CSS-coding-standards
+
+// main.scss
+// --------------------------------------------------
+// No 'real' css in this file, only imports
+//
+// Breaking apart the styles into different partials makes them:
+// * more modular
+// * easier to read
+// * easier to troubleshoot
+// * more semantic
+
+// CSS Reset
+@import 'partials/reset';
+
+// Modules and Global Variables
+@import 'partials/base';
+
+// Editorial-specific Variables
+@import 'partials/variables';
+
+// Single Page App
+// @import 'partials/single-page';
+
+// Base Layout
+@import 'partials/responsive';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/section';
+@import 'partials/footer';
+
+// HBC Carousel
+//@import 'partials/hbc-carousel';
+
+// Typography
+@import 'partials/typography';
+
+//Tabs
+@import 'partials/_component_tabs-1';
+@import 'partials/_component_tabs-2';
+@import 'partials/_component_tabs-3';
+
+// Custom Elements
+// @import 'partials/your-custom-element-here';
+
+// Shameful Code
+@import 'partials/hacks';
+
+// temporary styles for template mockup
+//@import 'partials/temp-dev';
+
+#dsg-editorial.dsg-editorial {
+    img{margin: auto;}
+  
+    .caps {
+        text-transform: uppercase;
+    }
+    section.sec__header {
+        background-color: #fff;
+        border-bottom: 1px solid #848484;
+        .marketLogo {
+            margin: 30px;
+        }
+        h1 {
+            font-size: 74px;
+            margin: 0px 0 25px;
+        }
+        h4 {
+            font-size: 30px;
+
+        }
+        .HBCColors{
+            margin-top: 5%;
+            margin-bottom: -1px;
+        }
+        p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+    }
+    section.section-two {
+        text-align: center;
+        padding: 3%;
+        a {
+            display: inline-block;
+            width: 47%;
+            border: 1px solid grey;
+            margin: auto;
+            height: 250px;
+            max-height: 400px;
+            height: 25vw;
+            span {
+                font-size: 40px;
+                margin-top: 23%;
+            }
+        }
+        a.cta:hover {
+            background-color: #000; 
+            span {
+                color: #fff;
+            }
+        
+        }
+    }
+
+    section {
+        margin-top: 20px;
+    }
+}
+@media (max-width:950px) {
+    #dsg-editorial.dsg-editorial {
+        margin-top: 0px!important;
+        section.sec__header {
+            h1 {
+                font-size: 11vw;
+                margin: 10px;
+            }
+            h4 {
+                font-size: 5vw;
+            }
+            p {
+                font-size: 5vw;
+                line-height: 6.5vw;
+                margin: 0 5% 5% 5%;
+            }
+        }
+        section.section-two {
+            a {
+                display: inline-block;
+                display: inline-block;
+                width: 88%;
+                height: 50vw;
+                margin: 5%;
+                span {
+                    margin-top: 26%;
+                    font-size: 6vw;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,268 @@
+// @author Penn
+// --------------------------------------------------
+
+// header.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+  
+  img{
+       width:100%;
+       display:block;
+   }
+   div.header {
+    max-width: $header-width;
+    margin-bottom: 0;
+    z-index: 1;
+    /*background: transparent url("<%=img('092420-beauty-services-hero-512.jpg')%>") no-repeat 0 100px;*/
+
+    picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 36px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 0.95em;
+        letter-spacing: 0.025em;
+        // text-align: center;
+    }
+    
+    p {
+        font-size: 19px;
+        color: #000;
+        line-height: 1.562;
+        letter-spacing: 0.06em;
+    }
+     a {
+        font-size: 19px;
+     }
+    
+    h3 {
+        font-size: 18px;
+        color: #000;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 0.06em;
+    }
+
+    .left{
+        flex:1;
+        }
+        
+    .right{
+        flex:1;
+        display: flex;
+        align-items: left;
+        padding:2em;
+        margin-left: 60%;
+        margin-top: 15.5%;
+        z-index: 10;
+
+        .right__text-box {
+            h1,p.desktop-text {
+                text-align: left;
+            }
+        }
+        
+    p.mobile-text{
+        display: block;
+        text-align: center;
+    }
+
+    &__text-box{
+    width: 100%;
+
+    button{
+        background: transparent;
+        border: none;
+        padding: 1em;
+        font-size:.75em;
+        font-weight: 400;
+        text-decoration: underline;
+        // margin-bottom:24px; 
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: 1.2em;
+        // letter-spacing: 0.06em;
+        
+        p{
+            margin-bottom: 0px;
+        }
+    }
+    h1{
+            margin-bottom: 25px;
+        text-align: center;
+        transform: translateX(0%);
+    }
+    p{
+        margin-bottom:25px;
+        text-align: left;
+     }
+    }
+
+  }
+  
+}
+
+
+     @media(min-width:768px) and (max-width:861px){
+        div.header{
+            display: flex;
+            .right{
+
+               &__text-box{
+                   h1{
+                    margin-bottom: 5%;
+                    // font-size: 30px;
+                    // color:coral;
+                   }
+                   p.desktop-text {
+                    display:block;
+                    margin-bottom: 8%;
+                    // font-size:11px;
+                    // color:crimson;
+                   }
+                   p.mobile-text{
+                       display: none;
+                   }
+                   p{
+                     margin-bottom: 0px;
+                    //  color:blueviolet;
+                   }
+
+               }
+                
+
+            }
+
+        }
+
+     }    
+
+     @media(min-width:862px) and (max-width:1024px){
+        div.header{
+            display: flex;
+            .right{
+
+               &__text-box{
+                   h1{
+                    margin-bottom: 5%;
+                    // font-size: 35px;
+                    // color:purple;
+                   }
+                   p.desktop-text {
+                    display:block;
+                    margin-bottom: 8%;
+                    // font-size:14px;
+                    // color:purple;
+                   }
+                   p.mobile-text{
+                       display: none;
+                   }
+                   p{
+                     margin-bottom: 0px;
+                    //  color:purple;
+                   }
+               }
+                
+
+            }
+
+        }
+
+     }    
+               
+
+     @media(min-width:1024px){
+       
+        div.header{
+            display: flex;
+
+            .left {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 468px;
+              overflow: hidden;
+            }
+            .right{
+
+               &__text-box{
+                   h1{
+                    margin-bottom: 23px;
+                    font-weight: 400;
+                    letter-spacing: 0.05em;
+                   }
+                   p.desktop-text {
+                    display:block;
+                    margin-bottom:1.66em;
+                    // color:yellow;
+                   }
+                   p.mobile-text{
+                       display: none;
+                   }
+                   p{
+                    margin-bottom: 32px;
+                    //  color:green;
+                   }
+              
+                }
+                
+
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 600px){
+       .header {
+            padding: 0em;
+            picture {
+                position: relative!important;
+            }
+
+        .right {
+            padding: 1em!important;
+            margin-left: 0!important;
+        .right__text-box{
+            text-align: left;
+            h1 {
+                font-size: 9vw;
+                font-weight: 400;
+                color: #000;
+                line-height: 13vw;
+                letter-spacing: 0.025em;
+                width: 90%;
+            }
+            
+            p {
+                font-size: 2.5vw;
+                color: #000;
+                line-height: 3vw;
+                letter-spacing: 0.01em;
+                width: 90%;
+                br {
+                    display: none;
+                }
+            }
+            a {
+                font-size: 10px;
+                text-align: left;
+            }
+            }
+            }
+                br {
+                    display: none;
+                }
+            }
+        }
+    #accordion .panel-heading span { 
+        font-size: 0.1vw;
+    }
+
+} // end #dsg-editorial.dsg-editorial

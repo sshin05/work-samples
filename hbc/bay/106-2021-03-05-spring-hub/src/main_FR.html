@@ -1,0 +1,271 @@
+<style>
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		/*text-align:center;
+		overflow: hidden;*/
+	}
+
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+
+	/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	#section0 .fp-video-text-wrapper{
+		position: absolute;
+		z-index: 4;
+		width: 100vw;
+		height: 100vh;
+		left: 0;
+		top: 0; //43%;
+
+		/*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	/*solves problem with overflowing video in Mac with Chrome */
+	#section0{
+		overflow: hidden;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	/* Hiding video controls
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+	video::-webkit-media-controls {
+	  display:none !important;
+	}
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+<div class="editorial-spinner">
+	<style>.loader{color:#787373;font-size:20px;margin:100px auto;width:1em;height:1em;border-radius:50%;position:relative;text-indent:-9999em;-webkit-animation:load4 1.3s infinite linear;animation:load4 1.3s infinite linear;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0)}@-webkit-keyframes load4{0%,100%{box-shadow:0 -3em 0 0.2em,2em -2em 0 0em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 0}12.5%{box-shadow:0 -3em 0 0,2em -2em 0 0.2em,3em 0 0 0,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 -1em}25%{box-shadow:0 -3em 0 -0.5em,2em -2em 0 0,3em 0 0 0.2em,2em 2em 0 0,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 -1em}37.5%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 0,2em 2em 0 0.2em,0 3em 0 0em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 -1em}50%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 0em,0 3em 0 0.2em,-2em 2em 0 0,-3em 0 0 -1em,-2em -2em 0 -1em}62.5%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 0,-2em 2em 0 0.2em,-3em 0 0 0,-2em -2em 0 -1em}75%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 0,-3em 0 0 0.2em,-2em -2em 0 0}87.5%{box-shadow:0 -3em 0 0,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 0,-3em 0 0 0,-2em -2em 0 .2em}}@keyframes load4{0%,100%{box-shadow:0 -3em 0 0.2em,2em -2em 0 0em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 0}12.5%{box-shadow:0 -3em 0 0,2em -2em 0 0.2em,3em 0 0 0,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 -1em}25%{box-shadow:0 -3em 0 -0.5em,2em -2em 0 0,3em 0 0 0.2em,2em 2em 0 0,0 3em 0 -1em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 -1em}37.5%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 0,2em 2em 0 0.2em,0 3em 0 0em,-2em 2em 0 -1em,-3em 0 0 -1em,-2em -2em 0 -1em}50%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 0em,0 3em 0 0.2em,-2em 2em 0 0,-3em 0 0 -1em,-2em -2em 0 -1em}62.5%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 0,-2em 2em 0 0.2em,-3em 0 0 0,-2em -2em 0 -1em}75%{box-shadow:0 -3em 0 -1em,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 0,-3em 0 0 0.2em,-2em -2em 0 0}87.5%{box-shadow:0 -3em 0 0,2em -2em 0 -1em,3em 0 0 -1em,2em 2em 0 -1em,0 3em 0 -1em,-2em 2em 0 0,-3em 0 0 0,-2em -2em 0 .2em}}</style>
+	<div class="loader">Loading...</div>
+</div>
+<div id="dsg-editorial" class="dsg-editorial dsg-fr" style="display: none;">
+	<div class="preload-images" style="width: 1px; position: fixed; left: 0;">
+		<img src="<%=img('sec-7-2_bg.png', 'jpg')%>" alt="">
+		<img src="<%=img('sec-7-3_bg.png', 'jpg')%>" alt="">
+		<img src="<%=img('sec-7-4_bg.png', 'jpg')%>" alt="">
+		<img src="<%=img('sec-7-5_bg.png', 'jpg')%>" alt="">
+		<img src="<%=img('sec-7-6_bg.png', 'jpg')%>" alt="">
+	</div>
+
+	<div class="logo-hbc">
+		<a href="$httpsUrl('Home-Show')$?sre=ED_SPRINGHUB_BACKTOHUDSONSBAY">
+			<img src="<%=img('bay-logo.png')%>" alt="">
+		</a>
+	</div>
+	<div class="back-to-hp">
+		<a href="$httpsUrl('Home-Show')$?sre=ED_SPRINGHUB_BACKTOHUDSONSBAY">
+			<span>Retour à <br/>La Baie d’Hudson</span>
+		</a>
+	</div>
+	<div class="shop-catalogues">
+		<a href="$url('Page-Show','cid','bay-flyer')$?sre=ED_SPRINGHUB_SHOPOURCATALOGUES">
+			<span> Consulter <br/>les guides</span>
+		</a>
+	</div>
+
+	<!-- <div class="arrow-back-to-top icon-down hide-mobile"> -->
+	<div class="arrow-back-to-top">
+		<img src="<%=img('arrow-back-to-top.png')%>" alt="">
+	</div>
+
+	<div class="arrow-down">
+		<img src="<%=img('arrow-back-to-top.png')%>" alt="">
+	</div>
+
+	<!-- Static Sections -->
+	<div class="static-sections"></div>
+	<!-- END Static Sections -->
+
+	<div id="bay-fullpage">
+		<div class="section" id="section0" role="img" aria-label="">
+			<video id="myVideo" loop muted data-autoplay>
+				<source src="https://content.hbc.com/chad/bay/editorial/106-2021-03-15-spring-hub/106-2021-03-15-spring-hub-01-opt.mp4">
+				<!-- <source src="https://content-edit-assets.s3.amazonaws.com/bay/editorial/videos/test-video.webm" type="video/webm"> -->
+			</video>
+
+			<div class="fp-video-text-wrapper">
+				<div class="text-wrapper">
+					<h1>Humeur printanière</h1>
+					<p>Célébrons la nouvelle saison, ses humeurs et ses plus belles tendances.</p>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="section" id="section1" role="img" aria-label="">
+			<div class="text-wrapper">
+				<div class="text-section1">
+					<div>
+						<h2>En mode renouveau</h2>
+					</div>
+					<div class="text-wrapper_bottom">
+						<div>
+							<a href="$url('Search-Show','cgid','spring-2021-women')$?sre=ED_SPRINGHUB_WOMEN">
+								<span>Femme</span>
+							</a>
+						</div>
+						<div>
+							<a href="$url('Search-Show','cgid','spring-2021-men')$?sre=ED_SPRINGHUB_MEN">
+								<span>Homme</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section" id="section2" role="img" aria-label="">
+			<div class="text-wrapper text-section2">
+				<h2>En mode confort</h2>
+				<a href="$url('Search-Show','cgid','spring-2021-feel-comfy')$?sre=ED_SPRINGHUB_FEELCOMFY">
+					<span>Tout voir</span>
+				</a>
+			</div>
+		</div>
+		<div class="section" id="section3" role="img" aria-label="">
+			<div class="text-wrapper text-section3">
+				<h2>En mode casanier</h2>
+				<a href="$url('Search-Show','cgid','spring-2021-home')$?sre=ED_SPRINGHUB_HOME">
+					<span>Tout voir</span>
+				</a>
+			</div>
+			
+			<!-- <div class="icon-down hide-mobile">
+				<img src="<%=img('arrow-back-to-top.png')%>" alt="">
+			</div> -->
+		</div>
+
+		<div class="section" id="section4" role="img" aria-label="">
+			<div class="text-wrapper text-section4">
+				<h2>En mode beauté</h2>
+				<a href="$url('Search-Show','cgid','spring-2021-beauty')$?sre=ED_SPRINGHUB_BEAUTY">
+					<span>Tout voir</span>
+				</a>
+			</div>
+
+			<!-- <div class="icon-down hide-mobile">
+				<img src="<%=img('arrow-back-to-top.png')%>" alt="">
+			</div> -->
+		</div>
+
+		<div class="section" id="section5" role="img" aria-label="">
+			<div class="text-wrapper text-section5">
+				<h2>En mode responsable</h2>
+				<a href="$url('Search-Show','cgid','spring-2021-feel-purposeful')$?sre=ED_SPRINGHUB_FEELPURPOSEFUL">
+					<span>Tout voir</span>
+				</a>
+			</div>
+
+			<!-- <div class="icon-down hide-mobile">
+				<img src="<%=img('arrow-back-to-top.png')%>" alt="">
+			</div> -->
+		</div>
+
+		<div class="section" id="section6" role="img" aria-label="">
+			<div class="text-wrapper text-section6">
+				<h2>En mode espiègle</h2>
+				<a href="$url('Search-Show','cgid','spring-2021-kids')$?sre=ED_SPRINGHUB_KIDS">
+					<span>Tout voir</span>
+				</a>
+			</div>
+
+			<!-- <div class="icon-down hide-mobile">
+				<img src="<%=img('arrow-back-to-top.png')%>" alt="">
+			</div> -->
+		</div>
+
+		<div class="section" id="section7" role="img" aria-label="">
+			<div class="text-wrapper text-section7">
+				<div>
+					<h2>Magasiner selon l’humeur</h2>
+				</div>
+				<div class="text-wrapper-inner">
+					<div>
+						<a class="sec-7_bg-1" href="$url('Search-Show','cgid','1613504627898')$?sre=ED_SPRINGHUB_SHOPBYMOOD_RELAXED">Détendue</a>
+					</div>
+					<div>
+						<a class="sec-7_bg-2" href="$url('Search-Show','cgid','1613504627899')$?sre=ED_SPRINGHUB_SHOPBYMOOD_OPTIMISTIC">Optimiste</a>
+					</div>
+					<div>
+						<a class="sec-7_bg-3" href="$url('Search-Show','cgid','1613504627900')$?sre=ED_SPRINGHUB_SHOPBYMOOD_ANXIOUS"> Anxieuse</a>
+					</div>
+				</div>
+				<div class="text-wrapper-inner">
+					<div>
+						<a class="sec-7_bg-4" href="$url('Search-Show','cgid','1613504627902')$?sre=ED_SPRINGHUB_SHOPBYMOOD_RESTLESS"> Agitée</a>
+					</div>
+					<div>
+						<a class="sec-7_bg-5" href="$url('Search-Show','cgid','1613504627901')$?sre=ED_SPRINGHUB_SHOPBYMOOD_BOLD">Audacieuse</a>
+					</div>
+					<div>
+						<a class="sec-7_bg-6" href="$url('Search-Show','cgid','1613504627903')$?sre=ED_SPRINGHUB_SHOPBYMOOD_REFLECTIVE"> Pensive</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="section" id="section8" role="img" aria-label="">
+			<div class="text-wrapper text-section8">
+				<div>
+					<div>
+						<h2>Cartes<br class="br-desktop"/>-cadeaux </h2>
+						<a href="https://www.labaie.com/cartes-cadeaux">
+							<span>Acheter</span>
+						</a>
+					</div>
+					<div>
+						<h2>PRIMES<br class="br-desktop"/><br class="br-desktop"/></h2>
+						<a href="$url('Search-Show','cgid','rewards')$?sre=ED_SPRINGHUB_REWARDS">
+							<span>S’inscrire</span>
+						</a>
+					</div>
+					<div> 
+						<h2> Atelier de<br class="br-desktop"/> style</h2>
+						<a href="https://widgets.stores.thebay.com/stores/1013/services/landing_page/components/landing">
+							<span>Réserver</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	
+	</div>
+
+</div> <!-- END #dsg-editorial -->

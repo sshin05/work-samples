@@ -1,0 +1,66 @@
+// @author Joseph
+// --------------------------------------------------
+
+// section.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+    section {
+    	text-align: center;
+
+    	&.sec__three{
+    		display: flex;
+
+    		div{
+    			flex:1;
+    		}
+
+    	}
+
+        .fed-tabs{
+            .fed-tabs__buttons{
+                border-top: 1px solid #262525;
+                border-bottom: 1px solid #262525;
+
+                .fed-tabs__buttons-button{
+                    text-transform: uppercase;
+                    color:#000;
+                    padding: 22px 0;
+
+                    &.fed-tabs__buttons-active{
+                        color: #a7a9ac;
+                    }
+                }
+
+                .fed-tabs__buttons-container{
+                    display: flex;
+
+                    div{
+                        flex:1;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .fed-tabs__container{
+
+
+
+                .fed-tabs__container-section{
+                    display: none;
+
+                    &.fed-tabs__container-active{
+                        display: block;
+                    }
+                }
+            }
+        }
+
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+        	&.sec__three{
+        		flex-direction: column;
+        	}
+        }
+    }
+} // end #dsg-editorial.dsg-editorial

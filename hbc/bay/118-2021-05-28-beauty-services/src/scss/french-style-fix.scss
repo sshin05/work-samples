@@ -1,0 +1,33 @@
+
+// // --------------------------------------------------
+
+// // french-style-fix.scss
+// // --------------------------------------------------
+// // All style fixes for French are contained here.
+// // Using gulp concat, this whole file should be added to
+// // the END of main.scss, overwriting EN styles in the normal
+// // manner of cascading style sheets.
+
+#dsg-editorial.dsg-editorial.dsg-fr div.header .right {
+	margin-top: 8.5%;
+}
+
+#dsg-editorial.dsg-editorial.dsg-fr div.header .right .right__text-box h1{
+	font-size: 40px;
+	line-height: 44px;
+}
+#dsg-editorial.dsg-editorial.dsg-fr div.header .right .right__text-box p.desktop-text {
+	font-size: 15px;
+	line-height: 16px;
+}
+
+@media only screen and (max-width: 736px){
+	#dsg-editorial.dsg-editorial.dsg-fr #accordion .panel-heading span {
+		margin-right: 12px !important;
+		font-size: 12px;
+	}
+}
+
+
+
+

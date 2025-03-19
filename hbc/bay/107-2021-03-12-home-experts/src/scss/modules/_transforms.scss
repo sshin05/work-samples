@@ -1,0 +1,33 @@
+// @author Penn
+// --------------------------------------------------
+// NOTE: vendor prefixes are now obsolete thanks to Gulp Autoprefixer
+// https://www.npmjs.com/package/gulp-autoprefixer
+
+// transforms.scss
+// --------------------------------------------------
+// mixins involving css transforms
+// translating, flipping, etc.
+
+@mixin flip-h() {
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+@mixin flip-v() {
+    transform: scaleY(-1);
+    filter: FlipV;
+}
+
+@mixin translate-x($value:-50%) {
+    transform: translateX($value);
+}
+
+@mixin translate-y($value:-50%) {
+    transform: translateY($value);
+}
+
+// rotate element on a specified axis
+@mixin rotate($degrees, $pos-y, $pos-x) {
+    transform-origin: $pos-y $pos-x;
+    transform: rotate($degrees);
+}

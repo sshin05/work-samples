@@ -1,0 +1,55 @@
+// @author Penn
+// --------------------------------------------------
+
+// french-style-fix.scss
+// --------------------------------------------------
+// All style fixes for French are contained here.
+// Using gulp concat, this whole file should be added to
+// the END of main.scss, overwriting EN styles in the normal
+// manner of cascading style sheets.
+
+#dsg-editorial.dsg-editorial.dsg-fr {
+
+    .fed-tabs {
+        .fed-tabs__container-section.fed-tabs__container-section-01{
+            .fed-tabs__container-section-01__05{
+                .fed-tabs__container-section-01__05-container div.fr-fix{
+                    flex: 0 0 21%;
+                }
+            }
+        }
+
+        .fed-tabs__container-section-02 .fed-tabs__container-section-02__05 .fed-tabs__container-section-02__05-container{
+            width: 725px;
+
+            div.fr-fix{
+                flex: 0 0 28%;
+            }
+        }
+
+        .fed-tabs__container-section-02 .fed-tabs__container-section-02__10 .fed-tabs__container-section-02__10-container{
+            div.fr-fix{
+                flex: 0 0 27%;
+            }
+        }
+
+        .fed-tabs__container-section-03 .fed-tabs__container-section-03__04 .fed-tabs__container-section-03__04-container{
+            width: 900px;
+
+            div.fr-fix{
+                flex: 0 0 33%;
+            }
+        }
+
+        @media only screen and (max-width: 1023px) {
+
+            .fed-tabs__container-section.fed-tabs__container-section-01 .fed-tabs__container-section-01__02 ol {
+                height: 700px;
+            }
+
+        }
+
+    }
+
+
+} // end .bay-editorial

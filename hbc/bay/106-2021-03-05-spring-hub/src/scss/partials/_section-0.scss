@@ -1,0 +1,72 @@
+// @author Joseph
+
+#dsg-editorial.dsg-editorial #section0{
+	background-image: url("https://content-edit-assets.s3.amazonaws.com/bay/editorial/106-2021-03-15-spring-hub/106-2021-03-15-spring-hub-01-gif.gif");
+
+	h1{
+		margin-bottom: 40px;
+	}
+
+	.text-wrapper{
+		margin: 0;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	button{
+		width: 20vw;
+		display: block;
+		margin: 0.5vw auto;
+		border: 0.01vw solid #999;
+		padding: 1vw;
+		cursor: pointer;
+
+		&.yellow{ background: yellow;}
+		&.red{ background: red;}
+		&.blue{ background: blue;}
+	}
+
+	@-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+	}
+	
+	// .fp-tableCell{
+	// 	padding-top: 18vw;
+	// }
+
+	a{
+		margin-top: 58px;
+	}
+
+	.icon-down{
+		left: calc(50% - 35px);
+		animation: action 0.5s infinite  alternate;
+	}
+
+	@media(max-width: $tablet-breakpoint){
+
+	}
+
+	@media(max-width: $mobile-breakpoint){
+		//background-image: url("<%=img('sec-bg-0-mobile.png')%>");
+
+		#myVideo{
+			display: none;
+		}
+
+		// .fp-tableCell{
+		// 	padding-top: 44vw;
+		// }
+
+		a{
+			
+		}
+	}
+
+} // end #dsg-editorial.dsg-editorial

@@ -1,0 +1,74 @@
+// @author Joseph
+// --------------------------------------------------
+
+// responsive.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+	margin-top:0;
+
+	  //cursor: none;
+	
+	br{
+		&.br-mobile{
+			display: none;
+		}
+
+		&.br-desktop{
+			display: inline-block;
+		}
+	}
+
+	.only-desktop{
+		display: block;
+	}
+
+	.only-mobile{
+		display: none;
+	}
+
+	.cursor{
+		height: 100vh;
+    	width: 100vw;
+
+		.text{
+		    position: absolute;
+		    pointer-events: none;
+		    font-size: 5vw;
+		    -webkit-text-stroke: 1px #161616;
+		    color: transparent;
+		    font-weight: 700;
+		}
+
+		.text span{
+		    color: #161616
+		}
+	}
+
+    @media(max-width: $mobile-breakpoint) {
+
+    	br{
+			&.br-mobile{
+				display: inline-block;
+			}
+
+			&.br-desktop{
+				display: none;
+			}
+		}
+
+		.hide-mobile{
+			display: none !important;
+		}
+
+		.only-desktop{
+			display: none;
+		}
+	
+		.only-mobile{
+			display: block;
+		}
+
+    }
+
+} // end #dsg-editorial.dsg-editorial

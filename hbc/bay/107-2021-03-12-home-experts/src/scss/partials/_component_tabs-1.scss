@@ -1,0 +1,156 @@
+#dsg-editorial.dsg-editorial {
+    .fed-tabs{
+
+        .fed-tabs__container-section{
+            h2{
+                @include FontSans(20px, 900, 250);
+
+                text-transform: uppercase;
+            }
+
+            h3{
+                @include FontSans(13px, 800, 50);
+
+                text-transform: uppercase;
+            }
+
+            p{
+                @include FontSans(16px, 400, 15, 1.15);
+            }
+
+            img{
+                width: auto;
+            }
+
+            a.cta{
+                @include FontSans(14px, 700, 40);
+                @include CTA();
+
+                text-transform: uppercase;
+            }
+
+            &.fed-tabs__container-section-01, &.fed-tabs__container-section-02{
+                .fed-tabs__container-section-01__01{
+                    display: flex;
+                    align-items: center;
+
+                    h1 {
+                        font-style: normal;
+                        line-height: 1;
+                        display: block;
+                        margin: 50px auto;
+                        font-family: ivypresto-headline, serif;
+                        font-size: 26px;
+                        text-align: center;
+                        font-weight: 300;
+                    }
+
+                    h2{
+                        margin-bottom: 15px;
+                    }
+
+                    p{
+                        width: 82%;
+                        text-align: left;
+                        margin: 0 auto 25px;
+                        font-size: 20px;
+                        font-family: Helvetica, serif;
+
+                        &.number {
+                            font-family: ivypresto-headline, serif;
+                            font-style: normal;
+                            font-size: 65px;
+                            font-weight: 400;
+                            text-align: left;
+                        }
+                    }
+
+                    a {
+                        
+                        font-weight: 400;
+                        font-family: Helvetica, serif;
+                        border-bottom: 1px solid black;
+                        color: black;
+                        font-size: 22px;
+                        padding: 0;
+                        text-align: left;
+                        margin: 0 9%;
+                        width: auto;
+                        display: inline-block;
+                    }
+
+                    div{
+                        position: relative;
+                        text-align: left;
+                        width: 50%;
+
+                        img{
+                            display: block;
+                            width: auto;
+                        }
+
+                    }
+                }
+
+            }
+
+            &.fed-tabs__container-section-02{
+
+            }
+
+            &.fed-tabs__container-section-03{
+
+            }
+
+            &.fed-tabs__container-section-04{
+
+            }
+
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+            br{
+                display: none;
+            }
+
+            .fed-tabs__container-section{
+
+                // SECTION #1
+                &.fed-tabs__container-section-01, &.fed-tabs__container-section-02{
+                    .fed-tabs__container-section-01__01{
+                        display: flex;
+                        padding-bottom: 1vw;
+                        flex-direction: column;
+
+                        &.row{
+                            flex-direction: column-reverse;
+                        }
+
+                        div{
+                            display: flex;
+                            position: relative;
+                            text-align: center;
+                            align-items: center;
+                            flex-flow: column wrap;
+                            order: 1;
+                            padding-bottom: 20px;
+                            width: 100%;
+
+                            img{
+                                display: inline-block;
+                                position: relative;
+                                top: auto;
+                                right: auto;
+                            }
+                        }
+                    }
+
+                }
+
+
+            }
+
+        }
+
+    }
+}

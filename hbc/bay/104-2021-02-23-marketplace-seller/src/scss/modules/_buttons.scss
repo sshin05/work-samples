@@ -1,0 +1,46 @@
+// @author Penn
+// --------------------------------------------------
+// NOTE: vendor prefixes are now obsolete thanks to Gulp Autoprefixer
+// https://www.npmjs.com/package/gulp-autoprefixer
+
+// buttons.scss
+// --------------------------------------------------
+// Animated button with border
+//
+// Usually inverts color and background-color
+
+@mixin button-border($color, $hover-color, $hover-background-color) {
+
+    &,
+    &:link,
+    &:visited,
+    &:active {
+        @include base-transition;
+        display: inline-block;
+        padding: 25px 20px;
+        border: 1px solid $color;
+        background: none;
+        text-align: center;
+        line-height: 0;
+        font-family: $sans;
+        font-style: normal;
+        font-weight: $bold;
+        color: $color;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    &:hover {
+        @include button-border-hover($hover-color, $hover-background-color);
+    }
+
+}
+
+
+@mixin button-border-hover($hover-color, $hover-background-color) {
+    background: $hover-background-color;
+    border: 1px solid $hover-background-color;
+    color: $hover-color;
+    text-decoration: none;
+}

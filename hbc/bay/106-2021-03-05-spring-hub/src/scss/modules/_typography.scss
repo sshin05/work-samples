@@ -1,0 +1,72 @@
+// @author Penn
+// --------------------------------------------------
+// NOTE: vendor prefixes are now obsolete thanks to Gulp Autoprefixer
+// https://www.npmjs.com/package/gulp-autoprefixer
+
+// typography.scss
+// --------------------------------------------------
+// typography, fonts, etc go here
+
+// Font smoothing
+// Fixes issues with css transitions involving text
+@mixin font-smoothing($value: antialiased) {
+    @if $value == antialiased {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    } @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+// enable font kerning for typekit!
+// may cause weirdness at larger font-sizes
+// http://blog.typekit.com/2014/02/05/kerning-on-the-web/
+@mixin font-kerning {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'kern';
+    -webkit-font-feature-settings: 'kern';
+    -moz-font-feature-settings: 'kern';
+    -moz-font-feature-settings: 'kern=1';
+    font-kerning: normal;
+}
+
+// Cross-browser vertical centering for webfonts!
+// Works in Chrome, FF, Safari
+
+// uses the following method by Alan Stearns to align to baseline:
+// http://blogs.adobe.com/webplatform/2014/08/13/one-weird-trick-to-baseline-align-text/
+// then subtracts from the "strut" to vertically center in a container
+
+@mixin center-webfont($font-size, $line-height, $typeface) {
+
+  // cap height (expressed as % of em)
+  // 70% of em is a rough average
+  $cap-height-percentage-of-em: .7;
+  
+  // specify typeface
+  @if $typeface == lust {
+    $cap-height-percentage-of-em: .68;
+    font-family: lust, sans-serif;
+  }
+  
+  font-family: $typeface;
+  
+  // calculate cap-height for specific point size
+  $cap-height: round($cap-height-percentage-of-em * $font-size);
+  
+  // calculate strut height
+  $strut-height: ($line-height / 2) + ($cap-height / 2);
+
+  font-size: $font-size;
+  height: $line-height;
+  line-height: 0;
+
+  &:before {
+    // set height to div height
+    height: $strut-height;
+    display: inline-block;
+    content: '';
+  }
+
+}

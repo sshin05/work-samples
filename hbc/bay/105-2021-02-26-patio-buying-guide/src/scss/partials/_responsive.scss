@@ -1,0 +1,28 @@
+// @author Joseph
+// --------------------------------------------------
+
+// responsive.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+    max-width: 1280px;
+
+    .br-desktop{
+    	display: inline;
+    }
+
+    .br-mobile{
+    	display: none;
+    }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+    	.br-desktop{
+    		display: none;
+	    }
+
+	    .br-mobile{
+	    	display: inline;
+	    }
+    }
+
+} // end #dsg-editorial.dsg-editorial

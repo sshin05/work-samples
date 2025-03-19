@@ -1,0 +1,144 @@
+// @author Penn
+// --------------------------------------------------
+
+// accordion.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+
+	.uppercase{
+		text-transform: uppercase;
+	}
+
+    #accordion {
+		
+		.panel-heading.collapsed {
+			cursor: pointer;
+		}
+        text-align: left;
+        font-size: 14px;
+
+        $panel-heading-height: 50px;
+
+		.panel {
+			border-radius: 0;
+			border-left-width: 0;
+			border-right-width: 0;
+			border-bottom-width: 0;
+			box-shadow: none;
+			margin-top: 0;
+			border-top:1px solid #ddd;
+
+			// border-bottom:1px solid #ddd;
+			
+			&.panel-last {
+				border-bottom-width: 1px;
+			}
+			.panel-default:first-child {
+				border-top: 1px solid red!important;
+			}
+
+		}
+
+        .panel-heading {
+        	background-color: $white;
+			padding-top: 0;
+			padding-bottom: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 22px;
+			margin-bottom: 1rem;
+			color: #737373;
+			.logo-902 img {
+				// border: 1px solid blue!important;
+				width: 200px;
+			}
+			span{
+				margin-right: 30px!important;
+				// border: 1px solid orange!important;	
+				font-weight: 400;
+				font-size: 16px;
+				font-weight: 500;
+			}
+
+			&__view-service {
+				// border: 1px solid red!important;
+				display: flex;
+				align-items: center;
+				width: 200px;
+				height: 40px;
+				justify-content: flex-end;
+				&__text{
+					margin-right: 19px!important;
+					border: 1px solid orange!important;
+					
+				}
+			}
+			
+
+	        a {
+        		font-size: 14px;
+        		font-weight: $medium;
+	            display: inline-block;
+	            width: 100%;
+	            min-height: $panel-heading-height;
+	            line-height: $panel-heading-height;
+	            transition-property: opacity;
+	            transition-duration: 200ms;
+	            transition-timing-function: ease;
+				text-decoration: none;
+				padding-right: 15px;
+
+			
+
+	            &:hover {
+					text-decoration: none;
+	            }
+
+	            &:active {
+	            	opacity: .6;
+	            }
+
+	        }
+        
+        }
+
+        .panel-body {
+        	border: 0;
+        	padding-top: 0;
+        	padding-right: 140px;
+        	line-height: 20px;
+        	color: #737373;
+			font-weight: $regular;
+		
+			h2{
+				font-size:13px;
+				color: #737373;
+				text-transform: uppercase;
+				font-weight: 700;
+				margin-bottom: .5rem;
+			}
+			p{
+				font-size: 13px;
+				color: #737373;
+				line-height: 1.3em;
+				 a {
+					color: #737373;
+					text-decoration: underline;
+				}
+				
+			}
+			ul{
+					margin-top: 0;
+					margin-bottom: 10px;
+					margin-left: 34px;
+					line-height: 32px;
+
+				
+			}
+        }
+
+    }
+
+} // end #dsg-editorial.dsg-editorial

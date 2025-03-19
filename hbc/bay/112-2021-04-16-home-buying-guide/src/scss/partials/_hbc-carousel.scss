@@ -1,0 +1,55 @@
+// @author Joseph
+// --------------------------------------------------
+
+// HBC Bay Carousel
+// overwrite defaults
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+    #hbc-carousel.hbc-carousel-bay{
+    	padding: 0 30px;
+
+    	a {
+            color: #000;
+            text-transform: uppercase;
+            font-weight: 800;
+            border-bottom: 1px solid black;
+            padding-bottom: 3px;
+            display: inline-block;
+        }
+
+
+    	.image {
+            margin: 15px 15px 30px 15px;
+        }
+
+        span {
+            font-weight: 16px;
+        }
+
+        .slick-dots {
+            position: relative;
+            margin-top: 40px;
+
+            & button:before {
+                display: none;
+            }
+        }
+
+        .slick-arrow {
+            margin-top: -50px;
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+        	.slick-prev:before {
+        		content: '\003C';
+
+        	}
+        	.slick-next:before {
+        		content: '\003E';
+
+        	}
+        }
+
+    }
+}

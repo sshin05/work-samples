@@ -1,0 +1,112 @@
+// @author Penn
+// --------------------------------------------------
+
+// french-style-fix.scss
+// --------------------------------------------------
+// All style fixes for French are contained here.
+// Using gulp concat, this whole file should be added to
+// the END of main.scss, overwriting EN styles in the normal
+// manner of cascading style sheets.
+
+#dsg-editorial.dsg-editorial.dsg-fr {
+    &.dsg-editorial section.sec-50-50 .flex-container h4 {
+        line-height: 1.25em;
+        text-transform: uppercase;
+    }
+   &.dsg-editorial section.sec__nav #logo {
+        width: 280px;
+        margin-top: 1.35%;
+    }
+
+    section.cards .split50 .copy .buttonLink.one {
+        margin-top: 20%;
+    }
+    section.cards .split50 .copy .buttonLink.two {
+        margin-top: 11%;
+    }
+    section.sec__header .text-wrapper h1 {
+        font-size: 5.5vw;
+        line-height: 6vw;
+    }
+
+    section.sec__2header .text-wrapper h1 {
+        font-size: 4.4vw;
+        font-weight: 100;
+    }
+    section.table .tableWrapper .tableColumn .title {
+        height: 16%;
+    }
+    section.table .tableWrapper .tableColumn .title .rewardLogo {
+        height: auto;
+        margin: 3% 0 7%;
+        padding-top: 7%;
+    }
+    section.table .tableWrapper .tableColumn ul li:last-child.hideOnMobile {
+        height: 0;
+        padding-bottom: 222px;
+    }
+
+    @media only screen and (min-width: 2000px) {
+        section.sec__header .text-wrapper h1 {
+            font-size: 100px;
+            line-height: 118px;
+        }
+        section.sec__2header .text-wrapper h1 {
+            font-size: 75px;
+        }
+
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1333px){
+        section.sec__2header .sub {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1023px){
+        &.dsg-editorial section.sec__header .text-wrapper h1 {
+            font-size: 10vw;
+            line-height: 12vw;
+            margin: -7% 0 0 2%;
+        }
+
+        &.dsg-editorial section.sec__header .logoMobile {
+            display: block;
+            width: 60%;
+            margin-top: 6%;
+        }
+        &.dsg-editorial section.sec__footer h1 {
+            font-size: 2.5em!important;
+        }
+        &.dsg-editorial section.sec__footer h2 {
+            font-size: 1.3em!important;
+        }
+        section.sec__2header .text-wrapper h1.text-transition span {
+            font-size: 5.4vw;
+            font-weight: 400;
+        }
+        section.sec__2header .text-wrapper .sub div {
+            font-size: 3.3vw;
+            font-weight: 400;
+        }
+        section.sec__2header .text-wrapper h1 {
+            font-size: 14vw;
+        }
+        section.cards .split50 .copy .buttonLink.two {
+            margin-top: -16%;
+        }
+        section.table .tableWrapper .tableColumn .title {
+            height: 25%;
+        }
+        section.sec__2header .item.linksHead {
+            width: auto;
+            margin-top: 17%;
+        }
+        section.sec__2header .sub {
+            width: 90%;
+            margin: auto;
+        }
+
+}
+
+
+} // end .bay-editorial

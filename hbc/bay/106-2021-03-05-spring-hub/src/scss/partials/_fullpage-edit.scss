@@ -1,0 +1,320 @@
+// @author Joseph
+// --------------------------------------------------
+
+// responsive.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+	visibility: hidden;
+
+	@keyframes fadeIn {
+		0% {opacity:0;}
+		100% {opacity:1;}
+	}
+
+	@keyframes fadeOut {
+		100% {opacity:1;}
+		0% {opacity:0;}
+	}
+
+	.logo-hbc{
+		position: fixed;
+		z-index: 1;
+		width: 120px;
+		top:0;
+		left: 70px;
+	}
+
+	.back-to-hp{
+		position: fixed;
+		z-index: 1;
+		width: 130px;
+		top: 37px;
+		left: 66px;
+		text-align:center;
+		//text-shadow: 1px 1px #333;
+
+		a{
+			@include FontSans(17px, 400, 15);
+
+			text-transform: uppercase;
+			color: #fff;
+		}
+	}
+
+	.arrow-back-to-top{
+		display: none;
+		position: fixed;
+		z-index: 1;
+		bottom:2vw;
+		width: 100%;
+		//display: flex;
+		justify-content: center;
+
+		img{
+			display: block;
+			width: 66px;
+			height: 33px;
+			cursor: pointer;
+		}
+	}
+
+	.arrow-down{
+		@include flip-v();
+
+		position: fixed;
+		z-index: 1;
+		bottom:2vw;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		img{
+			display: block;
+			width: 66px;
+			height: 33px;
+			cursor: pointer;
+		}
+	}
+
+	.shop-catalogues{
+		position: fixed;
+		//display: none;
+		z-index: 1;
+		width: 131px;
+    	top:50px;
+		right: 75px;
+		text-align:center;
+
+		a{
+			@include FontSans(20px, 400, 15);
+
+			text-transform: uppercase;
+			color: #fff;
+		}
+	}
+
+	#fp-nav{
+		top:85%;
+	}
+
+	#bay-fullpage{
+
+	}
+
+	#fp-nav ul li a span,
+	#dsg-editorial.dsg-editorial .fp-slidesNav ul li a span{
+		background-color: rgba(0, 0, 0, 0);
+		border:2px solid #fbf4e3;
+
+	}
+
+	#fp-nav ul li a.active span,
+	#dsg-editorial.dsg-editorial #fp-nav ul li:hover a.active span,
+	#dsg-editorial.dsg-editorial .fp-slidesNav ul li a.active span, 
+	#dsg-editorial.dsg-editorial .fp-slidesNav ul li:hover a.active span{
+		background: #fbf4e3;
+	}
+
+	.section-wrapper{
+		position: relative;
+		height: auto;
+		overflow: hidden;
+		display: flex;
+		//height: 730px;
+		margin: 0 auto;
+		//background: green;
+
+		.section-wrapper-left{
+			flex: 1;
+		}
+
+		.section-wrapper-right{
+			flex: 1;
+		}
+	}
+
+	.text-wrapper{
+		// position: relative;
+		// width: 80%;
+		// margin: 0 auto;
+
+		// .text-wrapper-inner{
+		// 	display: flex;
+
+		// 	div{
+		// 		flex:1;
+		// 		padding: 2vw;
+		// 	}
+		// }
+	}
+
+	@media(max-width: $tablet-breakpoint) {
+		.text-wrapper{
+			// display: block;
+			// margin-top: -23vw;
+			// width: 70vw;
+		}
+	}
+
+    @media(max-width: $mobile-breakpoint) {
+		.section-wrapper{
+			display: block;
+			height: auto;
+			overflow: visible;
+	
+			.section-wrapper-left{
+				display: block;
+			}
+	
+			.section-wrapper-right{
+				display: block;
+			}
+		}
+
+		.text-wrapper{
+			// margin-top: -45vw;
+			// //margin-top: 60vw;
+			// margin-left: 10vw;
+			// width: 80vw;
+			// position: absolute;
+			// bottom: 10vw;
+
+			// h2{
+			// 	font-size: 9vw;
+			// }
+
+			// p{
+			// 	font-size: 3vw;
+			// }
+
+			// .cta{
+			// 	font-size: 3.5vw;
+			// 	padding: 9px 17px;
+			// 	margin-top:7vw;
+			// }
+
+			// &.text-section0{
+			// 	//h2{ font-size: 120px; }
+			// }
+	
+			// &.text-section1{
+			// 	margin-top: 0;
+			// }
+	
+			// &.text-section2{
+			// 	//text-align: left;
+			// 	margin-left: 9vw;
+			// 	//animation: fadeIn ease 2s;
+			// }
+	
+			// &.text-section3{
+			// 	width: 100vw;
+			// 	margin-left: 0;
+			// }
+	
+			// &.text-section4{
+			// 	width: 100vw;
+			// 	margin-left: 0;
+			// }
+	
+			// &.text-section5{
+			// 	width: 100vw;
+			// 	margin-left: 0;
+			// }
+	
+			// &.text-section6{
+			// 	width: 100vw;
+			// 	margin-left: 0;
+			// }
+	
+			// &.text-section7{
+			// 	width: 100vw;
+			// 	margin-left: 0;
+			// }
+		}
+
+		.arrow-back-to-top{
+			img{
+				width: 49px;
+				height: 24px;
+			}
+		}
+
+		.arrow-down{
+			img{
+				width: 49px;
+				height: 24px;
+			}
+		}
+		
+		.logo-hbc{
+			width: 15vw;
+			left:10vw;
+		}
+
+		.back-to-hp{
+			//@include rotate(270deg);
+			//display: none;
+			//background: green;
+			width: 30vw;
+			left: 3vw;
+			top: 6vw;
+			//text-align: left;
+			//bottom: 12vw;
+
+			a{
+				font-size: 3vw;
+			}
+		}
+
+		.shop-catalogues{
+			width: 30vw;
+			right: 3vw;
+			top: 6vw;
+
+			a{
+				font-size: 3vw;
+			}
+		}
+
+		.explore-lookbook{
+			//@include rotate(90deg);
+
+			//background: green;
+			width: 35vw;
+			//text-align: left;
+			//left: 95vw;
+			right: 0;
+			top: 3vw;
+			//right: initial;
+
+
+		}
+
+		#fp-nav{
+			//display: none;
+		}
+
+		#fp-nav.fp-right{
+			top:78%;
+			right: 1vw;
+		}
+
+		.hide-mobile{
+			display: none;
+		}
+
+		#fp-nav ul li a span,
+		.fp-slidesNav ul li a span{
+			border:1px solid #fbf4e3;
+		}
+
+		#fp-nav ul li, 
+		.fp-slidesNav ul li{
+			margin: 3px;
+		}
+
+    }
+} // end #dsg-editorial.dsg-editorial

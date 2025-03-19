@@ -1,0 +1,49 @@
+// @author Penn
+// --------------------------------------------------
+
+// typography.scss
+// --------------------------------------------------
+// Includes font-family, weights, styles, colors, etc
+
+
+
+
+#dsg-editorial.dsg-editorial {
+
+    h1{
+        @include FontSans(94px, 400, 30);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h2{
+        @include FontSans(65px, 400, 35);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h3{
+        @include FontSans(50px, 400, 35);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h4{
+        @include FontSans(32px, 400, 35);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    p{
+        @include FontSans(28px, 400, 35);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .cta{
+        @include FontSans(22px, 400, 35);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        @include CTA();
+    }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            
+    }
+
+} // end #dsg-editorial.dsg-editorial

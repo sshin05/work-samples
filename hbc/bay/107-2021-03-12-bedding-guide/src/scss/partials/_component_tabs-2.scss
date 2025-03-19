@@ -1,0 +1,299 @@
+#dsg-editorial.dsg-editorial {
+    .fed-tabs{
+
+        .fed-tabs__container-section-02{
+
+            .fed-tabs__container-section-02__01{
+                align-items: center;
+                padding: 0 0 50px 0;
+                text-align: center;
+
+                &.line {
+                    border-top: 1px solid #000;
+                }
+
+                h1 {
+                    font-style: normal;
+                    line-height: 1;
+                    display: block;
+                    margin: 50px auto 10px;
+                    font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                h2{
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    letter-spacing: 0.15em;
+
+                    &.line {
+                        margin: 0 auto;
+                        width: 100%;
+                        text-align: center;
+                        font-size: 20px;
+                    }
+                }
+
+                p{
+                    text-align: center;
+                    margin: 0 0 40px 0;
+                }
+
+                img {
+                    display: block;
+                    width: auto;
+                    margin: 0 auto;
+                }
+
+                a {
+                    font-weight: 800;
+                    border-bottom: 1px solid #bfbfbf;
+                    padding-bottom: 0;
+                    line-height: 1.2em;
+                    text-align: center;
+                    margin: 0 auto;
+                    display: inline-block;
+                    color: #000;
+                    text-transform: uppercase;
+                    font-size: 18px;
+
+                    &.button {
+                        width: 94%;
+                        border: 2px solid #000;
+                        padding: 10px 0;
+                        margin: 4% auto;
+                        display: block;
+                    }
+                }
+
+                div.box {
+                    width: 41%;
+                    display: inline-block;
+                    text-align: left;
+                    margin: 3% 3% 1%;
+                    vertical-align: top;
+
+                    p {
+                        text-align: left;
+                        margin: 0 0 20px 0;
+                    }
+
+                    &.box2 {
+                        width: 25%;
+                    }
+
+                    &.box3 {
+                        width: 26%;
+                        padding-top: 2%;
+                    }
+
+                }
+            }
+            .fed-tabs__container-section-02__02{
+                align-items: center;
+                padding: 0 0 50px 0;
+                border-top: 1px solid #000;
+
+                h1 {
+                    font-style: normal;
+                    line-height: 1;
+                    display: block;
+                    margin: 50px auto 10px;
+                    font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                h3{
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 40%;
+                    text-align: center;
+                    flex: 1;
+                    align-items: center;
+                    padding-top: 1%;
+                    font-size: 16px;
+                }
+
+                p{
+                    text-align: center;
+                    margin: 0 0 40px 0;
+                }
+
+                .row {
+                    width: 100%;
+                    flex: 1;
+                    padding: 2% 3%;
+                }
+
+                .row-color {
+                    padding: 2% 3%;
+                    width: 100%;
+                    background-color: #ebebec;
+
+                    
+                }
+
+                span {
+                    width: 50%;
+                    display: inline-block;
+                    text-align: left;
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+            br{
+                display: none;
+            }
+
+            .fed-tabs__container-section-02{
+
+                .fed-tabs__container-section-02__01{
+                    display: flex;
+                    padding-bottom: 1vw;
+                    flex-direction: column;
+
+                    &.row{
+                        flex-direction: column-reverse;
+                    }
+
+                    div{
+                        display: flex;
+                        position: relative;
+                        text-align: center;
+                        align-items: center;
+                        flex-flow: column wrap;
+                        order: 1;
+                        padding-bottom: 20px;
+                        width: 100%;
+
+                        &.box {
+                            width: 90%;
+
+                            &.box2, &.box3 {
+                                width: inherit;
+                            }
+                        }
+
+                        img{
+                            display: inline-block;
+                            position: relative;
+                            top: auto;
+                            right: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-02__02{
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .fed-tabs__container-section-02__03{
+                    .fed-tabs__container-section-02__03-container{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding-left: 2vw;
+                            padding-right: 2vw;
+
+                            &:first-child{
+                                padding-bottom: 6vw;
+                            }
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-02__04{
+                    .fed-tabs__container-section-02__04-container{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding-left: 2vw;
+                            padding-right: 2vw;
+
+                            &:first-child{
+                                padding-bottom: 6vw;
+                            }
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-02__05{
+                    .fed-tabs__container-section-02__05-container{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding: 2vw 0;
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-02__07{
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                }
+
+                .fed-tabs__container-section-02__08{
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .fed-tabs__container-section-02__09{
+                    display: block;
+                        //width: auto;
+
+                    div{
+                        padding-left: 2vw;
+                        padding-right: 2vw;
+                        padding-bottom: 6vw;
+                    }
+                }
+
+                .fed-tabs__container-section-02__10{
+                    .fed-tabs__container-section-02__10-container{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding: 2vw 0;
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-02__13{
+                    .fed-tabs__container-section-02__13-title{
+                        padding-bottom: 6vw;
+                    }
+
+                    .fed-tabs__container-section-02__13-content{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding-left: 2vw;
+                            padding-right: 2vw;
+                            padding-bottom: 6vw;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+}

@@ -1,0 +1,12 @@
+// @author Penn
+// --------------------------------------------------
+// NOTE: vendor prefixes are now obsolete thanks to Gulp Autoprefixer
+// https://www.npmjs.com/package/gulp-autoprefixer
+
+// animation.scss
+// --------------------------------------------------
+// mixins involving css transitions, animations, etc
+
+@mixin transition($value: .25s) {
+    transition: all $value ease-in-out;
+}

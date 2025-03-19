@@ -1,0 +1,764 @@
+<style type="text/css"> 
+    @import url(https://use.typekit.net/qno3ktb.css);
+    @-webkit-keyframes rotateIn {
+        0% {
+            opacity: 0;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg)
+        }
+        10% {
+            opacity: 0
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+    }
+
+    @keyframes rotateIn {
+        0% {
+            opacity: 0;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg)
+        }
+        10% {
+            opacity: 0
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+    }
+
+    @-webkit-keyframes rotateOut {
+        0% {
+            opacity: 1;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+        50% {
+            opacity: 0
+        }
+        to {
+            opacity: 0;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+    }
+
+    @keyframes rotateOut {
+        0% {
+            opacity: 1;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+        50% {
+            opacity: 0
+        }
+        to {
+            opacity: 0;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial {
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        color: #666;
+        letter-spacing: .05em;
+        line-height: 1.5em;
+        text-align: left;
+        max-width: 1220px;
+        width: 100%;
+        padding: 20px !important;
+    }
+
+    @media (max-width:959px) {
+        #hbc-fed-editorial.hbc-fed-editorial {
+            font-size: 12px
+        }
+    }
+
+ @media (max-width:581px) {
+        #hbc-footer-page.hbc-footer-page {
+            font-size: 12px;
+            width: auto !important;
+        }
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h1,
+    #hbc-fed-editorial.hbc-fed-editorial h2,
+    #hbc-fed-editorial.hbc-fed-editorial h3,
+    #hbc-fed-editorial.hbc-fed-editorial h4,
+    #hbc-fed-editorial.hbc-fed-editorial h5,
+    #hbc-fed-editorial.hbc-fed-editorial h6 {
+        color: #333;
+        display: block;
+        padding: 0;
+        margin: 0;
+        line-height: 1.5em;
+        position: relative
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial strong {
+        font-weight: 700;
+        color: #333
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial em {
+        font-weight: 700;
+        color: #666
+    }
+
+
+    #hbc-fed-editorial.hbc-fed-editorial h2 {
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        font-size: 1em;
+        border: none;
+        border-bottom: thin solid #ccc;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px;
+        letter-spacing: .25em
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h3 {
+        font-family: adobe-caslon-pro, Times New Roman, Times, Serif;
+        font-size: 1.25em;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        font-weight: 400
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h3.price {
+        font-size: 1.16667em;
+        font-weight: 700
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h4 {
+        padding: 0;
+        font-size: 1em
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h5 {
+        font-size: .91667em
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h6 {
+        padding: 0
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h6:before {
+        content: "+";
+        padding: 0 5px 0 0
+    }
+
+
+
+    #hbc-fed-editorial.hbc-fed-editorial p {
+        font-size: 1em;
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        margin: 5px 0 10px;
+        padding: 0 0 10px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial a,
+    #hbc-fed-editorial.hbc-fed-editorial a:visited {
+        font-weight: 700;
+        color: #333;
+        -webkit-transition: opacity .2s;
+        transition: opacity .2s
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial a:hover,
+    #hbc-fed-editorial.hbc-fed-editorial a:visited:hover {
+        opacity: .7
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] {
+        border: none;
+        border-bottom: thin solid #ccc;
+        padding: 10px 5px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] [data-type=expandable] {
+        border: none
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 10px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle {
+        margin: 5px 0 0;
+        cursor: pointer
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h2:after {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        content: "";
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTMyIDE3LjR2LTIuOGgtMTQuNnYtMTQuNmgtMi44djE0LjZoLTE0LjZ2Mi44aDE0LjZ2MTQuNmgyLjh2LTE0LjZ6Ij48L3BhdGg+PC9zdmc+);
+        background-size: 75%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        width: 15px;
+        height: 15px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4 {
+        margin: 0 0 0 20px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:before {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTMyIDE3LjR2LTIuOGgtMTQuNnYtMTQuNmgtMi44djE0LjZoLTE0LjZ2Mi44aDE0LjZ2MTQuNmgyLjh2LTE0LjZ6Ij48L3BhdGg+PC9zdmc+)
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:after {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTMyIDE0LjZoLTMydjIuOGgzMnoiPjwvcGF0aD48L3N2Zz4=)
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:after,
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:before {
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        content: "";
+        top: 0;
+        left: 0;
+        position: absolute;
+        margin: 0 10px 0 -20px;
+        width: 10px
+    }
+
+    @media (max-width:959px) {
+        #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:after,
+        #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:before {
+            height: 18px
+        }
+    }
+
+    @media (min-width:581px) {
+        #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:after,
+        #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:before {
+            height: 20px
+        }
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__content {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__content [data-type=expandable] {
+        padding: 0 0 10px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__content [data-type=expandable] .expandable__content {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-expanded=false] .expandable__toggle h2:after {
+        -webkit-transform: translateY(-75%) rotate(0deg);
+        -ms-transform: translateY(-75%) rotate(0deg);
+        transform: translateY(-75%) rotate(0deg)
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-expanded=true] .expandable__toggle h2:after {
+        -webkit-transform: translateY(-75%) rotate(45deg);
+        -ms-transform: translateY(-75%) rotate(45deg);
+        transform: translateY(-75%) rotate(45deg)
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] [data-expanded=false] .expandable__toggle h4:before {
+        -webkit-animation: rotateIn .4s ease-out;
+        animation: rotateIn .4s ease-out;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+        animation-direction: normal
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] [data-expanded=false] .expandable__toggle h4:after {
+        -webkit-animation: rotateOut .4s ease-out;
+        animation: rotateOut .4s ease-out;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+        animation-direction: normal
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] [data-expanded=true] .expandable__toggle h4:before {
+        -webkit-animation: rotateOut .4s ease-in-out;
+        animation: rotateOut .4s ease-in-out;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+        animation-direction: normal
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] [data-expanded=true] .expandable__toggle h4:after {
+        -webkit-animation: rotateIn .4s ease-in-out;
+        animation: rotateIn .4s ease-in-out;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+        animation-direction: normal
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-expanded=false]>.expandable__content {
+        margin: 0;
+        opacity: 0
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-expanded=true]>.expandable__content {
+        margin: 10px 0 0;
+        opacity: 1
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        margin: 0 auto;
+        padding: 0
+    }
+    
+    #hbc-fed-editorial div div ol li {
+        margin-bottom:10px;
+    }
+
+    
+#hbc-fed-editorial .hbc-fed-editorial.free-shipping {
+        padding: 1px 10px 20px 10px;
+text-align: center;
+    }
+</style>
+
+
+<style type="text/css">@import url(https://use.typekit.net/qno3ktb.css);
+
+    #hbc-livetext-page.hbc-livetext-page {
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        color: #666;
+        letter-spacing: .05em;
+        line-height: 1.5em;
+        margin: 2em auto !important;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        margin: 0 auto;
+        text-align: left;
+        width: auto !important;
+max-width: 1220px;
+    }
+
+
+    @media (max-width:959px) {
+        #hbc-livetext-page.hbc-livetext-page {
+            font-size: 12px
+        }
+    }
+
+    @media (min-width:581px) {
+        #hbc-livetext-page.hbc-livetext-page {
+            font-size: 14px
+        }
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h1,
+    #hbc-livetext-page.hbc-livetext-page h2,
+    #hbc-livetext-page.hbc-livetext-page h3,
+    #hbc-livetext-page.hbc-livetext-page h4,
+    #hbc-livetext-page.hbc-livetext-page h5,
+    #hbc-livetext-page.hbc-livetext-page h6 {
+        color: #333;
+        display: block;
+        padding: 0;
+        margin: 0;
+        line-height: 1.5em;
+        position: relative
+    }
+
+    #hbc-livetext-page.hbc-livetext-page strong {
+        font-weight: 700;
+        color: #333
+    }
+
+    #hbc-livetext-page.hbc-livetext-page em {
+        font-weight: 700;
+        color: #666
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h1 {
+        font-size: 1.66667em;
+        font-weight: 300;
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h2 {
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        font-size: 1.2em;
+        border: none;
+        text-align: center;
+        padding: 5px;
+        letter-spacing: .25em
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h3 {
+        font-size: 1.25em;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h4 {
+        padding: 0;
+        font-size: 1em
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h5 {
+        font-size: .91667em
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h6 {
+        padding: 0
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h6:before {
+        content: "+";
+        padding: 0 5px 0 0
+    }
+
+
+    #hbc-livetext-page.hbc-livetext-page p {
+        font-size: 1em;
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        margin: 0 10px;
+        color: black;
+    }
+
+    #hbc-livetext-page.hbc-livetext-page a,
+    #hbc-livetext-page.hbc-livetext-page a:visited {
+        font-weight: 700;
+        color: #333;
+        -webkit-transition: opacity .2s;
+        transition: opacity .2s;
+        text-align: left !important;
+    }
+
+    #hbc-livetext-page.hbc-livetext-page a:hover,
+    #hbc-livetext-page.hbc-livetext-page a:visited:hover {
+        opacity: .7
+    }
+    
+#saksBody {
+    width: 1024px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    #saksBody {
+        width: auto !important;
+    }
+}
+
+.main {
+    padding: 0  !important;
+}
+ol {
+    padding: 20px; 
+    list-style-type: decimal;
+
+}
+#maincontent .cat-landing .home-slots .html-slot-container #hbc-fed-editorial #qa div ol.numb li {
+    list-style-type: decimal!important;
+}
+#maincontent .cat-landing .home-slots .html-slot-container #hbc-fed-editorial #qa div ul li{
+    list-style-type: disc!important;
+    margin: 0 0 20px 32px;
+}
+</style>
+
+<!-- html start -->
+<div id="hbc-fed-editorial" class="hbc-fed-editorial shipping-return en">
+
+
+
+
+    <div class="hbc-livetext-page" id="hbc-livetext-page">
+        <h1><img src="https://image.s5a.com/is/image/TheBay/HB_NextChapter_FR?wid=500&fmt=png"/></h1>
+        <h1>Bienvenue sur le site Le prochain chapitre à La Baie d’Hudson</h1><br /><br />
+        <p>
+        
+        
+            Nous sommes très heureux de lancer notre page spéciale pour les retraités et les membres du Club du Gouverneur. Restez au fait des changements liés aux réductions, des événements et des avis importants.<br /><br />
+        --<br /><br />
+        
+        <strong>Carte MastercardMD La Baie d’Hudson fournie par Neo</strong><br />
+        
+        Nous avons récemment annoncé notre partenariat avec Neo Financial, une société canadienne novatrice de technologies financières, pour lancer notre nouvelle carte Mastercard La Baie d’Hudson, intégrée numériquement.
+        Découvrez tous les avantages et les récompenses de la nouvelle carte  <a href="https://image.s5a.com/is/content/TheBay/2021%5FSiteContent/109/PDF/Benefits%5Frewards%5FNEOcard%5FEN.pdf">ici</a>. <br /><br />
+        
+        Le dernier jour où vous pourrez utiliser votre carte de crédit La Baie d’Hudson ou Mastercard La Baie d’Hudson de Capital One est le 3 mai 2021. Pour continuer à profiter de la remise consentie aux retraités et aux membres du Club du Gouverneur après le 3 mai 2021, vous devez demander la nouvelle carte MastercardMD La Baie d’Hudson fournie par Neo.<br /><br />
+        
+        --<br /><br />
+        
+        <strong>Changements concernant la remise consentie aux retraités</strong><br />
+        
+        À partir du début mai 2021, vous bénéficierez d’une remise de 30 % sur la marchandise à prix ordinaire et d’une remise de 20 % sur la marchandise en solde. Les articles en liquidation ne seront plus admissibles à une remise d’associé.  Vous trouverez de plus amples renseignements ci-dessous.<br /><br />
+ 
+        Veuillez prendre note que les remises Saks et Saks OFF 5TH ont pris fin le 1er mars 2021 et que vous ne pouvez plus en bénéficier.<br /><br />
+        
+        <a href="https://image.s5a.com/is/content/TheBay/2021%5FSiteContent/109/PDF/POST%2DRETIREMENT%5FLETTER%5FMARCH%5F2021%5FFR.pdf">LETTRE POUR LES RETRAITÉS DE MARS&nbsp;2021</a><br /><br /> 
+        --<br /><br />
+
+
+
+
+<!-- //////////////// Collapsible QA /////////////// -->
+<div id="qa">
+    <div data-type="expandable">
+        <h2>Demander la nouvelle carte MastercardMD La Baie d’Hudson fournie par Neo</h2>
+		<div>
+            <strong>Voici ce que vous devez faire avant de demander la nouvelle carte Mastercard :</strong>
+            <ul>
+                <li>Vous devez valider votre numéro de compte Primes La Baie d’Hudson. Vous avez récemment reçu une lettre vous indiquant comment valider votre numéro de compte Primes. Si vous n’avez pas de compte Primes La Baie d’Hudson, vous devez en créer un à labaie.com ou en <a href="https://www.labaie.com/content/rewards">cliquant ici</a> et envoyer ensuite un courriel confirmant votre nom, votre adresse et votre nouveau numéro Primes La Baie d’Hudson à <a href="hbcpensions.generalinquiries@hbc.com">hbcpensions.generalinquiries@hbc.com</a>.</li>
+                <li>Vous devez avoir un compte à labaie.com et confirmer que votre carte Primes La Baie d’Hudson est liée à ce compte. Pour ce faire, ouvrez une session à labaie.com et vérifiez que votre numéro Primes La Baie d’Hudson s’affiche correctement. Si c’est le cas, vous pouvez demander la nouvelle carte MastercardMD La Baie d’Hudson fournie par Neo.  Si le numéro Primes La Baie d’Hudson est incorrect ou si vous ne le trouvez pas, veuillez appeler au <a href="tel:1-800-844-8131">1-800-844-8131</a> pour obtenir de l’aide.</li>
+            </ul>
+            <p>
+                Si vous n’avez pas de compte à labaie.com, vous pouvez en créer un en visitant labaie.com ou en <a href="https://urldefense.com/v3/__http:/thebay.com__;!!FScAfPZOFZjJhQ!lJNVair_2UXthsYpkUeU_D3K2XC0BnQ8Yqdmz13GUIPBpKCf0fs7_VcB9AyFHhnv$">cliquant ici</a>, puis en cliquant sur « Bienvenue! Ouvrir une session » dans le coin supérieur droit de l’écran. Cliquez ensuite sur « Créer un compte ».  Assurez-vous d’entrer votre numéro Primes La Baie d’Hudson lorsqu’on vous le demandera.</p>
+        <p><strong>Vous pouvez maintenant demander la nouvelle carte MastercardMD La Baie d'Hudson fournie par Neo.</strong></p>
+    <p>Vous pouvez faire une demande sur le site Web de <a href="https://member.neofinancial.com/fr-CA/login">Neo</a>. Rendez-vous au bas de la page et cliquez sur « S’inscrire ». Veuillez vous assurer de sélectionner la carte Mastercard La Baie d’Hudson.</p>
+    <p>Vous pouvez aussi faire une demande depuis votre appareil mobile. Téléchargez d’abord l’application Neo>, puis créez un compte et demandez la carte Mastercard La Baie d’Hudson.    </p>
+            <p>Si vous avez besoin d’aide, veuillez appeler au <a href="tel:1-855-636-2265">1-855-636-2265</a> ou écrire à <a href="mailto:soutien@neofinancial.com">soutien@neofinancial.com</a></p>
+        </div>
+    </div>
+
+
+    <div data-type="expandable">
+        <h2>Dates importantes</h2>
+		<div>
+            <p>
+                Vous pouvez continuer à utiliser votre carte de crédit La Baie d’Hudson ou votre carte Mastercard La Baie d’Hudson et à bénéficier d’une remise sur vos achats à La Baie d’Hudson jusqu’au <strong>3 mai 2021</strong> inclusivement.            </p>
+            <p>
+                À partir du 4 mai 2021, nous n’accepterons plus le retour d’articles achetés avec une carte de crédit La Baie d’Hudson ou une carte Mastercard La Baie d’Hudson émise par Capital One. <strong>Tous les retours <u>doivent</u> être effectués avant le 3 mai 2021</strong>. Les retours effectués après le 3 mai 2021 ne seront pas appliqués à votre carte de crédit La Baie d’Hudson ou votre carte Mastercard La Baie d’Hudson émise par Capital One.            </p>
+            <p>
+                Rappelez-vous de transférer tout accord de paiement préautorisé de votre carte de crédit La Baie d’Hudson ou votre carte Mastercard La Baie d’Hudson actuelle à votre nouvelle carte MastercardMD La Baie d’Hudson fournie par Neo avant le <strong>3 mai 2021</strong>.            </p>
+            <p>
+                À partir du <strong>5 mai 2021</strong>, les remises seront appliquées aux <ul>achats en ligne</ul> admissibles effectués avec votre carte Mastercard La Baie d’Hudson fournie par Neo. Les remises seront appliquées</p>
+            <p>
+                aux achats en magasin admissibles effectués avec votre carte Mastercard La Baie d’Hudson fournie par Neo à partir du <strong>13 mai 2021</strong>.</p> 
+        </div>
+    </div>
+
+
+    <div data-type="expandable">
+        <h2> Foire aux questions</h2>
+		<div>
+            <ol class="numb">
+                <li><strong>Pourquoi la Compagnie de la Baie d’Hudson s’est-elle associée à une nouvelle société de cartes de crédit?</strong>
+                    Capital One retire son service de cartes de crédit comarquées au Canada. Nous sommes donc très heureux de pouvoir proposer la nouvelle carte Mastercard La Baie d’Hudson fournie par Neo. Cette dernière offre plusieurs avantages et récompenses pour les titulaires de carte, notamment des remises en argent sur les achats quotidiens, des offres exclusives et des promotions tout au long de l’année.   
+                </li>
+                <li>
+                    <strong>Qu’est-ce que Neo Financial?</strong>
+                    Neo Financial est une société canadienne innovante de technologies financières qui souhaite offrir aux Canadiens un meilleur avenir financier quant à leurs dépenses, leurs économies et leurs récompenses. Pour en savoir plus, consultez le site Web <a href="https://urldefense.com/v3/__http:/neofinancial.com__;!!FScAfPZOFZjJhQ!hl3M-C6afDDvR7sUDqpsUmvKYBCaGgnFOKYVmNPmXmAy0bI76fffdlquTzI$">neofinancial.com</a>.
+                </li>
+                <li>
+                    <strong>Puis-je encore utiliser ma carte Mastercard La Baie d’Hudson ou ma carte de crédit La Baie d’Hudson?</strong>
+                    Vous pouvez continuer à utiliser votre carte Capital One jusqu’au <strong>3 mai 2021</strong>.                  
+                </li>
+                <li>
+                    <strong> Pourrai-je encore retourner les articles achetés avec ma carte La Baie d’Hudson émise par Capital One après le 3 mai?</strong>
+                    Non. À compter du 4 mai 2021, nous n’accepterons plus le retour d’articles achetés par les associés retraités et les membres du Club du Gouverneur avec une carte de crédit La Baie d’Hudson ou Mastercard La Baie d’Hudson émise par Capital One. <strong>Tous les retours doivent être effectués avant le 3 mai 2021</strong>. Les retours effectués après le 3 mai 2021 ne seront pas appliqués à votre carte de crédit La Baie d’Hudson ou votre carte Mastercard La Baie d’Hudson émise par Capital One.
+                </li>
+                <li>
+                    <strong>Dois-je refaire une demande pour la nouvelle carte MastercardMD La Baie d’Hudson fournie par Neo Financial?</strong>
+                    Non. Il n’y aura plus de carte de crédit maison La Baie d’Hudson. La nouvelle carte MastercardMD La Baie d'Hudson fournie par Neo n’a pas de frais annuels ni de frais de dépassement de limite. Elle offre des remises en argent sur les achats quotidiens et un service de soutien amélioré grâce à une application personnalisée.
+                <li>
+                    <strong>J’avais une carte de crédit maison (carte La Baie d’Hudson). Puis-je obtenir ce type de carte à nouveau? Je ne veux pas de carte Mastercard/J’ai déjà une carte Mastercard.</strong>
+                    Non. Il n’y aura plus de carte de crédit maison La Baie d’Hudson. La nouvelle carte MastercardMD La Baie d'Hudson fournie par Neo n’a pas de frais annuels ni de frais de dépassement de limite. Elle offre des remises en argent sur les achats quotidiens et un service de soutien amélioré grâce à une application personnalisée. 
+                </li>
+                <li>
+                    <strong>Des changements seront-ils apportés à la remise consentie aux retraités?</strong>
+                    Vous serez toujours admissible à la remise consentie aux retraités. Nous sommes heureux de vous annoncer qu’à partir du début mai 2021, les retraités admissibles bénéficieront d’une remise de 30 % sur la marchandise à prix ordinaire, et d’une remise de 20 % sur la marchandise en solde. Il n’y aura cependant plus de remise sur la marchandise en liquidation.
+                </li>
+                <li>
+                    <strong>  La remise consentie aux retraités sera-t-elle accordée au point de vente (en magasin et en ligne) avec la nouvelle carte Mastercard fournie par Neo?</strong>
+                    Oui. La remise sera désormais accordée au point de vente lorsque vous utiliserez la nouvelle carte Mastercard La Baie d’Hudson fournie par Neo. Vous pourrez la voir directement sur votre reçu de caisse.                </li>
+                <li>
+                    <strong> Pourquoi mon numéro de compte Primes La Baie d’Hudson est-il nécessaire pour obtenir ma remise?</strong>
+                    Votre numéro de membre Primes La Baie d’Hudson sera utilisé à la caisse (en magasin et à labaie.com) pour confirmer votre statut d’associé retraité ou de membre du Club du Gouverneur et déclencher l’application de la remise si vous payez avec votre nouvelle carte Mastercard La Baie d’Hudson fournie par Neo.
+                </li>
+                <li>
+                    <strong>Que faire si j’ai perdu ou si je ne trouve pas mon numéro de compte Primes La Baie d’Hudson?</strong>
+                    Veuillez appeler au <a href="tel:1-800-844-8131">1-800-844-8131</a> pour obtenir de l’aide.
+                </li>
+                <li>
+                    <strong>Puis-je utiliser le numéro de compte Primes La Baie d’Hudson de mon/ma partenaire?</strong>
+                    Non. Si vous utilisiez le compte Primes de votre partenaire, vous devrez en créer un nouveau. Veuillez visiter le site Web du <a href="https://www.labaie.com/content/primes">programme Primes La Baie d’Hudson</a> pour vous inscrire.                </li>
+                <li>
+                    <strong>Quand puis-je demander ma carte MastercardMD La Baie d’Hudson fournie par Neo?</strong>
+                    Vous pouvez demander la nouvelle carte Mastercard La Baie d’Hudson dès que vous aurez confirmé votre numéro de membre du programme Primes La Baie d’Hudson et que vous aurez lié celui-ci à votre compte labaie.com. Pour faire une demande depuis votre appareil mobile, téléchargez <a href="member.neofinancial.com">l’application Neo</a>, créez un compte et demandez la carte Mastercard La Baie d’Hudson. En outre, vous pouvez faire une demande sur le <a href="member.neofinancial.com">site Web de Neo</a>. <strong>Veuillez vous assurer de sélectionner la carte Mastercard La Baie d’Hudson</strong>.
+                    Lorsque vous faites votre demande, veuillez utiliser le courriel et le numéro de téléphone associés à vos comptes Primes La Baie d’Hudson et labaie.com.                    
+                </li>
+                <li>
+                    <strong>De quelle façon puis-je contacter Neo si j’éprouve de la difficulté avec ma demande?</strong>
+                    Vous pouvez communiquer avec Neo en composant le <a href="tel:1-855-636-2265">1-855-636-2265</a> ou en écrivant à <a href="mailto:soutien@neofinancial.com">soutien@neofinancial.com</a>.
+
+                </li>
+                <li>
+                    <strong>Puis-je commencer à utiliser ma nouvelle carte MastercardMD La Baie d’Hudson fournie par Neo dès que je la reçois?</strong>
+                    Vous pouvez faire des achats partout où la carte Mastercard est acceptée et obtenir des points Primes et des remises en argent, notamment dans les magasins La Baie d’Hudson ou à labaie.com, mais <strong>vous ne pourrez pas bénéficier de la remise consentie aux retraités et aux membres du Club du Gouverneur avant le 5 mai 2021 pour les achats en ligne et avant le 13 mai 2021 pour les achats en magasin</strong>.
+                </li>
+                <li>
+                    <strong>Puis-je ajouter mon/ma partenaire, mon conjoint/ma conjointe ou mon enfant comme utilisateur autorisé de mon compte?</strong>
+                    Personne d’autre que vous ne peut utiliser votre carte MastercardMD La Baie d’Hudson fournie par Neo. Vous devez donc accompagner les membres de votre famille immédiate au moment de leur achat pour qu’ils puissent bénéficier d’une remise.
+                </li>
+                <li>
+                    <strong>Puis-je payer avec des points Primes ou une carte-cadeau La Baie d’Hudson et bénéficier de ma remise?</strong>
+                            La remise consentie aux retraités et aux membres du Club du Gouverneur s’appliquera seulement si vous utilisez vos points Primes ou votre carte-cadeau La Baie d’Hudson en conjonction avec la carte MastercardMD La Baie d’Hudson fournie par Neo (MC La Baie).
+                            <p>Par exemple :</p>
+                            <ul>
+                            <li>
+                                Points + Carte-cadeau + MC La Baie = Remise
+                            </li>
+                            <li>
+                                Points + MC La Baie = Remise
+                            </li>
+                            <li>
+                                Carte-cadeau + MC La Baie = Remise
+                            </li>
+                            <li>
+                                Points et/ou carte-cadeau = Aucune remise
+                            </li>
+                            <li>
+                                Points, carte-cadeau + carte de crédit de tiers = Aucune remise
+                            </li>
+                            </ul>
+                </li>
+                <li>
+                    <strong> Vais-je continuer à recevoir un relevé de compte mensuel?                    </strong>
+                    Vous recevez une notification par courriel ou dans l’application Neo vous avisant que votre relevé mensuel est prêt. Neo n’émet pas de relevés papier.                </li>
+                <li>
+                    <strong> Puis-je toujours payer mon compte en magasin?</strong>
+                    Neo accepte seulement les paiements en ligne; nous n’accepterons donc plus les paiements en magasin. Pour en savoir plus ou obtenir de l’aide, veuillez communiquer avec Neo au <a href="tel:1-855-636-2265">1-855-636-2265</a> ou à <a href="mailto:soutien@neofinancial.com">soutien@neofinancial.com</a>.
+                </li>
+                <li>
+                    <strong>Qu’arrivera-t-il aux modalités de paiement associées à ma carte de crédit La Baie d’Hudson ou à ma carte Mastercard La Baie d’Hudson de Capital One?</strong>
+                    Ces modalités de paiement continueront d’exister sur ces cartes jusqu’à ce que votre solde soit entièrement remboursé. Votre compte sera ensuite fermé.                </li>
+                </ol>
+                Pour en savoir davantage en tant que client, veuillez <a href="https://service.labaie.com/s/topic/0TO2E000000kIfO/modes-de-paiement-cr%C3%A9dit-la-baie-dhudson">cliquer ici</a>.
+        </div>
+    </div>
+
+
+
+
+    <div data-type="expandable">
+        <h2>Remise consentie aux retraités en vigueur dès le début mai 2021</h2>
+		<div>
+            <p>
+                Avec le lancement de la nouvelle carte MastercardMD La Baie d’Hudson fournie par Neo, la nouvelle remise consentie aux retraités sera programmée sur votre nouvelle carte MastercardMD La Baie d’Hudson. Par conséquent, vous recevrez votre remise directement au point de vente si vous utilisez votre carte avec votre compte Primes La Baie d’Hudson.
+            </p>
+            <ul><li>
+                Une remise de <strong>30 %</strong>> sera accordée sur les vêtements pour homme, femme et enfant, les chaussures, les sacs à main, les accessoires, les meubles et les articles décoratifs (y compris les articles de table, le linge de maison et les accessoires de salle de bain) à prix ordinaire.            </li>
+            <li>
+                Une remise de <stroing>20 %</stroing> sera accordée sur les vêtements pour homme, femme et enfant, les chaussures, les sacs à main, les accessoires, les meubles et les articles décoratifs (y compris les articles de table, le linge de maison et les accessoires de salle de bain) à prix de solde.            </li>
+            <li>
+                Une remise de <strong>20 %</strong> sera accordée sur les produits de beauté et les parfums à prix ordinaire et de solde.            </li>
+            <li>
+                Une remise de <strong>15 %</strong> sera accordée sur les montres haut de gamme, les montres technos, les gros électros et les petits électros de cuisine et de salle de bain à prix ordinaire et de solde.            </li>
+            <li>
+                Une remise de <strong>10 %</strong> sera accordée sur les jouets, les appareils électroniques, les produits d’épicerie et les services de la catégorie Services à domicile HBC achetés à labaie.com à prix ordinaire et de solde.            </li> 
+            <li>
+                Une remise de <strong>10 %</strong> sera accordée sur les matelas Casper, Zinus et Springwall à prix ordinaire et de solde.            </li>
+            <li>
+                Une remise de <strong>10 %</strong> sera accordée sur les meubles et l’équipement pour bébé.
+            </li>
+            <li>
+                Aucune remise ne sera appliquée sur les articles en liquidation.
+            </li>
+            <li>
+                La remise consentie aux retraités ne s’applique qu’aux articles vendus par La Baie d’Hudson. Elle ne s’applique pas aux vendeurs du Marché à labaie.com. Veuillez vérifier la description de l’article pour confirmer l’identité du vendeur avant d’effectuer votre achat en ligne.            </li>
+            <li>
+                La majorité de nos concessionnaires accordent aux retraités une remise de 10 % sur les achats réglés avec leur carte Mastercard La Baie d’Hudson. Certaines exceptions peuvent s’appliquer, et dans tous les cas, les retraités sont tenus de respecter les exigences de chaque concessionnaire. Il incombe aux retraités de s’informer des exigences du concessionnaire avant d’effectuer un achat.            </li>
+            </ul>
+
+            <p>
+                Pour l’instant, il n’y a pas de changement au programme Primes La Baie d’Hudson pour les retraités. Les retraités continuent d’accumuler des points Primes La Baie d’Hudson sur les articles à prix ordinaire, de solde et de liquidation. Les points Primes sont accordés aux retraités sur le montant total des achats (avant taxes et avant leur remise).            </p>
+        </div>
+    </div>
+
+
+    <div data-type="expandable">
+        <h2>Membres du Club du Gouverneur</h2>
+		<div>
+            <p>
+                Si vous êtes à la fois un retraité et un membre du Club du Gouverneur, vous bénéficierez des privilèges de remise sous la politique du Club du Gouverneur.            </p>
+                <p>
+                    Avec le lancement de la nouvelle carte MastercardMD La Baie d’Hudson fournie par Neo, la nouvelle remise consentie aux membres du Club du Gouverneur sera programmée sur votre nouvelle carte MastercardMD La Baie d’Hudson. Par conséquent, vous recevrez votre remise directement au point de vente si vous utilisez votre carte avec votre compte Primes La Baie d’Hudson.                </p>
+            <p>
+                <strong>Remise consentie aux membres du Club du Gouverneur en vigueur dès le début mai 2021</strong></p>
+            <ul><li>Une remise de <strong>40 %</strong> sera accordée sur les vêtements pour homme, femme et enfant, les chaussures, les sacs à main, les accessoires, les meubles et les articles décoratifs (y compris les articles de table, le linge de maison et les accessoires de salle de bain) à prix ordinaire.
+                </li>
+                <li>
+                    Une remise de <strong>25 %</strong> sera accordée sur les vêtements pour homme, femme et enfant, les chaussures, les sacs à main, les accessoires, les meubles et les articles décoratifs (y compris les articles de table, le linge de maison et les accessoires de salle de bain) à prix de solde.                </li>
+                <li>
+                    Une remise de <strong>20 %</strong> sera accordée sur les produits de beauté et les parfums à prix ordinaire et de solde.                </li>
+                <li>
+                    Une remise de <strong>15 %</strong> sera accordée sur les montres haut de gamme, les montres technos, les gros électros et les petits électros de cuisine et de salle de bain à prix ordinaire et de solde.                </li>
+                <li>
+                    Une remise de <strong>10 %</strong> sera accordée sur les jouets, les appareils électroniques, les produits d’épicerie et les services de la catégorie Services à domicile HBC achetés à labaie.com à prix ordinaire et de solde.                </li>
+                <li>
+                    Une remise de <strong>10 %</strong> sera accordée sur les matelas Casper, Zinus et Springwall à prix ordinaire et de solde.                </li>
+                <li>
+                    Une remise de <strong>10 %</strong> sera accordée sur les meubles et l’équipement pour bébé.                </li>
+                <li>
+                    Aucune remise ne sera appliquée sur les articles en liquidation.                </li>
+                <li>
+                    La remise consentie aux membres du Club du Gouverneur ne s’applique qu’aux articles vendus par La Baie d’Hudson. Elle ne s’applique pas aux vendeurs du Marché à labaie.com.Veuillez vérifier la description de l’article pour confirmer l’identité du vendeur avant d’effectuer votre achat en ligne.</li>
+                <li>
+                    La majorité de nos concessionnaires accordent aux associés de HBC une remise de 10 % sur les achats réglés avec leur carte Mastercard La Baie d’Hudson. Certaines exceptions peuvent s’appliquer, et dans tous les cas, les associés sont tenus de respecter les exigences de chaque concessionnaire. Il incombe aux associés de s’informer des exigences du concessionnaire avant d’effectuer un achat. Ils doivent présenter une pièce d’identité valable confirmant leur admissibilité.                </li>
+            </ul>
+
+            <p>
+                Pour l’instant, il n’y a pas de changement au programme Primes La Baie d’Hudson pour les membres du Club du Gouverneur. Les membres du Club du Gouverneur continuent à accumuler des points Primes La Baie d’Hudson sur les articles à prix ordinaire ordinaire, de solde et de liquidation. Les points Primes sont accordés membres du Club du Gouverneur sur le montant total des achats (avant taxes et avant leur remise).            </p>
+
+            <p><a href="https://image.s5a.com/is/content/TheBay/2021_SiteContent/109/PDF/GOVERNORS_CLUB_MEMBERS_LETTER_MARCH_2021_FR.pdf">LETTRE AUX MEMBRES DU CLUB DU GOUVERNEUR DE MARS 2021</a></p>
+        </div>
+    </div>
+
+
+</div>
+   
+<!-- html end -->
+
+<script type="text/javascript">var HBC_FED_EDITORIAL=function(t){function e(n){if(i[n])return i[n].exports;var s=i[n]={i:n,l:!1,exports:{}};return t[n].call(s.exports,s,s.exports,e),s.l=!0,s.exports}var i={};return e.m=t,e.c=i,e.d=function(t,i,n){e.o(t,i)||Object.defineProperty(t,i,{configurable:!1,enumerable:!0,get:n})},e.n=function(t){var i=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(i,"a",i),i},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="/wcsstore/TheBay/InteractiveEditorials/shipping-returns/",e(e.s=0)}([function(t,e,i){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=i(1),s=(i.n(n),i(2)),l=(i.n(s),i(3));new l.a("#hbc-fed-editorial",!1,400)},function(t,e){},function(t,e){},function(t,e,i){"use strict";i.d(e,"a",function(){return l});var n=1e3,s=function(){function t(t,e,i){void 0===e&&(e=!1),void 0===i&&(i=n);var s=this;switch(t.getAttribute("data-expanded")){case"true":this.isExpanded=!0;break;case"false":this.isExpanded=!1;break;default:this.isExpanded=e}this.element=t,this.firstElement=this.wrapElement(t.firstElementChild),this.lastElement=this.wrapElement(t.firstElementChild),this.setElementAttributes(),this.setElementHeight(),this.firstElement.className="expandable__toggle",this.firstElement.onclick=function(t){return s.onClick(t)},this.element.style.overflow="hidden",this.lastElement.offsetHeight,this.lastElement.className="expandable__content",this.lastElement.style.overflow="hidden",this.lastElement.style.transitionProperty="all",this.lastElement.style.transitionTimingFunction="ease-in-out",this.setElementAttributes(),this.setElementHeight(),this.duration=i}return t.prototype.getElementHeight=function(t){return t.scrollHeight},t.prototype.wrapElement=function(t){var e=document.createElement("div");return t.parentNode.appendChild(e),e.className="wrapped",e.appendChild(t),e},t.prototype.onClick=function(t){this.lastElement.style.transitionDuration=this.duration+"ms",this.toggleExpandableState(),this.setElementAttributes(),this.setElementHeight()},t.prototype.setElementHeight=function(){var t=this;clearTimeout(this.isInTransitionTimer),this.isInTransitionTimer=setTimeout(function(){t.lastElement.style.height=t.isExpanded?"auto":"0px"},this.duration),this.lastElement.style.height="auto"===this.lastElement.style.height?this.lastElement.getBoundingClientRect().height+"px":this.lastElement.style.height,this.lastElement.offsetWidth,this.isExpanded?(this.lastElement.style.height=this.getElementHeight(this.lastElement)+"px",this.lastElement.firstChild.style.transitionTimingFunction="ease-in-out"):(this.lastElement.style.height="0px",this.lastElement.firstChild.style.transitionTimingFunction="ease-in-out")},t.prototype.setElementAttributes=function(){this.element.setAttribute("data-expanded",""+this.isExpanded)},t.prototype.toggleExpandableState=function(){this.isExpanded=!this.isExpanded},t}(),l=function(){function t(t,e,i){void 0===e&&(e=!1),void 0===i&&(i=n);var l=this;this.duration=i,this.elements=[].slice.call(document.querySelectorAll(t+' [data-type="expandable"]')).map(function(t){return new s(t,e,l.duration)})}return t}()}]);
+
+</script>   
+<script type="text/javascript">
+document.querySelector("#qa h2").addEventListener('click',function(){
+if (document.querySelector("#qa h2[data-expanded=false]")){
+  document.querySelector("#qa h2 .expandable__toggle").click()
+    }
+  }
+   );        
+</script>

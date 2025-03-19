@@ -1,0 +1,321 @@
+// @author Joseph
+// --------------------------------------------------
+
+// section.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+    section {
+    	&.sec__hero{
+    		position: relative;
+
+    		h1{
+    			margin-bottom: 15px;
+    		}
+
+    		div{
+    			width: 60%;
+    			position: absolute;
+    			top: 10%;
+    			left: 7%;
+    			z-index: 1;
+    		}
+
+    		img{
+    			display: block;
+    			position: relative;
+    			z-index: 0;
+    		}
+    	}
+
+    	&.sec__two{
+    		text-align: center;
+    		width: 90%;
+    		margin: 0 auto;
+    		border-bottom: 1px solid #C2C2C2;
+    		padding-top: 55px;
+    		padding-bottom: 55px;
+
+    		h2{
+    			margin-bottom: 20px;
+    		}
+    	}
+
+    	&.sec__three{
+    		text-align: center;
+    		width: 90%;
+    		margin: 0 auto;
+    		border-bottom: 1px solid #C2C2C2;
+
+    		h2{
+    			margin-bottom: 20px;
+    		}
+
+    		h3{
+    			margin-bottom: 20px;
+    			text-transform: uppercase;
+    		}
+
+    		a{
+    			margin-top: 20px;
+    		}
+
+    		.sec__three-top{
+    			padding-top:55px;
+    			padding-bottom:55px;
+    		}
+
+    		.sec__three-bottom{
+    			overflow: hidden;
+
+    			div{
+    				width: 50%;
+    				float: left;
+    				padding-bottom:55px;
+    			}
+    		}
+    	}
+
+		&.sec__four{
+			text-align: center;
+			padding-bottom: 50px;
+
+			h2{
+				margin-bottom: 20px;
+			}
+
+			.sec__four-top{
+				width: 90%;
+				margin: 0 auto;
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
+
+			.sec__four-bottom{
+				display: flex;
+
+				img{
+					display: block;
+					flex:1;
+					width: 33%;
+					margin-left: 1%;
+
+					&:first-child{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+
+		&.sec__five{
+			text-align: center;
+			border-top: 1px solid #C2C2C2;
+			border-bottom: 1px solid #C2C2C2;
+			width: 90%;
+    		margin: 0 auto;
+
+    		h3{
+    			text-transform: uppercase;
+    			margin-bottom: 20px;
+    		}
+
+    		a{
+    			margin-top:20px;
+    		}
+			
+			.sec__five-top{
+				margin-top: 55px;
+				margin-bottom: 55px;
+			}
+
+			.sec__five-bottom{
+				overflow: hidden;
+
+    			div{
+    				width: 50%;
+    				float: left;
+    				padding-bottom: 55px;
+    			}
+			}
+		}
+
+		&.sec__six{
+			text-align: center;
+			border-bottom: 1px solid #C2C2C2;
+			width: 90%;
+    		margin: 0 auto;
+    		padding-top: 55px;
+    		padding-bottom: 55px;
+
+    		h2{
+    			margin-bottom: 20px;
+    		}
+
+    		a{
+    			margin-top: 20px;
+    		}
+		}
+
+		&.sec__seven{
+			text-align: center;
+
+			h3{
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+
+			.sec__seven-top{
+				padding-top: 55px;
+				padding-bottom: 55px;
+			}
+
+			.sec__seven-middle{
+				display: flex;
+
+				div{
+					flex:1;
+					width: 33%;
+					padding-bottom: 55px;
+				}
+			}
+
+			.sec__seven-bottom{
+				display: flex;
+
+				div{
+					flex:1;
+					width: 33%;
+					padding-bottom: 55px;
+				}
+			}
+		}
+
+		&.sec__eight{
+			text-align: center;
+
+			.sec__eight-top{
+				padding: 30px 0;
+			}
+
+			.sec__eight-bottom{
+				display: flex;
+
+				img{
+					margin-bottom: 10px;
+				}
+
+				div{
+					flex:1;
+					width: 33%;
+					margin-left: 1%;
+
+					&:first-child{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+
+		&.sec__nine{
+			border:2px solid #000;
+			width: 65%;
+			margin: 0 auto;
+			text-align: center;
+			padding: 20px;
+			margin-top: 30px;
+
+			a{
+				span{
+					border: 0;
+				}
+			}
+		}
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+        	&.sec__hero{
+        		div{
+        			top:5%;
+        			left: 5%;
+        		}
+        	}
+
+        	&.sec__three{
+	    		.sec__three-bottom{
+	    			overflow: hidden;
+	    			
+	    			div{
+	    				width: 100%;
+	    				float: none;
+	    			}
+	    		}
+	    	}
+
+        	&.sec__four{
+        		.sec__four-top{
+
+        		}
+
+        		.sec__four-bottom{
+        			flex-direction:column;
+
+        			img{
+						width: 100%;
+						margin-left: 0;
+						margin-bottom: 10px;
+					}
+        		}
+			}
+
+			&.sec__five{
+
+	    		.sec__five-bottom{
+	    			overflow: hidden;
+	    			
+	    			div{
+	    				width: 100%;
+	    				float: none;
+	    			}
+	    		}
+	    	}
+
+	    	&.sec__seven{
+				.sec__seven-middle{
+					flex-direction:column;
+
+					div{
+						width: 100%;
+					}
+				}
+
+				.sec__seven-bottom{
+					flex-direction:column;
+
+					div{
+						width: 100%;
+					}
+				}
+			}
+
+			&.sec__eight{
+				.sec__eight-bottom{
+					flex-direction:column;
+
+					div{
+						width: 100%;
+						margin-left:0;
+						margin-bottom: 15px;
+
+						&:first-child{
+							margin-left: 0;
+						}
+					}
+				}
+			}
+
+			&.sec__nine{
+				width: 80%;
+			}
+
+        }
+    }
+} // end #dsg-editorial.dsg-editorial

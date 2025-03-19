@@ -1,0 +1,34 @@
+// @author Penn
+// --------------------------------------------------
+
+// footer.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+
+    section{
+        &.sec__footer{
+            max-width: 1024px;
+            background: #000;
+            padding: 20px;
+            margin: 70px auto 0 auto;
+            
+            a{
+                @include FontSans(18px, 700, 40);
+                @include CTA(#fff);
+
+                text-transform: uppercase;
+            }
+
+        }
+    }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+        section{
+            &.sec__footer{
+                display: none;
+            }
+        }
+    }
+
+} // end #dsg-editorial.dsg-editorial

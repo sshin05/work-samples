@@ -1,0 +1,298 @@
+// @author Joseph
+// --------------------------------------------------
+
+// section.scss
+// --------------------------------------------------
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@media screen and (min-width: 1440px){
+    .home-slots {
+        max-width: 1920px!important;
+    }
+}
+
+.page {
+    #maincontent {
+    padding-top: 0px!important;
+        .home-slots {
+            padding-top: 0!important;
+        }
+        .back-to-top.active, .back-to-top {
+            display: none!important;
+            right: -19%;
+        }
+    }
+}
+.back-to-top, .back-to-top:hover, .back-to-top.active {
+    background: url(https://image.s5a.com/is/image/TheBay/bay-private-brands-2021-04-16-arrow4040?scl=1&fmt=jpg&qlt=95)!important;
+    width: 40px!important;
+    height: 40px!important;
+}
+
+#dsg-editorial.dsg-editorial {
+    margin-top: 0px!important;
+
+	section {
+        text-align: center;
+
+        &.sec__nav {
+            height: 100px;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            text-align: right;
+            height: auto;
+            z-index: 120;
+            opacity: 0;
+            left: 0;
+            .HudsonBayLogo {
+                position: absolute;
+                top: 0px;
+                left:8%;
+                width:12%;
+            }
+            h1 {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 2.3vw;
+                line-height: 1.3em;
+                padding-right: 6%;
+                font-weight: 400;
+            }
+        }&.fadein {
+            animation: fadeIn 2s ease-in;
+            -webkit-animation: fadeIn 2s;
+            -moz-animation: fadeIn 2s;
+            -o-animation: fadeIn 2s;
+            -ms-animation: fadeIn 2s;
+            opacity: 1;
+        }
+        &.sec__carousel{
+            img {
+                margin-bottom: 0;
+            }
+            .hbc-carousel.hbc-carousel-bay {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 1s ease;
+                -webkit-transition: opacity 1s ease;
+            }
+            .hbc-carousel.hbc-carousel-bay.slick-initialized.slick-slider{
+                z-index: 10;
+                visibility: visible;
+                opacity: 1;
+            }
+            .textOverlay {
+                position: absolute;
+                width: 100%;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                z-index: 110;
+                h1{
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 11vw;
+                    color: #fff;
+                    font-weight: 400;
+                }
+            }
+        }
+        &.sec__header {
+            margin: 98px auto 95px auto;
+            h1 {
+                font-family:"ivypresto-text";
+                font-weight: 100;
+                letter-spacing: 0;
+            }
+            a.button {
+                border: 1px solid #000;
+                padding: 5px 15px 5px 15px;
+                display: inline-block;
+                margin: 30px 0 0 0;
+            }
+            a.button:hover {
+                background-color: #727272;
+                color: #fff;
+                border: 1px solid #727272;
+            }
+        }
+        &.sec__sec{
+            max-width: 1240px;
+            margin: 29px auto 0 auto;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            padding-left: 0;
+            margin-bottom: 2%;
+
+            &.grid {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+                grid-auto-rows: 20px;
+            }
+
+            div{
+                &.fadeIn{
+                    opacity: 0;
+                    text-rendering: optimizeLegibility;
+                    -webkit-font-smoothing: antialiased;
+                }
+                // padding:6px;
+                flex: 0 0 32.5%;
+                text-align: left;
+
+                padding-bottom: 4%;
+                img{
+                    padding-bottom: 5%;
+
+                }
+                a:hover{
+                    color: #727272;
+                    .hideOnHover {
+                        //opacity: 0;
+                        //transition: opacity 0.3s, visibility 0.3s;
+                        content: url(https://image.s5a.com/is/image/TheBay/bay-summer-hub-hp-2021-05-20-b0103?scl=1&fmt=jpg&qlt=75);
+                    }
+                }
+                .cont-text {
+                    width: 300px;
+                    h2 {
+                        font-family: ivypresto-headline, serif;
+                        font-weight: 300;
+                        font-size: 1.5em;
+                        line-height: 1.25em;
+                        text-transform: unset;
+                        margin-bottom: 8px;
+                    }
+                    h1{
+                        font-size: 1.5em;
+                        text-transform: uppercase;
+                        letter-spacing: 0;
+                        margin-bottom: 2.5%;
+                    }
+                    p {
+                        margin-top: 10px;
+                        // font-size: 3.5vw;
+                        // line-height: 1.3;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+        .sec__header h1 {
+            font-size: 3vw;
+        }
+        section {
+            &.sec__carousel{
+                img {
+                    height: 450px;
+                    object-fit: cover;
+                    object-position: 50% 0;
+                }
+            }
+
+            &.sec__sec{
+                display: block;
+                margin-top: 0;
+                overflow: hidden;
+
+                div{
+                    margin: auto;
+                    // width: 48%;
+                    float: left;
+                    padding: 0;
+                    overflow: hidden;
+                    height: 95vw;
+                    height: auto;
+                    .cont-text {
+                        p {
+                            font-size: 1.85vw;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    @media only screen and (max-width: 1220px) {
+        section {
+            &.sec__sec{
+            &.grid {
+                margin: 0 1% 0 1%;
+            }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        section.sec__carousel .textOverlay {
+            padding: 0 20% 0 20%;
+        }
+        section {
+            &.sec__header {
+                .textOverlay {
+                    
+                    h1 {
+                        width: 50%;
+                        margin: auto;
+                        padding-bottom: 10%;
+                    }
+                }
+                margin: 50px 8% 55px 8%;
+                h1 {
+                    font-size: 4.75vw;
+                    line-height: 6vw;
+                }
+            }
+            &.sec__sec{
+                margin: 5%;
+                div{
+                    width: 100%;
+                    height: auto;
+                    padding-bottom: 2%;
+                    .cont-text {
+                        width: 220px;
+                        p {
+                            font-size: 3.5vw;
+                            line-height: 1.3;
+                        }
+                    }
+                }
+            }
+            &.fadein {
+                animation: none;
+                opacity: 0;
+                margin: 0;
+            }
+        }
+    }
+    @media screen and (min-width: 1700px) {
+        section {
+            .sec__nav {
+                h1 {
+                    font-size: 60px;
+                }
+            }
+            &.sec__carousel {
+                .textOverlay {
+                    h1 {
+                        font-size: 160px;
+                        margin-top: -30px;
+                    }
+                }
+
+            }
+        }
+    }
+} // end #dsg-editorial.dsg-editorial

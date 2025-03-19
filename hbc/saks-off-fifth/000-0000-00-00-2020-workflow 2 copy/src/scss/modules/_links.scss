@@ -1,0 +1,44 @@
+// @author Penn
+// --------------------------------------------------
+// NOTE: vendor prefixes are now obsolete thanks to Gulp Autoprefixer
+// https://www.npmjs.com/package/gulp-autoprefixer
+
+// links.scss
+// --------------------------------------------------
+// link, CTA styliing goes here
+
+// LT CTA
+// CTA (Apply to A tag. eg.  <a class="the-cta"><span>CLICK CTA</span></a> )
+@mixin lt-cta ($color: $black) {
+    @include transition;
+    color: $color;
+    text-decoration: none;
+
+    span {
+        padding-bottom: 4px;
+        border-bottom: 3px solid $color;
+    }
+
+    &:hover {
+        opacity: .6;
+    }
+
+}
+
+// Bay CTA
+// CTA (Apply to A tag. eg.  <a class="the-cta"><span>CLICK CTA</span></a> )
+@mixin bay-cta ($color: $black) {
+    @include transition;
+    color: $color;
+    text-decoration: none;
+
+    span {
+        padding-bottom: 6px;
+        border-bottom: 1px solid $color;
+    }
+
+    &:hover {
+        opacity: .6;
+    }
+
+}

@@ -1,0 +1,39 @@
+// @author Penn
+// --------------------------------------------------
+
+// typography.scss
+// --------------------------------------------------
+// Includes font-family, weights, styles, colors, etc
+
+#dsg-editorial.dsg-editorial {
+
+    h1{
+    	@include FontSans(94px, 400, 30);
+    }
+
+    h2{
+    	@include FontSans(65px, 400, 35);
+    }
+
+    h3{
+    	@include FontSans(50px, 400, 35);
+    }
+
+    h4{
+        @include FontSans(32px, 400, 35);
+    }
+
+    p{
+    	@include FontSans(28px, 400, 35);
+    }
+
+    .cta{
+        @include FontSans(22px, 400, 35);
+        @include CTA();
+    }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+            
+    }
+
+} // end #dsg-editorial.dsg-editorial

@@ -1,0 +1,810 @@
+<style type="text/css"> 
+    @import url(https://use.typekit.net/qno3ktb.css);
+    @-webkit-keyframes rotateIn {
+        0% {
+            opacity: 0;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg)
+        }
+        10% {
+            opacity: 0
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+    }
+
+    @keyframes rotateIn {
+        0% {
+            opacity: 0;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg)
+        }
+        10% {
+            opacity: 0
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+    }
+
+    @-webkit-keyframes rotateOut {
+        0% {
+            opacity: 1;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+        50% {
+            opacity: 0
+        }
+        to {
+            opacity: 0;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+    }
+
+    @keyframes rotateOut {
+        0% {
+            opacity: 1;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+        50% {
+            opacity: 0
+        }
+        to {
+            opacity: 0;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial {
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        color: #666;
+        letter-spacing: .05em;
+        line-height: 1.5em;
+        text-align: left;
+        max-width: 1220px;
+        width: 100%;
+        padding: 20px !important;
+    }
+
+    @media (max-width:959px) {
+        #hbc-fed-editorial.hbc-fed-editorial {
+            font-size: 12px
+        }
+    }
+
+ @media (max-width:581px) {
+        #hbc-footer-page.hbc-footer-page {
+            font-size: 12px;
+            width: auto !important;
+        }
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h1,
+    #hbc-fed-editorial.hbc-fed-editorial h2,
+    #hbc-fed-editorial.hbc-fed-editorial h3,
+    #hbc-fed-editorial.hbc-fed-editorial h4,
+    #hbc-fed-editorial.hbc-fed-editorial h5,
+    #hbc-fed-editorial.hbc-fed-editorial h6 {
+        color: #333;
+        display: block;
+        padding: 0;
+        margin: 0;
+        line-height: 1.5em;
+        position: relative
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial strong {
+        font-weight: 700;
+        color: #333
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial em {
+        font-weight: 700;
+        color: #666
+    }
+
+
+    #hbc-fed-editorial.hbc-fed-editorial h2 {
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        font-size: 1em;
+        border: none;
+        border-bottom: thin solid #ccc;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px;
+        letter-spacing: .25em
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h3 {
+        font-family: adobe-caslon-pro, Times New Roman, Times, Serif;
+        font-size: 1.25em;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        font-weight: 400
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h3.price {
+        font-size: 1.16667em;
+        font-weight: 700
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h4 {
+        padding: 0;
+        font-size: 1em
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h5 {
+        font-size: .91667em
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h6 {
+        padding: 0
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial h6:before {
+        content: "+";
+        padding: 0 5px 0 0
+    }
+
+
+
+    #hbc-fed-editorial.hbc-fed-editorial p {
+        font-size: 1em;
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        margin: 5px 0 10px;
+        padding: 0 0 10px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial a,
+    #hbc-fed-editorial.hbc-fed-editorial a:visited {
+        font-weight: 700;
+        color: #333;
+        -webkit-transition: opacity .2s;
+        transition: opacity .2s
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial a:hover,
+    #hbc-fed-editorial.hbc-fed-editorial a:visited:hover {
+        opacity: .7
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] {
+        border: none;
+        border-bottom: thin solid #ccc;
+        padding: 10px 5px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] [data-type=expandable] {
+        border: none
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 10px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle {
+        margin: 5px 0 0;
+        cursor: pointer
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h2:after {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        content: "";
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTMyIDE3LjR2LTIuOGgtMTQuNnYtMTQuNmgtMi44djE0LjZoLTE0LjZ2Mi44aDE0LjZ2MTQuNmgyLjh2LTE0LjZ6Ij48L3BhdGg+PC9zdmc+);
+        background-size: 75%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        width: 15px;
+        height: 15px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4 {
+        margin: 0 0 0 20px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:before {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTMyIDE3LjR2LTIuOGgtMTQuNnYtMTQuNmgtMi44djE0LjZoLTE0LjZ2Mi44aDE0LjZ2MTQuNmgyLjh2LTE0LjZ6Ij48L3BhdGg+PC9zdmc+)
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:after {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTMyIDE0LjZoLTMydjIuOGgzMnoiPjwvcGF0aD48L3N2Zz4=)
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:after,
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:before {
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        content: "";
+        top: 0;
+        left: 0;
+        position: absolute;
+        margin: 0 10px 0 -20px;
+        width: 10px
+    }
+
+    @media (max-width:959px) {
+        #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:after,
+        #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:before {
+            height: 18px
+        }
+    }
+
+    @media (min-width:581px) {
+        #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:after,
+        #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__toggle h4:before {
+            height: 20px
+        }
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__content {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__content [data-type=expandable] {
+        padding: 0 0 10px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] .expandable__content [data-type=expandable] .expandable__content {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-expanded=false] .expandable__toggle h2:after {
+        -webkit-transform: translateY(-75%) rotate(0deg);
+        -ms-transform: translateY(-75%) rotate(0deg);
+        transform: translateY(-75%) rotate(0deg)
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-expanded=true] .expandable__toggle h2:after {
+        -webkit-transform: translateY(-75%) rotate(45deg);
+        -ms-transform: translateY(-75%) rotate(45deg);
+        transform: translateY(-75%) rotate(45deg)
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] [data-expanded=false] .expandable__toggle h4:before {
+        -webkit-animation: rotateIn .4s ease-out;
+        animation: rotateIn .4s ease-out;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+        animation-direction: normal
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] [data-expanded=false] .expandable__toggle h4:after {
+        -webkit-animation: rotateOut .4s ease-out;
+        animation: rotateOut .4s ease-out;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+        animation-direction: normal
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] [data-expanded=true] .expandable__toggle h4:before {
+        -webkit-animation: rotateOut .4s ease-in-out;
+        animation: rotateOut .4s ease-in-out;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+        animation-direction: normal
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-type=expandable] [data-expanded=true] .expandable__toggle h4:after {
+        -webkit-animation: rotateIn .4s ease-in-out;
+        animation: rotateIn .4s ease-in-out;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+        animation-direction: normal
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-expanded=false]>.expandable__content {
+        margin: 0;
+        opacity: 0
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial [data-expanded=true]>.expandable__content {
+        margin: 10px 0 0;
+        opacity: 1
+    }
+
+    #hbc-fed-editorial.hbc-fed-editorial {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        margin: 0 auto;
+        padding: 0
+    }
+    
+    #hbc-fed-editorial div div ol li {
+        margin-bottom:10px;
+    }
+
+    
+#hbc-fed-editorial .hbc-fed-editorial.free-shipping {
+        padding: 1px 10px 20px 10px;
+text-align: center;
+    }
+</style>
+
+
+
+
+
+
+
+
+<style type="text/css">@import url(https://use.typekit.net/qno3ktb.css);
+
+    #hbc-livetext-page.hbc-livetext-page {
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        color: #666;
+        letter-spacing: .05em;
+        line-height: 1.5em;
+        margin: 2em auto !important;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        margin: 0 auto;
+        text-align: left;
+        width: auto !important;
+max-width: 1220px;
+    }
+
+
+    @media (max-width:959px) {
+        #hbc-livetext-page.hbc-livetext-page {
+            font-size: 12px
+        }
+    }
+
+    @media (min-width:581px) {
+        #hbc-livetext-page.hbc-livetext-page {
+            font-size: 14px
+        }
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h1,
+    #hbc-livetext-page.hbc-livetext-page h2,
+    #hbc-livetext-page.hbc-livetext-page h3,
+    #hbc-livetext-page.hbc-livetext-page h4,
+    #hbc-livetext-page.hbc-livetext-page h5,
+    #hbc-livetext-page.hbc-livetext-page h6 {
+        color: #333;
+        display: block;
+        padding: 0;
+        margin: 0;
+        line-height: 1.5em;
+        position: relative
+    }
+
+    #hbc-livetext-page.hbc-livetext-page strong {
+        font-weight: 700;
+        color: #333
+    }
+
+    #hbc-livetext-page.hbc-livetext-page em {
+        font-weight: 700;
+        color: #666
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h1 {
+        font-size: 1.66667em;
+        font-weight: 300;
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h2 {
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        font-size: 1.2em;
+        border: none;
+        text-align: center;
+        padding: 5px;
+        letter-spacing: .25em
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h3 {
+        font-size: 1.25em;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h4 {
+        padding: 0;
+        font-size: 1em
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h5 {
+        font-size: .91667em
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h6 {
+        padding: 0
+    }
+
+    #hbc-livetext-page.hbc-livetext-page h6:before {
+        content: "+";
+        padding: 0 5px 0 0
+    }
+
+
+    #hbc-livetext-page.hbc-livetext-page p {
+        font-size: 1em;
+        font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+        margin: 0 10px;
+        color: black;
+    }
+
+    #hbc-livetext-page.hbc-livetext-page a,
+    #hbc-livetext-page.hbc-livetext-page a:visited {
+        font-weight: 700;
+        color: #333;
+        -webkit-transition: opacity .2s;
+        transition: opacity .2s;
+        text-align: left !important;
+    }
+
+    #hbc-livetext-page.hbc-livetext-page a:hover,
+    #hbc-livetext-page.hbc-livetext-page a:visited:hover {
+        opacity: .7
+    }
+    
+#saksBody {
+    width: 1024px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    #saksBody {
+        width: auto !important;
+    }
+}
+
+.main {
+    padding: 0  !important;
+}
+ol {
+    padding: 20px; 
+    list-style-type: decimal;
+
+}
+#maincontent .cat-landing .home-slots .html-slot-container #hbc-fed-editorial #qa div ol.numb li {
+    list-style-type: decimal!important;
+}
+#maincontent .cat-landing .home-slots .html-slot-container #hbc-fed-editorial #qa div ul li{
+    list-style-type: disc!important;
+    margin: 0 0 20px 32px;
+}
+</style>
+
+<!-- html start -->
+<div id="hbc-fed-editorial" class="hbc-fed-editorial shipping-return en">
+
+
+
+
+    <div class="hbc-livetext-page" id="hbc-livetext-page">
+        <h1><img src="https://image.s5a.com/is/image/TheBay/HB_NextChapter_EN?wid=500&fmt=png"/></h1>
+        <h1>Welcome to Hudson’s Bay Next Chapter</h1><br /><br />
+        <p>
+        
+        
+        We’re excited to launch this special page for our Retirees and Governor’s Club Members. Keep up to date with discount-related changes, events and important notices. <br /><br />
+        
+        --<br /><br />
+        
+        <strong>Hudson’s Bay Mastercard® Powered by Neo</strong><br />
+        
+        We recently announced our partnership with Neo Financial, an innovative Canadian financial services company, to launch our new, digitally-integrated Hudson’s Bay Mastercard.<br />
+        Learn all about the benefits and rewards of applying for the card <a href="https://image.s5a.com/is/content/TheBay/2021%5FSiteContent/109/PDF/Benefits%5Frewards%5FNEOcard%5FEN.pdf">here</a>. <br /><br />
+        
+        The last day to use your Capital One Hudson’s Bay Mastercard/Hudson’s Bay Credit Card is May 3, 2021. Check this page for upcoming information on how to apply for the new Hudson’s Bay Mastercard powered by Neo, in order to continue to receive your discount.<br /><br />
+        
+        --<br /><br />
+        
+        <strong>Changes to Your Post-Retirement Discount Privilege</strong><br />
+        
+        As of early May 2021, you’ll receive a 30% discount on regular-priced items and a 20% discount on sale items. Clearance items will no longer be eligible for an Associate discount.  More information, including updated discount policy details, will be shared on this page within the next few months.<br /><br />
+        
+        For those with a Saks and Saks OFF 5TH discount, effective March 1, 2021, this benefit has ceased and you are no longer eligible for this discount.<br /><br />
+        
+        <a href="https://image.s5a.com/is/content/TheBay/2021%5FSiteContent/109/PDF/POST%2DRETIREMENT%5FLETTER%5FMARCH%5F2021%5FEN.pdf">POST-RETIREMENT LETTER MARCH 2021</a><br /><br />
+        
+        --<br /><br />
+
+
+
+
+<!-- //////////////// Collapsible QA /////////////// -->
+<div id="qa">
+    <div data-type="expandable">
+        <h2>Applying for Your New Hudson’s Bay Mastercard® powered by Neo</h2>
+		<div>
+            <ul>
+                <li>You must validate your Hudson’s Bay Rewards number. You recently received a letter from us indicating how to validate your Rewards number. If you don’t have a Hudson’s Bay Rewards number, you must sign up for a Hudson’s Bay Rewards account on thebay.com or by <a href="https://www.thebay.com/content/rewards?sre=SUBFOOTER_HUDSONSBAY_REWARDS">clicking here</a> and then email hbcpensions.generalinquiries@hbc.com with your name, address and your new Hudson’s Bay Rewards number.</li>
+                <li>You must have an account on thebay.com and confirm that your Hudson’s Bay Rewards card is linked to this account. To do this, sign into your account on thebay.com and check that the Rewards number displayed is correct. If it is, you’re ready to apply for your new Hudson’s Bay Mastercard® powered by Neo.  If the Hudson’s Bay Rewards number is not correct or you can’t find your Rewards card, please call 1-800-844-8131 for assistance.</li>
+            </ul>
+            <p>
+                If you don’t have a thebay.com account, you can set this up by visiting thebay.com or by <a href="https://urldefense.com/v3/__http:/thebay.com__;!!FScAfPZOFZjJhQ!lJNVair_2UXthsYpkUeU_D3K2XC0BnQ8Yqdmz13GUIPBpKCf0fs7_VcB9AyFHhnv$">clicking here</a>, then click on “Welcome, Sign In” on the top right of the screen. Next, click on “Create an account”.  Be sure to enter your valid Hudson’s Bay Rewards number when prompted to do so.
+            </p>
+        <p><strong>You are now ready to apply for your new Hudson’s Bay Mastercard® powered by Neo.</strong></p>
+    <p>You can apply via the Neo website>. Scroll down on the screen and click on “Sign Up”. Ensure you  select Hudson’s Bay Mastercard when applying.</p>
+    <p>You may also apply from your mobile device. First,download the Neo App>, then create an account and apply for the Hudson's Bay Mastercard.</p>
+            <p>If you require assistance when applying, call <a href="tel:1-855-636-2265">1-855-636-2265</a> or email <a href="mailto:support@neofinancial.com">support@neofinancial.com</a></p>
+        </div>
+    </div>
+
+
+    <div data-type="expandable">
+        <h2>Important Dates</h2>
+		<div>
+            <p>
+            You can  continue to use your existing Hudson’s Bay Credit Card or Hudson’s Bay Mastercard to receive a discount on Hudson’s Bay purchases up to and including <strong>May 3, 2021</strong>.
+            </p>
+            <p>
+            Effective May 4, 2021, we will not accept returns of items purchased on a Hudson's Bay Credit Card or Hudson's Bay Mastercard issued by Capital One. <strong>All returns <u>must</u> be done by May 3, 2021</strong>. Any returns post-May 3, 2021 will not be credited to your Hudson’s Bay Credit Card or Hudson's Bay Mastercard issued by Capital One.
+            </p>
+            <p>
+            Remember to update any pre-authorized payment arrangements from your current Hudson’s Bay Credit Card or Hudson’s Bay Mastercard to your new Hudson’s Bay Mastercard® powered by Neo by <strong>May 3, 2021</strong>.
+            </p>
+            <p>
+            Effective <strong>May 5, 2021</strong>, discounts will be applied to eligible  <u>online purchases</u> made with your Neo Hudson’s Bay Mastercard. Discounts will be applied to eligible  <u>purchases made in all stores</u> with your Neo Hudson’s Bay Mastercard by <strong>May 13, 2021</strong>.
+            </p> 
+        </div>
+    </div>
+
+
+    <div data-type="expandable">
+        <h2>Frequently Asked Questions</h2>
+		<div>
+            <ol class="numb">
+                <li><strong>Why is Hudson’s Bay partnering with a new credit card company?</strong>
+                    Capital One is exiting its co-branded credit card business in Canada. We are incredibly excited to offer the new Hudson’s Bay Mastercard® powered by Neo. This card comes with a number of cardholder benefits and rewards, including cash back on everyday purchases, exclusive offers, and events throughout the year.                    
+                </li>
+                <li>
+                    <strong>Who is Neo Financial?</strong>
+                    Neo Financial is an innovative Canadian financial technology company that’s helping Canadians build a better financial future with spending, savings and rewards. Learn more at <a href="https://www.neofinancial.com">neofinancial.com</a>.
+                </li>
+                <li>
+                    <strong>Can I still use my existing Hudson’s Bay Mastercard or Hudson’s Bay Credit Card?</strong>
+                    Yes, you can continue to use your existing card until May 3, 2021.                     
+                </li>
+                <li>
+                    <strong>Will I be able to return items purchased on my Capital One Hudson’s Bay card after May 3, 2021?</strong>
+                    No. Effective May 4, 2021, we will not accept returns of items purchased by Retirees/Governor’s Club members on their Hudson's Bay Credit Card or Hudson's Bay Mastercard issued by Capital One. All returns must be done by May 3, 2021. Any returns post-May 3, 2021 will not be credited to your Hudson’s Bay Credit Card or Hudson’s Bay Mastercard issued by Capital One.
+                </li>
+                <li>
+                    <strong>Do I have to reapply for the new Hudson’s Bay Mastercard® powered by Neo?</strong>
+                    Yes. All Retirees/Governor’s Club members must reapply. You must have a new card to continue to receive your discount post-May 3, 2021.
+                </li>
+                <li>
+                    <strong>I had a PLCC card (Hudson’s Bay card)—can I get that again? I don’t want/already have a Mastercard.</strong>
+                    No. Hudson’s Bay will no longer have a private label credit card. The new Hudson’s Bay Mastercard® powered by Neo has no annual or over-limit fees. It offers cashback on everyday purchases and enhanced service support through a customized app.                    
+                </li>
+                <li>
+                    <strong>Will my retiree discount change?</strong>
+                    You will continue to be eligible for a post-retirement discount. We are pleased to announce that as of early May 2021, Retirees eligible for the post-retirement discount privilege will receive a 30% discount on regular-price items and a 20% discount on sale items. Clearance items will no longer be eligible for discount.
+                </li>
+                <li>
+                    <strong>Will I receive my Retiree discount at point of purchase (in store and online) with the new Hudson’s Bay Mastercard® powered by Neo?</strong>
+                    Yes. Discounts will now be applied at point of sale when using the new Hudson’s Bay Mastercard. You’ll be able to see your discount right on your receipt.
+                </li>
+                <li>
+                    <strong>Why is my Hudson’s Bay Rewards number required to get my discount?</strong>
+                    Your Hudson’s Bay Rewards number will be used at point-of-sale (POS) and at checkout on thebay.com to obtain your Retiree/Governor’s Club status and trigger the Retiree/Governor’s Club discount when paying with your new Hudson’s Bay Mastercard® powered by Neo.
+                </li>
+                <li>
+                    <strong>What if I have lost or can’t find my Hudson’s Bay Rewards number?</strong>
+                    Please call 1-800-844-8131 for assistance.
+                </li>
+                <li>
+                    <strong>Can I use my partner’s Hudson’s Bay Rewards number?</strong>
+                    No. If you were using your partner’s Rewards account, you’ll need to create a new account. Please visit Hudson’s Bay Rewards> to enroll. 
+                </li>
+                <li>
+                    <strong>When can I apply for my Hudson’s Bay Mastercard® powered by Neo?</strong>
+                You can apply for the new Hudson’s Bay Mastercard as soon as you’ve confirmed your Hudson’s Bay Rewards number and have linked it to your thebay.com account. To apply from your mobile device, download the Neo App>, create an account and apply for the Hudson's Bay Mastercard. Alternatively, you can apply via the Neo website>. Please ensure you select Hudson’s Bay Mastercard when applying. 
+                When applying, use the same email address and phone number associated with your Hudson’s Bay Rewards and thebay.com account. 
+                </li>
+                <li>
+                    <strong>How do I contact Neo if I’m having trouble applying for my card?</strong>
+                    You can contact Neo support by calling <a href="tel:1-855-636-2265">1-855-636-2265</a> or <a href="mailto:support@neofinancial.com">emailing support@neofinancial.com</a>.
+
+                </li>
+                <li>
+                    <strong>Can I start using my new Hudson’s Bay Mastercard® powered by Neo account as soon as I receive it?</strong>
+                    You can shop anywhere Mastercard is accepted and earn Rewards points and cashback, including at Hudson’s Bay stores or thebay.com, but you will not get the Retiree/Governor’s Club discount on Hudson’s Bay purchases on this card until May 5, 2021 for online purchases and by May 13, 2021 for in-store purchases. 
+
+                </li>
+                <li>
+                    <strong>Can I add my partner, spouse or eligible child as an authorized user to my account?</strong>
+                    There are no authorized users on the Hudson’s Bay Mastercard® powered by Neo. Your partner, spouse or eligible child must be with you at the time of purchase in order to receive a discount on their purchase.
+
+                </li>
+                <li>
+                    <strong>Can I pay with Rewards points or a Hudson’s Bay gift card and get my discount?</strong>
+                When paying with Rewards points or a Hudson’s Bay gift card, the Retiree/Governor’s Club discount will only be applied when used in conjunction with the Hudson’s Bay Mastercard® powered by Neo (HBMC).
+                For example:
+                            <ul>
+                            <li>
+                            Points + Gift Card + HBMC = Discount
+                            </li>
+                            <li>
+                            Points + HBMC = Discount
+                            </li>
+                            <li>
+                            Gift Card + HBMC = Discount
+                            </li>
+                            <li>
+                            Points and/or Gift Card = No Discount
+                            </li>
+                            <li>
+                            Points, Gift Card + 3rd party credit card = No Discount
+                            </li>
+                            </ul>
+                </li>
+                <li>
+                    <strong>Will I still get a monthly credit statement?</strong>
+                Notification of the monthly statement will be via email and within the Neo app. Neo does not issue paper statements.  
+                </li>
+                <li>
+                    <strong>Can I still pay my bill in store?</strong>
+                Neo only accepts online bill payments and we will no longer accept in-store payments. For further information and assistance, contact Neo support at <a href="tel:1-855-636-2265">1-855-636-2265</a> or <a href="mailto:support@neofinancial.com">emailing support@neofinancial.com</a>.
+                </li>
+                <li>
+                    <strong>What happens with my payment plans on my Hudson’s Bay credit card or Hudson’s Bay Mastercard with Capital One?</strong>
+                    These payment plans will continue to exist on these cards until they are paid in full at which time your account will be closed.
+                </li>
+                </ol>
+                For further information as a customer, please <a href="https://support.thebay.com/s/topic/0TO2E000000kIf2/hb-credit-payment-methods">click here</a>.
+        </div>
+    </div>
+
+
+
+
+    <div data-type="expandable">
+        <h2>Retiree Discount Effective Early May 2021</h2>
+		<div>
+            <p>
+                With the launch of the new Hudson’s Bay Mastercard® powered by Neo, the new Retiree discount will be programmed to your new Hudson’s Bay Mastercard, when used with your Hudson’s Bay Rewards account, and you will receive your discount immediately at point-of-sale. 
+            </p>
+            <ul><li>
+                A <strong>30%</strong> discount will be granted on regular-price men’s, women’s and kids’ clothing; shoes, handbags and accessories; furniture; and home decor (including tableware, linens and bathroom accessories).
+            </li>
+            <li>
+                A <strong>20%</strong> discount will be granted on sale-price men’s, women’s and kids’ clothing; shoes, handbags and accessories; furniture; and home decor (including tableware, linens and bathroom accessories). 
+            </li>
+            <li>
+                A <strong>20%</strong> discount will be granted on regular-price and sale-price cosmetics and fragrance products. 
+            </li>
+            <li>
+                A <strong>15%</strong> discount will be granted on regular and sale-price fine watches and tech watches; major appliances and kitchen and bathroom electrics.
+            </li>
+            <li>
+                A <strong>10%</strong> discount will be granted on regular and sale-price toys, home electronics, food-related items and services purchased through the HBC Home Services category on thebay.com.
+            </li> 
+            <li>
+                A <strong>10%</strong> discount will be granted all on regular and sale-price Casper, Zinus and Springwall Mattresses.
+            </li>
+            <li>
+                A <strong>10%</strong> discount will be granted on all nursery and baby gear.
+            </li>
+            <li>
+                No discount will be applied on clearance merchandise.
+            </li>
+            <li>
+                The Retiree discount applies to items sold by Hudson’s Bay. It does not apply to Marketplace sellers on thebay.com. Review the item details to confirm the seller prior to making your online purchase.
+            </li>
+            <li>
+                The majority of our licensed partners provide eligible Retirees a 10% discount on purchases made on their Hudson’s Bay Mastercard. Some exceptions may apply, and in all cases, Retirees are required to comply with each Licensee’s requirements. It is the responsibility of the Retiree to confirm the Licensee’s requirements for discount prior to making their purchase.
+            </li>
+            </ul>
+
+            <p>
+            At this time, there is no change to the Hudson’s Bay Rewards program for Retirees. Retirees will continue to earn Hudson’s Bay Rewards points on regular, sale and clearance items. Retirees will earn Rewards points on the total purchase price, before taxes and before their discount is applied. 
+            </p>
+        </div>
+    </div>
+
+
+    <div data-type="expandable">
+        <h2>Governor’s Club Members</h2>
+		<div>
+            <p>
+                If you are both a Retiree and a Governor’s Club member, you will receive the discount privileges under the Governor’s Club policy.
+            </p><p>
+                With the launch of the new Hudson’s Bay Mastercard® powered by Neo, the new Governor’s Club discount will be programmed to your new Hudson’s Bay Mastercard, when used with your Hudson’s Bay Rewards account, and you will receive your discount immediately at point-of-sale. 
+            </p>
+        </div>
+    </div>
+
+
+    <div data-type="expandable">
+        <h2>Governor’s Club Discount Effective Early May 2021</h2>
+		<div>
+            <p>
+                With the launch of the new Hudson’s Bay Mastercard® powered by Neo, the new Retiree discount will be programmed to your new Hudson’s Bay Mastercard, when used with your Hudson’s Bay Rewards account, and you will receive your discount immediately at point-of-sale. 
+            </p>
+            <ul><li>
+                    A <strong>40%</strong> discount will be granted on regular-price men’s, women’s and kids’ clothing; shoes, handbags and accessories; furniture; and home decor (including tableware, linens and bathroom accessories). 
+                </li>
+                <li>
+                    A <strong>25%</strong> discount will be granted on sale-price men’s, women’s and kids’ clothing; shoes, handbags and accessories; furniture; and home decor (including tableware, linens and bathroom accessories). 
+                </li>
+                <li>
+                    A <strong>20%</strong> discount will be granted on regular and sale-price cosmetics and fragrance products. 
+                </li>
+                <li>
+                    A <strong>15%</strong> discount will be granted on regular and sale-price fine watches and tech watches; major appliances and kitchen and bathroom electrics.
+                </li>
+                <li>
+                    A <strong>10%</strong> discount will be granted on regular and sale-price toys, home electronics, food-related items and services purchased through the HBC Home Services category on thebay.com.
+                </li>
+                <li>
+                    A <strong>10%</strong> discount will be granted all on regular and sale-price Casper, Zinus and Springwall Mattresses.                </li>
+                </li>
+                <li>
+                    A <strong>10%</strong> discount will be granted on all nursery and baby gear.
+                </li>
+                <li>
+                    No discount will be applied on clearance items. 
+                </li>
+                <li>
+                    The Governor’s Club discount applies to items sold by Hudson’s Bay. It does not apply to Marketplace sellers on thebay.com. Review the item details to confirm the seller prior to making your online purchase.
+                </li>
+                <li>
+                    The majority of our licensed partners provide HB Associates with a 10% discount on purchases made on their Hudson’s Bay Mastercard. Some exceptions may apply, and in all cases, Associates are required to comply with each Licensee’s requirements. It is the responsibility of the Associate to confirm the Licensee’s requirements for discount prior to making their purchase, and to produce the appropriate ID to confirm eligibility.
+                </li>
+            </ul>
+
+            <p>
+                At this time, there is no change to the Hudson’s Bay Rewards program for Governor’s Club members. Governor’s Club members will continue to earn Hudson’s Bay Rewards points on regular, sale and clearance items. Governor’s Club members will earn Rewards points on the total purchase price, before taxes and before their discount is applied. 
+            </p>
+
+            <p><a href="https://image.s5a.com/is/content/TheBay/2021_SiteContent/109/PDF/GOVERNORS_CLUB_MEMBERS_LETTER_MARCH_2021_EN.pdf">GOVERNOR’S CLUB MEMBERS LETTER MARCH 2021</a></p>
+        </div>
+    </div>
+
+
+</div>
+   
+<!-- html end -->
+
+<script type="text/javascript">var HBC_FED_EDITORIAL=function(t){function e(n){if(i[n])return i[n].exports;var s=i[n]={i:n,l:!1,exports:{}};return t[n].call(s.exports,s,s.exports,e),s.l=!0,s.exports}var i={};return e.m=t,e.c=i,e.d=function(t,i,n){e.o(t,i)||Object.defineProperty(t,i,{configurable:!1,enumerable:!0,get:n})},e.n=function(t){var i=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(i,"a",i),i},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="/wcsstore/TheBay/InteractiveEditorials/shipping-returns/",e(e.s=0)}([function(t,e,i){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=i(1),s=(i.n(n),i(2)),l=(i.n(s),i(3));new l.a("#hbc-fed-editorial",!1,400)},function(t,e){},function(t,e){},function(t,e,i){"use strict";i.d(e,"a",function(){return l});var n=1e3,s=function(){function t(t,e,i){void 0===e&&(e=!1),void 0===i&&(i=n);var s=this;switch(t.getAttribute("data-expanded")){case"true":this.isExpanded=!0;break;case"false":this.isExpanded=!1;break;default:this.isExpanded=e}this.element=t,this.firstElement=this.wrapElement(t.firstElementChild),this.lastElement=this.wrapElement(t.firstElementChild),this.setElementAttributes(),this.setElementHeight(),this.firstElement.className="expandable__toggle",this.firstElement.onclick=function(t){return s.onClick(t)},this.element.style.overflow="hidden",this.lastElement.offsetHeight,this.lastElement.className="expandable__content",this.lastElement.style.overflow="hidden",this.lastElement.style.transitionProperty="all",this.lastElement.style.transitionTimingFunction="ease-in-out",this.setElementAttributes(),this.setElementHeight(),this.duration=i}return t.prototype.getElementHeight=function(t){return t.scrollHeight},t.prototype.wrapElement=function(t){var e=document.createElement("div");return t.parentNode.appendChild(e),e.className="wrapped",e.appendChild(t),e},t.prototype.onClick=function(t){this.lastElement.style.transitionDuration=this.duration+"ms",this.toggleExpandableState(),this.setElementAttributes(),this.setElementHeight()},t.prototype.setElementHeight=function(){var t=this;clearTimeout(this.isInTransitionTimer),this.isInTransitionTimer=setTimeout(function(){t.lastElement.style.height=t.isExpanded?"auto":"0px"},this.duration),this.lastElement.style.height="auto"===this.lastElement.style.height?this.lastElement.getBoundingClientRect().height+"px":this.lastElement.style.height,this.lastElement.offsetWidth,this.isExpanded?(this.lastElement.style.height=this.getElementHeight(this.lastElement)+"px",this.lastElement.firstChild.style.transitionTimingFunction="ease-in-out"):(this.lastElement.style.height="0px",this.lastElement.firstChild.style.transitionTimingFunction="ease-in-out")},t.prototype.setElementAttributes=function(){this.element.setAttribute("data-expanded",""+this.isExpanded)},t.prototype.toggleExpandableState=function(){this.isExpanded=!this.isExpanded},t}(),l=function(){function t(t,e,i){void 0===e&&(e=!1),void 0===i&&(i=n);var l=this;this.duration=i,this.elements=[].slice.call(document.querySelectorAll(t+' [data-type="expandable"]')).map(function(t){return new s(t,e,l.duration)})}return t}()}]);
+
+</script>   
+<script type="text/javascript">
+document.querySelector("#qa h2").addEventListener('click',function(){
+if (document.querySelector("#qa h2[data-expanded=false]")){
+  document.querySelector("#qa h2 .expandable__toggle").click()
+    }
+  }
+   );        
+</script>

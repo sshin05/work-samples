@@ -1,0 +1,21 @@
+// @author Joseph
+// --------------------------------------------------
+
+// header.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+
+    section.sec__header {
+    	margin: 100px auto 60px auto;
+
+    	h1{
+    		margin-bottom: 20px;
+    	}
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+
+        }
+    }
+
+} // end #dsg-editorial.dsg-editorial

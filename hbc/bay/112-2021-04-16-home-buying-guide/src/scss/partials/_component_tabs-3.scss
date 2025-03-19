@@ -1,0 +1,167 @@
+#dsg-editorial.dsg-editorial {
+
+    .fed-tabs{
+
+        .fed-tabs__container{
+            .fed-tabs__container-section{
+                display: block;
+            }
+        }
+
+        & .fed-tabs__container-section-03{
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+
+            .fed-tabs__container-section-03__01{
+                text-align: center;
+                padding: 50px 0 30px 0;
+                width: 100%;
+
+                h1 {
+                    font-size: 30px;
+                    font-weight: 900;
+                    font-style: normal;
+                    letter-spacing: 0.25em;
+                    line-height: 1;
+                    display: block;
+                    margin: 50px auto;
+                    font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+
+            .fed-tabs__container-section-03__02{
+                margin-bottom: 40px;
+                flex-direction: row;
+                flex: 1;
+                width: 33%;
+                text-align: center;
+                display: inline-flex;
+
+                img{
+                    margin: 0 auto 30px;
+                    display: block;
+                }
+
+                h2{
+                    font-size: 16px;
+                    font-weight: 800;
+                    letter-spacing: 0.05em;
+                    margin-bottom: 23px;
+                }
+
+                p {
+                    padding: 0 70px;
+                }
+
+            }
+
+            .fed-tabs__container-section-03__03{
+                text-align:center;
+                margin-bottom: 50px;
+
+                h2{
+                    font-size: 16px;
+                    font-weight: 800;
+                    letter-spacing: 0.05em;
+                    //margin-bottom: 23px;
+                }
+            }
+
+            .fed-tabs__container-section-03__04{
+                background: #F9FAFA;
+                padding: 29px 0;
+
+                .fed-tabs__container-section-03__04-container{
+                    display: flex;
+                    width: 600px;
+                    margin: 0 auto;
+
+                    div{
+                        flex: 1;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+            br{
+                display: none;
+            }
+
+            .fed-tabs__container-section-03{
+                .fed-tabs__container-section-03__01{
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                }
+
+                .fed-tabs__container-section-03__02{
+                    display: block;
+                    width: 100%;
+                }
+
+                .fed-tabs__container-section-03__03{
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                }
+
+                .fed-tabs__container-section-03__04{
+                    .fed-tabs__container-section-03__04-container{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding: 2vw 0;
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-03__07{
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .fed-tabs__container-section-03__08{
+                    display: block;
+                    padding-bottom:0;
+
+                    div{
+                        padding:4vw 2vw;
+                    }
+                }
+
+                .fed-tabs__container-section-03__09{
+                    display: block;
+                    padding-bottom:0;
+
+                    div{
+                        padding:4vw 2vw;
+                    }
+                }
+
+                .fed-tabs__container-section-03__10{
+                    display: block;
+                    padding-bottom:0;
+
+                    div{
+                        padding:4vw 2vw;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}

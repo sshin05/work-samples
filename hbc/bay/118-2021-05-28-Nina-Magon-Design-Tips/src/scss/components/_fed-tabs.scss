@@ -1,0 +1,50 @@
+#dsg-editorial.dsg-editorial {
+    .fed-tabs{
+
+        .fed-tabs__buttons{
+
+
+            .fed-tabs__buttons-container{
+                display: flex;
+                width: 80%;
+                margin: 0 auto;
+                justify-content: space-around;
+
+                .fed-tabs__buttons-button{
+                    text-align: center;
+                    cursor: pointer;
+                    white-space: nowrap;
+
+                    span{
+                        @include FontSans(14px, 700, 80);
+                    }
+
+                    &.fed-tabs__buttons-active{
+                        cursor: default;
+                    }
+                }
+            }
+        }
+
+        .fed-tabs__container{
+            .fed-tabs__container-section{
+                display: none;
+
+                &.fed-tabs__container-active{
+                    display: block;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+        //@media only screen and (max-width: 560px) {
+
+            .fed-tabs__buttons{
+                .fed-tabs__buttons-container{
+                    display: block;
+                }
+            }
+
+        }
+    }
+}

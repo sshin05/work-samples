@@ -1,0 +1,14 @@
+#Ignore folders
+.git
+.vscode
+node_modules
+
+#ignore project folders
+**/**/build
+**/**/bin
+
+#Ignore files
+yarn.lock
+yarn-error.log
+npm-debug.log
+.DS_Store

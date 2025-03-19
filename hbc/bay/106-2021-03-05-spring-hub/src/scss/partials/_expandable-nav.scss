@@ -1,0 +1,84 @@
+
+// expandable-nav.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+
+    section.main_menu .main_menu__right .main_menu__right-container .featured_brand .brand_container .brand_cta span {
+        font-weight: 700;
+    }
+
+    // #dsg-designer-nav.dsg-designer-nav section.main_menu .main_menu__middle{
+    //     //height: 35vw;
+    // }
+
+    // #dsg-editorial.dsg-editorial #dsg-designer-nav.dsg-designer-nav section.main_menu{
+    //     padding-bottom: 2vw;
+    // }
+
+    .expandable-nav {
+        $expandable-nav-width: 100%;
+        $expandable-nav-max-width: 960px;
+
+        width: $expandable-nav-width;
+        //max-width: $expandable-nav-max-width;
+        height: 0;
+        position: absolute;
+        // top: $nav-bottom-height;
+        left: 0;
+        //left: 50%;
+        //margin-left: $expandable-nav-max-width * -0.5;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.95);
+        transition-property: height, box-shadow;
+        transition: 0.42s ease-in-out;
+        //margin-top: 14px;
+
+        &.open {
+            height: auto; //655px;
+            box-shadow: 0 1px 3px rgba(0,0,0,.7);
+        }
+
+    }
+
+    .expandable-nav.open {
+        overflow: visible;
+
+        .close-caret {
+            position:absolute;
+            top: -1.75em;
+            right: 20%;
+            line-height: normal;
+            color: coral;
+            cursor: pointer;
+        }
+
+    }
+    @media only screen and (min-width: 2500px) {
+        // .expandable-nav {
+        //     position: fixed;
+        //     top:0;
+        //     left: 0;
+
+        //     &.open {
+        //         height: 800px !important;
+        //     }
+        // }
+    }
+
+    @media only screen and (max-width: 959px) {
+        .expandable-nav {
+            display: none;
+            position: fixed;
+            top:0;
+            left: 0;
+            height: 100vh;
+
+            &.open {
+                display: block;
+                //height: 800px !important;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,24 @@
+// @author Penn
+// --------------------------------------------------
+
+// hacks.scss
+// --------------------------------------------------
+// Shameful Code :(
+//
+// Document all hacks fully!
+// * What part of the codebase does it relate to?
+// * Why was this needed?
+// * How does this fix it?
+// * How might you fix it properly, given more time?
+
+// suppress global sticky nav on scroll-up
+// needed to prevent the simultaneous display of two sticky navs
+.hbc-header__container.hbc-header__container--peek {
+    visibility: hidden;
+}
+
+// force #saksBody to display full width
+// necessary for full-bleed editorials
+#saksBody {
+    width: 100% !important;
+}

@@ -1,0 +1,62 @@
+// @author Joseph
+// --------------------------------------------------
+
+// section.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+	section {
+        text-align: center;
+
+        &.sec__sec{
+            max-width: 1240px;
+            margin: 29px auto 0 auto;
+            //max-width: 800px;
+            display: flex;
+            justify-content:space-between;
+
+            div{
+                padding:6px;
+                flex:1;
+
+                img{
+
+                    padding-bottom: 25px;
+
+                }
+            }
+
+            // &.sec__sec-03{
+            //     max-width: 923px;
+            // }
+
+        }
+
+    }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+        section {
+            &.sec__sec{
+                display: block;
+                margin-top: 0;
+                overflow: hidden;
+
+                div{
+                    margin: 0 1%;
+                    width: 48%;
+                    float: left;
+                    padding: 0;
+                    overflow: hidden;
+                    height: 95vw;
+                }
+
+                // &.sec__sec-3{
+
+                //     div{
+                //         height: 100vw;
+                //     }
+                // }
+            }
+        }
+    }
+} // end #dsg-editorial.dsg-editorial

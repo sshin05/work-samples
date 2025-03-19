@@ -1,0 +1,218 @@
+// @author Penn
+// --------------------------------------------------
+
+// typography.scss
+// --------------------------------------------------
+// Includes font-family, weights, styles, colors, etc
+
+@font-face {
+    //Production
+    // src: url("https://content.hbc.com/chad/bay/editorial/fonts/MortModernPro/MortModern-03LargeMedium.otf") format("opentype");
+    // font-family: MortModern;
+}
+
+#dsg-designer-nav.dsg-designer-nav {
+    // base styles
+    font-family: $sans;
+    font-weight: $regular;
+    font-style: normal;
+    color: $text-color-dark;
+
+    section.main_menu{
+        h1{
+            @include FontSans(30px, 700, 50, 1.4);
+
+            text-transform: uppercase;
+            //font-family: 'MortModern';
+        }
+
+        a{
+            @include FontSans(18px, 400, 25);
+
+            color:#000;
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+
+        .main_menu-top{
+            padding-bottom: 20px;
+
+            div{
+                @include FontSans(30px, 700, 50, 1.4);
+
+                cursor: pointer;
+                //font-family: 'MortModern';
+                color: #606060;
+
+                &.button-selected{
+                    color:#121212;
+                }
+            }
+        }
+
+        .main_menu__middle-results{
+            .main_menu-results{
+                div{
+                    div{
+                        padding: 8px 0;
+
+                        a{
+                            @include FontSans(18px, 400, 25, 1);
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main_menu__left{
+            h1{
+                margin-bottom: 1vw;
+            }
+
+            .main_menu-featured-results{
+                a{
+                    &:hover{
+                        text-decoration: underline;
+                    };
+                }
+            }
+        }
+
+        .main_menu__right{
+
+            .main_menu__right-container{
+
+                .search_link{
+                    padding-bottom: 10px;
+                    p{
+                        @include FontSans(16px, 700, 25, 1);
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+                }
+
+                .featured_brand{
+                    .brand_container{
+                        .brand_cta{
+                            @include CTA();
+
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            padding-top: 1vw;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main_search-overlay{
+            .main_search-texbox{
+
+                input{
+                    @include FontSerif(36px, 400, 25, 1.6);
+
+                    padding: 10px;
+                    font-family: 'MortModern';
+                    color:#000;
+                    display: inline-block;
+                }
+            }
+
+            .main_search-search{
+                p{
+                    display: inline;
+                }
+            }
+
+            .main_search-results{
+                a{
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media only screen and (max-width: 959px) {
+
+        section.main_menu{
+
+            .main_search-overlay{
+
+                .main_search-texbox{
+                    input{
+                        width: 70vw;
+                        height: 9vw;
+                        font-size: 8vw;
+                    }
+                }
+            }
+
+            .main_menu__left{
+                h1{
+                    font-size: 7vw;
+                }
+
+                a{
+                    font-size: 3vw;
+                }
+
+                .main_menu-featured-results{
+                    height: 50vw;
+
+                    li{
+                        a{
+                            line-height: 2;
+                        }
+                    }
+
+                }
+            }
+
+            .main_menu__middle{
+
+                .main_menu__middle-container{
+                    .main_menu__middle-filter{
+                        div{
+                            font-size: 6vw;
+                        }
+                    }
+                }
+
+                .main_menu-results{
+                    div{
+                        div{
+                            padding: 1.3vw 0;
+
+                            a{
+                                line-height: 2;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main_menu__middle-results{
+
+                .main_menu-results{
+                    div{
+                        div{
+                            a{
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+} // end #dsg-editorial.dsg-editorial

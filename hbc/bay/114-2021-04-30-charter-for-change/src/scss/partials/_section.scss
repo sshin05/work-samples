@@ -1,0 +1,274 @@
+// @author Joseph
+// --------------------------------------------------
+
+// section.scss
+// --------------------------------------------------
+html {
+    scroll-behavior: smooth;
+}
+#dsg-editorial.dsg-editorial {
+    margin-top: 0px!important;
+    background-color: #eee9dc;
+    font-family: Helvetica, Arial, sans-serif;
+	section {
+        position: relative;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+
+        &.sec__nav {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            background-color: #eee9dc;
+            width: 100%;
+            z-index: 10;
+            max-width: 1440px;
+            padding: 15px 0% 12px 2%;
+            #logo {
+                width: 200px;
+                margin-left: 5%;
+                height: intrinsic;
+            }
+            ul{
+                width: 50%;
+                li {
+                    display: inline-block;
+                    margin-top: 3%;
+                    margin-left: 2%;
+                    font-size: 1.2em;
+                    ;
+                    a {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        &.sec__nav.scrolled {
+            position: fixed;
+            top: 62px;
+        }
+        &.sec__header {
+            text-align: left;
+            padding-left: 7%;
+            .logoMobile {
+                display: none;
+            }
+            h3 {
+                text-transform: uppercase;
+                font-size: 1.2em;
+                margin: 2% 0 3% 0;
+            }
+            h1 {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 7em;
+                font-weight: 100;
+                letter-spacing: 0;
+            }
+            .hbcolors {
+                position: absolute;
+                right: 0px;
+                top: 0;
+                width: 20px;
+            }
+        }
+
+        &.sec-Fullfrmae {
+            padding-left: 0%;
+            padding-right: 0%;
+            .logoOverportrait {
+                width: 45%;
+                position: absolute;
+                top: 9%;
+                left: 32%;
+                display: none;
+            }
+        }
+        &.sec-50-50{
+            .flex-container{
+                width: 39%;
+                display: inline-block;
+                margin: 8% 5% 0% 5%;
+                text-align: left;
+                position: relative;
+                h2{
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 3em;
+                    font-weight: 100;
+                    letter-spacing: 0;
+                }
+                .faqElement:after {
+    
+                    -webkit-font-smoothing: antialiased;
+                    content: "〉";
+                    position: absolute;
+                    top: 2em;
+                    right: 1em;
+                    font-size: 1em;
+                    font-weight: bold;
+                    -webkit-transform: rotate(90deg); 
+                    -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                    cursor: pointer;
+                }
+                .flipButton:after {
+                    -webkit-transform: rotate(270deg);
+                    -ms-transform: rotate(270deg);
+                    transform: rotate(270deg);
+                }
+                .faqQuestion {
+                    cursor: pointer;
+                    margin: 0;
+                    padding-right: 2em;
+                }
+                .faqAnswer {
+                    margin: 0;
+                    max-height: 0;
+                    overflow-y: hidden;
+                    -webkit-transition: all .25s;
+                    -moz-transition: all .25s;
+                    transition: all .25s;
+                    -webkit-transition-timing-function: ease-out;
+                    -moz-transition-timing-function: ease-out;
+                    transition-timing-function: ease-out;
+                    padding-right: 2em;
+                }
+                .activeFaqAnswer {
+                    margin-top: 1.5em;
+                }
+                h4 {
+                    font-size: 1.4em;
+                    line-height: 2em;
+                    font-weight: 100;
+                    letter-spacing: 0px;
+                }
+                .faqElement {
+                    padding: 1.5em 0;
+                    border-bottom: 1px solid #000;
+                    position: relative;
+                }
+                .faqElement:last-child {
+                    border-bottom: 0px
+                }
+
+                .slide {
+                    text-align: center;
+                }
+                .slick-next:before,
+                .slick-prev:before {
+                    content: "〉";
+                    opacity: 1;
+                    color:#000;
+                    font-weight: bolder;
+                }
+                .slick-prev:before {
+                    content: "〈";
+                }
+                .slick-prev,
+                .slick-prev:hover,
+                .slick-next,
+                .slick-next:hover {
+                    opacity: 1;
+                    background: none;
+                }
+                h1 {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 5em;
+                    font-weight: 100;
+                    letter-spacing: 0;
+                }
+
+
+                .partners {
+                    text-align: center;
+                    li {
+                        display: inline-block;
+                        width: 30%;
+                        margin: 2% 5% 2% 5%;
+                        img {
+                            cursor: pointer;
+                            opacity: .5;
+                        }
+                        img:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+                .partnersCopy {
+                    li {
+                        display: none;
+                    }
+                }
+
+            }
+            &#COMMITMENT{
+                .flex-container{
+                    margin: 5% 5% 0% 5%;
+                }
+            }
+            #GOALS{
+                height: 180px;
+            }
+            &#COMMITMENT, &#PARTNERS {
+                padding-top: 6%;
+            }
+        }
+    }
+    #INVOLVED{
+        padding-top: 15%;
+    }  
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+        section {
+            margin-top: 20%;
+            &.sec__header {
+                margin: 10px auto 60px auto;
+            }
+            &.sec__nav {
+                display: none;
+            }
+            &.sec__header {
+                .logoMobile {
+                    display: block;
+                    width: 40%;
+                    margin-bottom: 10%;
+                }
+                h3 {
+                    font-size: .9em;
+                }
+                h1{
+                    font-size: 3em;
+                }
+            }
+            &.sec-50-50 {
+                #GOALS{
+                    height: 10px;
+                }
+                .flex-container{
+                    width: 90%;
+                    margin: 0;
+                    h1{
+                        font-size: 3.6em;
+                    }
+                }
+                &#PARTNERS {
+                    h2 {
+                        margin-top: 10%;
+                    }
+                }
+            }
+            &.sec__footer{ 
+                h1{
+                    font-size: 3em!important;
+                    width: 100%;
+                }
+                h2{
+                    font-size: 2em!important;
+                }
+                img{
+                    width: 50px!important;
+                }
+            }
+        }
+    }
+} // end #dsg-editorial.dsg-editorial

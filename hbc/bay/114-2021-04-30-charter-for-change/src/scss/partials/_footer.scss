@@ -1,0 +1,44 @@
+// @author Penn
+// --------------------------------------------------
+
+// footer.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+
+    section{
+        &.sec__footer{
+
+            
+            h1,h2 {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 3.5em;
+                font-weight: 100;
+                letter-spacing: 0;
+            }
+
+            h2{
+                font-size: 2.5em;
+                line-height: 3em;
+                display: inline-block
+            }
+            img {
+                display:inline-block;
+                width: 3%;
+                margin: -1.5% 1% 0 1%;
+                vertical-align:middle;
+            }
+
+
+        }
+    }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+        section{
+            &.sec__footer{
+
+            }
+        }
+    }
+
+} // end #dsg-editorial.dsg-editorial

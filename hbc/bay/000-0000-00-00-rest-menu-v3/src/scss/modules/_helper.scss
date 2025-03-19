@@ -1,0 +1,56 @@
+/**
+ * @brief Helper
+ * @author Joseph Luzquinos
+ */
+
+ @mixin FontBuilder($size:14px, $weight:400, $tracking:100, $lineHeight:1, $style:normal){
+    font-size:$size;
+    font-weight:$weight;
+    font-style: $style;
+    letter-spacing: ($tracking/1000) + 0em; // Photoshop Tracking to em
+    line-height:$lineHeight;
+    display: block;
+    margin:0;
+}
+
+/**
+ * Fonts (HELPERS)
+ */
+
+ //BaskervillURW
+@mixin FontBaskerville($size:14px, $weight:400, $tracking:100, $lineHeight:1, $style:normal){
+    @include FontBuilder($size, $weight, $tracking, $lineHeight, $style);
+
+    font-family: $baskerville;
+}
+
+//Sans Serif
+@mixin FontSans($size:14px, $weight:400, $tracking:100, $lineHeight:1, $style:normal){
+    @include FontBuilder($size, $weight, $tracking, $lineHeight, $style);
+
+    font-family: $sans;
+}
+
+//Sans Serif
+@mixin FontSerif($size:14px, $weight:400, $tracking:100, $lineHeight:1, $style:normal){
+    @include FontBuilder($size, $weight, $tracking, $lineHeight, $style);
+
+    font-family: $serif;
+}
+
+// CTA
+@mixin CTA($color: #000) {
+    @include transition;
+    color: $color;
+    text-decoration: none;
+    cursor:pointer;
+
+    span {
+        display:inline-block;
+        border-bottom: 1px solid $color;
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+}

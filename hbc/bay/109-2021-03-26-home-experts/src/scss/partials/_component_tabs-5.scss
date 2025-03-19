@@ -1,0 +1,112 @@
+#dsg-editorial.dsg-editorial {
+    .fed-tabs{
+
+        & .fed-tabs__container-section-05{
+
+
+            .fed-tabs__container-section-05__01{
+                margin: 0 auto;
+                padding: 0 0 40px 0;
+                width: 100%;
+                text-align: center;
+
+                h1{
+                    font-size: 30px;
+                    font-style: normal;
+                    letter-spacing: 0.25em;
+                    line-height: 1;
+                    display: block;
+                    margin: 50px auto 20px;
+                    font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                img {
+                    width: auto;
+                    display: block;
+                    margin: 20px 0;
+                }
+
+                p {
+                    width: 59%;
+                    margin: 0 auto;
+                }
+
+
+                a {
+                    font-weight: 600;
+                    border-bottom: 2px solid black;
+                    padding-bottom: 1px;
+                    text-align: center;
+                    margin: 0 auto;
+                    display: inline-block;
+                    color: #000;
+                    text-transform: uppercase;
+                    font-size: 18px;
+
+                    &.button {
+                        width: 37%;
+                        border: 2px solid #000;
+                        padding: 10px 0;
+                        margin: 4% 1%;
+                        display: inline-block;
+                        font-weight: 800;
+                    }
+                }
+            }
+
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+            br{
+                display: none;
+            }
+
+            .fed-tabs__container-section-05{
+
+                .fed-tabs__container-section-05__01{
+                    padding: 8vw 2vw;
+
+                    p, a.button {
+                        width: 96%;
+                    }
+                }
+
+                .fed-tabs__container-section-04__02{
+                    display: block;
+                    padding-bottom: 3vw;
+                    width: 100%;
+                    margin: 0 0 5% 0;
+                    height: auto;
+
+                    
+
+                    .boxes{
+                        width: 100%;
+                        margin: 0 0 5% 0;
+                        padding: 3%;
+                        height: auto;
+
+                        &.first, &.last {
+                            margin: 0 0 5% 0;
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-04__03 {
+                    display: block;
+
+                     .text  {
+                        width: auto;
+                     }
+                }
+
+            }
+
+        }
+
+    }
+
+}

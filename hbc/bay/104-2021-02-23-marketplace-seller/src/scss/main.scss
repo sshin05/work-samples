@@ -1,0 +1,257 @@
+// @author Joseph
+// --------------------------------------------------
+// Read the HBC Frontend Guidelines!
+// https://github.com/saksdirect/HBC_frontend_guidelines/wiki/CSS-coding-standards
+
+// main.scss
+// --------------------------------------------------
+// No 'real' css in this file, only imports
+//
+// Breaking apart the styles into different partials makes them:
+// * more modular
+// * easier to read
+// * easier to troubleshoot
+// * more semantic
+
+// CSS Reset
+@import 'partials/reset';
+
+// Modules and Global Variables
+@import 'partials/base';
+
+// Editorial-specific Variables
+@import 'partials/variables';
+
+// Single Page App
+// @import 'partials/single-page';
+
+// Base Layout
+@import 'partials/responsive';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/section';
+@import 'partials/footer';
+
+// HBC Carousel
+//@import 'partials/hbc-carousel';
+
+// Typography
+@import 'partials/typography';
+
+//Tabs
+@import 'partials/_component_tabs-1';
+@import 'partials/_component_tabs-2';
+@import 'partials/_component_tabs-3';
+
+// Custom Elements
+// @import 'partials/your-custom-element-here';
+
+// Shameful Code
+@import 'partials/hacks';
+
+// temporary styles for template mockup
+//@import 'partials/temp-dev';
+
+#dsg-editorial.dsg-editorial {
+    img{
+        margin: auto;
+    }
+    .caps {
+        text-transform: uppercase;
+    }
+    .square {
+        color: #fff;
+        // height: 20vw;
+        max-height: 530px;
+        margin: 1%;
+        padding: 3%;
+        text-align: left;
+        h4 {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        p {
+            margin-top: 6%;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 5%;
+        }
+    }
+    .square.yellow {
+        color: #000;
+    }
+    .green {
+        background-color: #00704A;
+    }
+    .red {
+        background-color: #B30838;
+    }
+    .yellow {
+        background-color: #EEB211;
+    }
+    .blue {
+        background-color: #00274C;
+    }
+
+    section.sec__header {
+        background-color: #fff;
+        border-bottom: 1px solid #848484;
+        .marketLogo {
+            margin: 30px;
+        }
+        h1 {
+            font-size: 74px;
+            margin: 0px 0 25px;
+        }
+        h4 {
+            font-size: 30px;
+
+        }
+        .HBCColors{
+            margin-top: 5%;
+            margin-bottom: -1px;
+        }
+        p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+    }
+    section.section-one {
+        margin: 3% 0 3% 0;
+        a {
+            margin: 3% 0 3% 0;
+            font-size: 22px;
+        }
+    }
+    section.section-two {
+        h2 {
+            font-size: 40px;
+            margin: 40px 0 30px;
+        }
+        p{
+            font-size: 22px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+    }
+    section.section-three {
+        h3{
+            font-size: 45px;
+            margin-top: 100px;
+            margin-bottom: 25px;
+        }
+    }
+    section.section-four {
+        div {
+            .icon {
+                margin-bottom: 5%;
+                width: 36%;
+                text-align: center;
+                height: 42%;
+            }
+            text-align: left;
+            margin: 1%;
+            h4{
+                padding-top: 5%;
+                margin-bottom: 5%;
+                font-size: 25px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            .cta{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    section {
+        margin-top: 20px;
+    }
+    section.section-five {
+        margin: 5% 0 10% 0;
+    }
+}
+@media (max-width:950px) {
+    #dsg-editorial.dsg-editorial {
+        section.section-one a {
+            font-size: 18px;
+        }
+        section {
+            .cta {
+                font-size: 18px;
+            }
+        }
+        section.sec__header {
+            h4 {
+                font-size: 4vw;
+                margin: -4% 0 2%;
+            }
+            h1 {
+                font-size: 12vw;
+            }
+            p {
+                font-size: 5vw;
+                line-height: 5.5vw;
+                margin: -2% 5% 8% 5%;
+            }
+        }
+        section.section-one {
+            padding-top:5%;
+            h2 {
+                font-size: 5vw;
+            }
+            p {
+                padding: 1% 13%;
+                font-size: 3vw;
+                line-height: 5vw;
+            }
+            a {
+                padding-top:3%;
+            }
+        }
+        section.section-two {
+            h3 {
+                font-size: 5vw;
+            }
+        }
+        section.sec__three {
+            .square {
+                padding: 10%;
+            }
+        }
+        section.section-three {
+            h3 {
+                font-size: 5vw;
+                margin: 3% 5% 2% 5%;
+            }
+        }
+        section.section-four {
+            padding: 0 5% 0 7%;
+            div.step{
+                .icon{
+                    display: inline-block;
+                    width: 18%;
+                    margin: 7% 6% 10% 0;
+                    vertical-align: top;
+                    text-align: center;            
+                }
+                .textinbox {
+                    display: inline-block;
+                    width: 70%;
+                    h4 {
+                        font-size: 4vw;
+                        line-height: 5.5vw;
+                        margin: 3% 5% 1% 0%;
+                    }
+                    p {
+                        font-size: 3vw;
+                        line-height: 4vw;
+                    }
+                }
+            }
+        }
+    }
+}

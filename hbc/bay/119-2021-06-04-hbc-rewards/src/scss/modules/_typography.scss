@@ -1,0 +1,32 @@
+// @author Penn
+// --------------------------------------------------
+// NOTE: vendor prefixes are now obsolete thanks to Gulp Autoprefixer
+// https://www.npmjs.com/package/gulp-autoprefixer
+
+// typography.scss
+// --------------------------------------------------
+// typography, fonts, etc go here
+
+// Font smoothing
+// Fixes issues with css transitions involving text
+@mixin font-smoothing($value: antialiased) {
+    @if $value == antialiased {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    } @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+// enable font kerning for typekit!
+// may cause weirdness at larger font-sizes
+// http://blog.typekit.com/2014/02/05/kerning-on-the-web/
+@mixin font-kerning {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'kern';
+    -webkit-font-feature-settings: 'kern';
+    -moz-font-feature-settings: 'kern';
+    -moz-font-feature-settings: 'kern=1';
+    font-kerning: normal;
+}

@@ -1,0 +1,13 @@
+// @author Joseph
+// --------------------------------------------------
+
+// fontface.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial{
+	@font-face {
+		font-family: "Ogg";
+		src: url('https://content-edit-assets.s3.amazonaws.com/bay/editorial/fonts/Ogg/Ogg-Roman.ttf') format('truetype');
+		font-style:normal;
+	  }
+} // end #dsg-editorial.dsg-editorial

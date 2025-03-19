@@ -1,0 +1,73 @@
+// @author Joseph
+
+#dsg-editorial.dsg-editorial #section9{
+	background: #881829;
+
+	h3{
+		margin-bottom: 20px;
+	}
+
+	.cta{
+		margin-top: 30px;
+	}
+
+	.section-inner{
+		width: 70vw;
+		margin: 0 auto;
+
+		.section-inner-top{
+			padding: 5vw 0;	
+		}
+
+		.section-inner-bottom{
+			.section-inner-bottom-top{
+				border-bottom: 1px solid #fff;
+				padding: 2vw 0;
+
+				a{
+					display: inline-block;
+					margin:0 1vw;
+				}
+			}
+
+			.section-inner-bottom-bottom{
+				padding: 2vw 0;
+
+				.cta-icons{
+					display: inline-block;
+					width: 30px;
+					margin: 0 3vw;
+				}
+			}
+		}
+	}
+
+	@media(max-width: $tablet-breakpoint){
+
+	}
+
+	@media(max-width: $mobile-breakpoint){
+		.section-inner{
+			width: 80vw;
+
+			.section-inner-bottom{
+				.section-inner-bottom-top{
+					.cta-plain{
+						display: block;
+						font-size: 4vw;
+						margin: 6vw 0px;
+					}
+				}
+				
+				.section-inner-bottom-bottom{
+					margin-top: 10vw;
+
+					.cta-icons{
+						width: 8vw;
+					}
+				}
+			}
+		}
+	}
+
+} // end #dsg-editorial.dsg-editorial

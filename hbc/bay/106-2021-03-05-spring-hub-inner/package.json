@@ -1,0 +1,62 @@
+{
+  "version": "3.0.0",
+  "author": "Frontend Editorial Team - DSG",
+  "license": "MIT",
+  "stageURL": "https://stage.thebay.com/editorial/spring-2021-women?__siteDate=202103050000",
+  "liveURL": "https://www.thebay.com/editorial/spring-2021-women",
+  "scripts": {
+    "postinstall": "gulp build && cd ~/Workspace && gulp build"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-external-helpers": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
+    "core-js": "3",
+    "del": "^2.0.2",
+    "downloadjs": "^1.4.7",
+    "fs": "^0.0.1-security",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "^1.0.8",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-data": "^1.2.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-html-replace": "^1.5.1",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-json-modify": "^1.0.2",
+    "gulp-livereload": "^3.8.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-notifier": "^1.0.6",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-template": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.7",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "global": "^4.4.0",
+    "jquery": "3.3.1",
+    "navigo": "^7.1.2"
+  },
+  "eslintIgnore": [
+    "hbc-carousel.min.js"
+  ]
+}

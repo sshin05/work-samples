@@ -1,0 +1,267 @@
+#dsg-editorial.dsg-editorial {
+    .fed-tabs{
+
+        .fed-tabs__container-section{
+            h1{
+                @include FontSans(30px, 900, 250);
+
+                font-family: Helvetica,Arial,sans-serif;
+            }
+            h2{
+                @include FontSans(28px, 400, 250);
+
+                font-family: Helvetica,Arial,sans-serif;
+            }
+
+            h3{
+                @include FontSans(13px, 800, 50);
+
+                text-transform: uppercase;
+            }
+
+            p{
+                @include FontSans(16px, 400, 15, 1.15);
+            }
+
+            img{
+                width: auto;
+            }
+
+            a.cta{
+                @include FontSans(14px, 700, 40);
+                @include CTA();
+
+                text-transform: uppercase;
+            }
+
+            &.fed-tabs__container-section-01{
+                
+
+                .fed-tabs__container-section-01__01 {
+                    width: 100%;
+
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 900;
+                        font-style: normal;
+                        letter-spacing: 0.01em;
+                        line-height: 1;
+                        display: block;
+                        margin: 50px auto;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                    .album {
+                        display: inline-block;
+                        img {
+                            display: none;
+                            max-width: 100%;
+                            &.selected {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    ol {
+                        display: inline-block;
+                        width: 35%;
+                        flex: 1;
+                        flex-direction: column;
+                        align-items: stretch;
+                        justify-content: center;
+                        vertical-align: top;
+                        margin: 3% 0 0 5%;
+                        list-style: none;
+                        counter-reset: orderedlist;
+
+                        & li {
+                            counter-increment: orderedlist;
+                            margin: 0 0 10% 0%;
+                            padding: 0%;
+                            font-family: Helvetica, serif;
+                            font-size: 20px;
+                            color: #231f20;
+                            cursor: pointer;
+
+                            &.selected {
+                                color:#000;
+                            }
+
+                            &::before{
+                                content: counter(orderedlist)". ";
+                                font-family: Helvetica, serif;
+                                font-size: 32px;
+                                font-weight: 400;
+                                margin-left: -1em;
+                            }
+                        }
+                    }
+                    
+
+                    h3 {
+                        text-transform: uppercase;
+                        margin: 15px 0;
+                        font-size: 16px;
+                    }
+
+                    p {
+                        margin: 0 auto 60px;
+                        text-align: center;
+                    }
+
+                    .box {
+                        width: 24%;
+                        display: inline-block;
+                        margin: 0 50px 40px;
+                        text-align: left;
+                        vertical-align: top;
+
+                        p {
+                            text-align: left;
+                            margin: 0 0 20px;
+                        }
+                    }
+
+                }
+
+                .fed-tabs__container-section-01__02{
+                    flex: 1;
+                    border-top: 1px solid black;
+                    text-align: center;
+
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 900;
+                        font-style: normal;
+                        letter-spacing: 0.01em;
+                        line-height: 1em;
+                        display: block;
+                        margin: 50px auto;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+
+                    h2{
+                        margin-bottom: 10px;
+                        text-align: center;
+                        letter-spacing: 0em;
+                        font-size: 28px;
+                        font-weight: 400;
+                        max-width: 1000px;
+                        margin: 0 auto;
+                    }
+
+                    p{
+                        text-align: right;
+                        font-family: Helvetica, serif;
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                        margin: 2% 12% 5% 0;
+                    }
+
+                    img {
+                        max-width: 100%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    a {
+                        font-weight: 400;
+                        border-bottom: 1px solid #000;
+                        padding-bottom: 0;
+                        line-height: 1.2em;
+                        text-align: center;
+                        margin: 5% auto;
+                        display: inline-block;
+                        color: #000;
+                        text-transform: capitalize;
+                        font-size: 22px;
+                        font-family: Helvetica, serif;
+                    }
+                }
+
+                .fed-tabs__container-section-01__04{
+                    flex: 1;
+                    border-top: 1px solid black;
+                    text-align: center;
+
+                   h1 {
+                        font-size: 30px;
+                        font-weight: 900;
+                        font-style: normal;
+                        letter-spacing: 0.01em;
+                        line-height: 1;
+                        display: block;
+                        margin: 50px auto;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+
+                    a.custom-back-to-top {
+                        font-weight: 800;
+                        border-bottom: 1px solid #bfbfbf;
+                        font-size: 18px;
+                        line-height: 1.2em;
+                        text-align: center;
+                        display: inline;
+                        color: #000;
+                        width: 100%;
+                    }
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+            br{
+                display: none;
+            }
+
+            .fed-tabs__container-section{
+
+                // SECTION #1
+                &.fed-tabs__container-section-01{
+                    .fed-tabs__container-section-01__01{
+                        // text-align: center;
+                        div.box {
+                            width: auto;
+                        }
+                        ol {
+                            margin: 3% 0 0 12%;
+                            width: 85%;
+                            height: 600px;
+                        }
+                    }
+
+                    .fed-tabs__container-section-01__02 {
+                        ol {
+                            margin: 3% 0 0 12%;
+                            width: 85%;
+                            height: 600px;
+                            li {
+                                text-align: left;
+                            }
+                        }
+                    }
+
+                    .fed-tabs__container-section-01__03{
+                        display: block;
+
+                        div{
+                            margin-bottom: 50px;
+                            padding: 0 20px;
+                            &.box {
+                                width: 88%;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}

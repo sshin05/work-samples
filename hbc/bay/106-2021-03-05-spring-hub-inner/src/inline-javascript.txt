@@ -1,0 +1,48 @@
+
+    <script>
+        document.onreadystatechange=function(){
+            if("complete"===document.readyState){
+                //Expand home-slots to 100%
+                document.querySelector(".secondary-content > .home-slots").style.maxWidth="100%";
+                
+                //Add styles to HEAD
+                var e=document.createElement("link");
+                e.rel="stylesheet";
+                e.href="https://content-edit-assets.s3.amazonaws.com/bay/editorial/106-2021-03-15-spring-hub-inner/bay-spring-hub-inner-2021-03-15-main-3.0.0.css";
+                document.head.appendChild(e);
+
+                //Hide
+                document.querySelector(".livechat-wrapper").style.display = "none";
+                document.querySelector("#promo-drawer").style.display = "none";
+                document.querySelector(".grecaptcha-badge").style.display = "none";
+
+                //Show Editorial
+                document.querySelector(".home-slots section").style.display = "block";
+            }
+        };
+    </script>
+
+
+cached:
+   <script>
+        document.onreadystatechange=function(){
+            if("complete"===document.readyState){
+                //Expand home-slots to 100%
+                document.querySelector(".secondary-content > .home-slots").style.maxWidth="100%";
+                
+                //Add styles to HEAD
+                var e=document.createElement("link");
+                e.rel="stylesheet";
+                e.href="https://content.hbc.com/chad/bay/editorial/106-2021-03-15-spring-hub-inner/bay-spring-hub-inner-2021-03-15-main-3.0.0.css";
+                document.head.appendChild(e);
+
+                //Hide
+                document.querySelector(".livechat-wrapper").style.display = "none";
+                document.querySelector("#promo-drawer").style.display = "none";
+                document.querySelector(".grecaptcha-badge").style.display = "none";
+
+                //Show Editorial
+                document.querySelector(".home-slots section").style.display = "block";
+            }
+        };
+    </script>

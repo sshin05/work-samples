@@ -1,0 +1,135 @@
+<style>
+    .home-slots .wrapper-content.hero-banner.homepage-slider.hbc-slider.slick-initialized.slick-slider {
+        margin: 0;
+        width: 100%;
+    }
+    .home-slots .slick-slide.slick-current.slick-active{
+        width: 100%!important;
+    }
+    .home-slots.nav-fixed {
+        top: 61px;
+        position: fixed;
+        z-index: 1;
+    }
+    
+    .home-slots section.sec__.sec__edtitorial__topnav {
+        /* margin-top: 150px; */
+        background-color: #fff;
+        color: #000;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        text-align: right;
+        height: auto;
+        z-index: 120;
+        opacity: 1;
+        max-width: 4500px;
+        /* padding: 18px 0 18px 0; */
+        max-width: 2000px;
+    }
+    .home-slots section.sec__.sec__edtitorial__topnav.nav-fixed {
+        position: sticky;
+        top: 0;
+    }
+
+    .home-slots section.sec__.sec__edtitorial__topnav .wrapper {
+        text-align: center;
+        margin: auto;
+        max-width: 1380px;
+        position: relative;
+        height: 38px;
+    }
+    .home-slots section.sec__.sec__edtitorial__topnav .wrapper .hudsons{
+        position: relative;
+        top: 0;
+        left: 7.2%;
+        max-width: 1000px;
+    }
+    .home-slots section.sec__.sec__edtitorial__topnav a {
+        margin: 0;
+        text-decoration: none;
+    }
+    .home-slots section.sec__.sec__edtitorial__topnav .wrapper a .hudsons h3{
+        font-family: Helvetica,Arial,sans-serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: .1vw;
+        text-align: left;
+        color: #000;
+        margin: 0 0 0 .1%;
+    }
+
+    .home-slots section.sec__.sec__edtitorial__topnav .hbc-home {
+        position: absolute;
+        top: -4px;
+        right: 10px;
+    }
+    @media only screen and (max-width:1023px){
+        #maincontent {
+            padding-top: 23px!important;
+        }
+        .home-slots.home-slots-nav {
+            display: none;
+        }
+    }
+    </style>
+
+        <section class="sec__ sec__edtitorial__topnav" id="sec__edtitorial__topnav">
+                <div class="wrapper">
+                <a href="$url('Search-Show','cgid','stories')$" linkname="Hudsonspage">
+                    <div class="hudsons"><h3>HUDSONS</h3></div>
+                </a>
+                <a href="$httpsUrl('Home-Show')$" linkname="Homepage">
+                    <div class="hbc-home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="300" height="27">
+                            <g id="Group_550" data-name="Group 550" transform="translate(0 0)">
+                                <rect id="Rectangle_40" data-name="Rectangle 40" width="35.683" height="24.054" transform="translate(64.325 35.683) rotate(-90)" fill="#006d4c"/>
+                                <rect id="Rectangle_41" data-name="Rectangle 41" width="35.683" height="24.054" transform="translate(112.666 35.683) rotate(-90)" fill="#94243b"/>
+                                <rect id="Rectangle_42" data-name="Rectangle 42" width="35.683" height="24.054" transform="translate(161.007 35.683) rotate(-90)" fill="#d6a340"/>
+                                <rect id="Rectangle_43" data-name="Rectangle 43" width="35.683" height="24.054" transform="translate(209.348 35.683) rotate(-90)" fill="#00264a"/>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    <script>
+
+        ///// position of slot from top by scroll test
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed');
+
+            ////// SRE TAGS
+
+            var links = document.querySelectorAll('#sec__edtitorial__topnav a');
+            var pathString = (window.location.pathname).split('/').pop();
+
+            // var allLinks = document.querySelectorAll("a");
+            for (var i = 0; i < links.length; i++) {
+                links[i].href = links[i].href + '?sre=header_link_' + links[i].getAttribute('linkname') + '_editorial_' + pathString;
+            }
+
+
+            // Sticky nav
+            let myNav = document.getElementById('sec__edtitorial__topnav');
+            let thishomeslots = myNav.closest('.home-slots');
+            ///// to control the homeslot I must add a unique class
+            thishomeslots.classList.add("home-slots-nav");
+            // console.log('myNav: ', myNav);
+                document.onscroll = function () { 
+                    "use strict";
+                    if (document.body.scrollTop >= 166 || document.documentElement.scrollTop >= 200 ) {
+                        // console.log('scrolled ', myNav);
+                        myNav.classList.add("nav-fixed");
+                        thishomeslots.classList.add("nav-fixed");
+                    } 
+                    else {
+                        myNav.classList.remove("nav-fixed");
+                        thishomeslots.classList.remove("nav-fixed");
+                    }
+                };
+            });
+        
+    </script>

@@ -1,0 +1,23 @@
+// @author Penn
+// --------------------------------------------------
+
+// french-style-fix.scss
+// --------------------------------------------------
+// All style fixes for French are contained here.
+// Using gulp concat, this whole file should be added to
+// the END of main.scss, overwriting EN styles in the normal
+// manner of cascading style sheets.
+
+#dsg-editorial.dsg-editorial.dsg-fr {
+
+    section.sec__nav h1 {
+        text-transform: uppercase;
+    }
+    section.sec__carousel .textOverlay h1 {
+        text-transform: uppercase;
+    }
+    section.sec__sec div .cont-text h1 {
+        line-height: 1.35em;
+    }
+
+} // end .bay-editorial

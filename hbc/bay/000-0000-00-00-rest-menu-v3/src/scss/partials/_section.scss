@@ -1,0 +1,279 @@
+// @author Penn
+// --------------------------------------------------
+
+// section.scss
+// --------------------------------------------------
+
+#dsg-designer-nav.dsg-designer-nav {
+    //background: #fff;
+    margin:0 auto !important;
+
+    section {
+        width: $section-width;
+        height: $section-height;
+        margin-bottom: $section-margin;
+        //background-color: $section-background-color;
+
+        &.main_menu{
+            width: 960px;
+            background: #fff;
+            margin:0 auto;
+
+            .main_menu-featured-title{
+                text-align: center;
+                padding: 13px 0 3px 0;
+                //border-top: 7px #969696 solid;
+                border-bottom: 1px #969696 solid;
+
+                h1{
+                    @include FontSerif(18px, 700);
+                    text-transform: uppercase;
+                }
+            }
+
+            .main_menu-designers{
+                text-align: center;
+                padding: 13px 0 3px 0;
+                border-top: 1px #969696 solid;
+                border-bottom: 1px #969696 solid;
+                margin-bottom: 10px;
+
+                h1{
+                    @include FontSerif(18px, 700);
+                    text-transform: uppercase;
+                }
+            }
+
+            .main_menu-featured{
+                width: 960px;
+                height: 203px;
+                position: relative;
+
+                .main_menu-featured-img{
+                    display: block;
+                    //background: red;
+                    position: absolute;
+                    top:0;
+                    left:0;
+                }
+
+                .main_menu-featured-content{
+                    display: block;
+                    //background: green;
+                    position: absolute;
+                    top:0;
+                    left:0;
+
+                    .main_menu-featured-left{
+                        display: block;
+                        position: absolute;
+                        width: 200px;
+                        height: 50px;
+                        text-align: center;
+                        //background: yellow;
+                    }
+
+                    .main_menu-featured-right{
+                        display: block;
+                        position: absolute;
+                        width: 500px;
+                        height: 155px;
+                        top: 0;
+                        left: 400px;
+                        //background: green;
+
+                        a{
+                            @include FontSerif(15px, 700);
+
+                            &:hover{
+                                cursor: pointer;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                // Featured versions
+                &.main_menu-featured-v1{
+                    .main_menu-featured-content{
+                        //display: none;
+
+                        .main_menu-featured-left{
+                            top:130px;
+                            left:5px;
+
+                            p{
+                                text-transform: uppercase;
+                            }
+
+                            a{
+                                @include FontSerif();
+                                @include CTA();
+                            }
+                        }
+
+                        .main_menu-featured-right{
+                            width: 500px;
+                            height: 165px;
+                            overflow: hidden;
+                            top: 20px;
+                            left: 460px;
+
+                            div{
+                                width: 250px;
+                                height: 28px;
+                                float: left;
+                            }
+                        }
+                    }
+                }
+
+                &.main_menu-featured-v2{
+                    .main_menu-featured-img{
+                        display: none;
+                    }
+
+                    .main_menu-featured-content{
+
+                        .main_menu-featured-left{
+                            display: none;
+                        }
+
+                        .main_menu-featured-right{
+                            overflow: hidden;
+                            display: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 960px;
+                            margin-top: 50px;
+
+                            div{
+                                float: left;
+                                width: 240px;
+                                height: 33px;
+                            }
+
+                        }
+                    }
+                }
+
+                &.main_menu-featured-v3{
+                    .main_menu-featured-content{
+                        .main_menu-featured-left{
+                            //display: none;
+                            top: 95px;
+                            left: 60px;
+                            width: 400px;
+
+                            p{
+                                @include FontSerif(22px);
+                                line-height: 40px;
+                                text-transform: uppercase;
+                            }
+
+                            a{
+                                @include FontSerif(22px);
+                                @include CTA();
+                            }
+                        }
+
+                        .main_menu-featured-right{
+                            display: none;
+                            background: red;
+                        }
+                    }
+                }
+            }
+
+            .main_menu-top{
+                width: 960px;
+                height: 30px;
+                display: flex;
+
+                div{
+                    @include FontSerif(14px);
+
+                    display: flex;
+                    flex: auto;
+                    padding-top: 6px;
+                    align-items: center;
+                    justify-content: center;
+                    background: #CFCFCF;
+                    color:#7A797E;
+                    position: relative;
+                    margin-left:5px;
+                    text-align: center;
+
+                    &:first-child{
+                        margin-left:0;
+                    }
+
+                    &:hover{
+                        background:#000;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+
+                    &.button-selected{
+                        background:#000;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .main_menu-bottom{
+                width: 960px;
+                height: 300px;
+                overflow-y: scroll;
+                margin: 20px 0;
+
+                .mCSB_scrollTools{
+                    width: 10px;
+                }
+
+                .main_menu-results{
+                    display: flex;
+                    min-height: 300px;
+
+                    div{
+                        flex: 1;
+                        // width: 179px;
+                        //height: 18px;
+                        padding:10px 5px;
+                        float: left;
+                        position: relative;
+
+                        &.main_menu-col-1,
+                        &.main_menu-col-2,
+                        &.main_menu-col-3,
+                        &.main_menu-col-4,
+                        &.main_menu-col-5{
+                            height: auto;
+
+                            div{
+                                width:100%;
+                            }
+                        }
+
+                        a{
+                            @include FontSerif(12px);
+
+                            color: #000;
+                            letter-spacing: .1em;
+                            line-height:18px;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main_menu-bottom-border{
+            border-bottom: 7px solid #969696;
+        }
+    }
+
+} // end #dsg-editorial.dsg-editorial

@@ -1,0 +1,219 @@
+// @author Joseph
+// --------------------------------------------------
+// Read the HBC Frontend Guidelines!
+// https://github.com/saksdirect/HBC_frontend_guidelines/wiki/CSS-coding-standards
+
+// main.scss
+// --------------------------------------------------
+// No 'real' css in this file, only imports
+//
+// Breaking apart the styles into different partials makes them:
+// * more modular
+// * easier to read
+// * easier to troubleshoot
+// * more semantic
+
+// CSS Reset
+@import 'partials/reset';
+
+// Modules and Global Variables
+@import 'partials/base';
+
+// Editorial-specific Variables
+@import 'partials/variables';
+
+// Single Page App
+// @import 'partials/single-page';
+
+// Base Layout
+@import 'partials/responsive';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/section';
+@import 'partials/footer';
+
+// HBC Carousel
+//@import 'partials/hbc-carousel';
+
+// Typography
+@import 'partials/typography';
+
+// Custom Elements
+// @import 'partials/your-custom-element-here';
+
+// Shameful Code
+@import 'partials/hacks';
+
+// temporary styles for template mockup
+@import 'partials/temp-dev';
+html {
+    scroll-behavior: smooth;
+  }
+#dsg-editorial.dsg-editorial {
+    font-family: Helvetica,Arial,Sans-serif;
+    h1{
+        font-size: 4.8vw;
+        font-weight: 100;
+    }
+    h2 {
+        font-size: 2.8vw;
+        letter-spacing: .5px;
+    }
+    h3 {
+        font-size: 1.8vw;
+        letter-spacing: .3px;
+        padding-right: 25%;
+    }
+    p {
+        margin: 4% 0 0 0;
+    }
+    section {
+        text-align: center;
+        .upper{
+            text-transform: uppercase;
+        }
+        &.fifty{
+            display: flex;
+            padding: 0;
+            margin-bottom: -6px;
+            div{
+                text-align: left;
+                flex:2;
+                a {
+                    text-decoration: underline;
+                    color: #000;
+                }
+                &.cta {
+                    font-size: 1.85vw;
+                    letter-spacing: .05vw;
+                }
+            }
+            .copy{
+                padding: 5% 5% 0 5%;
+            }
+        }
+        .white {
+            color:#fff;
+        }
+        &.sec__header {
+            h1 {
+                font-family:"adobe-caslon-pro";
+                margin-top: -70%;
+                margin-bottom: 3%;
+            }h2 {
+                margin-bottom: 55%;
+            }
+        }
+        &.title{
+            margin: 4% 0 4% 0;
+            h1 {
+                font-family:"adobe-caslon-pro";
+            }
+        }
+    }
+
+    .center-link {
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 100%;
+        margin: 5% auto;
+        justify-content: center;
+
+        a {
+            border-bottom: 1px solid black;
+            color: #000000;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    }
+    
+}
+
+a.custom-back-to-top {
+    position: relative;
+    font-family: Helvetica, serif;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000;
+    margin: 40px auto 20px;
+    display: block;
+    text-decoration: none;
+
+    & span {
+        text-align: center;
+        border-bottom: 1px solid #000;
+        font-size: 16px;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+@media (max-width:950px) {
+    #dsg-editorial.dsg-editorial {
+        section {
+            &.fifty{
+                flex-flow: column;
+                padding: 5% 0 5% 0;
+                margin-bottom: 0px;
+            }
+            &.reverse{
+                flex-direction: column-reverse;
+            }
+            &.fifty div a.cta {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width:460px) {
+    #dsg-editorial.dsg-editorial {
+        font-family: Helvetica,Arial,Sans-serif;
+        section{
+            h1{
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            h3 {
+                padding-right: 0%;
+            }
+            &.sec__header {
+                h1 {
+                    font-size: 30px;
+                    font-weight: 400;
+                    margin-bottom: 48%;
+                }
+                h2 {
+                    color: #000;
+                    margin-bottom: 0;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:951px) {
+    #dsg-editorial.dsg-editorial {
+        font-family: Helvetica,Arial,Sans-serif;
+        section{
+            h1{
+                font-size: 48px;
+            }
+            h2 {
+                font-size: 21px;
+            }
+            h3 {
+                font-size: 17px;
+                line-height: 19px;
+            }
+            &.fifty div a.cta {
+                font-size: 20px;
+            }
+        }
+    }
+}

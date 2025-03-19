@@ -1,0 +1,69 @@
+// @author Penn
+// --------------------------------------------------
+
+// variables.scss
+// --------------------------------------------------
+// editorial-specific variables
+// because variables.scss gets imported before the rest of the partials,
+// these variables can be globally referenced (except in base.scss)
+//
+// variables that are consistent across multiple editorials go in base.scss
+
+// Z-Index
+// --------------------------------------------------
+$z-index-nav: 1000;
+
+$section-margin-bottom: calc(110/2000 * 100%);
+
+// Dimensions
+// --------------------------------------------------
+
+$header-width: $stage-width;
+$header-height: auto;
+
+$nav-width: $stage-width;
+$nav-height: auto;
+
+$section-width: $stage-width;
+$section-height: auto;
+
+$footer-width: $stage-width;
+$footer-height: auto;
+
+
+// Positioning, Margin, Border, Padding
+// --------------------------------------------------
+
+$header-margin: 0;
+
+$nav-position: 0;
+$nav-margin: 0;
+
+$section-margin: 0;
+
+$footer-margin: 0;
+
+// Typography
+// --------------------------------------------------
+
+// Colors
+// --------------------------------------------------
+// All color variable names should be semantic
+// use this tool for name generation: http://chir.ag/projects/name-that-color/
+
+// first we set descriptive variables
+$concrete: #f2f2f2;
+$iron: #cdd0d1;
+
+// then we set functional variables
+$text-color-light: $white;
+$text-color-dark: $black;
+
+$header-background-color: $concrete;
+
+$nav-background-color: $iron;
+$nav-indicator-color: $concrete;
+
+$section-background-color: $concrete;
+
+$footer-background-color: $iron;

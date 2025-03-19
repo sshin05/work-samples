@@ -1,0 +1,89 @@
+// @author Penn
+// --------------------------------------------------
+// base.sass
+//
+// The base stylesheet does two things:
+// 1) Sets a couple of variables that are consistent across multiple editorials
+// 2) Sets styles for the base editorial container
+// 3) Loads all of my Sass modules (via @import)
+//
+// Tying my static variables and modules up into a base partial
+// gives me access to my entire Sass environment whenever I'm
+// setting up a new stylesheet with a single import statement.
+//
+
+// Global Variables
+// --------------------------------------------------
+
+// Stage dimensions
+$stage-width       : 100%;
+$mobile-breakpoint : 1023px;
+$stage-height      : auto;
+
+// Font Family - Bay
+$serif : "ivypresto-headline", serif;
+$sans  : "NeueMontreal-Regular", sans-serif;
+
+// Font Family - L&T
+// $serif: "Lust", Times, serif;
+// $sans-regular: 'TriviaSansRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// $sans-regular-bold: 'TriviaSansRegular-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// $sans-medium: 'TriviaSansMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// $sans: $sans-regular;
+
+// Font weights
+$regular: 400;
+$bold: 700;
+
+// Colors - Grayscale
+// tip: use the sass functions lighten/darken for alternate shades
+// e.g. lighten($black, 20%);
+$black: #000;
+$gray: #999;
+$white: #fff;
+
+// Colors - HBC Stripes (in order from left -> right)
+$hbc-stripe-green: #246d4b;
+$hbc-stripe-red: #a81a39;
+$hbc-stripe-yellow: #eab129;
+$hbc-stripe-blue: #0a284a;
+
+// Base Styles
+// --------------------------------------------------
+body{ margin: 0; }
+
+#dsg-editorial.dsg-editorial {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: $stage-width;
+    height: $stage-height;
+    margin: 0 auto;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    a {
+        text-decoration: none;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    picture{
+        display: block;
+
+        img{
+            display: block;
+        }
+    }
+
+} // end #dsg-editorial.dsg-editorial
+
+
+// Modules
+// --------------------------------------------------
+
+@import 'modules/all';

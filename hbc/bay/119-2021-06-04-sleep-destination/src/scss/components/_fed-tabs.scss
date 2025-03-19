@@ -1,0 +1,49 @@
+#dsg-editorial.dsg-editorial {
+    .fed-tabs{
+
+        .fed-tabs__buttons{
+
+
+            .fed-tabs__buttons-container{
+                display: flex;
+                width: 80%;
+                margin: 0 auto;
+
+                .fed-tabs__buttons-button{
+                    flex: 1;
+                    text-align: center;
+                    cursor: pointer;
+
+                    span{
+                        @include FontSans(16px, 700, 80);
+                    }
+
+                    &.fed-tabs__buttons-active{
+                        cursor: default;
+                    }
+                }
+            }
+        }
+
+        .fed-tabs__container{
+            .fed-tabs__container-section{
+                display: none;
+
+                &.fed-tabs__container-active{
+                    display: block;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+        //@media only screen and (max-width: 560px) {
+
+            .fed-tabs__buttons{
+                .fed-tabs__buttons-container{
+                    display: block;
+                }
+            }
+
+        }
+    }
+}

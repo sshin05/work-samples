@@ -1,0 +1,88 @@
+/**
+ * @brief Font Builder SFCC
+ * @version 2.0.1
+ * @year 2020
+ * @author Joseph Luzquinos
+ */
+
+ @mixin FontBuilder($size:14px, $weight:400, $tracking:100, $lineHeight:1, $style:normal){
+    font-size:$size;
+    font-weight:$weight;
+    font-style: $style;
+    letter-spacing: ($tracking/1000) + 0em; // Photoshop Tracking to em
+    line-height:$lineHeight;
+    display: block;
+    margin:0;
+}
+
+/**
+ * Fonts Builder
+ */
+
+ //BaskervillURW
+@mixin FontBaskerville($size:14px, $weight:400, $tracking:100, $lineHeight:1, $style:normal){
+    @include FontBuilder($size, $weight, $tracking, $lineHeight, $style);
+
+    //font-family: $baskerville;
+}
+
+//Sans Serif
+@mixin FontSans($size:14px, $weight:400, $tracking:100, $lineHeight:1, $style:normal){
+    @include FontBuilder($size, $weight, $tracking, $lineHeight, $style);
+
+    //Proxima Nova Black
+    //NOT currently included in SFCC global styles, needs to be loaded in the HTML page
+    // <!-- Proxima nova Extras (800,900), comment if NOT needed -->
+    // <link rel="stylesheet" href="https://use.typekit.net/sfz0foe.css">
+
+    @if $weight == 900{ //Proxima Nova Black
+        font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+        font-weight: 900;
+
+    }@else if $weight == 800{ //Proxima Nova Extrabold
+
+        font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+        font-weight: 800;
+
+    }@else if $weight == 700{ //Proxima Nova Bold
+
+        font-family: "proxima-nova-bold", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+        font-weight: 700;
+
+    }@else if $weight == 600{ // Proxima Nova Semibold
+
+        font-family: "proxima-nova-semibold", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+        font-weight: 600;
+
+    }@else{ // Proxima Nova Regular
+
+        //font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+        font-family: "NeueMontreal-Regular", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+        font-weight: 400;
+
+    }
+}
+
+//Sans Serif
+@mixin FontSerif($size:14px, $weight:400, $tracking:100, $lineHeight:1, $style:normal){
+    @include FontBuilder($size, $weight, $tracking, $lineHeight, $style);
+
+    font-family: "meno-banner", "Times New Roman", Times, serif;
+}
+
+// CTA
+@mixin CTA($color: #000) {
+    @include transition;
+    color: $color;
+    text-decoration: none;
+    cursor:pointer;
+
+    span {
+        display:inline-block;
+        border-bottom: 3px solid $color;
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+}

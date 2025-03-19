@@ -1,0 +1,58 @@
+// @author Penn
+// --------------------------------------------------
+
+// french-style-fix.scss
+// --------------------------------------------------
+// All style fixes for French are contained here.
+// Using gulp concat, this whole file should be added to
+// the END of main.scss, overwriting EN styles in the normal
+// manner of cascading style sheets.
+
+#dsg-editorial.dsg-editorial.dsg-fr {
+
+    section.section-one h2 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    section.section-one p {
+        font-size: 22px;
+    }
+
+    section.section-two a span {
+        font-size: 2vw;
+    }
+    .square h4 {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .square p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .section-three h3,
+    h3 {
+        font-size: 36px;
+    }
+
+    @media (max-width: 950px) {
+        section.sec__header h1 {
+            font-size: 9vw;
+        }
+        section.section-one h2 {
+            font-size: 21px;
+            line-height: 26px;
+        }
+        section.section-one p {
+            font-size: 16px;
+        }
+        section.section-two a span {
+            font-size: 4vw;
+        }
+       .section-three h3, h3 {
+            font-size: 24px;
+            line-height: 30px;
+       }
+    }
+
+} // end .bay-editorial

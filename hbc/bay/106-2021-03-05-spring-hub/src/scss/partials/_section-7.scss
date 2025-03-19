@@ -1,0 +1,76 @@
+// @author Joseph
+
+#dsg-editorial.dsg-editorial #section7{
+	$transition-speed: 0.5s;
+
+	h2{
+		font-size: 80px;
+		text-transform: uppercase;
+	}
+
+	.text-wrapper-inner{
+		display: flex;
+		width: 70%;
+    	margin: 0 auto;
+
+		div{
+			flex:1;
+			padding: 40px 0;
+		}
+	}
+	
+	background-image: url("<%=img('sec-7-1_bg.png', 'jpg')%>");
+
+	&.section7-bg1{
+		background-image: url("<%=img('sec-7-1_bg.png', 'jpg')%>");
+		transition: background $transition-speed linear;
+	}
+
+	&.section7-bg2{
+		background-image: url("<%=img('sec-7-2_bg.png', 'jpg')%>");
+		transition: background $transition-speed linear;
+	}
+
+	&.section7-bg3{
+		background-image: url("<%=img('sec-7-3_bg.png', 'jpg')%>");
+		transition: background $transition-speed linear;
+	}
+
+	&.section7-bg4{
+		background-image: url("<%=img('sec-7-4_bg.png', 'jpg')%>");
+		transition: background $transition-speed linear;
+	}
+
+	&.section7-bg5{
+		background-image: url("<%=img('sec-7-5_bg.png', 'jpg')%>");
+		transition: background $transition-speed linear;
+	}
+
+	&.section7-bg6{
+		background-image: url("<%=img('sec-7-6_bg.png', 'jpg')%>");
+		transition: background $transition-speed linear;
+	}
+
+	@media(max-width: $tablet-breakpoint){
+		a{
+			font-size: 30px;
+		}
+	}
+
+	@media(max-width: $mobile-breakpoint){
+		background-image: url("<%=img('sec-7-1_bg-mobile.png')%>");
+
+		.text-wrapper-inner{
+			width:90%;
+		}
+
+		h2{
+			font-size: 15vw;
+		}
+
+		a{
+			font-size: 5vw;
+		}
+	}
+
+} // end #dsg-editorial.dsg-editorial

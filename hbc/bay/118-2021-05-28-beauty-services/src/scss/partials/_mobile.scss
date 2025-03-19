@@ -1,0 +1,143 @@
+// Hack for m.thebay.com
+
+#dsg-editorial.dsg-editorial {
+
+	.fine-print span {
+	    display: block;
+	}
+
+	.static-faq-list{
+		// display: none;
+		text-align: left;
+		padding: 1em;
+		line-height: 2em;
+		
+		.static-faq-title{
+			font-size: 14px;
+			font-weight: 500;
+			text-decoration: none;
+			border-top: 1px solid #dcdcdc;
+			border-bottom: 1px solid #dcdcdc;
+			padding: 2rem 0;
+			margin-bottom: 1rem;
+		}
+
+		.static-faq-copy{
+			font-size: 14px;
+			font-weight: 400;
+			text-decoration: none;
+			color: #737373;
+			margin-bottom: 1em;
+			p.margin-zero{
+				margin-bottom:0px;
+				// color:red;
+			  }
+			
+			p{
+				font-size: 14px;
+				font-weight: 400;
+				text-decoration: none;
+				color: #737373;
+				margin-bottom: 1em;
+				
+				a{
+					
+					color: #737373;
+					text-decoration: underline;
+					
+					
+				}
+			}
+			strong{
+				font-weight: bold;
+				ul{
+					margin-top: 0;
+					margin-bottom: 10px;
+					margin-left: 34px;
+					line-height: 32px;
+					font-weight:100;
+				}
+			}
+			
+		}
+		
+	}
+
+}
+
+@media only screen and (max-width: 736px) {
+
+	#dsg-editorial.dsg-editorial {
+
+		header,
+		header .wrapper p,
+		section,
+		section div,
+		section p,
+		.steps,
+		.steps p {
+		    width: 100% !important;
+		}
+
+		.steps p {
+		    margin: 0;
+		}
+
+		.fine-print {
+			
+			span {
+		    	display: inline;
+			}
+
+			p {
+		    	margin: 0;
+		    	padding: 50px 0;
+			}
+
+		}
+
+		#accordion {
+	
+			 .panel-heading {
+				span {
+					margin-right: 10px !important;
+				}
+			
+				.accordion-icon {
+				    top: 50%;
+				    margin-top: -7px;
+				}
+			
+			}
+
+			.panel-body {
+				padding: 1em;
+			    padding-right: 1em;
+			}
+	
+		}
+
+		.bootstrap-wrapper,
+		header span br {
+			// display:none;
+		}
+
+		.static-faq-list {
+			display:block;
+		}
+
+		// mobile padding fix
+		section.fine-print p {
+		    padding: 2em;
+		}
+		
+		// mobile padding fix
+		header .wrapper p {
+		    padding: 1em 2em 0;
+		}
+
+
+	}
+
+}
+

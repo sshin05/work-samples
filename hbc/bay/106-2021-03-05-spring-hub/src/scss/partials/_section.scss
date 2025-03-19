@@ -1,0 +1,81 @@
+// @author Joseph Luzquinos
+// --------------------------------------------------
+
+// section.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial .section{
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+
+	a{
+		@include FontSans(50px, 400, 0, 1.1);
+		@include CTA(#fff);
+
+		text-transform: uppercase;
+	}
+
+	.text-wrapper{
+		h2{
+			margin-bottom: 115px;
+		}
+	}
+
+	.icon-down{
+		width: 70px;
+		z-index: 1;
+		display: block;
+		position: absolute;
+		left: 50%;
+		bottom: 25px;
+		transform: translateX(-50%);
+		margin: 0 auto;
+		cursor: pointer;
+
+		&.icon-up{
+			img{
+				transform: rotate(180deg);
+			}
+		}
+
+		img{
+			display: inline-block;
+			width: 50px;
+			margin-bottom: 10px;
+		}
+
+		p{
+			@include FontSans(10px, 700, 15);
+
+			text-transform: uppercase;
+		};
+	}
+
+	.back-to-top-custom{
+		cursor: pointer;
+	}
+
+	@media(max-width: $tablet-breakpoint){
+
+	}
+
+	@media(max-width: $mobile-breakpoint){
+		.text-wrapper{
+			position: relative;
+
+			h2{
+				font-size: 12vw;
+				margin-bottom: 7vw;
+			}
+
+			a{
+				font-size: 7vw;
+				margin-top: 5vw;
+			}
+		}
+
+
+	}
+
+} // end #dsg-editorial.dsg-editoria	l

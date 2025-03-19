@@ -1,0 +1,140 @@
+// @author Joseph
+// --------------------------------------------------
+
+// section.scss
+// --------------------------------------------------
+html {
+    scroll-behavior: smooth;
+  }
+#dsg-editorial.dsg-editorial {
+    section {
+
+        em {
+            font-weight: 800;
+        }
+
+        &.sec__01{
+            .headTitle {
+                position: relative;
+                text-align: center;
+                color: #fff;
+                margin: -16% auto 12% auto;
+                h1 {
+                    font-size: 3.5em;
+                    line-height: 1.5em;
+                    font-weight: 100;
+                    font-family: Helvetica, Arial, sans-serif;
+                }
+                h3 {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 1.5em;
+                    letter-spacing: .05em;
+                    line-height: 0em;
+                    font-weight: 100;
+                }
+            }
+        }
+
+        &.sec__02{
+            max-width: 1230px;
+            text-align: center;
+            padding: 40px 0;
+            margin: 0 auto;
+
+            h1{
+                @include FontSans(30px, 900, 250);
+
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+
+            p{
+                @include FontSans(16px, 400, 15);
+                font-style: italic;
+                max-width: 635px;
+                margin: 0 auto;
+            }
+
+            a {
+                text-decoration:underline;
+            }
+
+            .profile {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                margin: 0 auto;
+                justify-content: center;
+
+                img {
+                    width: 16%;
+                }
+
+                span {
+                    margin: 0;
+                    width: 58%;
+                    text-align: left;
+                    padding-left: 30px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+
+        a.custom-back-to-top {
+            text-decoration: none;
+            position: relative;
+            font-weight: 100;
+            width: 100%;
+            text-align: center;
+            text-transform:none;
+            color: #000;
+            margin: 20px auto;
+            display: block;
+
+            span {
+                text-align: center;
+                border-bottom: 1px solid black;
+                font-size: 18px;
+            }
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+            &.sec__01{
+                img {
+                    height: 290px;
+                    object-fit: cover;
+                    object-position: 70% 0;
+                }
+                .headTitle {
+                    color: #000;
+                    margin: 0 auto 2% auto;
+                    h1 {
+                        font-size: 8.5vw;
+                    }
+                    h3 {
+                        font-size: 6vw;
+                        line-height: 6vw;
+                    }
+                }
+            }
+            &.sec__02{
+                padding: 0;
+                .profile {
+                    margin-top: 10%;
+                    display: block;
+                    img, span {
+                        display: inline-block;
+                    }
+                    img {
+                        width: 45%;
+                        margin: auto;
+                    }
+                    span {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+} // end #dsg-editorial.dsg-editorial

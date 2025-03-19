@@ -1,0 +1,16 @@
+// @author Joseph
+
+#dsg-editorial.dsg-editorial #section6{
+	background-image: url("<%=img('sec-6_bg.png')%>");
+
+	
+
+	@media(max-width: $tablet-breakpoint){
+
+	}
+
+	@media(max-width: $mobile-breakpoint){
+		background-image: url("<%=img('sec-6_bg-mobile.png')%>");
+	}
+
+} // end #dsg-editorial.dsg-editorial

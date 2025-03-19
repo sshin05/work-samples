@@ -1,0 +1,89 @@
+// @author Penn
+// --------------------------------------------------
+// NOTE: vendor prefixes are now obsolete thanks to Gulp Autoprefixer
+// https://www.npmjs.com/package/gulp-autoprefixer
+
+// buttons.scss
+// --------------------------------------------------
+// Animated button with border
+//
+// Usually inverts color and background-color
+
+@mixin button($color, $hover-color, $hover-background-color, $border-width: 2px) {
+
+    &,
+    &:link,
+    &:visited,
+    &:active {
+        @include transition;
+        display: inline-block;
+        padding: 15px 9px 12px 10px;
+        border: $border-width solid $hover-color;
+        text-align: center;
+        line-height: 0;
+        font-family: $sans;
+        font-style: normal;
+        font-size: 12px;
+        letter-spacing: .2em;
+        color: $color;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    &:hover {
+        @include button-hover($hover-color, $hover-background-color);
+    }
+
+}
+
+
+@mixin button-hover($hover-color, $hover-background-color) {
+    background: $hover-background-color;
+    border-color: $hover-color;
+    color: $hover-color;
+    text-decoration: none;
+}
+
+
+@mixin button-inverted($color, $hover-color, $hover-background-color, $border-width: 2px) {
+
+    &,
+    &:link,
+    &:visited,
+    &:active {
+        @include transition;
+        display: inline-block;
+        padding: 15px 8px 11px 10px;
+        border: $border-width solid $color;
+        text-align: center;
+        line-height: 0;
+        font-family: $sans;
+        font-style: normal;
+        font-size: 12px;
+        letter-spacing: .2em;
+        color: $color;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    &:hover {
+        @include button-inverted-hover($hover-color, $hover-background-color);
+    }
+
+}
+
+
+@mixin button-inverted-hover($hover-color, $hover-background-color) {
+    background: $hover-background-color;
+    border-color: $hover-background-color;
+    color: $hover-color;
+    text-decoration: none;
+
+    .arrow {
+        border-bottom-color: $hover-color;
+    }
+
+}
+

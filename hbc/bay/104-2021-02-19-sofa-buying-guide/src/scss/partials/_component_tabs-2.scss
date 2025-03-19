@@ -1,0 +1,210 @@
+#dsg-editorial.dsg-editorial {
+    .fed-tabs{
+
+        .fed-tabs__container-section-02{
+
+            .fed-tabs__container-section-02__01{
+                padding: 0 0 50px 0;
+
+                h1 {
+                    font-style: normal;
+                    line-height: 1;
+                    display: block;
+                    margin: 50px auto;
+                    font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                h2{
+                    margin-bottom: 15px;
+                }
+
+                p{
+                    width: 80%;
+                    text-align: center;
+                    margin: 0 auto 25px;
+
+                    &.small{
+                        font-size: 13px;
+                        font-style: normal;
+
+                        em {
+                            font-weight: 800;
+                            font-style: normal;
+                        }
+                    }
+
+                }
+
+                a {
+                    &.button {
+                        font-weight: 800;
+                        border-bottom: 1px solid black;
+                        padding-bottom: 2px;
+                        text-align: center;
+                        margin: 0 auto;
+                        display: inline-block;
+                        color: #000;
+                        text-transform: uppercase;
+                    }
+                }
+
+                div.box {
+                    text-align: left;
+                    width: 41%;
+
+                    img{
+                        display: block;
+                        width: auto;
+                    }
+
+                }
+            }
+
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+            br{
+                display: none;
+            }
+
+            .fed-tabs__container-section-02{
+
+                .fed-tabs__container-section-02__01{
+                    display: flex;
+                    padding-bottom: 1vw;
+                    flex-direction: column;
+
+                    &.row{
+                        flex-direction: column-reverse;
+                    }
+
+                    div{
+                        display: flex;
+                        position: relative;
+                        text-align: center;
+                        align-items: center;
+                        flex-flow: column wrap;
+                        order: 1;
+                        padding-bottom: 20px;
+                        width: 100%;
+
+                        img{
+                            display: inline-block;
+                            position: relative;
+                            top: auto;
+                            right: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-02__02{
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .fed-tabs__container-section-02__03{
+                    .fed-tabs__container-section-02__03-container{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding-left: 2vw;
+                            padding-right: 2vw;
+
+                            &:first-child{
+                                padding-bottom: 6vw;
+                            }
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-02__04{
+                    .fed-tabs__container-section-02__04-container{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding-left: 2vw;
+                            padding-right: 2vw;
+
+                            &:first-child{
+                                padding-bottom: 6vw;
+                            }
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-02__05{
+                    .fed-tabs__container-section-02__05-container{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding: 2vw 0;
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-02__07{
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                }
+
+                .fed-tabs__container-section-02__08{
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .fed-tabs__container-section-02__09{
+                    display: block;
+                        //width: auto;
+
+                    div{
+                        padding-left: 2vw;
+                        padding-right: 2vw;
+                        padding-bottom: 6vw;
+                    }
+                }
+
+                .fed-tabs__container-section-02__10{
+                    .fed-tabs__container-section-02__10-container{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding: 2vw 0;
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-02__13{
+                    .fed-tabs__container-section-02__13-title{
+                        padding-bottom: 6vw;
+                    }
+
+                    .fed-tabs__container-section-02__13-content{
+                        display: block;
+                        width: auto;
+
+                        div{
+                            padding-left: 2vw;
+                            padding-right: 2vw;
+                            padding-bottom: 6vw;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+}

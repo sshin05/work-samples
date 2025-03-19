@@ -1,0 +1,342 @@
+#dsg-editorial.dsg-editorial {
+    .fed-tabs{
+
+        .fed-tabs__container-section{
+            h1{
+                @include FontSans(30px, 900, 250);
+
+                text-transform: uppercase;
+            }
+            h2{
+                @include FontSans(20px, 900, 250);
+
+                text-transform: uppercase;
+            }
+
+            h3{
+                @include FontSans(13px, 800, 50);
+
+                text-transform: uppercase;
+            }
+
+            p{
+                @include FontSans(16px, 400, 15, 1.15);
+            }
+
+            img{
+                width: auto;
+            }
+
+            a.cta{
+                @include FontSans(14px, 700, 40);
+                @include CTA();
+
+                text-transform: uppercase;
+            }
+
+            &.fed-tabs__container-section-01{
+                .fed-tabs__container-section-01__01{
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    margin-top: 20px;
+
+                    h1 {
+                        font-size: 30px;
+                        font-style: normal;
+                        letter-spacing: 0.25em;
+                        line-height: 1;
+                        display: block;
+                        margin: 50px auto;
+                        font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+
+                    h2{
+                        margin-bottom: 20px;
+                        text-align: left;
+                    }
+
+                    p{
+                        width: 85%;
+                        text-align: left;
+                        font-size: 16px;
+                        margin-bottom: 30px;
+
+                        span {
+                            font-weight: 800;
+                            text-transform: uppercase;
+                        }
+
+                    }
+
+
+                    div{
+                        position: relative;
+                        width: 50%;
+
+                        img{
+                            display: block;
+                            width: auto;
+                        }
+
+                    }
+                }
+
+                .fed-tabs__container-section-01__02 {
+                    width: 100%;
+                    border-top: 1px solid black;
+
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 900;
+                        font-style: normal;
+                        letter-spacing: 0.25em;
+                        line-height: 1;
+                        display: block;
+                        margin: 50px auto 20px;
+                        font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+
+                    h3 {
+                        text-transform: uppercase;
+                        margin: 15px 0;
+                        font-size: 16px;
+                    }
+
+                    p {
+                        margin: 0 auto 60px;
+                        text-align: center;
+                    }
+
+                    .box {
+                        width: 24%;
+                        display: inline-block;
+                        margin: 0 50px 40px;
+                        text-align: left;
+                        vertical-align: top;
+
+                        p {
+                            text-align: left;
+                            margin: 0 0 20px;
+                        }
+                    }
+
+                    a {
+                        font-weight: 800;
+                        border-bottom: 1px solid #bfbfbf;
+                        line-height: 1.2em;
+                        text-align: left;
+                        display: inline;
+                        color: #000;
+                        font-size: 18px;
+                        text-transform: uppercase;
+
+                        &.button {
+                            border: 2px solid black;
+                            padding: 8px 40px;
+                            text-align: center;
+                            margin: 0 auto;
+                            display: block;
+                            width: 85%;
+                        }
+                    }
+                }
+
+                .fed-tabs__container-section-01__03{
+                    flex: 1;
+                    border-top: 1px solid black;
+                    margin-top: 20px;
+                    text-align: center;
+
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 900;
+                        font-style: normal;
+                        letter-spacing: 0.25em;
+                        line-height: 1;
+                        display: block;
+                        margin: 50px auto;
+                        font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    h2{
+                        margin-bottom: 10px;
+                        text-align: left;
+                        font-size: 16px;
+                        letter-spacing: 0.15em;
+                    }
+
+                    p{
+                        text-align: center;
+                        font-size: 16px;
+                        margin-bottom: 30px;
+
+                        span {
+                            font-weight: 800;
+                            text-transform: uppercase;
+                        }
+
+                    }
+
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+
+                    div.box {
+                        width: 35%;
+                        display: inline-block;
+                        margin: 6% 6% 3%;
+                        vertical-align: top;
+
+                        p {
+                            text-align: left;
+                        }
+
+                    }
+                }
+
+                .fed-tabs__container-section-01__04{
+                    flex: 1;
+                    border-top: 1px solid black;
+                    margin-top: 20px;
+                    text-align: center;
+
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 900;
+                        font-style: normal;
+                        letter-spacing: 0.25em;
+                        line-height: 1;
+                        display: block;
+                        margin: 50px auto 10px;
+                        font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    h2{
+                        margin-bottom: 20px;
+                        text-align: left;
+                    }
+
+                    p{
+                        text-align: center;
+                        font-size: 16px;
+                        margin-bottom: 30px;
+
+                        span {
+                            font-weight: 800;
+                            text-transform: uppercase;
+                        }
+
+                    }
+
+                    a {
+                        font-weight: 800;
+                        border-bottom: 1px solid #bfbfbf;
+                        font-size: 18px;
+                        line-height: 1.2em;
+                        text-align: center;
+                        display: inline;
+                        color: #000;
+                        width: 100%;
+                    }
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+            br{
+                display: none;
+            }
+
+            .fed-tabs__container-section{
+
+                // SECTION #1
+                &.fed-tabs__container-section-01{
+                    .fed-tabs__container-section-01__01{
+                        display: flex;
+                        padding-bottom: 1vw;
+                        flex-direction: column;
+
+                        &.row{
+                            flex-direction: column-reverse;
+                        }
+
+                        div{
+                            display: flex;
+                            position: relative;
+                            text-align: center;
+                            align-items: center;
+                            flex-flow: column wrap;
+                            order: 1;
+                            padding-bottom: 20px;
+                            width: 100%;
+
+                            img{
+                                display: inline-block;
+                                position: relative;
+                                top: auto;
+                                right: auto;
+                            }
+                        }
+                    }
+
+                    .fed-tabs__container-section-01__02 {
+                        div {
+                            &.box {
+                                width: 73%;
+                            }
+                        }
+                    }
+
+                    .fed-tabs__container-section-01__03{
+                        display: block;
+
+                        div{
+                            margin-bottom: 50px;
+                            padding: 0 20px;
+                            &.box {
+                                width: 88%;
+                            }
+                        }
+                    }
+
+                    .fed-tabs__container-section-01__04{
+                        display: block;
+
+                        div{
+                            margin-bottom: 50px;
+                            padding: 0 20px;
+                        }
+                    }
+
+                }
+
+                // SECTION #2
+                &.fed-tabs__container-section-02{
+
+                }
+
+
+            }
+
+        }
+
+    }
+}

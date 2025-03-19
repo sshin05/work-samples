@@ -1,0 +1,76 @@
+#dsg-editorial.dsg-editorial {
+	section{
+		&.sec__carousel{
+			margin-bottom: 23px;
+			position: relative;
+
+			.carousel-text{
+				position: absolute;
+				width: 530px;
+				right: 20%;
+				top:50%;
+				transform: translateY(-50%);
+
+				h2{
+					@include FontSans(28px, 800, 250);
+
+					margin-bottom: 34px;
+				}
+
+				p{
+					@include FontSans(16px, 400, 0, 1.4);
+
+					strong{
+						font-weight: 700;
+					}
+
+					margin-bottom: 30px;
+				}
+
+				a{
+					@include FontSans(14px, 700, 40);
+					@include CTA(#000);
+
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: $mobile-breakpoint) {
+		br{
+			display: none;
+		}
+		section{
+			&.sec__carousel{
+				.carousel-text{
+					width: 80vw;
+					top: 0;
+					left: 0;
+					right: 0;
+					margin: 45vw auto 0;
+					transform: translateY(0);
+
+					h2{
+						font-size: 5vw;
+						margin-bottom: 2vw;
+					}
+
+					p{
+						font-size: 4vw;
+						margin-bottom: 2vw;
+					}
+
+					a{
+						font-size: 4vw;
+					}
+
+				}
+
+				img{
+					margin-bottom: 35vw;
+				}
+			}
+		}
+    }
+}

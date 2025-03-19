@@ -1,0 +1,74 @@
+// @author Joseph
+// --------------------------------------------------
+// Read the HBC Frontend Guidelines!
+// https://github.com/saksdirect/HBC_frontend_guidelines/wiki/CSS-coding-standards
+
+// main.scss
+// --------------------------------------------------
+// No 'real' css in this file, only imports
+//
+// Breaking apart the styles into different partials makes them:
+// * more modular
+// * easier to read
+// * easier to troubleshoot
+// * more semantic
+
+// CSS Reset
+@import 'partials/reset';
+
+// Modules and Global Variables
+@import 'partials/base';
+
+//Fontface
+//@import 'partials/fontface';
+
+// Editorial-specific Variables
+@import 'partials/variables';
+
+// Single Page App
+// @import 'partials/single-page';
+
+//Fullpage.js Styles
+@import './src/scss/partials/_fullpage.min.scss';
+@import 'partials/fullpage-edit.scss';
+
+// Base Layout
+@import 'partials/responsive';
+@import 'partials/expandable-nav';
+@import 'partials/carousel-main';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/footer';
+
+//Sections
+@import 'partials/section';
+@import 'partials/section-0';
+@import 'partials/section-1';
+@import 'partials/section-2';
+@import 'partials/section-3';
+@import 'partials/section-4';
+@import 'partials/section-5';
+@import 'partials/section-6';
+@import 'partials/section-7';
+@import 'partials/section-8';
+//@import 'partials/section-9';
+
+
+
+// HBC Carousel
+//@import 'partials/hbc-carousel';
+
+// Typography
+@import 'partials/typography';
+
+// Mobile
+@import 'partials/mobile';
+
+// Custom Elements
+// @import 'partials/your-custom-element-here';
+
+// Shameful Code
+@import 'partials/hacks';
+
+// temporary styles for template mockup
+//@import 'partials/temp-dev';

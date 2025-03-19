@@ -1,0 +1,83 @@
+// @author Joseph
+// --------------------------------------------------
+
+// typography.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+
+    h1{
+        @include FontSans(40px, 800, 250);
+
+        text-transform: uppercase;
+    }
+
+    h2{
+        @include FontSans(30px, 900, 250);
+
+        text-transform: uppercase;
+
+        &.babyguide {
+            margin-bottom: 10px;
+        }
+    }
+
+    h3{
+        @include FontSans(16px, 800, 50);
+
+        text-transform: uppercase;
+    }
+
+    h4{
+
+    }
+
+    p{
+        @include FontSans(16px, 400, 25, 1.25);
+
+        strong{
+            @include FontSans(16px, 800, 25, 1.25);
+
+            display: inline;
+        }
+
+         &.babyguide {
+            margin-bottom: 25px;
+        }
+    }
+
+    a{
+        color: #000;
+    }
+
+    .cta{
+        @include FontSans(14px, 700, 40);
+        @include CTA(#000);
+
+        text-transform: uppercase;
+    }
+
+    .cta-square{
+        @include FontSans(14px, 700, 40);
+
+        padding: 11px 40px;
+        background: #000;
+        display: inline-block;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        span{
+            color: #fff;
+        }
+
+        &:hover{
+            opacity: 0.9;
+        }
+
+    }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+
+    }
+
+} // end #dsg-editorial.dsg-editorial

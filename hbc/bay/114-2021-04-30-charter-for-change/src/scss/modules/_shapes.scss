@@ -1,0 +1,68 @@
+// @author Penn
+// --------------------------------------------------
+// NOTE: vendor prefixes are now obsolete thanks to Gulp Autoprefixer
+// https://www.npmjs.com/package/gulp-autoprefixer
+
+// shapes.scss
+// --------------------------------------------------
+// Create geometric shapes with sass
+
+// give element rounded corners
+@mixin rounded($radius: 0.5em) {
+    border-radius: $radius;
+}
+
+// create a css arrow
+@mixin arrow($width, $height, $color) {
+    height: $height;
+    padding: 0 $width;
+    background: $color;
+    font-size: $height / 2;
+    display: inline-block;
+    position: relative;
+    line-height: 1.8;
+
+    &:before {
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        top: 0;
+        border-top: $height / 2 solid transparent;
+        border-bottom: $height / 2  solid transparent;
+        transform: rotateY(180deg);
+    }
+
+    &:before {
+        left: 100%;
+        border-right: $height / 2 solid $color;
+    }
+
+}
+
+// create a css arrow pointing up
+@mixin arrow-up($size, $color) {
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+}
+
+// create a css circle
+@mixin circle($size, $color) {
+    width: $size;
+    height: $size;
+    line-height: $size;
+    background: $color;
+    border-radius: $size / 2;
+}
+
+// create a css square
+@mixin square($size, $color, $display) {
+    display: $display;
+    width: $size;
+    height: $size;
+    line-height: $size;
+    background: $color;
+}

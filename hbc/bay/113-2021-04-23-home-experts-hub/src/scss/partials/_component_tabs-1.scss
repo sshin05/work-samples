@@ -1,0 +1,121 @@
+#dsg-editorial.dsg-editorial {
+    .fed-tabs{
+
+        .fed-tabs__container-section{
+            h2{
+                @include FontSans(20px, 900, 250);
+
+                text-transform: uppercase;
+            }
+
+            h3{
+                @include FontSans(13px, 800, 50);
+
+                text-transform: uppercase;
+            }
+
+            p{
+                @include FontSans(16px, 400, 15, 1.15);
+            }
+
+            img{
+                width: auto;
+            }
+
+            a.cta{
+                @include FontSans(14px, 700, 40);
+                @include CTA();
+
+                text-transform: uppercase;
+            }
+
+            &.fed-tabs__container-section-01{
+                .fed-tabs__container-section-01__01{
+                    display: flex;
+                    align-items: center;
+
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 900;
+                        font-style: normal;
+                        letter-spacing: 0.25em;
+                        line-height: 1;
+                        display: block;
+                        margin: 50px auto;
+                        font-family: "proxima-nova", "Gill Sans MT", "Gill Sans", "Corbel", sans-serif;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+
+                    h2{
+                        margin-bottom: 15px;
+                    }
+
+                    p{
+                        width: 80%;
+                        text-align: center;
+                        margin: 0 auto 25px;
+
+                        &.p-small{
+                            font-size: 13px;
+                        }
+
+                        &.italic {
+                            font-style: italic;
+                            font-size: 20px;
+                            width: 70%;
+                            text-align: left;
+                        }
+                    }
+
+                    a {
+                        &.button {
+                            font-weight: 800;
+                            border: 2px solid black;
+                            padding: 8px 40px;
+                            text-align: center;
+                            margin: 0 auto;
+                            display: block;
+                            width: 58%;
+                        }
+                    }
+
+                    div{
+                        position: relative;
+                        text-align: center;
+                        width: 50%;
+
+                        img{
+                            display: block;
+                            width: auto;
+                        }
+
+                    }
+                }
+
+            }
+
+            &.fed-tabs__container-section-02{
+
+            }
+
+            &.fed-tabs__container-section-03{
+
+            }
+
+            &.fed-tabs__container-section-04{
+
+            }
+
+        }
+
+        @media only screen and (max-width: $mobile-breakpoint) {
+            br{
+                display: none;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,21 @@
+// @author Joseph
+// --------------------------------------------------
+
+// responsive.scss
+// --------------------------------------------------
+
+#dsg-editorial.dsg-editorial {
+    //background: green;
+    max-width: 2000px;
+    // width: $stage-max-width;
+
+    // .responsive-image{
+    //     display: none;
+    //     align-self: center;
+    // }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+
+    }
+
+} // end #dsg-editorial.dsg-editorial
