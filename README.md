@@ -5,8 +5,3 @@ HBC Editorial Projects for Hudson's Bay, Saks and Saks Off 5th.
 It should be installed automatically when installing
 
 `https://github.com/saksdirect/hbc-digital-editorials-server`
-
-## Support
-###HBC Content Engineering Team
-Pierre Metivier
-Joseph Luzquinos
