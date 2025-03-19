@@ -1,0 +1,1 @@
+export { LocalTable } from './LocalTable';

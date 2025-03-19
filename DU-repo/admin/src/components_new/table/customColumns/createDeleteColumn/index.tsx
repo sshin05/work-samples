@@ -1,0 +1,1 @@
+export { createDeleteColumn } from './createDeleteColumn';

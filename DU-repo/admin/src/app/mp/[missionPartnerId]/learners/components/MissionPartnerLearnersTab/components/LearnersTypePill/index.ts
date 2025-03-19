@@ -1,0 +1,1 @@
+export { LearnersTypePill } from './LearnersTypePill';

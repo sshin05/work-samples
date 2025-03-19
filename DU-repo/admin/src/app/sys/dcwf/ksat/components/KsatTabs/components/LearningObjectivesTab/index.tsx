@@ -1,0 +1,1 @@
+export { LearningObjectivesTab } from './LearningObjectivesTab';

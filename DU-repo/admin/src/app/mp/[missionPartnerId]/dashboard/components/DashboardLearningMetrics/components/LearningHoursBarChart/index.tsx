@@ -1,0 +1,1 @@
+export { LearningHoursBarChart } from './LearningHoursBarChart';

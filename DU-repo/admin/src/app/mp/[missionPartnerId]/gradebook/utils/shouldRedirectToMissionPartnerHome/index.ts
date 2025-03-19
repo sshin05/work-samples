@@ -1,0 +1,1 @@
+export { shouldRedirectToMissionPartnerHome } from './shouldRedirectToMissionPartnerHome';

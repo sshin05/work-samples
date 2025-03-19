@@ -1,0 +1,1 @@
+export { ProductTypeTag } from './ProductTypeTag';

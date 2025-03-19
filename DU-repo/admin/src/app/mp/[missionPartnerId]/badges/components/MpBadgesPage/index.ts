@@ -1,0 +1,1 @@
+export { MpBadgesPage } from './MpBadgesPage';

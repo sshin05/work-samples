@@ -1,0 +1,1 @@
+export { PortalManagersTab } from './PortalManagersTab';

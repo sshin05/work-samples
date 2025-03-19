@@ -1,0 +1,1 @@
+export { SideDrawerDetailsCard } from './SideDrawerDetailsCard';

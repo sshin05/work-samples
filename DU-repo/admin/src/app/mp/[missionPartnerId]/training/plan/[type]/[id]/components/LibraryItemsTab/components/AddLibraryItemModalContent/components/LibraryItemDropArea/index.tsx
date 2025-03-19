@@ -1,0 +1,1 @@
+export { LibraryItemDropArea } from './LibraryItemDropArea';

@@ -1,0 +1,1 @@
+export { getMissionPartnerIdFromUrl } from './getMissionPartnerIdFromUrl';

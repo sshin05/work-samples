@@ -1,0 +1,1 @@
+export { IndividualTrainingPlanTab } from './IndividualTrainingPlanTab';

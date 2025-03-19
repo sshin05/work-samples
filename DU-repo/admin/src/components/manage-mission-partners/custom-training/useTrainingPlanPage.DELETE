@@ -1,0 +1,124 @@
+// NO_CLUE WHY THIS WOULD BE:
+// !!! useTrainingPlanPage.tsx !!!
+// while there is also a:
+// !!! useTrainingPlanPage.ts !!!
+import { useEffect } from 'react';
+import { getRouteUrl, routeGenerators } from '@/utils/getRouteUrl';
+import type { ForceMultiplier, MissionPartner } from '@/api/codegen/graphql';
+import type { Router } from 'next/router';
+
+type ResetParams = {
+  title: string;
+  summary: string;
+  visibility: string;
+  unsequenced: boolean;
+  missionPartnerId: string;
+  description: string;
+  aboutTitle: string;
+  aboutDescription: string;
+};
+
+type TrainingPlanPageProps = {
+  forceMultiplierById: ForceMultiplier | null;
+  forceMultiplierByIdLoading: boolean;
+  fmMissionPartner: MissionPartner | null;
+  isAcceptedType: boolean;
+  missionPartnerMinDetails: MissionPartner | null;
+  missionPartnerMinDetailsLoading: boolean;
+  missionPartnerId: string;
+  router: Router;
+  type: string;
+  reset: (params: ResetParams) => void;
+  setForceMultiplierItems: any;
+  setLibraryItems: any;
+  setModules: any;
+  callbackPath?: string;
+};
+
+export const useTrainingPlanPage = ({
+  forceMultiplierById,
+  forceMultiplierByIdError,
+  forceMultiplierByIdLoading,
+  missionPartnerMinDetails,
+  missionPartnerMinDetailsLoading,
+  fmMissionPartner,
+  isAcceptedType,
+  missionPartnerId,
+  router,
+  type,
+  reset,
+  setShowErrorModal,
+  callbackPath
+}: TrainingPlanPageProps) => {
+  useEffect(() => {
+    if (type === 'fm' && forceMultiplierById && !forceMultiplierByIdLoading) {
+      const { title, content, conditions, missionPartnerId, unsequenced } =
+        forceMultiplierById;
+
+      reset({
+        title,
+        summary: content.summary,
+        visibility:
+          conditions?.all?.length > 0 ? conditions.all[0].value : 'Everyone',
+        // react-hook-form ties the switch display and validation to the unsequenced field
+        // but it needs to display as sequenced in the UI
+        unsequenced: !unsequenced,
+        missionPartnerId,
+        description: content?.description?.join('\n') ?? '',
+        aboutTitle:
+          content?.about?.title ?? `About ${forceMultiplierById?.title}`,
+        aboutDescription:
+          content?.about?.description?.join('\n') ??
+          `This plan is provided by ${fmMissionPartner?.name}.`
+      });
+    }
+  }, [
+    forceMultiplierById,
+    forceMultiplierByIdLoading,
+    fmMissionPartner,
+    reset,
+    type
+  ]);
+
+  const routeToCallbackPath = () => {
+    router.push(
+      callbackPath ??
+        getRouteUrl(routeGenerators.CustomTraining, { missionPartnerId })
+    );
+  };
+
+  // If FM doesn't exist
+  useEffect(() => {
+    if (type === 'fm' && !forceMultiplierById && !forceMultiplierByIdLoading) {
+      routeToCallbackPath();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [
+    forceMultiplierById,
+    forceMultiplierByIdLoading,
+    missionPartnerId,
+    type,
+    router,
+    callbackPath
+  ]);
+
+  // If not accepted type
+  useEffect(() => {
+    if (!isAcceptedType) {
+      routeToCallbackPath();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isAcceptedType, missionPartnerId, router, callbackPath]);
+
+  useEffect(() => {
+    if (forceMultiplierByIdError) {
+      setShowErrorModal(true);
+    }
+  }, [forceMultiplierByIdError]);
+
+  useEffect(() => {
+    if (!missionPartnerMinDetails && !missionPartnerMinDetailsLoading) {
+      router.push(getRouteUrl('MissionPartners'));
+    }
+  }, [missionPartnerMinDetails, missionPartnerMinDetailsLoading, router]);
+};

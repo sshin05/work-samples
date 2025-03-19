@@ -1,0 +1,1 @@
+export { useHandleRemoveLicenses } from './useHandleRemoveLicenses';

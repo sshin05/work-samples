@@ -1,0 +1,27 @@
+node_modules
+.DS_Store
+.env
+.env.*
+.pnp/
+
+# Cerberus / Panda
+/styled-system/**
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Build output directories
+.next/
+out/
+build/
+
+# Logs and coverage
+*.log
+coverage/
+
+# Vercel deployment (not sure that this is necessary, but someone had it i guess)
+.vercel/
+
+# Some of jeremy's custom tools
+myscripts/

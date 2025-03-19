@@ -1,0 +1,11 @@
+export { CloudAcademy } from './CloudAcademy';
+export { Coursera } from './Coursera';
+export { DataCamp } from './DataCamp';
+export { Dataiku } from './Dataiku';
+export { DefaultIcon } from './DefaultIcon';
+export { HackEDU } from './HackEDU';
+export { JupyterNotebook } from './JupyterNotebook';
+export { Pluralsight } from './Pluralsight';
+export { Udacity } from './Udacity';
+export { Udemy } from './Udemy';
+export { Workera } from './Workera';

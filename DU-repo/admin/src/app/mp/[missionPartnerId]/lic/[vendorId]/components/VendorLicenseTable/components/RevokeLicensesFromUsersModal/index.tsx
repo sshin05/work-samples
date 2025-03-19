@@ -1,0 +1,1 @@
+export { RevokeLicensesFromUsersModal } from './RevokeLicensesFromUsersModal';

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "training-plan-id-1",
+    "planType": "Learning Path",
+    "planSourceId": "cp-id",
+    "title": "Learning Path Plan",
+    "started": 1615847006485,
+    "completed": null,
+    "activities": [{
+      "activityType": "Course",
+      "completed": null,
+      "markedComplete": null,
+      "masteryLevel": "Oriented",
+      "specialization": null,
+      "started": 1615847006485,
+      "value": null
+    },
+    {
+      "activityType": "Course",
+      "completed": null,
+      "markedComplete": null,
+      "masteryLevel": "Oriented",
+      "specialization": null,
+      "started": 1615847006485,
+      "value": null
+    }],
+    "stats": [{
+      "completed": 0,
+      "completedAt": null,
+      "completedPercentage": 0,
+      "duration": 150,
+      "group": "All",
+      "total": 2
+    }],
+    "nextActivity":
+    {
+      "activityType": "Course",
+      "completed": null,
+      "markedComplete": null,
+      "masteryLevel": "Oriented",
+      "specialization": {
+        "id": "specialization-id",
+        "title": "Choose an option",
+        "instructions": "Read me!",
+        "options": [
+          {
+            "title": "Option 1",
+            "text": "Option 1 description",
+            "value": "option-specialization"
+          },
+          {
+            "title": "Option 2",
+            "text": "Option 2 description",
+            "value": "option-specialization"
+          }
+        ]
+      },
+      "started": null,
+      "value": "optional-specialization",
+      "course": {
+        "activityType": "Course",
+        "duration": 210,
+        "forceMultipliers": [],
+        "id": "next-course",
+        "skills": [],
+        "summary": "",
+        "title": "",
+        "url": "course",
+        "vendor": "Udemy",
+        "vendorCourseId": ""
+      }
+    }
+  },
+  {
+    "id": "training-plan-id-2",
+    "planType": "Force Multiplier",
+    "planSourceId": "fm-id",
+    "title": "Force Multiplier Plan",
+    "started": 1615847006485,
+    "completed": null,
+    "activities": [{
+      "activityType": "Course",
+      "completed": null,
+      "markedComplete": null,
+      "masteryLevel": "Oriented",
+      "specialization": null,
+      "started": 1615847006485,
+      "value": null
+    }],
+    "stats": [{
+      "completed": 0,
+      "completedAt": null,
+      "completedPercentage": 0,
+      "duration": 90,
+      "group": "All",
+      "total": 1
+    }],
+    "nextActivity": null
+  }
+]

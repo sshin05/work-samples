@@ -1,0 +1,1 @@
+export { CohortsTrainingPlansTab } from './CohortsTrainingPlansTab';

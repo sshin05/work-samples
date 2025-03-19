@@ -1,0 +1,1 @@
+export { ForceMultiplierImage } from './ForceMultiplierImage';

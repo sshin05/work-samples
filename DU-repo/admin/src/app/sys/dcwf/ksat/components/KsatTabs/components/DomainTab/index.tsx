@@ -1,0 +1,1 @@
+export { DomainTab } from './DomainTab';

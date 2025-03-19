@@ -1,0 +1,1 @@
+export { normalizePathname } from './normalizePathname';

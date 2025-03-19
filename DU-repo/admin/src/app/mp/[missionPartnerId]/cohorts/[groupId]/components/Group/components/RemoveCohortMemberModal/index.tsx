@@ -1,0 +1,1 @@
+export { RemoveCohortMemberModal } from './RemoveCohortMemberModal';

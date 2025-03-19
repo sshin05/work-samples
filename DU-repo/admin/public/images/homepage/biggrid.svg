@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="342" height="342" viewBox="0 0 342 342">
+    <g fill="none" fill-rule="evenodd" opacity=".106">
+        <g>
+            <g style="mix-blend-mode:screen">
+                <g fill="#FFF">
+                    <path d="M0 0H2.836V340H0zM90.738 0H92.156V340H90.738zM46.787 0H48.205V340H46.787zM24.102 0H25.52V340H24.102zM68.053 0H69.471V340H68.053zM113.422 0H116.258V340H113.422zM204.16 0H205.578V340H204.16zM317.582 0H319V340H317.582zM160.209 0H161.627V340H160.209zM273.631 0H275.049V340H273.631zM137.524 0H138.942V340H137.524zM250.947 0H252.365V340H250.947zM181.476 0H182.894V340H181.476zM294.898 0H296.31600000000003V340H294.898zM226.844 0H229.68V340H226.844z" transform="translate(0 -2180) translate(0 2180) translate(0 1)"/>
+                </g>
+                <path fill="#FFF" d="M170 -79H171V262H170z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 91.5)"/>
+                <path fill="#FFF" d="M170 -123L171 -123 171 218 170 218z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 47.5)"/>
+                <path fill="#FFF" d="M170 -146L171 -146 171 195 170 195z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 24.5)"/>
+                <path fill="#FFF" d="M170 -102L171 -102 171 239 170 239z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 68.5)"/>
+                <path fill="#FFF" d="M169 -56H172V285H169z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 114.5)"/>
+                <path fill="#FFF" d="M170 34L171 34 171 375 170 375z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 204.5)"/>
+                <path fill="#FFF" d="M170 147H171V488H170z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 317.5)"/>
+                <path fill="#FFF" d="M170 -10L171 -10 171 331 170 331z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 160.5)"/>
+                <path fill="#FFF" d="M171 103L172 103 172 444 171 444z" transform="translate(0 -2180) translate(0 2180) rotate(90 171.5 273.5)"/>
+                <path fill="#FFF" d="M170 -33L171 -33 171 308 170 308z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 137.5)"/>
+                <path fill="#FFF" d="M170 81L171 81 171 422 170 422z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 251.5)"/>
+                <path fill="#FFF" d="M170 11L171 11 171 352 170 352z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 181.5)"/>
+                <path fill="#FFF" d="M170 125L171 125 171 466 170 466z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 295.5)"/>
+                <path fill="#FFF" d="M169 57H172V398H169z" transform="translate(0 -2180) translate(0 2180) rotate(90 170.5 227.5)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1 @@
+export { LicensesTab } from './LicensesTab';

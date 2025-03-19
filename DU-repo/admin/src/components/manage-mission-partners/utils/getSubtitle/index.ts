@@ -1,0 +1,1 @@
+export { getSubtitle } from './getSubtitle';

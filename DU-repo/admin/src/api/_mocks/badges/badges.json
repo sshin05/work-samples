@@ -1,0 +1,17 @@
+[
+  {
+    "id": "badge-id-1",
+    "title": "Badge Test 1",
+    "description": "Badge Test 1 description."
+  },
+  {
+    "id": "badge-id-2",
+    "title": "Badge Test 2",
+    "description": "Badge Test 2 description."
+  },
+  {
+    "id": "badge-id-3",
+    "title": "Badge Test 3",
+    "description": "Badge Test 3 description."
+  }
+]

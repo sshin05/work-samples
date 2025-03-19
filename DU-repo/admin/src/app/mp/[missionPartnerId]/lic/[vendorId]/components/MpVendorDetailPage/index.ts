@@ -1,0 +1,1 @@
+export { MpVendorDetailPage } from './MpVendorDetailPage';

@@ -1,0 +1,1 @@
+export { StandardModalHeader } from './StandardModalHeader';

@@ -1,0 +1,1 @@
+export { CustomNotifyBadge } from './CustomNotifyBadge';

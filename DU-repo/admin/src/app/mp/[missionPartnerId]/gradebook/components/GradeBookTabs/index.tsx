@@ -1,0 +1,1 @@
+export { GradeBookTabs } from './GradeBookTabs';

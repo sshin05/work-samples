@@ -1,0 +1,1 @@
+export { camelToCapitalCase } from './camelToCapitalCase';

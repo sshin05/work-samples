@@ -1,0 +1,1 @@
+export { MpTrainingHubPage } from './MpTrainingHubPage';

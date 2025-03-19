@@ -1,0 +1,1 @@
+export { ReportCenterTabs } from './ReportCenterTabs';

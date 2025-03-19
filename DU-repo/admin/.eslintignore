@@ -1,0 +1,13 @@
+src/server.js
+src/assets-handler.js
+eslint-local-rules/
+
+src/api/codegen/*
+src/api/codegen.test.ts
+
+build/
+.vscode/
+.swc/
+myscripts/
+styled-system/
+tsconfig.tsbuildinfo

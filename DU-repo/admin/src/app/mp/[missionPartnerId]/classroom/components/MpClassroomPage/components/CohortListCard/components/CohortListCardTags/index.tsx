@@ -1,0 +1,1 @@
+export { CohortListCardTags } from './CohortListCardTags';

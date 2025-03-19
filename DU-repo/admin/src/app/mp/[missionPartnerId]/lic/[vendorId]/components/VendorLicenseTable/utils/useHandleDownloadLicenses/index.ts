@@ -1,0 +1,1 @@
+export { useHandleDownloadLicenses } from './useHandleDownloadLicenses';

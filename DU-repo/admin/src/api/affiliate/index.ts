@@ -1,0 +1,1 @@
+export { useFindAllAffiliates } from './useFindAllAffiliates';

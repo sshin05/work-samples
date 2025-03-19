@@ -1,0 +1,1 @@
+export { KsatDetailsPage } from './KsatDetailsPage';

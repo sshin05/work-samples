@@ -1,0 +1,1 @@
+export { SideDrawerFooter } from './SideDrawerFooter';

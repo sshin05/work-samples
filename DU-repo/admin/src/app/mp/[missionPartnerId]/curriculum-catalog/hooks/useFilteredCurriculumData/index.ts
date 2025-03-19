@@ -1,0 +1,1 @@
+export { useFilteredCurriculumData } from './useFilteredCurriculumData';

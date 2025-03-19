@@ -1,0 +1,1 @@
+export { pluralSCheck } from './pluralSCheck';

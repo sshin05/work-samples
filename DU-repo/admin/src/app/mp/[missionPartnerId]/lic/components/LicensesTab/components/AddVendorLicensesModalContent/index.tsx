@@ -1,0 +1,1 @@
+export { AddVendorLicensesModalContent } from './AddVendorLicensesModalContent';

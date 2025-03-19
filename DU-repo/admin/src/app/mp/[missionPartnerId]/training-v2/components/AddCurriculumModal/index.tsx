@@ -1,0 +1,1 @@
+export { AddCurriculumModal } from './AddCurriculumModal';

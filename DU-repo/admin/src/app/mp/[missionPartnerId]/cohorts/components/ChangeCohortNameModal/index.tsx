@@ -1,0 +1,1 @@
+export { ChangeCohortNameModal } from './ChangeCohortNameModal';

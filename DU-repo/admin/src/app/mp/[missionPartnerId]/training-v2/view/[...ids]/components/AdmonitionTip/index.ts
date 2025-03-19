@@ -1,0 +1,1 @@
+export { AdmonitionTip } from './AdmonitionTip';

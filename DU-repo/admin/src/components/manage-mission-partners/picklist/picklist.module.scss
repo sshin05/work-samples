@@ -1,0 +1,49 @@
+.picklistContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  max-width: fit-content;
+  margin: 0;
+
+  button {
+    font-size: inherit;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .offscreen {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+.picklist {
+  text-align: left;
+  width: 400px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  min-height: 200px;
+  & > option {
+    padding: 3px 6px;
+  }
+}
+
+.transferButtons {
+  margin: auto;
+  justify-content: center;
+
+  button {
+    margin: 10px;
+    padding: 3px;
+  }
+}

@@ -1,0 +1,1 @@
+export { ReportCenterPage } from './ReportCenterPage';

@@ -1,0 +1,1 @@
+export { useResponsiveWidth } from './useResponsiveWidth';

@@ -1,0 +1,1 @@
+export { UserTrainingModal } from './UserTrainingModal';

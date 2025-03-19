@@ -1,0 +1,1 @@
+export { LicensesTable } from './LicensesTable';

@@ -1,0 +1,1 @@
+export { calculateChartScale } from './calculateChartScale';

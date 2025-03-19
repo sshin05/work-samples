@@ -1,0 +1,20 @@
+[
+  {
+    "badgeId": "test-badge",
+    "description": "test badge description",
+    "expiresOn": "2022-03-16T12:25:52.849Z",
+    "imageUrl": "test",
+    "issuedOn": 1601390704879,
+    "jsonUrl": "test",
+    "title": "test-badge"
+  },
+  {
+    "badgeId": "test-badge-2",
+    "description": "test badge 2 description",
+    "expiresOn": "2022-03-16T12:25:52.849Z",
+    "imageUrl": "test",
+    "issuedOn": 1601390704879,
+    "jsonUrl": "test",
+    "title": "test-badge-2"
+  }
+]

@@ -1,0 +1,1 @@
+export { UpdateAccessCodeModalContent } from './UpdateAccessCodeModalContent';

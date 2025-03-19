@@ -1,0 +1,1 @@
+export { KsatTab } from './KsatTab';

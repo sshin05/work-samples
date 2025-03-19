@@ -1,0 +1,1 @@
+export { DuiBreadcrumbs } from './DuiBreadcrumbs';

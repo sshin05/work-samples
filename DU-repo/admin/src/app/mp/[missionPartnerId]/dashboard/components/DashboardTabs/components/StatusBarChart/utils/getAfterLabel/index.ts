@@ -1,0 +1,1 @@
+export { getAfterLabel } from './getAfterLabel';

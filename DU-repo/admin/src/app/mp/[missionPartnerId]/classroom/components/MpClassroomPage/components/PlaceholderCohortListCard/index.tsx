@@ -1,0 +1,1 @@
+export { PlaceholderCohortListCard } from './PlaceholderCohortListCard';

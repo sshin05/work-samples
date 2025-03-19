@@ -1,0 +1,1 @@
+export { hasMinPicDimensions } from './hasMinPicDimensions';

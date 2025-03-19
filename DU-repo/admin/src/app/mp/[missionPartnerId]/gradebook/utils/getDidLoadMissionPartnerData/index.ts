@@ -1,0 +1,1 @@
+export { getDidLoadMissionPartnerData } from './getDidLoadMissionPartnerData';

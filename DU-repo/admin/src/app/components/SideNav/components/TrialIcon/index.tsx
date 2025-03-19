@@ -1,0 +1,1 @@
+export { TrialIcon } from './TrialIcon';

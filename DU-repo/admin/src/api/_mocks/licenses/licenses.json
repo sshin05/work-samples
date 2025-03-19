@@ -1,0 +1,38 @@
+[
+  {
+    "vendorId": "vendorId1",
+    "vendorName": "vendorName1",
+    "userId": "userId1",
+    "userFirstName": "userFirstName1",
+    "userLastName": "userLastName1",
+    "userEmail": "userEmail1@test.com",
+    "missionPartnerId": "licenseProviderId1",
+    "missionPartnerName": "licenseProviderName1",
+    "assignedAt": "2020-01-01",
+    "lastUsedAt": "2020-01-01"
+  },
+  {
+    "vendorId": "vendorId2",
+    "vendorName": "vendorName2",
+    "userId": "userId1",
+    "userFirstName": "userFirstName1",
+    "userLastName": "userLastName1",
+    "userEmail": "userEmail1@test.com",
+    "missionPartnerId": "licenseProviderId1",
+    "missionPartnerName": "licenseProviderName1",
+    "assignedAt": "2020-01-01",
+    "lastUsedAt": "2020-01-03"
+  },
+  {
+    "vendorId": "vendorId2",
+    "vendorName": "vendorName2",
+    "userId": "userId2",
+    "userFirstName": "userFirstName2",
+    "userLastName": "userLastName2",
+    "userEmail": "userEmail2@test.com",
+    "missionPartnerId": "licenseProviderId2",
+    "missionPartnerName": "licenseProviderName2",
+    "assignedAt": "2020-01-01",
+    "lastUsedAt": "2020-01-02"
+  }
+]

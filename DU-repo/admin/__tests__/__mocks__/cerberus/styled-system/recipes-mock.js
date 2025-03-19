@@ -1,0 +1,30 @@
+const recipeMock = () => '';
+
+module.exports = {
+  avatar: recipeMock,
+  button: recipeMock,
+  fieldMessage: recipeMock,
+  iconButton: recipeMock,
+  label: recipeMock,
+  tag: recipeMock,
+  thead: recipeMock,
+  th: recipeMock,
+  tbody: recipeMock,
+  td: recipeMock,
+  checkbox: recipeMock,
+  fileStatus: recipeMock,
+  fileUploader: recipeMock,
+  input: recipeMock,
+  modal: recipeMock,
+  notification: recipeMock,
+  progressBar: recipeMock,
+  radio: recipeMock,
+  select: recipeMock,
+  table: recipeMock,
+  tabs: recipeMock,
+  toggle: recipeMock,
+  menu: recipeMock,
+  admonition: recipeMock,
+  datePicker: recipeMock,
+  tooltip: recipeMock
+};

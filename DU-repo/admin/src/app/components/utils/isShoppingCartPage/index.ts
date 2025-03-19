@@ -1,0 +1,1 @@
+export { isShoppingCartPage } from './isShoppingCartPage';

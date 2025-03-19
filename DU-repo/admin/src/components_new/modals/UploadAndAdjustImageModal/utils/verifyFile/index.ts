@@ -1,0 +1,1 @@
+export { verifyFile } from './verifyFile';

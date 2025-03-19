@@ -1,0 +1,10 @@
+export enum FORM_INPUT_TYPES {
+  BOOLEAN = 'BOOLEAN',
+  DATE = 'DATE',
+  DATE_TIME = 'DATE_TIME',
+  LIST = 'LIST',
+  LONG_TEXT = 'LONG_TEXT',
+  NUMBER = 'NUMBER',
+  TEXT = 'TEXT',
+  TIME = 'TIME'
+}

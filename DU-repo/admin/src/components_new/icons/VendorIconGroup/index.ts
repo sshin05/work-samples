@@ -1,0 +1,1 @@
+export { VendorIconGroup } from './VendorIconGroup';

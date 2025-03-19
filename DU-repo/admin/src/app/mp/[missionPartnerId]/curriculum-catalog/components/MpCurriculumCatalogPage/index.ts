@@ -1,0 +1,1 @@
+export { MpCurriculumCatalogPage } from './MpCurriculumCatalogPage';

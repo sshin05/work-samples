@@ -1,0 +1,1 @@
+export { CurriculumTab } from './CurriculumTab';

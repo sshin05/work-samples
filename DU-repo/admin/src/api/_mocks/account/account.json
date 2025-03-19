@@ -1,0 +1,16 @@
+{
+  "id": "abcde-12345",
+  "branch": "Space Force",
+  "photoUrl": ".png",
+  "grade": "A1C",
+  "occupationalCode": "3D0X4",
+  "metadata": {
+    "command": "org",
+    "spaceDelta": "delta",
+    "dutyStation": "Keesler"
+  },
+  "currentCareer": "Web-Dev",
+  "firstName": "Sid",
+  "lastName": "Wal",
+  "email": "test@test.com"
+}

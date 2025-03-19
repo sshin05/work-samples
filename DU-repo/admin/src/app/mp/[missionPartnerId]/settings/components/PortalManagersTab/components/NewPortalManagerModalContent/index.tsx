@@ -1,0 +1,1 @@
+export { NewPortalManagerModalContent } from './NewPortalManagerModalContent';

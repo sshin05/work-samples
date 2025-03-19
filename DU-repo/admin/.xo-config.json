@@ -1,0 +1,72 @@
+{
+  "_comment": "!!!!! NOTE: The first override is unnecessary because of the last value of the 'ignores' array. Can be removed in the future!!!!!",
+  "space": true,
+  "prettier": true,
+  "extends": "xo-react",
+  "envs": ["es2020", "browser", "jest"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/jsx-sort-props": "off",
+    "react/boolean-prop-naming": "off",
+    "react/state-in-constructor": "off",
+    "react/no-array-index-key": "off",
+    "max-params": "off",
+    "complexity": "off",
+    "node/prefer-global/process": ["error", "always"],
+    "unicorn/prefer-module": "off",
+    "unicorn/filename-case": "off",
+    "import/extensions": "off",
+    "node/file-extension-in-import": "off",
+    "capitalized-comments": "off",
+    "no-warning-comments": "off",
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/member-ordering": "off",
+    "unicorn/expiring-todo-comments": "off"
+  },
+  "overrides": [
+    {
+      "files": "src/api/**.ts",
+      "rules": {
+        "@typescript-eslint/array-type": "off"
+      }
+    },
+    {
+      "files": "src/api/codegen/**.ts",
+      "rules": {
+        "unicorn/no-abusive-eslint-disable": "off",
+        "@typescript-eslint/array-type": "off",
+        "@typescript-eslint/no-unsafe-return": "off"
+      }
+    },
+    {
+      "files": "src/components/mission-partner-details/StatusBarChart.tsx",
+      "rules": {
+        "@typescript-eslint/no-unsafe-call": "off"
+      }
+    },
+    {
+      "files": "src/pages/_app.js",
+      "rules": {
+        "import/no-unassigned-import": "off",
+        "react/prop-types": "off"
+      }
+    },
+    {
+      "files": "src/components/*/*stories*",
+      "rules": {
+        "import/extensions": "off"
+      }
+    },
+    {
+      "files": "__tests__/**/*.test.*",
+      "rules": {
+        "max-nested-callbacks": "off"
+      }
+    }
+  ],
+  "ignores": [".gitlab", "build", "codegenConfig.ts", "src/api/codegen/**.ts"]
+}

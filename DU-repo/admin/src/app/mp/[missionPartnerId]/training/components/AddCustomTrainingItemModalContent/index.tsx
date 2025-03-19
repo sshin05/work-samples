@@ -1,0 +1,1 @@
+export { AddCustomTrainingItemModalContent } from './AddCustomTrainingItemModalContent';
